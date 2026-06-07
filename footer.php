@@ -3,7 +3,7 @@ defined( 'ABSPATH' ) || exit;
 
 wp_footer();
 ?>
-<script src="<?php echo esc_url(get_template_directory_uri() . '/assets/js/section-animations.js'); ?>?v=1780144480" defer></script>
+<script src="<?php echo esc_url(get_template_directory_uri() . '/assets/js/section-animations.js'); ?>?v=1780144481" defer></script>
 <?php
 $footer_slug = cyma_get_footer_slug();
 $footer_template = 'template-parts/footer/' . $footer_slug;

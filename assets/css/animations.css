@@ -186,3 +186,25 @@ a[class*="-btn"].w-inline-block:active .image,
     transform: none;
   }
 }
+
+/* Homepage header shell — fixed nav collapses the wrapper to 0 width */
+.section-3 {
+  width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .section-3 {
+    right: 0;
+  }
+}
+
+/* Ensure Webflow mobile nav collapse wins over theme overrides */
+@media screen and (max-width: 991px) {
+  .w-nav[data-collapse='medium'] .nav-menu-wrapper.w-nav-menu {
+    display: none !important;
+  }
+
+  .w-nav[data-collapse='medium'] .menu-button.w-nav-button {
+    display: block !important;
+  }
+}

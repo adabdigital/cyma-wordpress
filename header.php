@@ -24,6 +24,6 @@ defined( 'ABSPATH' ) || exit;
     <?php wp_head(); ?>
     <?php get_template_part('template-parts/head/global-assets'); ?>
 </head>
-<body class="w-mod-js w-mod-touch">
+<body class="w-mod-js">
 <?php wp_body_open(); ?>
  
