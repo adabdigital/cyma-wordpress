@@ -1,0 +1,188 @@
+/* Subtle scroll-reveal animations for page sections */
+
+section.cyma-reveal {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--cyma-reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+
+section.cyma-reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  section.cyma-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Subtle button hover & click interactions */
+
+.cyma-btn,
+[class*="contact-btn"],
+a.w-inline-block[class*="btn"],
+a[class*="-btn"].w-inline-block,
+.button-primary,
+.button-primary-2,
+.w-button,
+input.w-button[type="submit"],
+button.w-button {
+  transition:
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.28s ease,
+    border-color 0.28s ease,
+    color 0.28s ease;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.cyma-btn:hover,
+[class*="contact-btn"]:hover,
+a.w-inline-block[class*="btn"]:hover,
+a[class*="-btn"].w-inline-block:hover,
+.button-primary:hover,
+.button-primary-2:hover,
+.w-button:hover,
+input.w-button[type="submit"]:hover,
+button.w-button:hover {
+  transform: translate3d(0, -2px, 0) scale(1.02);
+  box-shadow: 0 8px 24px rgba(5, 98, 167, 0.22);
+}
+
+[class*="contact-btn"].extra-small:hover,
+.contact-btn.extra-small:hover,
+[class*="contact-btn--"]:hover,
+a.w-inline-block[class*="btn"].extra-small:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cyma-btn:active,
+[class*="contact-btn"]:active,
+a.w-inline-block[class*="btn"]:active,
+a[class*="-btn"].w-inline-block:active,
+.button-primary:active,
+.button-primary-2:active,
+.w-button:active,
+input.w-button[type="submit"]:active,
+button.w-button:active {
+  transform: translate3d(0, 0, 0) scale(0.98);
+  box-shadow: 0 2px 8px rgba(5, 98, 167, 0.14);
+  transition-duration: 0.1s;
+}
+
+/* Keep header / nav controls stable */
+.w-nav-menu [class*="contact-btn"],
+.w-nav-menu [class*="contact-btn"]:hover,
+.w-nav-menu [class*="contact-btn"]:active,
+.menu-button [class*="contact-btn"],
+.menu-button [class*="contact-btn"]:hover,
+.menu-button [class*="contact-btn"]:active,
+.navbar-wrapper .contact-btn,
+.navbar-wrapper .contact-btn:hover,
+.navbar-wrapper .contact-btn:active {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Arrow / icon nudge inside buttons */
+[class*="contact-btn"] img,
+[class*="contact-btn"] .image,
+[class*="contact-btn"] .image-copy-home,
+[class*="contact-btn"] .image-copy-home2,
+[class*="contact-btn"] .image-copy-home3,
+a.w-inline-block[class*="btn"] img,
+a.w-inline-block[class*="btn"] .image,
+a[class*="-btn"].w-inline-block img,
+a[class*="-btn"].w-inline-block .image,
+.button-primary img,
+.button-primary-2 img,
+.w-button img {
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[class*="contact-btn"]:hover img,
+[class*="contact-btn"]:hover .image,
+[class*="contact-btn"]:hover .image-copy-home,
+[class*="contact-btn"]:hover .image-copy-home2,
+[class*="contact-btn"]:hover .image-copy-home3,
+a.w-inline-block[class*="btn"]:hover img,
+a.w-inline-block[class*="btn"]:hover .image,
+a[class*="-btn"].w-inline-block:hover img,
+a[class*="-btn"].w-inline-block:hover .image,
+.button-primary:hover img,
+.button-primary-2:hover img,
+.w-button:hover img {
+  transform: translate3d(4px, 0, 0);
+}
+
+[class*="contact-btn"]:active img,
+[class*="contact-btn"]:active .image,
+[class*="contact-btn"]:active .image-copy-home,
+[class*="contact-btn"]:active .image-copy-home2,
+[class*="contact-btn"]:active .image-copy-home3,
+a.w-inline-block[class*="btn"]:active img,
+a.w-inline-block[class*="btn"]:active .image,
+a[class*="-btn"].w-inline-block:active img,
+a[class*="-btn"].w-inline-block:active .image,
+.button-primary:active img,
+.button-primary-2:active img,
+.w-button:active img {
+  transform: translate3d(1px, 0, 0);
+  transition-duration: 0.1s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cyma-btn,
+  [class*="contact-btn"],
+  a.w-inline-block[class*="btn"],
+  a[class*="-btn"].w-inline-block,
+  .button-primary,
+  .button-primary-2,
+  .w-button,
+  input.w-button[type="submit"],
+  button.w-button {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .cyma-btn:hover,
+  [class*="contact-btn"]:hover,
+  a.w-inline-block[class*="btn"]:hover,
+  a[class*="-btn"].w-inline-block:hover,
+  .button-primary:hover,
+  .button-primary-2:hover,
+  .w-button:hover,
+  input.w-button[type="submit"]:hover,
+  button.w-button:hover,
+  .cyma-btn:active,
+  [class*="contact-btn"]:active,
+  a.w-inline-block[class*="btn"]:active,
+  a[class*="-btn"].w-inline-block:active,
+  .button-primary:active,
+  .button-primary-2:active,
+  .w-button:active,
+  input.w-button[type="submit"]:active,
+  button.w-button:active {
+    transform: none;
+    box-shadow: none;
+  }
+
+  [class*="contact-btn"]:hover img,
+  [class*="contact-btn"]:hover .image,
+  [class*="contact-btn"]:active img,
+  [class*="contact-btn"]:active .image,
+  a.w-inline-block[class*="btn"]:hover img,
+  a.w-inline-block[class*="btn"]:active img,
+  .button-primary:hover img,
+  .button-primary-2:hover img,
+  .w-button:hover img {
+    transform: none;
+  }
+}

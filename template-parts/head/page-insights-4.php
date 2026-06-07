@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta content="Insights_4" name="twitter:title">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<?php wp_enqueue_style('normalize', get_template_directory_uri() . '/assets/css/normalize.css', [], '1780144474'); ?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/wordpress.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+<style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="21a407e2-dcf3-9cb3-a741-3462d500360d"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="21a407e2-dcf3-9cb3-a741-3462d5003618"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="21a407e2-dcf3-9cb3-a741-3462d500362e"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="cbe367e5-4e0c-a518-2a11-7b12b9e96c49"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="dfa99058-d892-3f0f-c37f-3b8514bcdb21"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="509d7a30-b95c-5887-9f82-122eca1e35e2"] {opacity:0;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="21a407e2-dcf3-9cb3-a741-3462d500360d"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="21a407e2-dcf3-9cb3-a741-3462d5003618"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="21a407e2-dcf3-9cb3-a741-3462d500362e"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="cbe367e5-4e0c-a518-2a11-7b12b9e96c49"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="dfa99058-d892-3f0f-c37f-3b8514bcdb21"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="509d7a30-b95c-5887-9f82-122eca1e35e2"] {opacity:0;}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="21a407e2-dcf3-9cb3-a741-3462d500360d"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="21a407e2-dcf3-9cb3-a741-3462d5003618"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="21a407e2-dcf3-9cb3-a741-3462d500362e"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="cbe367e5-4e0c-a518-2a11-7b12b9e96c49"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="dfa99058-d892-3f0f-c37f-3b8514bcdb21"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="509d7a30-b95c-5887-9f82-122eca1e35e2"] {opacity:0;}}@media (max-width:479px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="21a407e2-dcf3-9cb3-a741-3462d500360d"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="21a407e2-dcf3-9cb3-a741-3462d5003618"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="21a407e2-dcf3-9cb3-a741-3462d500362e"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="cbe367e5-4e0c-a518-2a11-7b12b9e96c49"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="dfa99058-d892-3f0f-c37f-3b8514bcdb21"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="509d7a30-b95c-5887-9f82-122eca1e35e2"] {opacity:0;}}</style>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+<script type="text/javascript">WebFont.load({
+google: {
+families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Inter:300,400,500,600,700"]
+}});</script>
+<script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+<link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png?v=1780144474" rel="shortcut icon" type="image/x-icon">
+<link href="<?php echo get_template_directory_uri(); ?>/assets/images/webclip.png?v=1780144474" rel="apple-touch-icon"><!--
+Finsweet Attributes
+-->
+<script async="" type="module" src="https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js" fs-list=""></script>

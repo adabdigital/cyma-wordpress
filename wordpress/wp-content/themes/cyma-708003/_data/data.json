@@ -1,0 +1,2084 @@
+{
+  "posts": [
+    {
+      "id": "698d5c0e9f899396717bf4ee",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/69775620162aa96097fa596e/69775620162aa96097fa5989_image13.jpeg",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "text-overlay": {
+          "value": "CMS Customization",
+          "type": "PlainText"
+        },
+        "heading": {
+          "value": "Tailoring the Experience",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "Customizing your CMS can enhance user experience by making navigation intuitive and content easily accessible, leading to higher engagement rates.",
+          "type": "PlainText"
+        },
+        "banner-image": {
+          "value": {
+            "url": "",
+            "alt": ""
+          },
+          "type": "ImageRef"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_content": "",
+      "post_title": "Customizing Your CMS for Better User Experience",
+      "post_name": "insight-article-9",
+      "post_date": "2026-02-12T05:22:30.308Z",
+      "post_modified": "2026-02-12T04:50:22.664Z",
+      "post_type": "insights"
+    },
+    {
+      "id": "698d5c0e9f899396717bf4ec",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/69775620162aa96097fa596e/698d31879f8993967178062c_image16.jpeg",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "text-overlay": {
+          "value": "CMS Security",
+          "type": "PlainText"
+        },
+        "heading": {
+          "value": "Protecting Your Content",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "Implementing security measures such as regular updates, strong passwords, and backups is essential to protect your CMS from potential threats.",
+          "type": "PlainText"
+        },
+        "banner-image": {
+          "value": {
+            "url": "",
+            "alt": ""
+          },
+          "type": "ImageRef"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_content": "",
+      "post_title": "Security Best Practices for Your CMS",
+      "post_name": "insight-article-8",
+      "post_date": "2026-02-12T05:22:30.308Z",
+      "post_modified": "2026-02-12T04:50:22.664Z",
+      "post_type": "insights"
+    },
+    {
+      "id": "698d5c0e9f899396717bf4ea",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/698d5c019f899396717bf2b1_image7.jpeg",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "text-overlay": {
+          "value": "CMS Trends",
+          "type": "PlainText"
+        },
+        "heading": {
+          "value": "What to Expect",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "As technology evolves, CMS platforms are incorporating AI and machine learning to enhance user experience and streamline content management processes.",
+          "type": "PlainText"
+        },
+        "banner-image": {
+          "value": {
+            "url": "",
+            "alt": ""
+          },
+          "type": "ImageRef"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_content": "",
+      "post_title": "Future Trends in Content Management Systems",
+      "post_name": "insight-article-7",
+      "post_date": "2026-02-12T05:22:30.308Z",
+      "post_modified": "2026-02-12T04:50:22.664Z",
+      "post_type": "insights"
+    },
+    {
+      "id": "698d5c0e9f899396717bf4e8",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/69775620162aa96097fa596e/698d31879f89939671780637_image11.jpeg",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "text-overlay": {
+          "value": "Analytics Insights",
+          "type": "PlainText"
+        },
+        "heading": {
+          "value": "Measuring Success",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "Utilizing analytics tools within your CMS can provide valuable insights into user behavior, helping you refine your content strategy for better results.",
+          "type": "PlainText"
+        },
+        "banner-image": {
+          "value": {
+            "url": "",
+            "alt": ""
+          },
+          "type": "ImageRef"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_content": "",
+      "post_title": "The Role of Analytics in Content Management",
+      "post_name": "insight-article-6",
+      "post_date": "2026-02-12T05:22:30.308Z",
+      "post_modified": "2026-02-12T04:50:22.664Z",
+      "post_type": "insights"
+    },
+    {
+      "id": "698d5c0e9f899396717bf4e6",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/69775620162aa96097fa596e/698d31879f8993967178062f_image16.jpeg",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "text-overlay": {
+          "value": "Social Media Integration",
+          "type": "PlainText"
+        },
+        "heading": {
+          "value": "Connecting Platforms",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "Integrating social media with your CMS allows for seamless sharing of content, increasing reach and engagement across various platforms.",
+          "type": "PlainText"
+        },
+        "banner-image": {
+          "value": {
+            "url": "",
+            "alt": ""
+          },
+          "type": "ImageRef"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_content": "",
+      "post_title": "Integrating Social Media with Your CMS",
+      "post_name": "insight-article-5",
+      "post_date": "2026-02-12T05:22:30.308Z",
+      "post_modified": "2026-02-12T04:50:22.664Z",
+      "post_type": "insights"
+    },
+    {
+      "id": "698d5c0e9f899396717bf4e4",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/69775620162aa96097fa596e/698d31879f89939671780637_image11.jpeg",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "text-overlay": {
+          "value": "Content Tips",
+          "type": "PlainText"
+        },
+        "heading": {
+          "value": "Creating Engaging Content",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "To create engaging content, focus on your audience's needs, use clear language, and incorporate visuals. This approach can enhance user experience and retention.",
+          "type": "PlainText"
+        },
+        "banner-image": {
+          "value": {
+            "url": "",
+            "alt": ""
+          },
+          "type": "ImageRef"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_content": "",
+      "post_title": "Best Practices for Content Creation",
+      "post_name": "insight-article-4",
+      "post_date": "2026-02-12T05:22:30.308Z",
+      "post_modified": "2026-02-12T04:50:22.664Z",
+      "post_type": "insights"
+    },
+    {
+      "id": "698d5c0e9f899396717bf4e2",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/69775620162aa96097fa596e/698d31879f89939671780610_image9.jpeg",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "text-overlay": {
+          "value": "CMS Selection",
+          "type": "PlainText"
+        },
+        "heading": {
+          "value": "Factors to Consider",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "When selecting a CMS, consider factors such as ease of use, scalability, and support. The right choice can significantly impact your content strategy.",
+          "type": "PlainText"
+        },
+        "banner-image": {
+          "value": {
+            "url": "",
+            "alt": ""
+          },
+          "type": "ImageRef"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_content": "",
+      "post_title": "Choosing the Right CMS for Your Business",
+      "post_name": "insight-article-3",
+      "post_date": "2026-02-12T05:22:30.308Z",
+      "post_modified": "2026-02-12T04:50:22.664Z",
+      "post_type": "insights"
+    },
+    {
+      "id": "698d5c0e9f899396717bf4e0",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/69775620162aa96097fa596e/698d31879f89939671780610_image9.jpeg",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "text-overlay": {
+          "value": "SEO Strategies",
+          "type": "PlainText"
+        },
+        "heading": {
+          "value": "Why SEO Matters",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "Search Engine Optimization (SEO) is crucial for increasing the visibility of your content. A well-optimized CMS can help improve your site's ranking on search engines.",
+          "type": "PlainText"
+        },
+        "banner-image": {
+          "value": {
+            "url": "",
+            "alt": ""
+          },
+          "type": "ImageRef"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_content": "",
+      "post_title": "The Importance of SEO in CMS",
+      "post_name": "insight-article-2",
+      "post_date": "2026-02-12T05:22:30.308Z",
+      "post_modified": "2026-02-12T04:50:22.664Z",
+      "post_type": "insights"
+    },
+    {
+      "id": "698d5c0e9f899396717bf4de",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/698d5c019f899396717bf2b5_image14.jpeg",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "text-overlay": {
+          "value": "CMS Basics",
+          "type": "PlainText"
+        },
+        "heading": {
+          "value": "What is a CMS?",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "A content management system (CMS) is a software application that enables users to create, manage, and modify content on a website without the need for specialized technical knowledge.",
+          "type": "PlainText"
+        },
+        "banner-image": {
+          "value": {
+            "url": "",
+            "alt": ""
+          },
+          "type": "ImageRef"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_content": "",
+      "post_title": "Understanding Content Management Systems",
+      "post_name": "insight-article-1",
+      "post_date": "2026-02-12T05:22:30.308Z",
+      "post_modified": "2026-02-12T05:11:20.979Z",
+      "post_type": "insights"
+    },
+    {
+      "id": "69871d1f6effb22a308ede71",
+      "custom_meta_input": {
+        "main-heading": {
+          "value": "Data Engineer",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "Design use cases and perform technical design and implementation. Work on batch and streaming applications for data processing using Apache Spark.",
+          "type": "PlainText"
+        },
+        "apply": {
+          "value": null,
+          "type": "Link"
+        },
+        "readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "card-under-text": {
+          "value": "Mail Resume to HR Dept., Cyma Systems, Inc., 360 Tolland Turnpike, Suite 2D, Manchester, CT 06042.",
+          "type": "PlainText"
+        },
+        "list-1": {
+          "value": "Design use cases and perform technical design and implementation.",
+          "type": "PlainText"
+        },
+        "list-2": {
+          "value": "Work on batch and streaming applications for data processing using Apache Spark.",
+          "type": "PlainText"
+        },
+        "list-3": {
+          "value": "Work with native AWS Cloud Services like Glue, Sqoop, Athena in loading the data into different databases such as Snowflake, Hive, Mongo DB and SQL databases.",
+          "type": "PlainText"
+        },
+        "list-4": {
+          "value": "Design and develop the data ingestion pipelines to move the data from source to target using Python programming language.",
+          "type": "PlainText"
+        },
+        "list-5": {
+          "value": "Analyze the data in a snowflake database with SQL queries and analyze the trends in the data.",
+          "type": "PlainText"
+        },
+        "list-6": {
+          "value": "Implement the continuous integration and deployment pipelines (CI/CD) with Maven and Jenkins.",
+          "type": "PlainText"
+        },
+        "list-7": {
+          "value": "Develop spark programs in Scala to cleanse the data in HDFS obtained from heterogeneous data sources in various formats such as JSON, Avro, and Parquet to make it suitable for ingestion into Hive schema for analysis.",
+          "type": "PlainText"
+        },
+        "list-8": {
+          "value": "Will work in Manchester, CT and/or various unanticipated client sites throughout the U.S.",
+          "type": "PlainText"
+        },
+        "list-9": {
+          "value": "Must be willing to travel and/or relocate.",
+          "type": "PlainText"
+        },
+        "list-10": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-11": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-12": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-13": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "Data Engineer",
+      "post_name": "data-engineer",
+      "post_date": "2026-02-08T06:59:25.772Z",
+      "post_modified": "2026-02-08T06:46:36.176Z",
+      "post_type": "explore-careers"
+    },
+    {
+      "id": "69871d1f6effb22a308ede6f",
+      "custom_meta_input": {
+        "main-heading": {
+          "value": "SAP BASIS HANA Administrator",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "Perform the migrations, installations, administration, monitoring and operation support of the SAP S/4 HANA environment ECC, PI, Portal, SAP HANA DB, BTP and SAP BW HANA.",
+          "type": "PlainText"
+        },
+        "apply": {
+          "value": null,
+          "type": "Link"
+        },
+        "readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "card-under-text": {
+          "value": "Mail Resume to HR Dept., Cyma Systems, Inc., 360 Tolland Turnpike, Suite 2D, Manchester, CT 06042.",
+          "type": "PlainText"
+        },
+        "list-1": {
+          "value": "Perform the migrations, installations, administration, monitoring and operation support of the SAP S/4 HANA environment ECC, PI, Portal, SAP HANA DB, BTP and SAP BW HANA.",
+          "type": "PlainText"
+        },
+        "list-2": {
+          "value": "Support the SAP S/4 HANA environment, SAP BW HANA, SAP Portals, and the SAP Solution Manager.",
+          "type": "PlainText"
+        },
+        "list-3": {
+          "value": "Support SAP infrastructure in Azure cloud and multiple SAP complementary software applications interfaces.",
+          "type": "PlainText"
+        },
+        "list-4": {
+          "value": "Support the system with various operating systems of Windows and Unix/Linux along with SAP cloud and other cloud service provider platforms.",
+          "type": "PlainText"
+        },
+        "list-5": {
+          "value": "Implement, develop and manage HANA Platform and HANA Database Administration.",
+          "type": "PlainText"
+        },
+        "list-6": {
+          "value": "Perform installation, setup, configuration, and upgrade of SAP HANA database, SAP HANA studio, and SAP HANA client.",
+          "type": "PlainText"
+        },
+        "list-7": {
+          "value": "Install, configure, and maintain SAP systems, including but not limited to S/4 HANA, BW/4HANA, SAP NetWeaver, and SAP Solution Manager.",
+          "type": "PlainText"
+        },
+        "list-8": {
+          "value": "Develop and maintain user documentation and provide user training on SAP GUI and FIORI.",
+          "type": "PlainText"
+        },
+        "list-9": {
+          "value": "Responsible for installation of SAP PO, installation of ORACLE Database, patching of the Oracle Database, patching the SAP PO System.",
+          "type": "PlainText"
+        },
+        "list-10": {
+          "value": "Set up integration between HANA DB to HADOOP with SDA and set up Email configuration on S/4 HANA Landscape.",
+          "type": "PlainText"
+        },
+        "list-11": {
+          "value": "Perform integration from S/4 HANA with AWS, Blackline and other 3rd party systems.",
+          "type": "PlainText"
+        },
+        "list-12": {
+          "value": "Will work in Manchester, CT and/or various unanticipated client sites throughout the U.S.",
+          "type": "PlainText"
+        },
+        "list-13": {
+          "value": "Must be willing to travel and/or relocate.",
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "SAP BASIS HANA Administrator",
+      "post_name": "sap-basis-hana-administrator",
+      "post_date": "2026-02-08T06:59:25.772Z",
+      "post_modified": "2026-02-08T06:45:07.682Z",
+      "post_type": "explore-careers"
+    },
+    {
+      "id": "69871d1f6effb22a308ede6d",
+      "custom_meta_input": {
+        "main-heading": {
+          "value": "Software Developer",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "Design, and implement Java/J2EE applications using AGILE methodology, participate in Scrum, Retrospective, and Release Planning Meetings. Develop and manage CI/CD pipeline utilizing the Azure DevOps p...",
+          "type": "PlainText"
+        },
+        "apply": {
+          "value": null,
+          "type": "Link"
+        },
+        "readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "card-under-text": {
+          "value": "Mail Resume to HR Dept., Cyma Systems, Inc., 360 Tolland Turnpike, Suite 2D, Manchester, CT 06042.",
+          "type": "PlainText"
+        },
+        "list-1": {
+          "value": "Design, and implement Java/J2EE applications using AGILE methodology, participate in Scrum, Retrospective, and Release Planning Meetings. ",
+          "type": "PlainText"
+        },
+        "list-2": {
+          "value": "Develop and manage CI/CD pipeline utilizing the Azure DevOps platform. ",
+          "type": "PlainText"
+        },
+        "list-3": {
+          "value": "Integrate cloud storage services with AWS S3-compatible APIs to ensure compatibility and interoperability. ",
+          "type": "PlainText"
+        },
+        "list-4": {
+          "value": "Build UI Screens using Angular JS, Node JS, HTML5, CSS, JavaScript, and Bootstrap. ",
+          "type": "PlainText"
+        },
+        "list-5": {
+          "value": "Perform error handling at the method level. Work on Spring controllers, microservices and DAO using annotation. ",
+          "type": "PlainText"
+        },
+        "list-6": {
+          "value": "Execute Kibana and elastic search to identify the Kafka and IBM MQ message failure scenarios. ",
+          "type": "PlainText"
+        },
+        "list-7": {
+          "value": "Improve response times and test web services, Restful web services and test using SOAP UI and POSTMAN with required validation of Source and Targets. Work on Mockito Framework. ",
+          "type": "PlainText"
+        },
+        "list-8": {
+          "value": "Utilize Git, TFS, Maven, Jenkins, Docker, and Kubernetes for efficient development workflows. ",
+          "type": "PlainText"
+        },
+        "list-9": {
+          "value": "Will work in Manchester, CT and/or various unanticipated client sites throughout the U.S. ",
+          "type": "PlainText"
+        },
+        "list-10": {
+          "value": "Must be willing to travel and/or relocate.",
+          "type": "PlainText"
+        },
+        "list-11": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-12": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-13": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "Software Developer",
+      "post_name": "software-developer",
+      "post_date": "2026-02-08T06:59:25.772Z",
+      "post_modified": "2026-02-08T06:40:46.639Z",
+      "post_type": "explore-careers"
+    },
+    {
+      "id": "69871d1f6effb22a308ede6b",
+      "custom_meta_input": {
+        "main-heading": {
+          "value": "Oracle EBS Developer",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "Implement, configure, and maintain Oracle EBS modules and ERP, focusing on Financials, Supply Chain Management (SCM) & Oracle Integration Cloud (OIC) including technical tasks, custom modules, and rep...",
+          "type": "PlainText"
+        },
+        "apply": {
+          "value": null,
+          "type": "Link"
+        },
+        "readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "card-under-text": {
+          "value": "Mail Resume to HR Dept., Cyma Systems, Inc., 360 Tolland Turnpike, Suite 2D, Manchester, CT 06042.",
+          "type": "PlainText"
+        },
+        "list-1": {
+          "value": "Implement, configure, and maintain Oracle EBS modules and ERP, focusing on Financials, Supply Chain Management (SCM) & Oracle Integration Cloud (OIC) including technical tasks, custom modules, and reporting with BI Publisher. ",
+          "type": "PlainText"
+        },
+        "list-2": {
+          "value": "Implement and maintain Oracle EBS modules (GL, AP, AR, FA, CM, OM, INV, PO, WMS, BOM, ASO) and custom modules, along with Oracle Fusion Cloud processes (LTC, O2C, P2P, R2R, A2R) and related technical tasks. ",
+          "type": "PlainText"
+        },
+        "list-3": {
+          "value": "Create Packages with Procedures, Triggers, along with business required Functions for SQL*Plus, SQL Developer and TOAD. ",
+          "type": "PlainText"
+        },
+        "list-4": {
+          "value": "Develop OA frameworks for front end applications and create MD50 & MD70 functional & technical documents. ",
+          "type": "PlainText"
+        },
+        "list-5": {
+          "value": "Will work in Manchester, CT and/or various unanticipated client sites throughout the U.S. ",
+          "type": "PlainText"
+        },
+        "list-6": {
+          "value": "Must be willing to travel and/or relocate.",
+          "type": "PlainText"
+        },
+        "list-7": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-8": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-9": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-10": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-11": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-12": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-13": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "Oracle EBS Developer",
+      "post_name": "oracle-ebs-developer",
+      "post_date": "2026-02-08T06:59:25.772Z",
+      "post_modified": "2026-02-08T06:39:17.556Z",
+      "post_type": "explore-careers"
+    },
+    {
+      "id": "69871d1f6effb22a308ede69",
+      "custom_meta_input": {
+        "main-heading": {
+          "value": "Salesforce Developer",
+          "type": "PlainText"
+        },
+        "sub-text": {
+          "value": "Work in various phases of software development including SFDC administration, SFDC development, design, testing, production support, and implementation of Salesforce CRM Applications.",
+          "type": "PlainText"
+        },
+        "apply": {
+          "value": null,
+          "type": "Link"
+        },
+        "readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "card-under-text": {
+          "value": "Mail Resume to HR Dept., Cyma Systems, Inc., 360 Tolland Turnpike, Suite 2D, Manchester, CT 06042.",
+          "type": "PlainText"
+        },
+        "list-1": {
+          "value": "Work in various phases of software development including SFDC administration, SFDC development, design, testing, production support, and implementation of Salesforce CRM Applications. ",
+          "type": "PlainText"
+        },
+        "list-2": {
+          "value": "Implement Salesforce CPQ solutions for clients across various industries, focusing on streamlining quote-to-cash processes. ",
+          "type": "PlainText"
+        },
+        "list-3": {
+          "value": "Develop solutions on the Salesforce.com platform, Apttus Contract Lifecycle Management (CLM) and Apttus Configure Price Quote (CPQ). ",
+          "type": "PlainText"
+        },
+        "list-4": {
+          "value": "Build and develop UI components using Apex classes and Triggers, Integration, Visualforce, Force.com API, Force.com Sites, SOQL, SOSL. ",
+          "type": "PlainText"
+        },
+        "list-5": {
+          "value": "Perform SFDC Administrative and monitor the Salesforce Sales Cloud applications like creating Profiles, Roles, Users, Page Layouts, Record Types, Email Services, Approvals, Workflows, Reports, Dashboards. ",
+          "type": "PlainText"
+        },
+        "list-6": {
+          "value": "Connect the Customer Data cloud with different Systems through AWS, Salesforce CRM, and injection API’s within the Salesforce CDP. ",
+          "type": "PlainText"
+        },
+        "list-7": {
+          "value": "Set up the accounts with multiple updates on objects in Service Cloud applications. ",
+          "type": "PlainText"
+        },
+        "list-8": {
+          "value": "Will work in Manchester, CT and/or various unanticipated client sites throughout the U.S. ",
+          "type": "PlainText"
+        },
+        "list-9": {
+          "value": "Must be willing to travel and/or relocate.",
+          "type": "PlainText"
+        },
+        "list-10": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-11": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-12": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "list-13": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "Salesforce Developer",
+      "post_name": "salesforce-developer",
+      "post_date": "2026-02-07T11:48:48.417Z",
+      "post_modified": "2026-02-07T11:42:40.475Z",
+      "post_type": "explore-careers"
+    },
+    {
+      "id": "69871820180b4b7d97c8bb1d",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/698effd0ec0c54acaf71c24b_Mask%20group%20(43).png",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "heading-text": {
+          "value": "Building Reliable Digital Platforms for Insurance Services",
+          "type": "PlainText"
+        },
+        "link-readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "casestudies": {
+          "value": "Home • Resources • Case Studies • Case Study 09",
+          "type": "PlainText"
+        },
+        "about-the-client": {
+          "value": "A large insurance organization operating in a high-trust, highly regulated environment, focused on delivering reliable digital services while meeting strict security and compliance requirements.",
+          "type": "PlainText"
+        },
+        "industry": {
+          "value": "Insurance",
+          "type": "PlainText"
+        },
+        "requirements": {
+          "value": "The objective was to build a reliable digital platform capable of supporting core insurance services while meeting regulatory obligations. ",
+          "type": "PlainText"
+        },
+        "requirements-2": {
+          "value": "Beyond improving system stability, the organization needed a foundation that enabled faster service delivery, improved customer experience, and long-term flexibility.",
+          "type": "PlainText"
+        },
+        "the-challenge": {
+          "value": "A large insurance organization faced increasing pressure on its digital platforms as customer expectations grew and product offerings expanded. Legacy systems were difficult to scale, slow to adapt, and prone to outages during peak demand, creating operational risk and limiting innovation.",
+          "type": "PlainText"
+        },
+        "the-solution": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "cyma-s-approach-1": {
+          "value": "Cyma partnered with the organization to design and deliver a robust digital platform tailored to modern insurance operations. The engagement began with a review of existing systems, workflows, and integration points. Cyma identified reliability gaps, manual processes, and architectural constraints that affected performance and increased operational overhead.",
+          "type": "PlainText"
+        },
+        "cyma-s-approach-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "execution-1": {
+          "value": "A scalable, cloud-enabled architecture was implemented to improve availability and resilience. Core services were designed to operate independently, reducing the risk of system-wide failures and allowing the platform to scale with demand. Automation improved consistency across environments and reduced dependency on manual intervention.",
+          "type": "PlainText"
+        },
+        "execution-2": {
+          "value": "Security and compliance were embedded throughout the platform. Strong access controls, data protection measures, and audit-ready processes ensured sensitive customer and policy data remained secure while supporting regulatory obligations. Monitoring and observability provided real-time insight into system health, enabling faster issue detection and resolution.",
+          "type": "PlainText"
+        },
+        "the-impact": {
+          "value": "Today, the organization operates on a reliable digital foundation that supports modern insurance services at scale. Cyma’s work transformed the platform into a stable, future-ready asset, enabling the insurer to adapt to change while maintaining trust, performance, and compliance.",
+          "type": "PlainText"
+        },
+        "inside-banner": {
+          "value": {
+            "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/6987173b566a248d4fb5f73f_Mask%20group%20(19).png",
+            "alt": null
+          },
+          "type": "ImageRef"
+        },
+        "the-solutions-1": {
+          "value": "Implemented a scalable, cloud-enabled architecture to improve platform availability and resilience.",
+          "type": "PlainText"
+        },
+        "the-solutions-2": {
+          "value": "Designed core services to operate independently, reducing the risk of system-wide failures.",
+          "type": "PlainText"
+        },
+        "the-solutions-3": {
+          "value": "Introduced automation to improve consistency across environments and reduce manual intervention.",
+          "type": "PlainText"
+        },
+        "the-solutions-4": {
+          "value": "Embedded strong access controls and data protection measures to secure sensitive customer and policy data.",
+          "type": "PlainText"
+        },
+        "the-solutions-5": {
+          "value": "Enabled monitoring and observability to provide real-time visibility into system health.",
+          "type": "PlainText"
+        },
+        "the-solutions-6": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results-1": {
+          "value": "Improved overall system reliability and platform stability.",
+          "type": "PlainText"
+        },
+        "the-results-2": {
+          "value": "Reduced operational risk during peak demand periods.",
+          "type": "PlainText"
+        },
+        "the-results-3": {
+          "value": "Faster issue detection and resolution through real-time monitoring.",
+          "type": "PlainText"
+        },
+        "the-results-4": {
+          "value": "More responsive and dependable digital experiences for customers.",
+          "type": "PlainText"
+        },
+        "the-results-5": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-impact-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "mainheading-case": {
+          "value": "Building Reliable Digital Platforms for Insurance Services",
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "Building Reliable Digital Platforms for Insurance Services",
+      "post_name": "building-reliable-digital-platforms-for-insurance-services",
+      "post_date": "2026-02-13T10:50:54.713Z",
+      "post_modified": "2026-02-13T10:43:30.442Z",
+      "post_type": "casestudies"
+    },
+    {
+      "id": "69871697b278432e326bbc8a",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/698effafdb864382f0a83d1e_Mask%20group%20(42).png",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "heading-text": {
+          "value": "Delivering Secure, Scalable Digital Services for the Public Sector",
+          "type": "PlainText"
+        },
+        "link-readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "casestudies": {
+          "value": "Home • Resources • Case Studies • Case Study 08",
+          "type": "PlainText"
+        },
+        "about-the-client": {
+          "value": "A government agency responsible for delivering critical public services, operating under strict governance, compliance, and security requirements while serving large and growing user populations.",
+          "type": "PlainText"
+        },
+        "industry": {
+          "value": "Public Sector",
+          "type": "PlainText"
+        },
+        "requirements": {
+          "value": "The objective was to deliver digital services that are secure, reliable, and accessible at scale. ",
+          "type": "PlainText"
+        },
+        "requirements-2": {
+          "value": "The agency needed a platform capable of supporting large user volumes while meeting governance, compliance, and security requirements, without limiting adaptability as policies and citizen needs evolved.",
+          "type": "PlainText"
+        },
+        "the-challenge": {
+          "value": "A government agency responsible for delivering critical public services faced growing challenges with legacy systems that were difficult to scale, slow to adapt, and costly to maintain. As usage increased and citizen expectations rose, system reliability and security became central concerns.",
+          "type": "PlainText"
+        },
+        "the-solution": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "cyma-s-approach-1": {
+          "value": "Cyma partnered with the agency to design and deliver a secure, scalable digital platform tailored for public service delivery. The engagement began with a detailed assessment of existing systems, service workflows, and regulatory constraints. Cyma identified fragmentation across platforms, limited scalability, and manual processes that increased operational risk and slowed service delivery.",
+          "type": "PlainText"
+        },
+        "cyma-s-approach-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "execution-1": {
+          "value": "A scalable, cloud-enabled architecture was introduced to support high availability and consistent performance. The platform was designed to handle fluctuating demand while maintaining strong security controls and data protection. Modular services allowed different functions to scale independently, improving resilience and simplifying future enhancements.",
+          "type": "PlainText"
+        },
+        "execution-2": {
+          "value": "Security and compliance were embedded throughout the platform. Strong identity and access controls, encryption, and auditability ensured sensitive data was protected while remaining accessible to authorized users. Automation reduced manual handling and improved consistency across environments.",
+          "type": "PlainText"
+        },
+        "the-impact": {
+          "value": "Today, the agency operates on a secure, resilient digital foundation that supports reliable public service delivery at scale. Cyma’s work enabled the organization to move beyond legacy limitations and establish a platform designed to serve citizens efficiently, securely, and sustainably.",
+          "type": "PlainText"
+        },
+        "inside-banner": {
+          "value": {
+            "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/698718bfd179a8ca23146355_Mask%20group%20(18).png",
+            "alt": null
+          },
+          "type": "ImageRef"
+        },
+        "the-solutions-1": {
+          "value": "Introduced a scalable, cloud-enabled architecture to support high availability and consistent performance",
+          "type": "PlainText"
+        },
+        "the-solutions-2": {
+          "value": "Designed modular services to allow independent scaling and improved system resilience",
+          "type": "PlainText"
+        },
+        "the-solutions-3": {
+          "value": "Embedded strong security controls and data protection mechanisms across the platform",
+          "type": "PlainText"
+        },
+        "the-solutions-4": {
+          "value": "Implemented identity and access management to ensure secure, role-based access",
+          "type": "PlainText"
+        },
+        "the-solutions-5": {
+          "value": "Applied encryption and auditability to meet governance and compliance requirements",
+          "type": "PlainText"
+        },
+        "the-solutions-6": {
+          "value": "Leveraged automation to reduce manual handling and improve operational consistency",
+          "type": "PlainText"
+        },
+        "the-results-1": {
+          "value": "Improved reliability and responsiveness of digital public services",
+          "type": "PlainText"
+        },
+        "the-results-2": {
+          "value": "Reduced system downtime and operational inefficiencies",
+          "type": "PlainText"
+        },
+        "the-results-3": {
+          "value": "Greater flexibility to introduce updates without disrupting users",
+          "type": "PlainText"
+        },
+        "the-results-4": {
+          "value": "Increased confidence in the platform’s ability to scale securely",
+          "type": "PlainText"
+        },
+        "the-results-5": {
+          "value": "Improved visibility into system performance for operational teams",
+          "type": "PlainText"
+        },
+        "the-impact-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "mainheading-case": {
+          "value": "Delivering Secure, Scalable Digital Services for the Public Sector",
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "Delivering Secure, Scalable Digital Services for the Public Sector",
+      "post_name": "case-study-8",
+      "post_date": "2026-02-13T10:50:54.713Z",
+      "post_modified": "2026-02-13T10:43:22.471Z",
+      "post_type": "casestudies"
+    },
+    {
+      "id": "69871344cb670b1028230587",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/698eff96ca04030579cd8cc1_Mask%20group%20(41).png",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "heading-text": {
+          "value": "Scaling Telecommunication Platforms to Support High-Volume, Always-On Services",
+          "type": "PlainText"
+        },
+        "link-readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "casestudies": {
+          "value": "Home • Resources • Case Studies • Case Study 07",
+          "type": "PlainText"
+        },
+        "about-the-client": {
+          "value": "A telecommunications provider delivering large-scale digital connectivity services, focused on reliability, performance, and uninterrupted availability in a high-demand environment.",
+          "type": "PlainText"
+        },
+        "industry": {
+          "value": "Telecommunication",
+          "type": "PlainText"
+        },
+        "requirements": {
+          "value": "The objective was to support high-volume, always-on services without compromising stability or speed. ",
+          "type": "PlainText"
+        },
+        "requirements-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-challenge": {
+          "value": "As digital connectivity became critical to everyday communication, the telecommunications provider began to experience growing strain on its core platforms. Rapid user growth, expanding service offerings, and expectations of uninterrupted availability exposed the limits of legacy systems. Performance issues during peak traffic and operational complexity made it increasingly difficult to scale reliably.",
+          "type": "PlainText"
+        },
+        "the-solution": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "cyma-s-approach-1": {
+          "value": "Cyma partnered with the organization to modernize its digital platform and re-architect it for scalability and reliability. The engagement began with an assessment of traffic patterns, system dependencies, and operational workflows. Key bottlenecks were identified, including tightly coupled components that limited scalability and manual processes that increased operational risk.",
+          "type": "PlainText"
+        },
+        "cyma-s-approach-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "execution-1": {
+          "value": "Cyma redesigned the platform using cloud-native principles. A modular architecture allowed services to scale independently, improving resilience and reducing the impact of failures. Dynamic scaling capabilities enabled the platform to respond automatically to traffic spikes while maintaining consistent performance.",
+          "type": "PlainText"
+        },
+        "execution-2": {
+          "value": "DevOps practices were embedded to improve delivery speed and operational consistency. Automated testing and deployment pipelines enabled more frequent releases without disrupting live services, while infrastructure automation reduced manual effort and improved reliability. Observability was integrated across the platform, enabling faster issue detection, proactive incident management, and improved service stability.",
+          "type": "PlainText"
+        },
+        "the-impact": {
+          "value": "Today, the organization operates on a modern digital foundation that supports growth, reliability, and continuous innovation. Cyma helped transform the platform from a constraint into a strategic capability built to scale and meet the demands of always-on digital connectivity.",
+          "type": "PlainText"
+        },
+        "inside-banner": {
+          "value": {
+            "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/6987135a72345b70e1b037e4_Mask%20group%20(17).png",
+            "alt": null
+          },
+          "type": "ImageRef"
+        },
+        "the-solutions-1": {
+          "value": "Re-architected the digital platform using cloud-native principles to improve scalability and reliability.",
+          "type": "PlainText"
+        },
+        "the-solutions-2": {
+          "value": "Introduced a modular architecture allowing services to scale independently and reduce the impact of failures.",
+          "type": "PlainText"
+        },
+        "the-solutions-3": {
+          "value": "Enabled dynamic scaling to automatically respond to traffic spikes while maintaining consistent performance.",
+          "type": "PlainText"
+        },
+        "the-solutions-4": {
+          "value": "Embedded DevOps practices, including automated testing and deployment pipelines, to improve delivery speed.",
+          "type": "PlainText"
+        },
+        "the-solutions-5": {
+          "value": "Implemented infrastructure automation to reduce manual effort and operational risk.",
+          "type": "PlainText"
+        },
+        "the-solutions-6": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results-1": {
+          "value": "Improved platform performance during peak demand",
+          "type": "PlainText"
+        },
+        "the-results-2": {
+          "value": "Faster and more predictable release cycles",
+          "type": "PlainText"
+        },
+        "the-results-3": {
+          "value": "Reduced operational complexity and manual intervention",
+          "type": "PlainText"
+        },
+        "the-results-4": {
+          "value": "Increased platform resilience and service stability",
+          "type": "PlainText"
+        },
+        "the-results-5": {
+          "value": "Enhanced ability to support always-on telecommunications services at scale",
+          "type": "PlainText"
+        },
+        "the-impact-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "mainheading-case": {
+          "value": "Scaling Telecommunication Platforms to Support High-Volume, Always-On Services",
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "Scaling Telecommunication Platforms to Support High-Volume, Always-On Services",
+      "post_name": "case-study-7",
+      "post_date": "2026-02-13T10:50:54.713Z",
+      "post_modified": "2026-02-13T10:43:15.678Z",
+      "post_type": "casestudies"
+    },
+    {
+      "id": "69871303d765a441d7f5ce39",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/698eff83e8afaa5e0d45ceb9_Mask%20group%20(40).png",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "heading-text": {
+          "value": "Enhancing Retail Platforms to Deliver Seamless, Data-Driven Customer Experiences",
+          "type": "PlainText"
+        },
+        "link-readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "casestudies": {
+          "value": "Home • Resources • Case Studies • Case Study 06",
+          "type": "PlainText"
+        },
+        "about-the-client": {
+          "value": "A multi-channel retail organization operating across digital and physical touchpoints, focused on improving customer experience, personalization, and operational agility in a fast-moving market.",
+          "type": "PlainText"
+        },
+        "industry": {
+          "value": "Retail",
+          "type": "PlainText"
+        },
+        "requirements": {
+          "value": "The organization needed a unified, scalable digital platform that could provide real-time insights without compromising performance or trust.",
+          "type": "PlainText"
+        },
+        "requirements-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-challenge": {
+          "value": "Fragmented systems, delayed insights, and limited personalization made it difficult to respond quickly to changing customer behavior.",
+          "type": "PlainText"
+        },
+        "the-solution": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "cyma-s-approach-1": {
+          "value": "Cyma partnered with the retailer to modernize its digital platform and enable real-time, data-driven engagement. The goal was to unify customer data, improve operational agility, and support scalable growth across channels.",
+          "type": "PlainText"
+        },
+        "cyma-s-approach-2": {
+          "value": "The engagement began by mapping customer journeys and identifying friction points across systems. Cyma focused on creating a platform that could consolidate data from e-commerce, in-store systems, and supply chain operations while maintaining performance during peak demand.",
+          "type": "PlainText"
+        },
+        "execution-1": {
+          "value": "A cloud-native architecture was implemented to support scalability and rapid iteration. Data pipelines enabled near real-time insights into customer behavior, inventory levels, and demand patterns. This allowed teams to make faster decisions and personalize experiences more effectively.",
+          "type": "PlainText"
+        },
+        "execution-2": {
+          "value": "DevOps practices supported continuous improvement, enabling frequent updates without disruption. Security and compliance were embedded to protect customer data and maintain trust.",
+          "type": "PlainText"
+        },
+        "the-impact": {
+          "value": "Today, the organization operates a unified retail platform that supports growth, personalization, and resilience. Cyma’s work helped turn data into a competitive advantage, enabling the retailer to adapt quickly and deliver consistent experiences in a fast-moving retail environment.",
+          "type": "PlainText"
+        },
+        "inside-banner": {
+          "value": {
+            "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/69871285a22e81f69199a537_Mask%20group%20(16).png",
+            "alt": null
+          },
+          "type": "ImageRef"
+        },
+        "the-solutions-1": {
+          "value": "Implemented a cloud-native architecture to support scalability and rapid iteration",
+          "type": "PlainText"
+        },
+        "the-solutions-2": {
+          "value": "Consolidated data from e-commerce, in-store systems, and supply chain operations into a unified platform",
+          "type": "PlainText"
+        },
+        "the-solutions-3": {
+          "value": "Built data pipelines to enable near real-time insights into customer behavior, inventory levels, and demand patterns",
+          "type": "PlainText"
+        },
+        "the-solutions-4": {
+          "value": "Enabled faster decision-making and more effective personalization across channels",
+          "type": "PlainText"
+        },
+        "the-solutions-5": {
+          "value": "Embedded security and compliance controls to protect customer data and maintain trust",
+          "type": "PlainText"
+        },
+        "the-solutions-6": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results-1": {
+          "value": "Improved customer engagement through more consistent and personalized experiences",
+          "type": "PlainText"
+        },
+        "the-results-2": {
+          "value": "Reduced operational inefficiencies across retail systems",
+          "type": "PlainText"
+        },
+        "the-results-3": {
+          "value": "Faster response to market trends and changing customer behavior",
+          "type": "PlainText"
+        },
+        "the-results-4": {
+          "value": "Increased flexibility to innovate while maintaining performance during peak demand",
+          "type": "PlainText"
+        },
+        "the-results-5": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-impact-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "mainheading-case": {
+          "value": "Enhancing Retail Platforms to Deliver Seamless, Data-Driven Customer Experiences",
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "Enhancing Retail Platforms to Deliver Seamless, Data-Driven Customer Experiences",
+      "post_name": "case-study-6",
+      "post_date": "2026-02-13T10:50:54.713Z",
+      "post_modified": "2026-02-13T10:42:56.093Z",
+      "post_type": "casestudies"
+    },
+    {
+      "id": "6986f7ff12f712911996dbd9",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/698eff79728910ce49816448_Mask%20group%20(39).png",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "heading-text": {
+          "value": "Upgrading Manufacturing Systems to Enable Smart, Scalable Operations",
+          "type": "PlainText"
+        },
+        "link-readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "casestudies": {
+          "value": "Home • Resources • Case Studies • Case Study 05",
+          "type": "PlainText"
+        },
+        "about-the-client": {
+          "value": "A global manufacturing organization operating across production, supply chain, and quality control functions, focused on improving efficiency, visibility, and responsiveness in an increasingly complex operating environment.",
+          "type": "PlainText"
+        },
+        "industry": {
+          "value": "Manufacturing",
+          "type": "PlainText"
+        },
+        "requirements": {
+          "value": "The objective was to improve visibility across manufacturing processes, support scalability across facilities, and create a digital foundation for continuous optimization. ",
+          "type": "PlainText"
+        },
+        "requirements-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-challenge": {
+          "value": "A global manufacturing organization faced increasing pressure to upgrade its operations. Legacy systems across production, supply chain, and quality control were siloed and slow to adapt, limiting visibility and reducing operational efficiency. ",
+          "type": "PlainText"
+        },
+        "the-solution": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "cyma-s-approach-1": {
+          "value": "Cyma partnered with the organization to design and implement a modern digital platform that unified manufacturing data and enabled smarter operations. The objective was to improve visibility across processes, support scalability, and create a foundation for continuous optimization.",
+          "type": "PlainText"
+        },
+        "cyma-s-approach-2": {
+          "value": "The engagement began with an assessment of production workflows, system integrations, and data sources across facilities. Cyma identified gaps in real-time monitoring and areas where manual processes introduced delays and risk. Rather than replacing systems indiscriminately, the approach focused on integrating and enhancing existing capabilities through a scalable digital layer.",
+          "type": "PlainText"
+        },
+        "execution-1": {
+          "value": "A centralized platform was designed to ingest data from machines, production systems, and enterprise applications. This enabled near real-time insight into operational performance, quality metrics, and bottlenecks. Cloud infrastructure provided the flexibility to scale across facilities while maintaining reliability.",
+          "type": "PlainText"
+        },
+        "execution-2": {
+          "value": "Automation and analytics played a central role. The platform supported predictive insights that allowed teams to identify issues earlier and optimize throughput. Security and access controls ensured operational data remained protected while accessible to the right teams.",
+          "type": "PlainText"
+        },
+        "the-impact": {
+          "value": "The upgraded manufacturing platform became a strategic asset for the organization. Manufacturing leaders gained a clearer, real-time view of performance across facilities, enabling faster improvements, improved efficiency, and a more resilient, scalable operation.",
+          "type": "PlainText"
+        },
+        "inside-banner": {
+          "value": {
+            "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/6987115f6d6f97df75c3070f_Mask%20group%20(15).png",
+            "alt": null
+          },
+          "type": "ImageRef"
+        },
+        "the-solutions-1": {
+          "value": "Designed a centralized digital platform to ingest data from machines, production systems, and enterprise applications",
+          "type": "PlainText"
+        },
+        "the-solutions-2": {
+          "value": "Unified manufacturing data to provide near real-time visibility into operational performance, quality metrics, and bottlenecks",
+          "type": "PlainText"
+        },
+        "the-solutions-3": {
+          "value": "Leveraged cloud infrastructure to enable scalability across facilities while maintaining reliability",
+          "type": "PlainText"
+        },
+        "the-solutions-4": {
+          "value": "Applied automation and analytics to generate predictive insights and support proactive issue identification",
+          "type": "PlainText"
+        },
+        "the-solutions-5": {
+          "value": "Implemented security and access controls to protect operational data while ensuring access for the right teams",
+          "type": "PlainText"
+        },
+        "the-solutions-6": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results-1": {
+          "value": "Faster innovation through more flexible and scalable digital services",
+          "type": "PlainText"
+        },
+        "the-results-2": {
+          "value": "Improved system reliability and platform stability",
+          "type": "PlainText"
+        },
+        "the-results-3": {
+          "value": "Stronger overall security posture aligned with regulatory requirements",
+          "type": "PlainText"
+        },
+        "the-results-4": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results-5": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-impact-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "mainheading-case": {
+          "value": "Upgrading Manufacturing Systems to Enable Smart, Scalable Operations",
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "Upgrading Manufacturing Systems to Enable Smart, Scalable Operations",
+      "post_name": "case-studies-5",
+      "post_date": "2026-02-13T10:50:54.713Z",
+      "post_modified": "2026-02-13T10:42:48.092Z",
+      "post_type": "casestudies"
+    },
+    {
+      "id": "697c9325384a79192f6862ad",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/698eff2dc3db4d43aafc19d7_Mask%20group%20(38).png",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "heading-text": {
+          "value": "Enhancing Data & IT in Healthcare",
+          "type": "PlainText"
+        },
+        "link-readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "casestudies": {
+          "value": "Home • Resources • Case Studies • Case Study 04",
+          "type": "PlainText"
+        },
+        "about-the-client": {
+          "value": "A banking and financial services organization operating in a highly regulated environment where trust, security, and compliance are critical.",
+          "type": "PlainText"
+        },
+        "industry": {
+          "value": "Banking & Financial Services",
+          "type": "PlainText"
+        },
+        "requirements": {
+          "value": "The objective was to support innovation while meeting strict regulatory and security requirements. ",
+          "type": "PlainText"
+        },
+        "requirements-2": {
+          "value": "The organization needed a resilient digital foundation that could enable new digital services without compromising compliance, trust, or operational stability.",
+          "type": "PlainText"
+        },
+        "the-challenge": {
+          "value": "Financial institutions operate in an environment where trust, security, and compliance are non-negotiable. Legacy systems were limiting agility and increasing operational complexity.",
+          "type": "PlainText"
+        },
+        "the-solution": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "cyma-s-approach-1": {
+          "value": "Cyma partnered with the organization to modernize its core digital platform, focusing on security, performance, and scalability. The goal was to create a resilient foundation that could support new digital services without compromising compliance or trust.",
+          "type": "PlainText"
+        },
+        "cyma-s-approach-2": {
+          "value": "The engagement began with a comprehensive review of existing infrastructure, security controls, and regulatory obligations. Cyma identified areas where modernization could improve performance and reduce risk while maintaining regulatory alignment.",
+          "type": "PlainText"
+        },
+        "execution-1": {
+          "value": "A secure, cloud-enabled architecture was implemented to support scalable services and improved availability. Strong identity and access management, encryption, and monitoring were embedded into the platform to protect sensitive financial data.",
+          "type": "PlainText"
+        },
+        "execution-2": {
+          "value": "DevOps practices were introduced to improve delivery speed while maintaining rigorous controls. Automated testing and compliance checks ensured updates could be deployed confidently and consistently.",
+          "type": "PlainText"
+        },
+        "the-impact": {
+          "value": "Today, the financial institution operates on a secure, future-ready platform that balances innovation with responsibility. Cyma’s approach ensured that modernization strengthened trust rather than compromising it, positioning the organization for sustained digital growth.",
+          "type": "PlainText"
+        },
+        "inside-banner": {
+          "value": {
+            "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/69870fd8a69f773872f3fc51_Mask%20group%20(14).png",
+            "alt": null
+          },
+          "type": "ImageRef"
+        },
+        "the-solutions-1": {
+          "value": "Implemented a secure, cloud-enabled architecture to support scalable services and improved availability",
+          "type": "PlainText"
+        },
+        "the-solutions-2": {
+          "value": "Embedded strong identity and access management controls to protect sensitive financial data",
+          "type": "PlainText"
+        },
+        "the-solutions-3": {
+          "value": "Applied encryption across data and systems to ensure confidentiality and integrity",
+          "type": "PlainText"
+        },
+        "the-solutions-4": {
+          "value": "Integrated continuous monitoring to strengthen security and operational visibility",
+          "type": "PlainText"
+        },
+        "the-solutions-5": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-solutions-6": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results-1": {
+          "value": "Faster innovation through more flexible and scalable digital services",
+          "type": "PlainText"
+        },
+        "the-results-2": {
+          "value": "Improved system reliability and platform stability",
+          "type": "PlainText"
+        },
+        "the-results-3": {
+          "value": "Stronger overall security posture aligned with regulatory requirements",
+          "type": "PlainText"
+        },
+        "the-results-4": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results-5": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-impact-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "mainheading-case": {
+          "value": "Building Secure, Compliant Digital Platforms for Banking and Financial Services",
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "Enhancing Data & IT in Healthcare",
+      "post_name": "case-study-4",
+      "post_date": "2026-02-13T10:50:54.713Z",
+      "post_modified": "2026-02-13T10:42:40.716Z",
+      "post_type": "casestudies"
+    },
+    {
+      "id": "697c9325384a79192f6862ab",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/698f06e8e95990bda670b613_Group%201171278871.png",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "heading-text": {
+          "value": "Streamlining Vendor Data",
+          "type": "PlainText"
+        },
+        "link-readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "casestudies": {
+          "value": "Home • Resources • Case Studies • Case Study 03",
+          "type": "PlainText"
+        },
+        "about-the-client": {
+          "value": "An energy organization operating in a complex environment where efficiency, reliability, and visibility across assets are critical to day-to-day operations and long-term performance.",
+          "type": "PlainText"
+        },
+        "industry": {
+          "value": "Energy",
+          "type": "PlainText"
+        },
+        "requirements": {
+          "value": "The objective was to improve operational visibility and efficiency by consolidating fragmented data and enabling faster, more informed decision-making.",
+          "type": "PlainText"
+        },
+        "requirements-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-challenge": {
+          "value": "Energy providers operate in complex environments where efficiency, reliability, and visibility are critical. A large energy organization faced challenges with fragmented operational data and limited insight into asset performance, making it difficult to optimize operations and respond quickly to change.",
+          "type": "PlainText"
+        },
+        "the-solution": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "cyma-s-approach-1": {
+          "value": "Cyma partnered with the organization to design and implement an intelligent platform that consolidated data, improved visibility, and supported more informed decision-making. The objective was to create a resilient, scalable system that could adapt to evolving operational needs.",
+          "type": "PlainText"
+        },
+        "cyma-s-approach-2": {
+          "value": "The engagement began with an assessment of existing data sources, asset monitoring systems, and reporting processes. Cyma identified opportunities to unify data and introduce analytics that could provide real-time and predictive insights across operations.",
+          "type": "PlainText"
+        },
+        "execution-1": {
+          "value": "A centralized data platform was built to ingest and process information from multiple operational systems. Advanced analytics enabled teams to identify patterns, monitor performance, and anticipate issues before they escalated. The platform was designed to scale as new assets and data sources were added.",
+          "type": "PlainText"
+        },
+        "execution-2": {
+          "value": "Cloud infrastructure provided flexibility and resilience, while automation reduced manual processes and improved consistency. Security controls ensured sensitive operational data remained protected while still accessible to authorized users.",
+          "type": "PlainText"
+        },
+        "the-impact": {
+          "value": "Today, the energy provider uses the platform as a core operational tool, supporting continuous improvement and long-term resilience. Cyma’s work helped transform data into a strategic resource, enabling smarter, more efficient energy operations.",
+          "type": "PlainText"
+        },
+        "inside-banner": {
+          "value": {
+            "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/69870f029a9bcfbe8a2b4acd_Mask%20group%20(13).png",
+            "alt": null
+          },
+          "type": "ImageRef"
+        },
+        "the-solutions-1": {
+          "value": "Built a centralized data platform to ingest and process information from multiple operational systems",
+          "type": "PlainText"
+        },
+        "the-solutions-2": {
+          "value": "Unified fragmented data sources to create a consistent, reliable view of asset performance",
+          "type": "PlainText"
+        },
+        "the-solutions-3": {
+          "value": "Applied advanced analytics to identify patterns, monitor performance, and anticipate issues early",
+          "type": "PlainText"
+        },
+        "the-solutions-4": {
+          "value": "Leveraged cloud infrastructure to ensure scalability, flexibility, and resilience",
+          "type": "PlainText"
+        },
+        "the-solutions-5": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-solutions-6": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results-1": {
+          "value": "Significant improvement in operational visibility across systems and assets",
+          "type": "PlainText"
+        },
+        "the-results-2": {
+          "value": "Faster, more proactive decision-making enabled by actionable insights",
+          "type": "PlainText"
+        },
+        "the-results-3": {
+          "value": "Reduced downtime and operational risk",
+          "type": "PlainText"
+        },
+        "the-results-4": {
+          "value": "Improved efficiency through better monitoring and predictive capabilities",
+          "type": "PlainText"
+        },
+        "the-results-5": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-impact-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "mainheading-case": {
+          "value": "Driving Operational Efficiency in Energy Systems Through Intelligent Platforms",
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "Streamlining Vendor Data",
+      "post_name": "case-study-3",
+      "post_date": "2026-02-13T11:12:09.053Z",
+      "post_modified": "2026-02-13T11:11:47.591Z",
+      "post_type": "casestudies"
+    },
+    {
+      "id": "697c9325384a79192f6862a9",
+      "_thumbnail_id": {
+        "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/698eff1953edc86f14f7585d_Mask%20group%20(37).png",
+        "alt": null
+      },
+      "custom_meta_input": {
+        "heading-text": {
+          "value": "Smart Grid Modernization for an Energy Provider",
+          "type": "PlainText"
+        },
+        "link-readmore": {
+          "value": null,
+          "type": "Link"
+        },
+        "casestudies": {
+          "value": "Home • Resources • Case Studies • Case Study 02",
+          "type": "PlainText"
+        },
+        "about-the-client": {
+          "value": "An automotive company specializing in vehicle manufacturing and after-sales services. They focus on operational efficiency, customer experience and adapting to evolving industry standards.",
+          "type": "PlainText"
+        },
+        "industry": {
+          "value": "Automotive",
+          "type": "PlainText"
+        },
+        "requirements": {
+          "value": "The objective was to build a scalable, high-performance digital platform capable of supporting connected vehicle services in real time. ",
+          "type": "PlainText"
+        },
+        "requirements-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-challenge": {
+          "value": "A leading automotive company sought to expand its connected vehicle capabilities but was constrained by infrastructure that struggled with real-time data processing, scalability, and reliability.",
+          "type": "PlainText"
+        },
+        "the-solution": {
+          "value": "A modern, cloud-enabled architecture was designed to support scalable data ingestion and real-time access. Strong access controls and encryption to protect data.",
+          "type": "PlainText"
+        },
+        "the-results": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "cyma-s-approach-1": {
+          "value": "Cyma partnered with the organization to design and build a high-performance platform capable of supporting connected vehicle services at scale. The goal was to enable real-time data ingestion and processing while ensuring system stability and future readiness.",
+          "type": "PlainText"
+        },
+        "cyma-s-approach-2": {
+          "value": "The engagement began by analyzing data volumes, latency requirements, and usage patterns across vehicle systems. Cyma identified the need for a platform that could handle continuous data streams while remaining resilient under peak load. Architectural decisions were guided by performance, scalability, and operational simplicity.",
+          "type": "PlainText"
+        },
+        "execution-1": {
+          "value": "A cloud-native architecture was implemented to support real-time data processing and analytics. Services were designed to scale independently, allowing the platform to adapt as vehicle connectivity expanded. Efficient data handling and event-driven processing enabled timely insights without compromising performance.",
+          "type": "PlainText"
+        },
+        "execution-2": {
+          "value": "Reliability was a core focus. Monitoring and observability were integrated across the platform to provide visibility into system health and data flows. Automated deployment pipelines ensured updates could be released frequently and safely, supporting rapid iteration without disrupting services.",
+          "type": "PlainText"
+        },
+        "the-impact": {
+          "value": "The platform enabled the organization to launch new connected vehicle features faster while maintaining consistent performance. Data-driven insights improved service quality, and the scalable foundation positioned the company to support future innovations in mobility.",
+          "type": "PlainText"
+        },
+        "inside-banner": {
+          "value": {
+            "url": "https://cdn.prod.website-files.com/697c91c020a782b9fdbf2922/69870e4ea8757569eee99890_Mask%20group%20(12).png",
+            "alt": null
+          },
+          "type": "ImageRef"
+        },
+        "the-solutions-1": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-solutions-2": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-solutions-3": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-solutions-4": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-solutions-5": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-solutions-6": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results-1": {
+          "value": "accurate insights.",
+          "type": "PlainText"
+        },
+        "the-results-2": {
+          "value": "supporting better decision-making.",
+          "type": "PlainText"
+        },
+        "the-results-3": {
+          "value": "Performance improved, data availability increased.",
+          "type": "PlainText"
+        },
+        "the-results-4": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-results-5": {
+          "value": null,
+          "type": "PlainText"
+        },
+        "the-impact-2": {
+          "value": "Today, the connected vehicle platform operates as a robust, real-time system capable of growing alongside evolving automotive technologies. Cyma’s work enabled the organization to move beyond experimentation and deliver connected services with confidence and scale.",
+          "type": "PlainText"
+        },
+        "mainheading-case": {
+          "value": "Powering Connected Vehicle Systems with Scalable, Real-Time Platforms",
+          "type": "PlainText"
+        },
+        "_noSearch": {
+          "value": false,
+          "type": "Bool"
+        }
+      },
+      "post_title": "Smart Grid Modernization for an Energy Provider",
+      "post_name": "case-study-2",
+      "post_date": "2026-02-13T10:50:54.713Z",
+      "post_modified": "2026-02-13T10:42:23.516Z",
+      "post_type": "casestudies"
+    },
+    {
+      "post_name": "index",
+      "post_title": "Home",
+      "post_type": "page"
+    },
+    {
+      "post_name": "style-guide",
+      "post_title": "Style Guide",
+      "post_type": "page"
+    },
+    {
+      "post_name": "about-us",
+      "post_title": "About Us",
+      "post_type": "page"
+    },
+    {
+      "post_name": "contact-us",
+      "post_title": "contact us",
+      "post_type": "page"
+    },
+    {
+      "post_name": "job-seekers",
+      "post_title": "Job Seekers",
+      "post_type": "page"
+    },
+    {
+      "post_name": "business-solutions",
+      "post_title": "Business Solutions",
+      "post_type": "page"
+    },
+    {
+      "post_name": "industries",
+      "post_title": "Industries",
+      "post_type": "page"
+    },
+    {
+      "post_name": "legal",
+      "post_title": "Legal",
+      "post_type": "page"
+    },
+    {
+      "post_name": "resources",
+      "post_title": "Resources",
+      "post_type": "page"
+    },
+    {
+      "post_name": "homeduplicate",
+      "post_title": "HomeDuplicate",
+      "post_type": "page"
+    },
+    {
+      "post_name": "insights-description",
+      "post_title": "Insights Description",
+      "post_type": "page"
+    },
+    {
+      "post_name": "technology-services",
+      "post_title": "Technology Services",
+      "post_type": "page"
+    },
+    {
+      "post_name": "software-development",
+      "post_title": "Software Development",
+      "post_type": "page"
+    },
+    {
+      "post_name": "ai",
+      "post_title": "AI",
+      "post_type": "page"
+    },
+    {
+      "post_name": "blockchain",
+      "post_title": "Blockchain",
+      "post_type": "page"
+    },
+    {
+      "post_name": "cloud-devops",
+      "post_title": "Cloud & DevOps",
+      "post_type": "page"
+    },
+    {
+      "post_name": "it-infrastructure",
+      "post_title": "IT Infrastructure",
+      "post_type": "page"
+    },
+    {
+      "post_name": "cyber-security",
+      "post_title": "Cyber Security",
+      "post_type": "page"
+    },
+    {
+      "post_name": "data-analytics",
+      "post_title": "Data Analytics",
+      "post_type": "page"
+    },
+    {
+      "post_name": "quality-assurance-and-testing",
+      "post_title": "Quality Assurance and Testing",
+      "post_type": "page"
+    },
+    {
+      "post_name": "emerging-technologies",
+      "post_title": "Emerging Technologies",
+      "post_type": "page"
+    },
+    {
+      "post_name": "employee-login",
+      "post_title": "Employee Login",
+      "post_type": "page"
+    },
+    {
+      "post_name": "notice-of-filing",
+      "post_title": "Notice of Filing",
+      "post_type": "page"
+    },
+    {
+      "post_name": "h1b-lca",
+      "post_title": "H1B-LCA",
+      "post_type": "page"
+    },
+    {
+      "post_name": "modernizing-loan-processing-systems",
+      "post_title": "CaseStudy_1",
+      "post_type": "page"
+    },
+    {
+      "post_name": "case-studies",
+      "post_title": "Case Studies",
+      "post_type": "page"
+    },
+    {
+      "post_name": "employee-login-inside",
+      "post_title": "Employee Login Inside",
+      "post_type": "page"
+    },
+    {
+      "post_name": "sign-up",
+      "post_title": "Sign Up",
+      "post_type": "page"
+    },
+    {
+      "post_name": "login",
+      "post_title": "Login",
+      "post_type": "page"
+    },
+    {
+      "post_name": "forgot-password",
+      "post_title": "Forgot password",
+      "post_type": "page"
+    },
+    {
+      "post_name": "verification",
+      "post_title": "Verification",
+      "post_type": "page"
+    },
+    {
+      "post_name": "create-new-password",
+      "post_title": "Create new password",
+      "post_type": "page"
+    },
+    {
+      "post_name": "password-updated",
+      "post_title": "Password Updated",
+      "post_type": "page"
+    },
+    {
+      "post_name": "insights-2",
+      "post_title": "Insights_2",
+      "post_type": "page"
+    },
+    {
+      "post_name": "insights-3",
+      "post_title": "Insights_3",
+      "post_type": "page"
+    },
+    {
+      "post_name": "insights-4",
+      "post_title": "Insights_4",
+      "post_type": "page"
+    },
+    {
+      "post_name": "insights-5",
+      "post_title": "Insights_5",
+      "post_type": "page"
+    },
+    {
+      "post_name": "insights-6",
+      "post_title": "Insights_6",
+      "post_type": "page"
+    },
+    {
+      "post_name": "insights-7",
+      "post_title": "Insights_7",
+      "post_type": "page"
+    },
+    {
+      "post_name": "insights-8",
+      "post_title": "Insights_8",
+      "post_type": "page"
+    },
+    {
+      "post_name": "insights-9",
+      "post_title": "Insights_9",
+      "post_type": "page"
+    },
+    {
+      "post_name": "email-verification",
+      "post_title": "Email Verification",
+      "post_type": "page"
+    }
+  ],
+  "terms": [],
+  "users": []
+}

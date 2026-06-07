@@ -1,0 +1,16 @@
+<?php
+get_header();
+load_page_data('page-ai');
+?>
+
+<main>
+    <?php
+    while ( have_posts() ) :
+        the_post();
+        get_template_part('template-parts/content/page-ai');
+    endwhile;
+    ?>
+</main>
+
+<?php
+get_footer();
