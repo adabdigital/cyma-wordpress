@@ -124,6 +124,17 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strpos($_SERVER['HTTP_X_FORWARD
 }
 // (we include this by default because reverse proxying is extremely common in container environments)
 
+// Public preview tunnels (e.g. cloudflared trycloudflare.com) — avoid redirect to localhost:8081
+if ( isset( $_SERVER['HTTP_HOST'] ) && strpos( $_SERVER['HTTP_HOST'], 'trycloudflare.com' ) !== false ) {
+	$preview_scheme = ( ! empty( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] !== 'off' ) ? 'https' : 'http';
+	if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ) {
+		$preview_scheme = 'https';
+	}
+	$preview_url    = $preview_scheme . '://' . $_SERVER['HTTP_HOST'];
+	define( 'WP_HOME', $preview_url );
+	define( 'WP_SITEURL', $preview_url );
+}
+
 if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {
 	eval($configExtra);
 }

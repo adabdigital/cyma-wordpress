@@ -1,23 +1,24 @@
-/* Subtle scroll-reveal animations for page sections */
+/* Scroll-reveal: fade + rise when each section enters the viewport */
 
-section.cyma-reveal {
-  opacity: 0;
-  transform: translate3d(0, 28px, 0);
-  transition:
-    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay: var(--cyma-reveal-delay, 0s);
-  will-change: opacity, transform;
+section.cyma-reveal:not(.is-visible) {
+  opacity: 0 !important;
+  transform: translate3d(0, 36px, 0);
+  transition: none;
 }
 
 section.cyma-reveal.is-visible {
-  opacity: 1;
+  opacity: 1 !important;
   transform: translate3d(0, 0, 0);
+  transition:
+    opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--cyma-reveal-delay, 0s);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  section.cyma-reveal {
-    opacity: 1;
+  section.cyma-reveal:not(.is-visible),
+  section.cyma-reveal.is-visible {
+    opacity: 1 !important;
     transform: none;
     transition: none;
   }

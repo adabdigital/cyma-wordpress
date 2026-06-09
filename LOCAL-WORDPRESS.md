@@ -6,21 +6,14 @@ This project runs WordPress in Docker. The custom theme is **cyma-708003**, conv
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) (includes Docker Compose)
 - A free port on your machine (default: **8081**)
+- Git (to clone the repo)
 
-## Project layout
+## Get the code
 
+```bash
+git clone https://github.com/adeemad/cyma-wordpress.git
+cd cyma-wordpress
 ```
-cyma-wordpress/
-├── docker-compose.yml          # WordPress + MySQL services
-├── wordpress/                  # WordPress install (mounted into container)
-│   └── wp-content/themes/cyma-708003/   # Active theme
-│       ├── _data/frontend-editor/       # Page content (JSON)
-│       ├── assets/                      # CSS, JS, images, videos
-│       └── template-parts/              # Page templates
-└── LOCAL-WORDPRESS.md          # This file
-```
-
-The repo root also contains theme source files that mirror the active theme. **Edit the theme under `wordpress/wp-content/themes/cyma-708003/`** when developing locally — that is what Docker serves.
 
 ## Quick start
 
@@ -30,12 +23,20 @@ From the project root:
 docker compose up -d
 ```
 
-Wait for both containers to start, then open:
+Wait for both containers to start (about 30–60 seconds on first run), then open:
 
 | URL | Purpose |
 |-----|---------|
 | http://localhost:8081 | Public site |
 | http://localhost:8081/wp-admin | WordPress admin |
+
+Check containers are running:
+
+```bash
+docker compose ps
+```
+
+You should see `cyma-wordpress` and `cyma-mysql` with status **Up**.
 
 ### Stop and start
 
@@ -48,6 +49,30 @@ docker compose up -d
 
 # View logs
 docker compose logs -f wordpress
+```
+
+## Project layout
+
+```
+cyma-wordpress/
+├── docker-compose.yml          # WordPress + MySQL services
+├── wordpress/                  # WordPress install (mounted into container)
+│   ├── wp-config.php           # Includes preview-tunnel URL handling
+│   └── wp-content/themes/cyma-708003/   # Active theme (edit this)
+│       ├── _data/frontend-editor/       # Page content (JSON)
+│       ├── assets/                      # CSS, JS, images, videos
+│       └── template-parts/              # Page templates
+└── LOCAL-WORDPRESS.md          # This file
+```
+
+The repo root also contains theme source files that mirror the active theme. **When developing locally, edit files under `wordpress/wp-content/themes/cyma-708003/`** — that is what Docker serves.
+
+After editing root-level theme copies, sync them into the active theme if needed:
+
+```bash
+THEME="wordpress/wp-content/themes/cyma-708003"
+cp header.php footer.php functions.php "$THEME/"
+cp -r assets/css assets/js "$THEME/assets/" 2>/dev/null || true
 ```
 
 ## First-time WordPress setup
@@ -126,6 +151,32 @@ Theme templates use JSON keys like `page-about-us`. WordPress page slugs should 
 
 See `_data/frontend-editor/` for the full list of available pages.
 
+## Share a public preview link (optional)
+
+To share the local site with someone else without deploying, use a Cloudflare quick tunnel.
+
+### 1. Install cloudflared (macOS)
+
+```bash
+brew install cloudflared
+```
+
+### 2. Start the tunnel
+
+Make sure Docker is running (`docker compose up -d`), then:
+
+```bash
+cloudflared tunnel --url http://localhost:8081
+```
+
+Copy the `https://*.trycloudflare.com` URL from the terminal output.
+
+### 3. How it works
+
+- `wordpress/wp-config.php` detects `trycloudflare.com` requests and sets `WP_HOME` / `WP_SITEURL` automatically so WordPress does not redirect to `localhost:8081`.
+- The preview link only works while **Docker** and **cloudflared** are running on your machine.
+- Each time you restart cloudflared, you get a **new URL**.
+
 ## Docker services
 
 | Service | Container | Port | Notes |
@@ -162,9 +213,13 @@ These are defined in `docker-compose.yml` and are suitable for local development
 | `page-{slug}.php` | Individual page templates |
 | `template-parts/content/` | Page HTML/content partials |
 | `template-parts/footer/` | Page-specific scripts (nav, Webflow init) |
+| `assets/css/animations.css` | Section scroll-reveal and button hover effects |
+| `assets/js/section-animations.js` | Scroll-reveal logic |
 | `assets/js/webflow.js` | Webflow interactions (sliders, nav, dropdowns) |
 
 Changes to theme files are reflected immediately on refresh — no container rebuild is needed because the `wordpress/` directory is bind-mounted.
+
+Hard-refresh the browser (Cmd+Shift+R) after CSS/JS changes to bypass cache.
 
 ### WP-CLI (optional)
 
@@ -198,6 +253,10 @@ docker exec cyma-wordpress wp option update home 'http://localhost:8081' --allow
 docker exec cyma-wordpress wp option update siteurl 'http://localhost:8081' --allow-root
 ```
 
+### Preview tunnel redirects to localhost:8081
+
+Ensure `wordpress/wp-config.php` includes the `trycloudflare.com` block (see **Share a public preview link** above). Restart the tunnel after any wp-config change.
+
 ### Buttons or links go to `#` or 404
 
 - Confirm the target page exists in **Pages** with the correct slug (e.g. `about-us`, not `page-about-us`)
@@ -209,7 +268,15 @@ Assets live under `assets/` in the theme (e.g. `assets/images/`, `assets/videos/
 
 ### Mobile menu or Webflow interactions broken
 
-The theme enqueues jQuery and loads `webflow.js` after `wp_footer()`. If interactions fail, check the browser console for JavaScript errors and confirm jQuery is loaded before `webflow.js`.
+The theme enqueues jQuery and loads `webflow.js` after `wp_footer()`. If interactions fail:
+
+1. Open the browser console and check for JavaScript errors
+2. Confirm jQuery loads before `webflow.js`
+3. Hard-refresh to clear cached CSS/JS
+
+### Header or navigation looks wrong
+
+The homepage nav lives inside `.section-3` and uses Webflow's `w-nav` component. Custom animation CSS must not override Webflow nav layout (display, position, transforms on `.w-nav-menu`).
 
 ### Reset the database
 

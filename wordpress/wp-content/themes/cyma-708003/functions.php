@@ -46,11 +46,11 @@ function cyma_enqueue_styles() {
     wp_enqueue_style('normalize', get_template_directory_uri() . '/assets/css/normalize.css', [], '1780144474');
     wp_enqueue_style('wordpress', get_template_directory_uri() . '/assets/css/wordpress.css', [], '1780144474');
     wp_enqueue_style('cyma-style', get_template_directory_uri() . '/assets/css/style.css', [], '1780144474');
-    wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1780144481');
+    wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1780144490');
 
     wp_add_inline_style(
         'cyma-style',
-        '[data-w-id], [style*="opacity:0"] { opacity: 1 !important; }'
+        '[data-w-id]:not(section.cyma-reveal), [style*="opacity:0"]:not(section.cyma-reveal) { opacity: 1 !important; }'
     );
 
     // Remove WordPress default styles that might conflict
@@ -62,6 +62,13 @@ add_action('wp_enqueue_scripts', 'cyma_enqueue_styles', 999);
 
 function cyma_enqueue_scripts() {
     wp_enqueue_script('jquery');
+    wp_enqueue_script(
+        'cyma-section-animations',
+        get_template_directory_uri() . '/assets/js/section-animations.js',
+        [],
+        '1780144490',
+        true
+    );
 }
 add_action('wp_enqueue_scripts', 'cyma_enqueue_scripts');
 
