@@ -136,18 +136,21 @@
   </div>
   <section class="section-71">
     <div class="w-layout-blockcontainer container-62 w-container">
-      <div class="text-block-676" data-textarea="tan1dda2cb0"><?php echo _u('tan1dda2cb0', 'textarea'); ?></div>
+      <div class="text-block-676"><?php echo esc_html( cyma_get_career_meta( 'sub-text' ) ?: get_the_title() ); ?></div>
       <div class="div-block-1389">
-        <h1 class="heading-149 w-dyn-bind-empty"></h1>
+        <h1 class="heading-149"><?php echo esc_html( cyma_get_career_meta( 'main-heading' ) ?: get_the_title() ); ?></h1>
         <ul role="list" class="list-8">
-          <li class="list-item-36 w-dyn-bind-empty"></li>
-          <li class="list-item-36 w-dyn-bind-empty"></li>
-          <li class="list-item-36 w-dyn-bind-empty"></li>
-          <li class="list-item-36 w-dyn-bind-empty"></li>
-          <li class="list-item-36 w-dyn-bind-empty"></li>
-          <li class="list-item-36 w-dyn-bind-empty"></li>
+          <?php for ( $i = 1; $i <= 13; $i++ ) : ?>
+            <?php $item = cyma_get_career_meta( 'list-' . $i ); ?>
+            <?php if ( $item ) : ?>
+              <li class="list-item-36"><?php echo esc_html( $item ); ?></li>
+            <?php endif; ?>
+          <?php endfor; ?>
         </ul>
-        <div data-text="tc50eabc"><?php echo _u('tc50eabc','text'); ?></div>
+        <?php $card_text = cyma_get_career_meta( 'card-under-text' ); ?>
+        <?php if ( $card_text ) : ?>
+          <div><?php echo esc_html( $card_text ); ?></div>
+        <?php endif; ?>
       </div>
     </div>
   </section>

@@ -151,6 +151,16 @@ Theme templates use JSON keys like `page-about-us`. WordPress page slugs should 
 
 See `_data/frontend-editor/` for the full list of available pages.
 
+### Import careers / job listings
+
+The **Explore Careers** page (`/explore-careers/`) and individual job posts are not created by the basic page import. Run:
+
+```bash
+docker exec cyma-wordpress php /var/www/html/wp-content/themes/cyma-708003/import-careers.php
+```
+
+This creates the `explore-careers` page and imports job listings from `_data/data.json` (e.g. `/explore-careers/data-engineer/`).
+
 ## Share a public preview link (optional)
 
 To share the local site with someone else without deploying, use a Cloudflare quick tunnel.

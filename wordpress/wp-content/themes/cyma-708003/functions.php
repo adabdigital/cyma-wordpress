@@ -72,6 +72,35 @@ function cyma_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'cyma_enqueue_scripts');
 
+function cyma_register_careers_post_type() {
+    register_post_type(
+        'explore-careers',
+        array(
+            'labels'       => array(
+                'name'          => 'Careers',
+                'singular_name' => 'Career',
+            ),
+            'public'       => true,
+            'has_archive'  => false,
+            'rewrite'      => array(
+                'slug'       => 'explore-careers',
+                'with_front' => false,
+            ),
+            'supports'     => array( 'title', 'editor', 'custom-fields' ),
+            'show_in_rest' => true,
+        )
+    );
+}
+add_action( 'init', 'cyma_register_careers_post_type' );
+
+function cyma_get_career_meta( $key, $post_id = null ) {
+    if ( ! $post_id ) {
+        $post_id = get_the_ID();
+    }
+    $value = get_post_meta( $post_id, $key, true );
+    return is_string( $value ) ? $value : '';
+}
+
 function cyma_get_template_slug() {
     if (is_front_page() || is_home()) {
         return 'front-page';
