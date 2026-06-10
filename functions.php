@@ -101,6 +101,26 @@ function cyma_get_career_meta( $key, $post_id = null ) {
     return is_string( $value ) ? $value : '';
 }
 
+function cyma_get_apply_url( $job_title = '' ) {
+    $contact = get_page_by_path( 'contact-us' );
+    $url     = $contact ? get_permalink( $contact ) : home_url( '/contact-us/' );
+
+    $job_title = preg_replace(
+        '/\s+/',
+        ' ',
+        trim(
+            wp_strip_all_tags(
+                str_ireplace( array( '<br>', '<br/>', '<br />', "\n", "\r" ), ' ', (string) $job_title )
+            )
+        )
+    );
+    if ( $job_title !== '' ) {
+        $url = add_query_arg( 'role', $job_title, $url );
+    }
+
+    return $url;
+}
+
 function cyma_get_template_slug() {
     if (is_front_page() || is_home()) {
         return 'front-page';

@@ -151,6 +151,9 @@
         <?php if ( $card_text ) : ?>
           <div><?php echo esc_html( $card_text ); ?></div>
         <?php endif; ?>
+        <a href="<?php echo esc_url( cyma_get_apply_url( get_the_title() ) ); ?>" class="featuredjobcontent-btn w-inline-block" style="margin-top: 24px;">
+          <div class="text-block-497">Apply Now</div>
+        </a>
       </div>
     </div>
   </section>

@@ -308,7 +308,7 @@
                 </div>
                 <div class="text-block-496" data-text="t6b28086b"><?php echo _u('t6b28086b','text'); ?></div>
               </div>
-              <a href="<?php echo _u('a2643837b','link'); ?>" class="featuredjobcontent-btn w-inline-block" data-link="a2643837b">
+              <a href="<?php echo esc_url( cyma_get_apply_url( _u( 't429c5741', 'text' ) ) ); ?>" class="featuredjobcontent-btn w-inline-block">
                 <div class="text-block-497" data-text="tn45e051c"><?php echo _u('tn45e051c','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->alt ?>" class="image-150" data-img="in75c75f65" srcset="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->srcset ?>">
               </a>
             </div>
@@ -340,7 +340,7 @@
                 </div>
                 <div class="text-block-496" data-text="t6b28086b"><?php echo _u('t6b28086b','text'); ?></div>
               </div>
-              <a href="<?php echo _u('a2643837b','link'); ?>" class="featuredjobcontent-btn w-inline-block" data-link="a2643837b">
+              <a href="<?php echo esc_url( cyma_get_apply_url( _u( 'tan524844c9', 'textarea' ) ) ); ?>" class="featuredjobcontent-btn w-inline-block">
                 <div class="text-block-497" data-text="tn45e051c"><?php echo _u('tn45e051c','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->alt ?>" class="image-151" data-img="in75c75f65" srcset="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->srcset ?>">
               </a>
             </div>

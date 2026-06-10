@@ -11,6 +11,7 @@ load_page_data( 'page-job-seekers' );
     while ( have_posts() ) :
         the_post();
         get_template_part( 'template-parts/content/page-job-seekers' );
+        get_template_part( 'template-parts/content/careers-open-roles' );
     endwhile;
     ?>
 </main>
