@@ -1798,3 +1798,11 @@ textarea.w-select {
   grid-row-gap: 16px;
   grid-column-gap: 16px;
 }
+
+@media screen and (max-width: 991px) {
+  .w-nav[data-collapse='medium'] .nav-menu-wrapper.w-nav-menu.w--open,
+  .w-nav[data-collapse='medium'] .nav-menu-wrapper.w-nav-menu[data-nav-menu-open] {
+    display: block !important;
+    height: 100% !important;
+  }
+}
