@@ -17,18 +17,13 @@ if ( empty( $jobs ) ) {
 <section class="section-71">
   <div class="w-layout-blockcontainer container-62 w-container">
     <h2 class="heading-149" style="margin-bottom: 32px;">Open Roles</h2>
-    <div class="w-layout-grid grid-44" style="grid-row-gap: 24px;">
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 24px; width: 100%;">
       <?php foreach ( $jobs as $job ) : ?>
-        <?php
-        setup_postdata( $job );
-        $summary = cyma_get_career_meta( 'sub-text', $job->ID );
-        ?>
-        <div class="div-block-1389" style="padding: 24px; border: 1px solid #e8eef5; border-radius: 16px;">
+        <?php setup_postdata( $job ); ?>
+        <div class="div-block-1389" style="padding: 24px; border: 1px solid #e8eef5; border-radius: 16px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column;">
           <h3 class="heading-61" style="margin-bottom: 8px;"><?php echo esc_html( get_the_title( $job ) ); ?></h3>
-          <?php if ( $summary ) : ?>
-            <p style="margin-bottom: 16px;"><?php echo esc_html( $summary ); ?></p>
-          <?php endif; ?>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <p style="margin-bottom: 16px; display: <?php echo cyma_get_career_meta( 'sub-text', $job->ID ) ? 'block' : 'none'; ?>;"><?php echo esc_html( cyma_get_career_meta( 'sub-text', $job->ID ) ); ?></p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: auto;">
             <a href="<?php echo esc_url( get_permalink( $job ) ); ?>" class="contact-btn-exploreinjobseeksers w-inline-block">
               <div class="text-block-483">View Role</div>
             </a>
