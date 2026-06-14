@@ -1017,5 +1017,23 @@
     </div>
   </section>
   <section class="section-spacer"></section>
+<script>
+var hamburgerMenu = document.querySelector('.hambuger-menu-main');
+var slider = document.querySelector('.technology-list');
+var leftArrow = document.querySelector('.left-arrow-10');
+var rightArrow = document.querySelector('.right-arrow-16');
+
+window.addEventListener('load', function() {
+  hamburgerMenu.style.display = window.innerWidth <= 991 ? 'flex' : '';
+});
+
+leftArrow.addEventListener('click', function() {
+  slider.scrollBy({ left: -300, behavior: 'smooth' });
+});
+
+rightArrow.addEventListener('click', function() {
+  slider.scrollBy({ left: 300, behavior: 'smooth' });
+});
+</script>
   
   

@@ -46713,4 +46713,27 @@ a {
   }
 }
 
+.w-slider {
+  touch-action: pan-y !important;
+}
+.w-slider-mask {
+  touch-action: pan-y !important;
+}
+.w-slide {
+  touch-action: pan-y !important;
+}
+
+@media screen and (max-width: 767px) {
+  .slider-27 .w-slider-mask {
+    overflow-x: auto !important;
+    touch-action: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
+  .slider-27 .w-slider-mask::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
 

@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --inter: Inter, sans-serif;
   --cloud-mist: #f9fbff;
   --heading-text-color: #191a1d;
@@ -46690,6 +46690,29 @@ a {
 
   #w-node-_7b47cb00-62be-5562-8ff5-558f1c382de5-5531b9c8 {
     grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+}
+
+.w-slider {
+  touch-action: pan-y !important;
+}
+.w-slider-mask {
+  touch-action: pan-y !important;
+}
+.w-slide {
+  touch-action: pan-y !important;
+}
+
+@media screen and (max-width: 767px) {
+  .slider-27 .w-slider-mask {
+    overflow-x: auto !important;
+    touch-action: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
+  .slider-27 .w-slider-mask::-webkit-scrollbar {
+    display: none !important;
   }
 }
 

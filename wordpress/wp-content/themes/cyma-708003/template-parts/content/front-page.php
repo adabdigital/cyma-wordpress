@@ -417,89 +417,6 @@
         <div class="right-arrow-16 w-slider-arrow-right"><img loading="lazy" src="<?php echo cyma_get_image(_u('in682a36d7', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in682a36d7', 'img'))->alt ?>" class="image-18" data-img="in682a36d7" srcset="<?php echo cyma_get_image(_u('in682a36d7', 'img'))->srcset ?>"></div>
         <div class="slide-nav-24 w-slider-nav w-round w-num"></div>
       </div>
-      <div data-w-id="3eba46d0-6942-6efc-7246-e8fb426e3476" class="w-layout-grid _4x1-copy">
-        <div data-w-id="e193d8cc-52f2-82ae-06c2-db45332c524c" class="w-layout-vflex flex-block-18">
-          <div class="div-block-1432"><img src="<?php echo cyma_get_image(_u('i16bde000', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i16bde000', 'img'))->alt ?>" class="serviceimage" data-img="i16bde000" srcset="<?php echo cyma_get_image(_u('i16bde000', 'img'))->srcset ?>">
-            <h4 class="purple-text _2" data-text="tn1324772f"><?php echo _u('tn1324772f','text'); ?></h4>
-            <div class="body-text-color _260px" data-text="t69409e74"><?php echo _u('t69409e74','text'); ?></div>
-          </div>
-          <a href="<?php echo _u('ac28','link'); ?>" class="contact-btn-copy-smarttechbtn extra-small w-inline-block" data-link="ac28">
-            <div class="text-block-copy-smarttechtext" data-text="t31997f7f"><?php echo _u('t31997f7f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->alt ?>" class="image arrow-3" data-img="in1ab3f705" srcset="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->srcset ?>">
-          </a>
-        </div>
-        <div data-w-id="1b54b027-4b07-2c56-d182-c9880c294de6" class="w-layout-vflex flex-block-18">
-          <div class="div-block-1433"><img src="<?php echo cyma_get_image(_u('in58ed299c', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in58ed299c', 'img'))->alt ?>" class="serviceimage" data-img="in58ed299c" srcset="<?php echo cyma_get_image(_u('in58ed299c', 'img'))->srcset ?>">
-            <h4 class="purple-text _2" data-text="tn3c4c418c"><?php echo _u('tn3c4c418c','text'); ?></h4>
-            <div class="body-text-color _260px" data-textarea="tan58818ad0"><?php echo _u('tan58818ad0', 'textarea'); ?></div>
-          </div>
-          <a href="<?php echo _u('a4ce1e254','link'); ?>" class="contact-btn-copy extra-small w-inline-block" data-link="a4ce1e254">
-            <div class="text-block text-block-copy-smarttechtext" data-text="t31997f7f"><?php echo _u('t31997f7f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->alt ?>" class="image arrow-3" data-img="in1ab3f705" srcset="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->srcset ?>">
-          </a>
-        </div>
-        <div data-w-id="52aa6c29-c38f-4797-dc41-ab93e53981d6" class="w-layout-vflex flex-block-18">
-          <div class="div-block-1434"><img src="<?php echo cyma_get_image(_u('in1ceafdbd', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in1ceafdbd', 'img'))->alt ?>" class="serviceimage" data-img="in1ceafdbd" srcset="<?php echo cyma_get_image(_u('in1ceafdbd', 'img'))->srcset ?>">
-            <h4 class="purple-text _2" data-text="tn512c2d87"><?php echo _u('tn512c2d87','text'); ?></h4>
-            <div class="body-text-color _260px _w-text" data-text="tn4d06d056"><?php echo _u('tn4d06d056','text'); ?></div>
-          </div>
-          <a href="<?php echo _u('a-29c2c5cc','link'); ?>" class="contact-btn-copy extra-small w-inline-block" data-link="a-29c2c5cc">
-            <div class="text-block text-block-copy-smarttechtext" data-text="t31997f7f"><?php echo _u('t31997f7f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->alt ?>" class="image arrow-3" data-img="in1ab3f705" srcset="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->srcset ?>">
-          </a>
-        </div>
-        <div data-w-id="eb552050-c338-c80a-fa58-408b5095dd2e" class="w-layout-vflex flex-block-18">
-          <div class="div-block-1435"><img src="<?php echo cyma_get_image(_u('in4bd6e9c2', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in4bd6e9c2', 'img'))->alt ?>" class="serviceimage" data-img="in4bd6e9c2" srcset="<?php echo cyma_get_image(_u('in4bd6e9c2', 'img'))->srcset ?>">
-            <h4 class="purple-text _2" data-text="t60823de1"><?php echo _u('t60823de1','text'); ?></h4>
-            <div class="body-text-color _260px" data-text="t5b933dfa"><?php echo _u('t5b933dfa','text'); ?></div>
-          </div>
-          <a href="<?php echo _u('aa264d15','link'); ?>" class="contact-btn-copy extra-small w-inline-block" data-link="aa264d15">
-            <div class="text-block text-block-copy-smarttechtext" data-text="t31997f7f"><?php echo _u('t31997f7f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->alt ?>" class="image arrow-3" data-img="in1ab3f705" srcset="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->srcset ?>">
-          </a>
-        </div>
-        <div class="w-layout-vflex flex-block-18">
-          <div class="div-block-1431"><img src="<?php echo cyma_get_image(_u('i595c90a5', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i595c90a5', 'img'))->alt ?>" class="serviceimage" data-img="i595c90a5" srcset="<?php echo cyma_get_image(_u('i595c90a5', 'img'))->srcset ?>">
-            <h4 class="purple-text _2" data-text="t7104442"><?php echo _u('t7104442','text'); ?></h4>
-            <div class="body-text-color _260px" data-text="t6b89f81b"><?php echo _u('t6b89f81b','text'); ?></div>
-          </div>
-          <a href="<?php echo _u('a-41931eb','link'); ?>" class="contact-btn-copy-smarttechbtn extra-small w-inline-block" data-link="a-41931eb">
-            <div class="text-block-copy-smarttechtext" data-text="t31997f7f"><?php echo _u('t31997f7f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->alt ?>" class="image arrow-3" data-img="in1ab3f705" srcset="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->srcset ?>">
-          </a>
-        </div>
-        <div class="w-layout-vflex flex-block-18">
-          <div class="div-block-1430"><img src="<?php echo cyma_get_image(_u('i283f6688', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i283f6688', 'img'))->alt ?>" class="serviceimage" data-img="i283f6688" srcset="<?php echo cyma_get_image(_u('i283f6688', 'img'))->srcset ?>">
-            <h4 class="purple-text _2 height" data-text="t1b563558"><?php echo _u('t1b563558','text'); ?></h4>
-            <div class="body-text-color _260px _w-text" data-text="tn38eb2385"><?php echo _u('tn38eb2385','text'); ?></div>
-          </div>
-          <a href="<?php echo _u('a2eab4a85','link'); ?>" class="contact-btn-copy-smarttechbtn extra-small w-inline-block" data-link="a2eab4a85">
-            <div class="text-block-copy-smarttechtext" data-text="t31997f7f"><?php echo _u('t31997f7f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->alt ?>" class="image arrow-3" data-img="in1ab3f705" srcset="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->srcset ?>">
-          </a>
-        </div>
-        <div class="w-layout-vflex flex-block-18">
-          <div class="div-block-1436"><img src="<?php echo cyma_get_image(_u('in58db0043', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in58db0043', 'img'))->alt ?>" class="serviceimage" data-img="in58db0043" srcset="<?php echo cyma_get_image(_u('in58db0043', 'img'))->srcset ?>">
-            <h4 class="purple-text _2" data-text="tn1e937170"><?php echo _u('tn1e937170','text'); ?></h4>
-            <div class="body-text-color _260px _w-text" data-text="tn5caeef8f"><?php echo _u('tn5caeef8f','text'); ?></div>
-          </div>
-          <a href="<?php echo _u('ad6e6123','link'); ?>" class="contact-btn-copy-smarttechbtn extra-small w-inline-block" data-link="ad6e6123">
-            <div class="text-block-copy-smarttechtext" data-text="t31997f7f"><?php echo _u('t31997f7f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->alt ?>" class="image arrow-3" data-img="in1ab3f705" srcset="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->srcset ?>">
-          </a>
-        </div>
-        <div class="w-layout-vflex flex-block-18">
-          <div class="div-block-1437"><img src="<?php echo cyma_get_image(_u('i48e146e4', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i48e146e4', 'img'))->alt ?>" class="serviceimage" data-img="i48e146e4" srcset="<?php echo cyma_get_image(_u('i48e146e4', 'img'))->srcset ?>">
-            <h4 class="purple-text _2" data-text="tn2ccd461a"><?php echo _u('tn2ccd461a','text'); ?></h4>
-            <div class="body-text-color _260px _w-text" data-text="tn736e9af4"><?php echo _u('tn736e9af4','text'); ?></div>
-          </div>
-          <a href="<?php echo _u('a28c32c','link'); ?>" class="contact-btn-copy-smarttechbtn extra-small w-inline-block" data-link="a28c32c">
-            <div class="text-block-copy-smarttechtext" data-text="t31997f7f"><?php echo _u('t31997f7f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->alt ?>" class="image arrow-3" data-img="in1ab3f705" srcset="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->srcset ?>">
-          </a>
-        </div>
-        <div class="w-layout-vflex flex-block-18">
-          <div class="div-block-1438"><img src="<?php echo cyma_get_image(_u('i48ef5e65', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i48ef5e65', 'img'))->alt ?>" class="serviceimage" data-img="i48ef5e65" srcset="<?php echo cyma_get_image(_u('i48ef5e65', 'img'))->srcset ?>">
-            <h4 class="purple-text _2" data-text="t424835da"><?php echo _u('t424835da','text'); ?></h4>
-            <div class="body-text-color _260px" data-text="t19a91c4f"><?php echo _u('t19a91c4f','text'); ?></div>
-          </div>
-          <a href="<?php echo _u('a-17bd1999','link'); ?>" class="contact-btn-copy-smarttechbtn extra-small w-inline-block" data-link="a-17bd1999">
-            <div class="text-block-copy-smarttechtext" data-text="t31997f7f"><?php echo _u('t31997f7f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->alt ?>" class="image arrow-3" data-img="in1ab3f705" srcset="<?php echo cyma_get_image(_u('in1ab3f705', 'img'))->srcset ?>">
-          </a>
-        </div>
-      </div>
     </div>
   </section>
   <div class="bgimg _2 padding-top">
@@ -1017,5 +934,28 @@
     </div>
   </section>
   <section class="section-spacer"></section>
-  
+<script>
+var navbar = document.querySelector('.navbar-logo-left-container.shadow-three.header-992');
+var hamburgerMenu = document.querySelector('.hambuger-menu-main');
+var slider = document.querySelector('.technology-list');
+var leftArrow = document.querySelector('.left-arrow-10');
+var rightArrow = document.querySelector('.right-arrow-16');
+
+window.addEventListener('scroll', function() {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+window.addEventListener('load', function() {
+  hamburgerMenu.style.display = window.innerWidth <= 991 ? 'flex' : '';
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+leftArrow.addEventListener('click', function() {
+  slider.scrollBy({ left: -300, behavior: 'smooth' });
+});
+
+rightArrow.addEventListener('click', function() {
+  slider.scrollBy({ left: 300, behavior: 'smooth' });
+});
+</script>
   
