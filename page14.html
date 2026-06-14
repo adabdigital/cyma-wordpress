@@ -1,0 +1,942 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+<meta content="Home" name="twitter:title">
+<meta content="Connecting People, Powering Progress." name="twitter:description">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link rel="stylesheet" href="http://localhost:8081/wp-content/themes/cyma-708003/assets/css/normalize.css">
+<link rel="stylesheet" href="http://localhost:8081/wp-content/themes/cyma-708003/assets/css/wordpress.css">
+<link rel="stylesheet" href="http://localhost:8081/wp-content/themes/cyma-708003/assets/css/style.css">
+<style>
+/* Force Webflow elements to be visible */
+[data-w-id], [style*="opacity:0"] {
+  opacity: 1 !important;
+}
+</style>
+<style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="e193d8cc-52f2-82ae-06c2-db45332c524c"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="1b54b027-4b07-2c56-d182-c9880c294de6"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="52aa6c29-c38f-4797-dc41-ab93e53981d6"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="eb552050-c338-c80a-fa58-408b5095dd2e"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44fb774a-7927-ed81-a8dc-8a433ae6af6c"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="dc9d422e-1741-bd1d-2290-afa45768558f"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="28f2b149-3ce4-4f1b-4ddb-dbbc4dad67f5"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="f40b93c9-90ee-ff54-c8c8-347b7aa9b10b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="65db915b-95e3-22dc-7c83-0744500f34e4"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a7aea696-247f-cad7-a22f-aed0e5644dbb"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="56ce17dd-95fd-754a-a01b-0c48875227a6"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="4ae1c09c-0f96-4bfc-d3f0-e58d253d1f87"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="7f42e9e5-4e6d-2e15-ca57-d82ed0f3a69b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e08a493f-eb40-9695-4c27-1e5f0c1e6054"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e08a493f-eb40-9695-4c27-1e5f0c1e6056"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e08a493f-eb40-9695-4c27-1e5f0c1e6074"] {opacity:0;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="e193d8cc-52f2-82ae-06c2-db45332c524c"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="1b54b027-4b07-2c56-d182-c9880c294de6"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="52aa6c29-c38f-4797-dc41-ab93e53981d6"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="eb552050-c338-c80a-fa58-408b5095dd2e"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44fb774a-7927-ed81-a8dc-8a433ae6af6c"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="dc9d422e-1741-bd1d-2290-afa45768558f"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="28f2b149-3ce4-4f1b-4ddb-dbbc4dad67f5"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="f40b93c9-90ee-ff54-c8c8-347b7aa9b10b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="65db915b-95e3-22dc-7c83-0744500f34e4"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a7aea696-247f-cad7-a22f-aed0e5644dbb"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="56ce17dd-95fd-754a-a01b-0c48875227a6"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="4ae1c09c-0f96-4bfc-d3f0-e58d253d1f87"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="7f42e9e5-4e6d-2e15-ca57-d82ed0f3a69b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e08a493f-eb40-9695-4c27-1e5f0c1e6054"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e08a493f-eb40-9695-4c27-1e5f0c1e6056"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e08a493f-eb40-9695-4c27-1e5f0c1e6074"] {opacity:0;}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="e193d8cc-52f2-82ae-06c2-db45332c524c"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="1b54b027-4b07-2c56-d182-c9880c294de6"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="52aa6c29-c38f-4797-dc41-ab93e53981d6"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="eb552050-c338-c80a-fa58-408b5095dd2e"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44fb774a-7927-ed81-a8dc-8a433ae6af6c"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="dc9d422e-1741-bd1d-2290-afa45768558f"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="28f2b149-3ce4-4f1b-4ddb-dbbc4dad67f5"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="f40b93c9-90ee-ff54-c8c8-347b7aa9b10b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="65db915b-95e3-22dc-7c83-0744500f34e4"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="a7aea696-247f-cad7-a22f-aed0e5644dbb"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="56ce17dd-95fd-754a-a01b-0c48875227a6"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="4ae1c09c-0f96-4bfc-d3f0-e58d253d1f87"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="7f42e9e5-4e6d-2e15-ca57-d82ed0f3a69b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e08a493f-eb40-9695-4c27-1e5f0c1e6054"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e08a493f-eb40-9695-4c27-1e5f0c1e6056"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e08a493f-eb40-9695-4c27-1e5f0c1e6074"] {opacity:0;}}@media (max-width:479px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="e08a493f-eb40-9695-4c27-1e5f0c1e6056"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e08a493f-eb40-9695-4c27-1e5f0c1e6074"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="e08a493f-eb40-9695-4c27-1e5f0c1e6054"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="3eba46d0-6942-6efc-7246-e8fb426e3476"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="9394d7e8-20b0-bc52-d590-fc4f6658369e"] {opacity:0;}}</style>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+<script type="text/javascript">WebFont.load({
+google: {
+families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Inter:300,400,500,600,700"]
+}});</script>
+<script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+<link href="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/favicon.png?v=1780144474" rel="shortcut icon" type="image/x-icon">
+<link href="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/webclip.png?v=1780144474" rel="apple-touch-icon">
+<!--
+Finsweet Attributes
+-->
+<script async="" type="module" src="https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js" fs-list=""></script>    <title>Explore Careers &#8211; cyma</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="http://localhost:8081/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Flocalhost%3A8081%2F%3Fpage_id%3D14" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="http://localhost:8081/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Flocalhost%3A8081%2F%3Fpage_id%3D14&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='normalize-css' href='http://localhost:8081/wp-content/themes/cyma-708003/assets/css/normalize.css?ver=1780144474' media='all' />
+<link rel='stylesheet' id='wordpress-css' href='http://localhost:8081/wp-content/themes/cyma-708003/assets/css/wordpress.css?ver=1780144474' media='all' />
+<link rel='stylesheet' id='cyma-style-css' href='http://localhost:8081/wp-content/themes/cyma-708003/assets/css/style.css?ver=1780144474' media='all' />
+<style id="cyma-style-inline-css">
+[data-w-id]:not(section.cyma-reveal), [style*="opacity:0"]:not(section.cyma-reveal) { opacity: 1 !important; }
+/*# sourceURL=cyma-style-inline-css */
+</style>
+<link rel='stylesheet' id='cyma-animations-css' href='http://localhost:8081/wp-content/themes/cyma-708003/assets/css/animations.css?ver=1780144490' media='all' />
+<script id="jquery-core-js" src="http://localhost:8081/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="http://localhost:8081/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="http://localhost:8081/index.php?rest_route=/" /><link rel="alternate" title="JSON" type="application/json" href="http://localhost:8081/index.php?rest_route=/wp/v2/pages/14" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost:8081/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.0" />
+<link rel="canonical" href="http://localhost:8081/?page_id=14" />
+<link rel='shortlink' href='http://localhost:8081/?p=14' />
+    <link rel="stylesheet" href="http://localhost:8081/wp-content/themes/cyma-708003/assets/css/animations.css?v=1780144490">
+</head>
+<body class="w-mod-js">
+ 
+<main>
+    
+  <div class="navbar-logo-left-2">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-left-container shadow-three header-992 white w-nav">
+      <div class="container-2">
+        <div class="navbar-wrapper nav-white">
+          <a href="http://localhost:8081/" class="navbar-brand w-nav-brand" data-link="a2f"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/home-logo.svg" loading="lazy" alt="" class="blue-logo-copy logo-white" data-img="in318a990b" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/home-logo.svg"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/cyma-logo.svg" loading="lazy" alt="" class="logo-2 dark-logo" data-img="in5e4f0856" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/cyma-logo.svg"></a>
+          <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
+            <ul role="list" class="nav-menu-two w-list-unstyled">
+              <li class="list-item-30 boader">
+                <a href="http://localhost:8081/" class="nav-link-copy nav-color _1" data-text="t2268ff" data-link="a2f">Home</a>
+                <a href="http://localhost:8081/" class="w-inline-block" data-link="a2f"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/mv_icon.svg" loading="lazy" alt="" class="image-219" data-img="in56820f15" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/mv_icon.svg"></a>
+              </li>
+              <li class="list-item-2">
+                <a href="http://localhost:8081/?page_id=6" class="nav-link-copy _1 new-color" data-text="t645efc51" data-link="a6084ccde">About Us</a>
+                <a href="http://localhost:8081/?page_id=6" class="w-inline-block" data-link="a6084ccde"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/mv_icon.svg" loading="lazy" alt="" class="image-219" data-img="in56820f15" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/mv_icon.svg"></a>
+              </li>
+              <li data-w-id="21186d26-fa63-fcbb-48df-617f60cbde7a" class="list-item-31">
+                <a href="http://localhost:8081/?page_id=7" class="nav-link-copy-bu _1 new-color" data-text="tn1578e46" data-link="a-7ed2abb3">Business Solutions</a>
+                <div data-hover="false" data-delay="0" data-w-id="cd9c34e7-9d42-f690-3d7e-9e368cfd1271" class="dropdown-3 w-dropdown">
+                  <div class="dropdown-toggle-3 w-dropdown-toggle">
+                    <div class="icon-21 w-icon-dropdown-toggle"></div>
+                    <div class="text-block-629" data-text="tn1578e46">Business Solutions</div>
+                    <div class="div-block-1410"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/pluse_icon.svg" loading="lazy" alt="" class="image-220" data-img="i4ec93dbd" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/pluse_icon.svg"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/minus.svg" loading="lazy" alt="" class="image-221" data-img="in798e76f4" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/minus.svg"></div>
+                  </div>
+                  <nav class="dropdown-list-2 w-dropdown-list">
+                    <div class="div-block-1406">
+                      <a href="http://localhost:8081/?page_id=59" class="dropdown-link-2 w-dropdown-link" data-text="tn637f7b0e" data-link="a-2a940401">Technology Services</a><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/gray_icon.svg" loading="lazy" alt="" data-img="i6293d3f1" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/gray_icon.svg">
+                    </div>
+                    <div class="div-block-1407"></div>
+                    <div class="w-layout-grid grid-48">
+                      <a data-w-id="22498602-d5ea-4e1e-df55-d1764cccba8a" href="http://localhost:8081/?page_id=59" class="link-58-copy" data-text="tn637f7b0e" data-link="a-2a940401">Technology Services</a>
+                      <a href="http://localhost:8081/?page_id=58" class="link-58" data-text="t7104442" data-link="a-41931eb">Software Development</a>
+                      <a href="http://localhost:8081/?page_id=33" class="link-58" data-text="tn1e937170" data-link="ad6e6123">Data Analytics</a>
+                      <a href="http://localhost:8081/?page_id=28" class="link-58" data-text="tn37796937" data-link="ac28">AI &amp; Machine Learning</a>
+                      <a href="http://localhost:8081/?page_id=56" class="link-58" data-text="tn2ccd461a" data-link="a28c32c">QA &amp; Testing</a>
+                      <a href="http://localhost:8081/?page_id=29" class="link-58" data-text="tn521c0074" data-link="a4ce1e254">Blockchain Security</a>
+                      <a href="http://localhost:8081/?page_id=32" class="link-58" data-text="tn512c2d87" data-link="a-29c2c5cc">Cybersecurity</a>
+                      <a href="http://localhost:8081/?page_id=30" class="link-58" data-text="tn69ded27e" data-link="aa264d15">Cloud &amp; Devops</a>
+                      <a href="http://localhost:8081/?page_id=35" class="link-58" data-text="t424835da" data-link="a-17bd1999">Emerging Technologies</a>
+                      <a href="http://localhost:8081/?page_id=50" class="link-58" data-text="t1b563558" data-link="a2eab4a85">IT Infrastructure</a>
+                    </div>
+                  </nav>
+                </div>
+              </li>
+              <li class="list-item-32">
+                <a href="http://localhost:8081/?page_id=10" class="nav-link-copy _1 new-color2" data-text="tn15a310e4" data-link="a738b12fc">Industries</a>
+                <a href="http://localhost:8081/?page_id=10" class="w-inline-block" data-link="a738b12fc"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/mv_icon.svg" loading="lazy" alt="" class="image-219" data-img="in56820f15" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/mv_icon.svg"></a>
+              </li>
+              <li class="list-item-33">
+                <a href="http://localhost:8081/?page_id=51" aria-current="page" class="nav-link-copy _1 new-color3" data-text="tn72f40db5" data-link="acd8f9de">Job Seekers</a>
+                <a href="http://localhost:8081/?page_id=51" aria-current="page" class="w-inline-block" data-link="acd8f9de"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/mv_icon.svg" loading="lazy" alt="" class="image-219" data-img="in56820f15" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/mv_icon.svg"></a>
+              </li>
+              <li data-w-id="21186d26-fa63-fcbb-48df-617f60cbde9d" class="list-item-34">
+                <a href="http://localhost:8081/?page_id=12" class="nav-link-copy-copy-l _1 new-color4-copy" data-text="t45e7299" data-link="a62162b9">Legal</a>
+                <div data-hover="false" data-delay="0" data-w-id="e9e27592-7f6a-9d29-16ec-07d0257d7eea" class="dropdown-2 w-dropdown">
+                  <div class="dropdown-toggle-3-copy-legal w-dropdown-toggle">
+                    <div class="icon-21 w-icon-dropdown-toggle"></div>
+                    <div class="text-block-629-copy_legal" data-text="t45e7299">Legal</div>
+                    <div class="div-block-1410"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/pluse_icon.svg" loading="lazy" alt="" class="image-220-copy-l" data-img="i4ec93dbd" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/pluse_icon.svg"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/minus.svg" loading="lazy" alt="" class="image-221-copy-l" data-img="in798e76f4" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/minus.svg"></div>
+                  </div>
+                  <nav class="dropdown-list-2 w-dropdown-list">
+                    <div class="div-block-1406">
+                      <a href="#" class="dropdown-link-2 w-dropdown-link" data-text="t45e7299" data-link="a23">Legal</a>
+                    </div>
+                    <div class="div-block-1407-copy-2"></div>
+                    <div class="w-layout-grid grid-49">
+                      <a href="http://localhost:8081/?page_id=54" class="link-59" data-text="tn1a79b566" data-link="a65c8db3a">Notice of Filing</a>
+                      <a href="http://localhost:8081/?page_id=39" class="link-59" data-text="t3815ca56" data-link="a-295f614a">H1B-LCA</a>
+                    </div>
+                  </nav>
+                </div>
+              </li>
+              <li class="list-item-35">
+                <a href="http://localhost:8081/?page_id=11" class="nav-link-copy-copy-res _1 new-color5-copy" data-text="t13ede05" data-link="a-763341db">Resources</a>
+                <div data-hover="false" data-delay="0" data-w-id="f655746a-0310-1555-82f4-dac0e52873e8" class="dropdown-3 w-dropdown">
+                  <div class="dropdown-toggle-3-copy-resources w-dropdown-toggle">
+                    <div class="icon-21 w-icon-dropdown-toggle"></div>
+                    <div class="text-block-629-copy_res" data-textarea="ta13ede05"><strong class="bold-text-100">Resources</strong></div>
+                    <div class="div-block-1410"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/pluse_icon.svg" loading="lazy" alt="" class="image-220-copy-r" data-img="i4ec93dbd" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/pluse_icon.svg"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/minus.svg" loading="lazy" alt="" class="image-221-copy-r" data-img="in798e76f4" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/minus.svg"></div>
+                  </div>
+                  <nav class="dropdown-list-2-copy-res w-dropdown-list">
+                    <div class="div-block-1406">
+                      <a href="#" class="dropdown-link-2 w-dropdown-link" data-text="t13ede05" data-link="a23">Resources</a>
+                    </div>
+                    <div class="div-block-1407-copy-3"></div>
+                    <div class="w-layout-grid grid-50">
+                      <a href="http://localhost:8081/?page_id=8" class="link-61" data-text="tn667f9cc9" data-link="a72ebbe8a">Case Studies</a>
+                      <a href="http://localhost:8081/insights/" class="link-61" data-text="t24589bfb" data-link="a207e37db">Insights</a>
+                      <a href="http://localhost:8081/?page_id=52" class="link-61" data-text="tn4d607489" data-link="a625ef69">Employee Login</a>
+                    </div>
+                  </nav>
+                </div>
+              </li>
+            </ul>
+            <div class="div-block-1408">
+              <a href="http://localhost:8081/?page_id=9" class="contact-btn--mv blue-copy-mv w-inline-block" data-link="a8559f6b">
+                <div class="text-block-440 blue" data-text="t7f2746de">Contact Us</div><img loading="lazy" src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/contact-newcolor.svg" alt="" class="image-copy-mv contact-us-copy-mv" data-img="i30ac0760" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/contact-newcolor.svg">
+              </a>
+            </div>
+            <div class="div-block-1409">
+              <div class="div-block-7-copy-mv _2">
+                <div class="div-block-5-copy-mv">
+                  <div class="_16px-text medium-copy-copy weight" data-text="tn164c917a">Socials</div>
+                  <div class="w-layout-hflex flex-block-4-copy-mv _2-copy">
+                    <a href="https://linkedin.com/company/1792232?trk=tyah" class="w-inline-block" data-link="a2bc946ca"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-314.svg" loading="lazy" alt="" class="image-109" data-img="in2274351c" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-314.svg"></a>
+                    <a href="https://x.com/cymasys" class="w-inline-block" data-link="a-4058cb70"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-555691.svg" loading="lazy" alt="" class="image-110" data-img="i70a9ab37" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-555691.svg"></a>
+                    <a href="#" class="w-inline-block" data-link="a23"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/path-21123.svg" loading="lazy" alt="" class="image-111" data-img="in58060b85" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/path-21123.svg"></a>
+                    <a href="https://www.facebook.com/CymaSys#" class="w-inline-block" data-link="a5320fcb0"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/path-21124.svg" loading="lazy" alt="" class="image-112" data-img="in57f7f404" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/path-21124.svg"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="copuwrite-container-copy">
+                <div class="text-block-5" data-text="t678f930f">Terms and Condition • Privacy Policy</div>
+                <div class="text-block-9" data-text="t357d664e">© 2026 CYMA. All Right Reserved</div>
+              </div>
+            </div>
+          </nav>
+          <div class="menu-button w-nav-button"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-1171278138.svg" loading="lazy" alt="" class="image-81" data-img="i880657b" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-1171278138.svg">
+            <div class="hambuger-menu-main">
+              <div class="hamburger-lines-1"></div>
+              <div class="hamburger-lines-2-copy _2"></div>
+              <div class="hamburger-lines-3"></div>
+            </div>
+            <div class="icon-19 w-icon-nav-menu"></div>
+            <a href="#" class="contact-btn-copy-new w-inline-block" data-link="a23">
+              <div class="text-block" data-text="t5635a22f">Discover Our Solutions</div><img loading="lazy" src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/bannericon.svg" alt="" class="image" data-img="in6837d6cb" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/bannericon.svg">
+            </a>
+          </div>
+          <a href="http://localhost:8081/?page_id=9" class="contact-btn-copy-nav-about blue w-inline-block" data-link="a8559f6b">
+            <div class="text-block-440 blue" data-text="t7f2746de">Contact Us</div><img loading="lazy" src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/contact-newcolor.svg" alt="" class="image contact-us h-38" data-img="i30ac0760" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/contact-newcolor.svg">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section-25-copy">
+    <div class="text-block-476" data-text="t1ee467b6">
+      <a href="/" class="link-39" data-text="t2268ff">undefined</a>
+    </div>
+  </section>
+  <section class="hero_section-jobseekers">
+    <div class="container-copy-js">
+      <div class="div-block-1090--jobseekers">
+        <div id="w-node-_3a83bb9c-e2f5-dbe7-e8c6-917b101b7926-1cbf22c9" data-w-id="3a83bb9c-e2f5-dbe7-e8c6-917b101b7926" class="js">
+          <h1 class="heading-8-copy" data-textarea="ta42b88712"><span class="text-span-33">Your Next Opportunity </span><strong class="bold-text-36">Starts Here</strong></h1>
+          <p class="paragraph-7" data-text="tn35ff8e3c">Discover roles that match your expertise in today’s fastest growing tech domains.</p>
+          <div class="div-block-1091-copy-discoveroursolutions-btn">
+            <a href="http://localhost:8081/?page_id=7" class="aboutus-banner-btn w-inline-block" data-link="a-7ed2abb3">
+              <div class="text-block" data-text="t2ee6d719">Explore Our Solutions</div><img loading="lazy" src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/signupbtn.svg" alt="" class="image" data-img="in4da69620" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/signupbtn.svg">
+            </a>
+            <a href="http://localhost:8081/?page_id=14" class="contact-btn-copy-js-btn w-inline-block" data-link="a2643837b">
+              <div class="text-block" data-text="tn20c94e15">Explore Career</div><img loading="lazy" src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/signupbtn.svg" alt="" class="image" data-img="in4da69620" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/signupbtn.svg">
+            </a>
+          </div>
+        </div>
+        <div data-w-id="3a83bb9c-e2f5-dbe7-e8c6-917b101b7937" class="hero_image_wrapper"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/jobseekersheader1.png" loading="lazy" sizes="(max-width: 640px) 100vw, 640px" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/jobseekersheader1.png" alt="" class="image_overlay-copy-js1-copy" data-img="i3424e74"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/jobseekersheader2.png" loading="lazy" sizes="(max-width: 866px) 100vw, 866px" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/jobseekersheader2.png" alt="" class="image_main-copy-js2" data-img="i35065f5"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/jobseekersheader1.png" loading="lazy" sizes="(max-width: 640px) 100vw, 640px" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/jobseekersheader1.png" alt="" class="image_overlay-copy-js1" data-img="i3424e74"></div>
+      </div>
+    </div>
+  </section>
+  <section class="section-15">
+    <div class="w-layout-blockcontainer container-20 w-container">
+      <div class="w-layout-grid grid-12">
+        <div data-w-id="281267d1-0b91-4c43-cb08-2e34be9967a3" class="div-block-1234">
+          <div class="div-block-1131"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/cyma-logo-icon.svg" loading="lazy" alt="" data-img="if0e32e8" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/cyma-logo-icon.svg">
+            <div class="text-block-468" data-text="tn72f40db5">Job Seekers</div>
+          </div>
+          <h1 class="heading-44" data-textarea="ta42c9090b">Your Trusted Partner in <br><span class="text-span-36"><strong class="bold-text-37">Career Advancement</strong></span></h1>
+          <div class="text-block-469" data-text="t2ab87b47">We use our industry expertise and commitment to integrity to find your perfect fit through a professional, transparent process.</div><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/jobseekers.png" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/jobseekers.png" alt="" class="image-47" data-img="ina81511a">
+        </div>
+        <div data-w-id="6029129e-936a-2322-8a90-ae305f3139e5" class="div-block-1133">
+          <div class="div-block-1132"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/industry.svg" loading="lazy" alt="" data-img="ia5f3f6e" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/industry.svg">
+            <div>
+              <h1 class="heading-45" data-text="t44cb064f">Industry Expertise</h1>
+              <div class="text-block-470" data-text="t526b0570">Nearly two decades of experience placing talent in high-impact tech roles.</div>
+            </div>
+          </div>
+          <div class="div-block-1132"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/accesstopremier.svg" loading="lazy" alt="" data-img="i38f2ab49" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/accesstopremier.svg">
+            <div>
+              <h1 class="heading-45" data-text="tn661eac00">Access to Premier Roles</h1>
+              <div class="text-block-470" data-text="tn7ab90549">Exclusive access to roles at fortune 1000 companies and federal agencies.</div>
+            </div>
+          </div>
+          <div class="div-block-1132"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-959-1.png" loading="lazy" alt="" data-img="in3a145b6c" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-959-1.png">
+            <div>
+              <h1 class="heading-45" data-text="tn5f412853">Focus on Emerging Tech</h1>
+              <div class="text-block-470" data-text="t70966559">Roles across fast-growing domains like AI, Cloud and Cybersecurity.</div>
+            </div>
+          </div>
+          <div class="div-block-1132-copy-1"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/trustedfederal.svg" loading="lazy" alt="" data-img="i2d4aa7d6" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/trustedfederal.svg">
+            <div>
+              <h1 class="heading-45" data-text="t3198bc">Trusted Federal Partner</h1>
+              <div class="text-block-470" data-text="tn535e43c9">A GSA-approved and MBE-certified partner for public and commercial sectors.</div>
+            </div>
+          </div>
+        </div><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/job-seekers.png" loading="lazy" data-w-id="86286ddf-6244-b4fa-fc10-ca343b8c150a" alt="" class="image-82" data-img="ic3ab2bf" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/job-seekers.png">
+      </div>
+    </div>
+  </section>
+  <section class="section-16">
+    <div class="w-layout-blockcontainer container-19 w-container">
+      <div data-w-id="edf13624-5144-b7bf-b3b3-d3716a15fa8f" style="opacity:0" class="div-block-1391">
+        <h1 class="heading-99" data-textarea="tan6fd13f5a"><span class="text-span-72">Opportunities Across</span><span class="text-span-58"><strong> </strong></span><span><strong class="bold-text-118">High-Demand Technologies</strong></span></h1>
+        <div class="text-block-479 max-w text" data-text="t67405684">We place talent across the technology ecosystem, from AI and Cloud to Cybersecurity and Enterprise Applications.</div>
+      </div>
+      <div data-w-id="132f06f3-cc21-be61-9013-1e48552f60ba" style="opacity:0" class="div-block-1170">
+        <div class="text-block-472" data-text="t1c83b0e5">Artificial Intelligence</div>
+        <div class="text-block-472" data-text="tn6c253137">Cloud Computing</div>
+        <div class="text-block-472" data-text="tn512c2d87">Cybersecurity</div>
+        <div class="text-block-472" data-text="tn239451cc">DevOps &amp; Automation</div>
+        <div class="text-block-472-copy-1" data-text="t7742b382">Enterprise Applications</div>
+      </div>
+      <div data-w-id="3a8a4b0b-e6af-8dd2-5855-72d2033d4216" style="opacity:0" class="div-block-1170">
+        <div class="text-block-472" data-text="t7a2f761a">Software Engineering</div>
+        <div class="text-block-472" data-text="t4dce6a65">Blockchain &amp; Web3</div>
+        <div class="text-block-472-copy _472" data-text="t7742b382">Enterprise Applications</div>
+        <div class="text-block-472-1" data-text="tn45b59b9c">Robotic Process Automation</div>
+      </div>
+      <div data-w-id="7cdedbe7-762f-104c-d638-63760d84e102" class="div-block-1235">
+        <div class="text-block-472-copy" data-text="t1c83b0e5">Artificial Intelligence</div>
+        <div class="text-block-472-copy" data-text="tn6c253137">Cloud Computing</div>
+      </div>
+      <div data-w-id="eee4a165-99ec-f854-5fcb-063be5f09995" class="div-block-1236">
+        <div class="text-block-472-copy" data-text="t4dce6a65">Blockchain &amp; Web3</div>
+        <div class="text-block-472-copy" data-text="tn239451cc">DevOps &amp; Automation</div>
+      </div>
+      <div data-w-id="31ec0ba2-17aa-f96f-b783-7759c61e3995" class="div-block-1237">
+        <div class="text-block-472-copy" data-text="t7742b382">Enterprise Applications</div>
+        <div class="text-block-472-copy" data-text="t7a2f761a">Software Engineering</div>
+      </div>
+      <div data-w-id="24cf500a-c965-2078-f60d-da3b28bc120f" class="div-block-1238">
+        <div class="text-block-472-copy" data-text="tn45b59b9c">Robotic Process Automation</div>
+        <div class="text-block-472-copy" data-text="tn512c2d87">Cybersecurity</div>
+      </div>
+      <div data-w-id="a976bd1d-d124-f92b-1c53-569a38c61be4" class="div-block-1239">
+        <div class="text-block-472-copy" data-text="t7742b382">Enterprise Applications</div>
+      </div>
+      <a data-w-id="f766238a-6676-3a22-9de6-c3f707d77f80" href="http://localhost:8081/?page_id=14" class="contact-btn-copy-js-btn-copy-highdemand w-inline-block" data-link="a2643837b">
+        <div class="text-block-481" data-text="tn77b3f950">View All Jobs</div><img loading="lazy" src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-1000007155-1.svg" alt="" class="image-83" data-img="in75c75f65" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-1000007155-1.svg">
+      </a>
+    </div>
+  </section>
+  <div>
+    <section class="section-27">
+      <div class="w-layout-blockcontainer container-21 w-container">
+        <div class="w-layout-grid grid-13">
+          <div data-w-id="77b739d7-31e5-1b43-cad9-b9f913d6236c" style="opacity:0" class="div-block-1174"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/explorecarrerpaths.png" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/explorecarrerpaths.png" alt="" class="image-48" data-img="in3f38f51b"></div>
+          <div id="w-node-b088f3f4-d76c-cf30-e154-a4956b9c7172-1cbf22c9" data-w-id="b088f3f4-d76c-cf30-e154-a4956b9c7172" class="div-block-1173">
+            <h1 class="heading-56" data-textarea="ta4808343f">Explore <span class="text-span-38"><strong class="bold-text-38">Career Paths</strong></span> <br>&amp; <span class="text-span-39"><strong class="bold-text-39">Open Roles</strong></span> at CYMA</h1>
+            <div class="text-block-482" data-text="t15aab5cd">Discover roles that match your skills and ambitions. From flexible staffing to executive search opportunities.</div>
+            <div class="div-block-1172">
+              <div class="div-block-1171"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/tick.svg" loading="lazy" alt="" data-img="in2fb00b53" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/tick.svg">
+                <div data-textarea="tan11fc2025"><strong>Flexible staffing </strong>for every need</div>
+              </div>
+              <div class="div-block-1171"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/tick.svg" loading="lazy" alt="" data-img="in2fb00b53" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/tick.svg">
+                <div data-textarea="tan7ea4272a"><strong>Contract hires</strong> to executive search</div>
+              </div>
+              <div class="div-block-1171"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/tick.svg" loading="lazy" alt="" data-img="in2fb00b53" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/tick.svg">
+                <div data-textarea="tan781fd32d"><strong>Professionals</strong> who drive growth</div>
+              </div>
+            </div>
+            <a href="http://localhost:8081/?page_id=14" class="contact-btn-exploreinjobseeksers w-inline-block" data-link="a2643837b">
+              <div class="text-block-483" data-text="t15309273">Explore</div><img loading="lazy" src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/signupbtn.svg" alt="" class="image arrow-2" data-img="in4da69620" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/signupbtn.svg">
+            </a>
+          </div>
+          <div data-w-id="6105f306-1fc3-6edb-9181-059e746862a4" class="div-block-1174-copy"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/jb.png" loading="lazy" sizes="100vw" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/jb.png" alt="" data-img="ic3e1d0d"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-28">
+      <div data-w-id="5393aaa0-2765-504c-13e5-c929ebd2e25e" class="div-block-1175">
+        <h1 class="heading-57" data-textarea="tan32b29b65">Trusted by Talent, <br><span><strong class="bold-text-97">Proven by Results</strong></span></h1>
+        <div class="text-block-484" data-text="tn6006dc3f">CYMA connects skilled professionals with roles that create real career momentum backed by scale, expertise, and long-term impact.</div>
+        <div class="div-block-1177">
+          <div class="div-block-1176">
+            <div class="text-block-485" data-text="t1774b9">200+</div>
+            <div class="text-block-486" data-textarea="tan47576ef9">Successful Placements<br>Every Month</div>
+          </div>
+          <div class="div-block-1176">
+            <div class="text-block-485" data-text="tc1ad">20+</div>
+            <div class="text-block-486" data-textarea="tan3fd5eea">20+ Years Of Proven Expertise <br>In Tech &amp; Staffing Solutions</div>
+          </div>
+        </div>
+      </div>
+      <div data-delay="4000" data-animation="slide" class="slider-27 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-w-id="d5d76e2e-d6c0-e386-eae6-e31689d342b1" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+        <div class="w-slider-mask">
+          <div class="slide-14 w-slide">
+            <div class="div-block-1179">
+              <div class="text-block-487" data-text="t51fe20cb">Featured Job</div>
+              <h1 class="heading-59" data-text="t429c5741">Cloud Infrastructure Engineer</h1>
+              <div class="div-block-1181">
+                <div class="div-block-1180"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/location.svg" loading="lazy" alt="" data-img="i48f9d9c5" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/location.svg">
+                  <div class="text-block-489" data-text="tn62a8001a">Seattle, WA</div>
+                </div>
+                <div class="text-block-492"></div>
+                <div class="text-block-491" data-text="tne756a0">Posted 10 Days Ago</div>
+              </div>
+              <div class="text-block-493" data-text="t31d10d85">Join our team as a Cloud Infrastructure Engineer, where you'll design, implement, and optimize robust cloud solutions tailored for enterprise applications. Collaborate with cross-functional teams to ensure seamless integration and performance.</div>
+              <div class="div-block-1182">
+                <div class="text-block-494" data-text="t7dd286da">Full-Time · Hybrid</div>
+                <div class="text-block-494" data-text="tfedd">AWS</div>
+                <div class="text-block-494" data-text="tn71f114c">Terraform</div>
+                <div class="text-block-494-copy-mv" data-text="t79cfaa7d">DevOps</div>
+              </div>
+              <div class="div-block-1332">
+                <div class="text-block-494-copy-1" data-text="t79cfaa7d">DevOps</div>
+              </div>
+              <div class="div-block-1184">
+                <div class="div-block-1183"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob1.png" loading="lazy" alt="" class="image-49" data-img="in6c668469" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob1.png"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob2.png" loading="lazy" alt="" class="image-50" data-img="in6c586ce8" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob2.png"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob3.png" loading="lazy" alt="" class="image-51" data-img="in6c4a5567" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob3.png"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob4.png" loading="lazy" alt="" class="image-52" data-img="in6c3c3de6" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob4.png">
+                  <div class="text-block-495" data-text="t1774b9">200+</div>
+                </div>
+                <div class="text-block-496" data-text="t6b28086b">200+ people already applied</div>
+              </div>
+              <a href="http://localhost:8081/?page_id=9&#038;role=Cloud%20Infrastructure%20Engineer" class="featuredjobcontent-btn w-inline-block">
+                <div class="text-block-497" data-text="tn45e051c">Apply Now</div><img loading="lazy" src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-1000007155-1.svg" alt="" class="image-150" data-img="in75c75f65" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-1000007155-1.svg">
+              </a>
+            </div>
+          </div>
+          <div class="slide-15 w-slide">
+            <div class="div-block-1179">
+              <div class="text-block-487" data-text="t51fe20cb">Featured Job</div>
+              <h1 class="heading-59" data-textarea="tan524844c9">Senior<br>AI Engineer</h1>
+              <div class="div-block-1181">
+                <div class="div-block-1180"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/location.svg" loading="lazy" alt="" data-img="i48f9d9c5" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/location.svg">
+                  <div class="text-block-489" data-text="tn62a8001a">Seattle, WA</div>
+                </div>
+                <div class="text-block-492"></div>
+                <div class="text-block-491" data-text="t27e2034f">Posted 2 Days Ago</div>
+              </div>
+              <div class="text-block-493" data-text="tn1851e616">Beeking an experienced AI Engineer to develop and deploy advanced machine learning models, including Generative AI and NLP solutions, for a leading client in the financial services industry.</div>
+              <div class="div-block-1182">
+                <div class="text-block-494" data-text="t7dd286da">Full-Time · Hybrid</div>
+                <div class="text-block-494" data-text="tn709ce304">Python</div>
+                <div class="text-block-494" data-text="tn71f114c">Terraform</div>
+                <div class="text-block-494-copy-s" data-text="tn605c22c0">Generative AI</div>
+              </div>
+              <div class="div-block-1333">
+                <div class="text-block-494-copy-new" data-text="tn605c22c0">Generative AI</div>
+              </div>
+              <div class="div-block-1184">
+                <div class="div-block-1183"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob1.png" loading="lazy" alt="" class="image-49" data-img="in6c668469" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob1.png"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob2.png" loading="lazy" alt="" class="image-50" data-img="in6c586ce8" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob2.png"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob3.png" loading="lazy" alt="" class="image-51" data-img="in6c4a5567" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob3.png"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob4.png" loading="lazy" alt="" class="image-52" data-img="in6c3c3de6" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/featuredjob4.png">
+                  <div class="text-block-495" data-text="t1774b9">200+</div>
+                </div>
+                <div class="text-block-496" data-text="t6b28086b">200+ people already applied</div>
+              </div>
+              <a href="http://localhost:8081/?page_id=9&#038;role=Senior%20AI%20Engineer" class="featuredjobcontent-btn w-inline-block">
+                <div class="text-block-497" data-text="tn45e051c">Apply Now</div><img loading="lazy" src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-1000007155-1.svg" alt="" class="image-151" data-img="in75c75f65" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-1000007155-1.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-29">
+      <div class="w-layout-blockcontainer container-23 w-container">
+        <div data-w-id="46a76484-acdc-690b-fed4-8f7893708593" style="opacity:0" class="div-block-1334">
+          <h1 class="heading-60 w" data-textarea="tan29c4792c">Our Commitment to a <span class="text-span-40"><strong class="bold-text-40">Transparent Process</strong></span></h1>
+          <div class="text-block-503 text" data-text="t4a0ed9fe">Our clear, four-step journey gives you full visibility and support,keeping you informed and empowered as we find your ideal role.</div>
+        </div>
+        <div data-w-id="d9b256ff-0e12-767c-9720-9b6050ec5b8c" style="opacity:0" class="div-block-1186">
+          <div class="div-block-1187">
+            <div class="text-block-499" data-text="tn6bcb8c03">Step 1</div><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/discover.svg" loading="lazy" alt="" data-img="in6d5c8807" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/discover.svg">
+            <h1 class="heading-61" data-text="tn454c9087">Discover &amp; Connect</h1>
+            <div class="text-block-498" data-textarea="ta614f6264">We start by understanding your skills, <br>goals and ideal career path forward.</div>
+          </div>
+          <div class="div-block-1220-copy-js"></div>
+          <div class="div-block-1187">
+            <div class="text-block-500" data-text="tn6bcb8c02">Step 2</div><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/preparematch.svg" loading="lazy" alt="" data-img="in3c4ce652" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/preparematch.svg">
+            <h1 class="heading-61" data-text="tn1b8ccd0e">Prepare &amp; Match</h1>
+            <div class="text-block-498" data-textarea="tan6fa4487b">We align your profile with curated <br>opportunities from leading organisations.</div>
+          </div>
+          <div class="div-block-1220-copy-js"></div>
+          <div class="div-block-1187">
+            <div class="text-block-501" data-text="tn6bcb8c01">Step 3</div><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/interviewplacement.svg" loading="lazy" alt="" data-img="i50888494" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/interviewplacement.svg">
+            <h1 class="heading-61" data-text="t14d8730c">Interview &amp; Placement</h1>
+            <div class="text-block-498" data-textarea="ta79d043af">We guide you through interviews, offers <br>and onboarding. Every step of the way.</div>
+          </div>
+        </div>
+        <div data-w-id="727e2a4d-697c-ace6-59a9-08dd217f642d" style="opacity:0" class="div-block-1335-mv">
+          <div class="w-layout-grid grid-44">
+            <div class="div-block-1336"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/discover.svg" loading="lazy" alt="" data-img="in6d5c8807" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/discover.svg"></div>
+            <div class="div-block-1337">
+              <div class="text-block-499-copy" data-text="tn6bcb8c03">Step 1</div>
+              <h1 class="heading-61-copy" data-text="tn454c9087">Discover &amp; Connect</h1>
+              <div class="text-block-498-copy" data-text="t614f6264">We start by understanding your skills, goals and ideal career path forward.</div>
+            </div>
+          </div>
+          <div class="w-layout-grid grid-44-copy _1">
+            <div class="div-block-1336"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/preparematch.svg" loading="lazy" alt="" data-img="in3c4ce652" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/preparematch.svg"></div>
+            <div class="div-block-1337">
+              <div class="text-block-499-copy" data-text="tn6bcb8c02">Step 2</div>
+              <h1 class="heading-61-copy" data-text="tn1b8ccd0e">Prepare &amp; Match</h1>
+              <div class="text-block-498-copy" data-text="tn6fa4487b">We align your profile with curated opportunities from leading organisations.</div>
+            </div>
+          </div>
+          <div class="w-layout-grid grid-44-copy _1">
+            <div class="div-block-1336"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/interviewplacement.svg" loading="lazy" alt="" data-img="i50888494" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/interviewplacement.svg"></div>
+            <div class="div-block-1337">
+              <div class="text-block-499-copy" data-text="tn6bcb8c01">Step 3</div>
+              <h1 class="heading-61-copy" data-text="t14d8730c">Interview &amp; Placement</h1>
+              <div class="text-block-498-copy" data-text="t79d043af">We guide you through interviews, offers and onboarding. Every step of the way.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="section-18">
+    <div class="w-layout-blockcontainer container-8 w-container">
+      <div data-w-id="c986ab1e-24a7-7158-226b-2ba8d1f77245" style="opacity:0" class="div-block-1102">
+        <h1 class="heading-16" data-textarea="ta39028a2e">The Latest on <span class="text-span-24"><strong class="bold-text-24">Tech</strong></span><span class="text-span-104">,</span> <span class="text-span-25"><strong class="bold-text-23">Trends</strong></span><span class="text-span-105">,</span> and <span class="text-span-26"><strong class="bold-text-25">Talent</strong></span><span class="text-span-106">.</span></h1>
+        <div class="text-block-448" data-text="t77ed1d1f">Expert insights on emerging technologies, workforce trends and hiring strategies.</div>
+      </div>
+      <div data-w-id="c986ab1e-24a7-7158-226b-2ba8d1f77256" style="opacity:0" class="div-block-1106-copy-js">
+        <div class="div-block-1103">
+          <div class="div-block-1104">
+            <div class="text-block-449" data-text="t24fef3">News</div>
+            <div class="text-block-450" data-text="tn40492b0b">Sep 10, 2024</div>
+          </div>
+          <h3 class="heading-17" data-text="t61b0b199">Goldman Sachs, Bank of America, and Morgan Stanley Compete for Top AI...</h3>
+          <div class="text-block-453" data-text="t2107bcb7">Top financial institutions ramp up AI hiring to stay ahead, creating fierce competition for tech...</div>
+          <div class="div-block-1105">
+            <div class="text-block-454" data-text="t318af39f">Read More</div><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/newtiltarrow.svg" loading="lazy" alt="" class="image-16" data-img="in45324ca4" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/newtiltarrow.svg">
+          </div>
+        </div>
+        <div class="div-block-1103">
+          <div class="div-block-1104">
+            <div class="text-block-449" data-text="t24fef3">News</div>
+            <div class="text-block-450" data-text="tn40492b0b">Sep 10, 2024</div>
+          </div>
+          <h3 class="heading-17" data-text="t62d91bd">Pratt Industries Announces $5B U.S. Investment to Create 5,000...</h3>
+          <div class="text-block-453" data-text="tn5851761a">Major boost in U.S. manufacturing and logistics employment, signaling growing demand for skilled...</div>
+          <div class="div-block-1105">
+            <div class="text-block-454" data-text="t318af39f">Read More</div><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/newtiltarrow.svg" loading="lazy" alt="" class="image-16" data-img="in45324ca4" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/newtiltarrow.svg">
+          </div>
+        </div>
+        <div class="div-block-1103">
+          <div class="div-block-1104">
+            <div class="text-block-449" data-text="t24fef3">News</div>
+            <div class="text-block-450" data-text="tn40492b0b">Sep 10, 2024</div>
+          </div>
+          <h3 class="heading-17" data-text="t649ce952">Building a Strong Workforce Pipeline for 2025</h3>
+          <div class="text-block-453" data-text="tn5273194d">Proactive hiring strategies can help you meet demand before the rush, here’s how to get ahead...</div>
+          <div class="div-block-1105">
+            <div class="text-block-454" data-text="t318af39f">Read More</div><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/newtiltarrow.svg" loading="lazy" alt="" class="image-16" data-img="in45324ca4" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/newtiltarrow.svg">
+          </div>
+        </div>
+      </div>
+      <div data-delay="4000" data-animation="slide" class="slider-30 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+        <div class="mask-12 w-slider-mask">
+          <div class="slide-17 w-slide">
+            <div class="div-block-1103">
+              <div class="div-block-1104">
+                <div class="text-block-449" data-text="t24fef3">News</div>
+                <div class="text-block-450" data-text="tn40492b0b">Sep 10, 2024</div>
+              </div>
+              <h3 class="heading-17" data-text="t61b0b199">Goldman Sachs, Bank of America, and Morgan Stanley Compete for Top AI...</h3>
+              <div class="text-block-453" data-text="t2107bcb7">Top financial institutions ramp up AI hiring to stay ahead, creating fierce competition for tech...</div>
+              <div class="div-block-1105 left-readmore">
+                <div class="text-block-454" data-text="t318af39f">Read More</div><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/newtiltarrow.svg" loading="lazy" alt="" class="image-16" data-img="in45324ca4" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/newtiltarrow.svg">
+              </div>
+            </div>
+          </div>
+          <div class="slide-18 w-slide">
+            <div class="div-block-1103">
+              <div class="div-block-1104">
+                <div class="text-block-449" data-text="t24fef3">News</div>
+                <div class="text-block-450" data-text="tn40492b0b">Sep 10, 2024</div>
+              </div>
+              <h3 class="heading-17" data-text="t62d91bd">Pratt Industries Announces $5B U.S. Investment to Create 5,000...</h3>
+              <div class="text-block-453" data-text="tn5851761a">Major boost in U.S. manufacturing and logistics employment, signaling growing demand for skilled...</div>
+              <div class="div-block-1105 left-readmore">
+                <div class="text-block-454" data-text="t318af39f">Read More</div><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/newtiltarrow.svg" loading="lazy" alt="" class="image-16" data-img="in45324ca4" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/newtiltarrow.svg">
+              </div>
+            </div>
+          </div>
+          <div class="slide-19 w-slide">
+            <div class="div-block-1103">
+              <div class="div-block-1104">
+                <div class="text-block-449" data-text="t24fef3">News</div>
+                <div class="text-block-450" data-text="tn40492b0b">Sep 10, 2024</div>
+              </div>
+              <h3 class="heading-17" data-text="t649ce952">Building a Strong Workforce Pipeline for 2025</h3>
+              <div class="text-block-453" data-text="tn5273194d">Proactive hiring strategies can help you meet demand before the rush, here’s how to get ahead...</div>
+              <div class="div-block-1105 left-readmore">
+                <div class="text-block-454" data-text="t318af39f">Read More</div><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/newtiltarrow.svg" loading="lazy" alt="" class="image-16" data-img="in45324ca4" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/newtiltarrow.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="left-arrow-11 w-slider-arrow-left">
+          <div class="w-icon-slider-left"></div>
+        </div>
+        <div class="right-arrow-17 w-slider-arrow-right">
+          <div class="w-icon-slider-right"></div>
+        </div>
+        <div class="slide-nav-25 w-slider-nav w-round w-num"></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec30">
+    <div data-w-id="41fc3d90-d10b-717f-f5fe-8cab5330e527" style="opacity:0" class="w-layout-blockcontainer container-11 max-width w-container">
+      <div class="div-block-1113">
+        <div class="div-block-1114">
+          <h2 class="heading-62" data-text="tff8a7dc">Your Journey Starts Here.</h2>
+          <p class="paragraph-34-copy-jb" data-text="tn25eb9092">Find opportunities that match your skills, ambition and long-term goals.</p>
+        </div>
+        <a href="http://localhost:8081/?page_id=14" class="contact-btn-copy-findmoreopp w-inline-block" data-link="a2643837b">
+          <div class="text-block-502" data-text="tn70356233">Find Your Opportunity</div><img loading="lazy" src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/signupbtn.svg" alt="" class="image" data-img="in4da69620" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/signupbtn.svg">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="footer-container white-bg footer">
+      <div class="div-block-4">
+        <a href="#" class="link-block-2 w-inline-block" data-link="a23"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/fotter-logo.svg" loading="lazy" alt="" class="image-5" data-img="in39951742" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/fotter-logo.svg"></a>
+        <h4 class="black-text text-color" data-textarea="ta1a480ad3"><span class="bold">Connecting</span> People,<br><span class="bold">Powering</span> Progress.</h4>
+        <div class="div-block-5 pt-30">
+          <div class="div-block-5">
+            <p class="_14px-text grey-text _12px" data-textarea="tan2045e04f">CYMA SYSTEMS, INC. 360 Tolland Turnpike, <br>Suite 2D Manchester, CT 06042, USA</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-layout-grid grid">
+        <div class="div-block-6">
+          <div class="_20px-text bold purple-text" data-text="tn64202ba3">Company</div>
+          <div class="w-layout-vflex flex-block-5">
+            <a href="http://localhost:8081/?page_id=10" class="link-block-3 w-inline-block" data-link="a738b12fc">
+              <div class="text-block-16" data-text="t360e27c1">Industries We Serve</div>
+            </a>
+            <a href="http://localhost:8081/?page_id=8" class="link-block-3 w-inline-block" data-link="a72ebbe8a">
+              <div class="text-block-17" data-text="tn667f9cc9">Case Studies</div>
+            </a>
+            <a href="http://localhost:8081/?page_id=6" class="link-block-3 w-inline-block" data-link="a6084ccde">
+              <div class="text-block-18" data-text="t645efc51">About Us</div>
+            </a>
+            <a href="http://localhost:8081/insights/" class="link-block-3 w-inline-block" data-link="a207e37db">
+              <div class="text-block-19" data-text="t24589bfb">Insights</div>
+            </a>
+            <a href="http://localhost:8081/?page_id=9" class="link-block-3 w-inline-block" data-link="a8559f6b">
+              <div class="text-block-20" data-text="t7f2746de">Contact Us</div>
+            </a>
+            <a href="http://localhost:8081/?page_id=52" class="link-block-3 w-inline-block" data-link="a625ef69">
+              <div class="text-block-20" data-text="tn4b9d8469">Employee login</div>
+            </a>
+          </div>
+        </div>
+        <div id="w-node-_747e6d39-c774-a763-9c54-31d5777c1fd7-777c1fa1" class="div-block-6">
+          <div class="_20px-text bold purple-text" data-text="t560f747e">Services</div>
+          <div class="w-layout-vflex flex-block-5 _2">
+            <div class="div-block-7">
+              <div class="text-block-4" data-text="tn4581e289">For Business</div>
+              <a href="http://localhost:8081/?page_id=7" class="link-block-3 w-inline-block" data-link="a-7ed2abb3">
+                <div class="text-block-21" data-text="tn3c015c4c">Workforce Solutions</div>
+              </a>
+              <a href="http://localhost:8081/?page_id=59" class="link-block-3 w-inline-block" data-link="a-2a940401">
+                <div class="text-block-22" data-text="tn637f7b0e">Technology Services</div>
+              </a>
+            </div>
+            <div class="div-block-7-copy-1">
+              <div class="text-block-4" data-text="t3ac2fd54">For Job Seekers</div>
+              <a href="http://localhost:8081/?page_id=14" class="link-block-3 w-inline-block" data-link="a2643837b">
+                <div class="text-block-23" data-text="t744016d9">Explore Careers &amp; Open Roles</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-6">
+          <div class="_20px-text bold purple-text" data-text="tn410b039b">Legal &amp; Access</div>
+          <div class="w-layout-vflex flex-block-5">
+            <div class="div-block-7">
+              <a href="http://localhost:8081/?page_id=54" class="link-block-3 w-inline-block" data-link="a65c8db3a">
+                <div class="text-block-24" data-text="t12ea5">NOF</div>
+              </a>
+              <a href="http://localhost:8081/?page_id=39" class="link-block-3 w-inline-block" data-link="a-295f614a">
+                <div class="text-block-25" data-text="t335ab9b6">H1B – LCA</div>
+              </a>
+              <a href="#" class="link-block-3-copy-legal w-inline-block" data-link="a23">
+                <div class="text-block-26" data-text="t2dcd8e9c">Legal &amp; Compliance</div>
+              </a>
+            </div>
+            <div class="div-block-7 _2">
+              <div class="div-block-5">
+                <div class="_16px-text medium" data-text="tn164c917a">Socials</div>
+                <div class="w-layout-hflex flex-block-4 _2">
+                  <a href="https://linkedin.com/company/1792232?trk=tyah" class="w-inline-block" data-link="a2bc946ca"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-314.svg" loading="lazy" alt="" class="image-109" data-img="in2274351c" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-314.svg"></a>
+                  <a href="https://x.com/cymasys" class="w-inline-block" data-link="a-4058cb70"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-555691.svg" loading="lazy" alt="" class="image-110" data-img="i70a9ab37" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/group-555691.svg"></a>
+                  <a href="#" class="w-inline-block" data-link="a23"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/path-21123.svg" loading="lazy" alt="" class="image-111" data-img="in58060b85" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/path-21123.svg"></a>
+                  <a href="https://www.facebook.com/CymaSys#" class="w-inline-block" data-link="a5320fcb0"><img src="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/path-21124.svg" loading="lazy" alt="" class="image-112" data-img="in57f7f404" srcset="http://localhost:8081/wp-content/themes/cyma-708003/assets/images/path-21124.svg"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-7-copy">
+          <div class="text-block-4" data-text="t3ac2fd54">For Job Seekers</div>
+          <a href="http://localhost:8081/?page_id=14" class="link-block-3 w-inline-block" data-link="a2643837b">
+            <div class="text-block-23" data-text="t744016d9">Explore Careers &amp; Open Roles</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="copuwrite-container">
+      <div class="text-block-9" data-text="t357ee62f">© 2026 CYMA. All Rights Reserved</div>
+      <div class="text-block-5" data-text="t1b29378e">Terms and Conditions • Privacy Policy</div>
+    </div>
+  </section>
+  <section class="section-49"></section>
+  
+  
+<section class="section-71">
+  <div class="w-layout-blockcontainer container-62 w-container">
+    <h2 class="heading-149" style="margin-bottom: 32px;">Open Roles</h2>
+    <div class="w-layout-grid grid-44 open-roles-grid">
+                      <div class="div-block-1389" style="padding: 24px; border: 1px solid #e8eef5; border-radius: 16px;">
+          <h3 class="heading-61" style="margin-bottom: 8px;">Data Engineer</h3>
+                      <p style="margin-bottom: 16px;">Design use cases and perform technical design and implementation. Work on batch and streaming applications for data processing using Apache Spark.</p>
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="http://localhost:8081/?explore-careers=data-engineer" class="contact-btn-exploreinjobseeksers w-inline-block">
+              <div class="text-block-483">View Role</div>
+            </a>
+            <a href="http://localhost:8081/?page_id=9&#038;role=Data%20Engineer" class="featuredjobcontent-btn w-inline-block">
+              <div class="text-block-497">Apply Now</div>
+            </a>
+          </div>
+        </div>
+                      <div class="div-block-1389" style="padding: 24px; border: 1px solid #e8eef5; border-radius: 16px;">
+          <h3 class="heading-61" style="margin-bottom: 8px;">Oracle EBS Developer</h3>
+                      <p style="margin-bottom: 16px;">Implement, configure, and maintain Oracle EBS modules and ERP, focusing on Financials, Supply Chain Management (SCM) &amp; Oracle Integration Cloud (OIC) including technical tasks, custom modules, and rep...</p>
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="http://localhost:8081/?explore-careers=oracle-ebs-developer" class="contact-btn-exploreinjobseeksers w-inline-block">
+              <div class="text-block-483">View Role</div>
+            </a>
+            <a href="http://localhost:8081/?page_id=9&#038;role=Oracle%20EBS%20Developer" class="featuredjobcontent-btn w-inline-block">
+              <div class="text-block-497">Apply Now</div>
+            </a>
+          </div>
+        </div>
+                      <div class="div-block-1389" style="padding: 24px; border: 1px solid #e8eef5; border-radius: 16px;">
+          <h3 class="heading-61" style="margin-bottom: 8px;">Salesforce Developer</h3>
+                      <p style="margin-bottom: 16px;">Work in various phases of software development including SFDC administration, SFDC development, design, testing, production support, and implementation of Salesforce CRM Applications.</p>
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="http://localhost:8081/?explore-careers=salesforce-developer" class="contact-btn-exploreinjobseeksers w-inline-block">
+              <div class="text-block-483">View Role</div>
+            </a>
+            <a href="http://localhost:8081/?page_id=9&#038;role=Salesforce%20Developer" class="featuredjobcontent-btn w-inline-block">
+              <div class="text-block-497">Apply Now</div>
+            </a>
+          </div>
+        </div>
+                      <div class="div-block-1389" style="padding: 24px; border: 1px solid #e8eef5; border-radius: 16px;">
+          <h3 class="heading-61" style="margin-bottom: 8px;">SAP BASIS HANA Administrator</h3>
+                      <p style="margin-bottom: 16px;">Perform the migrations, installations, administration, monitoring and operation support of the SAP S/4 HANA environment ECC, PI, Portal, SAP HANA DB, BTP and SAP BW HANA.</p>
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="http://localhost:8081/?explore-careers=sap-basis-hana-administrator" class="contact-btn-exploreinjobseeksers w-inline-block">
+              <div class="text-block-483">View Role</div>
+            </a>
+            <a href="http://localhost:8081/?page_id=9&#038;role=SAP%20BASIS%20HANA%20Administrator" class="featuredjobcontent-btn w-inline-block">
+              <div class="text-block-497">Apply Now</div>
+            </a>
+          </div>
+        </div>
+                      <div class="div-block-1389" style="padding: 24px; border: 1px solid #e8eef5; border-radius: 16px;">
+          <h3 class="heading-61" style="margin-bottom: 8px;">Software Developer</h3>
+                      <p style="margin-bottom: 16px;">Design, and implement Java/J2EE applications using AGILE methodology, participate in Scrum, Retrospective, and Release Planning Meetings. Develop and manage CI/CD pipeline utilizing the Azure DevOps p...</p>
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="http://localhost:8081/?explore-careers=software-developer" class="contact-btn-exploreinjobseeksers w-inline-block">
+              <div class="text-block-483">View Role</div>
+            </a>
+            <a href="http://localhost:8081/?page_id=9&#038;role=Software%20Developer" class="featuredjobcontent-btn w-inline-block">
+              <div class="text-block-497">Apply Now</div>
+            </a>
+          </div>
+        </div>
+                </div>
+    <div class="open-roles-controls">
+      <button class="open-roles-prev" aria-label="Previous">‹</button>
+      <div class="open-roles-dots" aria-hidden="false"></div>
+      <button class="open-roles-next" aria-label="Next">›</button>
+    </div>
+    <script>(function(){
+      if (!window.matchMedia('(max-width: 767px)').matches) return;
+      var grid = document.querySelector('.section-71 .open-roles-grid');
+      var prev = document.querySelector('.section-71 .open-roles-prev');
+      var next = document.querySelector('.section-71 .open-roles-next');
+      var dots = document.querySelector('.section-71 .open-roles-dots');
+      if (!grid || !prev || !next || !dots) return;
+      var slides = Array.prototype.slice.call(grid.children);
+      var count = slides.length;
+      function createDots(){
+        for (var i=0;i<count;i++){
+          var btn=document.createElement('button');
+          btn.className='open-roles-dot';
+          btn.setAttribute('data-index',i);
+          btn.addEventListener('click',function(e){
+            var idx= +e.currentTarget.getAttribute('data-index');
+            grid.scrollTo({left: idx*grid.clientWidth, behavior:'smooth'});
+          });
+          dots.appendChild(btn);
+        }
+      }
+      createDots();
+      var dotButtons = dots.querySelectorAll('.open-roles-dot');
+      function updateActive(){
+        var idx = Math.round(grid.scrollLeft / grid.clientWidth) || 0;
+        dotButtons.forEach(function(b,i){ b.classList.toggle('active', i===idx); });
+      }
+      prev.addEventListener('click', function(){ grid.scrollBy({left: -grid.clientWidth, behavior:'smooth'}); });
+      next.addEventListener('click', function(){ grid.scrollBy({left: grid.clientWidth, behavior:'smooth'}); });
+      grid.addEventListener('scroll', function(){ window.requestAnimationFrame(updateActive); });
+      updateActive();
+    })();</script>
+  </div>
+</section>
+</main>
+
+<script id="cyma-section-animations-js" src="http://localhost:8081/wp-content/themes/cyma-708003/assets/js/section-animations.js?ver=1780144490"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"http://localhost:8081/wp-includes/js/wp-emoji-release.min.js?ver=7.0"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=http://localhost:8081/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script type="text/javascript">var $ = window.jQuery;</script>
+<script src="http://localhost:8081/wp-content/themes/cyma-708003/assets/js/webflow.js?v=1780144474" type="text/javascript"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const menuButton = document.querySelector(".w-nav-button");
+  if (menuButton) {
+    menuButton.addEventListener("click", function() {
+      document.body.classList.toggle("no-scroll");
+    });
+  }
+});
+</script>
+<style>
+.no-scroll {
+  overflow: hidden;
+}
+
+.menu-button.w-nav-button > .contact-btn {
+  pointer-events: none;
+}
+
+.hambuger-menu-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  cursor: pointer;
+}
+
+.hamburger-lines-1,
+.hamburger-lines-2,
+.hamburger-lines-2-copy,
+.hamburger-lines-3 {
+  height: 2.3px;
+  background-color: #ffffff !important;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transform-origin: center !important;
+}
+
+.menu-button.is-scrolled .hamburger-lines-1,
+.menu-button.is-scrolled .hamburger-lines-2,
+.menu-button.is-scrolled .hamburger-lines-2-copy,
+.menu-button.is-scrolled .hamburger-lines-3 {
+  background-color: #0562A7 !important;
+}
+
+.menu-button.is-active .hamburger-lines-1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg) !important;
+}
+
+.menu-button.is-active .hamburger-lines-2-copy,
+.menu-button.is-active .hamburger-lines-2 {
+  opacity: 0 !important;
+  transform: translateX(-10px) !important;
+}
+
+.menu-button.is-active .hamburger-lines-3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg) !important;
+}
+
+.menu-button.is-active.is-scrolled .hamburger-lines-1,
+.menu-button.is-active.is-scrolled .hamburger-lines-3 {
+  background-color: #0562A7 !important;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuWrapper = document.querySelector('.menu-button');
+  if (!menuWrapper) {
+    return;
+  }
+
+  menuWrapper.addEventListener('click', function() {
+    this.classList.toggle('is-active');
+  });
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      menuWrapper.classList.add('is-scrolled');
+    } else {
+      menuWrapper.classList.remove('is-scrolled');
+    }
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof jQuery === 'undefined') {
+    return;
+  }
+
+  var overlay = document.querySelector('.w-nav-overlay');
+  if (!overlay) {
+    return;
+  }
+
+  var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+  var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutationRecord) {
+      if (mutationRecord.attributeName === 'style' && window.getComputedStyle(overlay).getPropertyValue('display') !== 'none') {
+        if (iOS) {
+          var x = jQuery(window).scrollTop().toFixed();
+          jQuery('body').css({
+            overflow: 'hidden',
+            position: 'fixed',
+            top: '-' + x + 'px',
+            width: '100vw'
+          });
+        } else {
+          jQuery('body').css('overflow', 'hidden');
+        }
+      } else {
+        if (iOS) {
+          var t = jQuery('body').css('top').replace('-', '').replace('px', '');
+          jQuery('body').css({ overflow: 'auto', position: '', width: '100vw' });
+          jQuery('body').animate({ scrollTop: t }, 0);
+        } else {
+          jQuery('body').css('overflow', '');
+        }
+      }
+    });
+  });
+
+  observer.observe(overlay, { attributes: true, attributeFilter: ['style'] });
+});
+</script>
+</body>
+</html>
+

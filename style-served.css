@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --inter: Inter, sans-serif;
   --cloud-mist: #f9fbff;
   --heading-text-color: #191a1d;
@@ -34340,12 +34340,6 @@ a {
     width: 100%;
   }
 
-  /* TEMP VISUAL AID: make mobile cards obvious while testing */
-  .section-71 .open-roles-grid > .div-block-1389 {
-    background: #fff6c2;
-    border: 2px solid #ff5722;
-  }
-
   .section-71 .open-roles-grid::-webkit-scrollbar {
     display: none;
   }
@@ -34396,20 +34390,6 @@ a {
   .section-71 .open-roles-dot.active {
     background: #1a73e8;
   }
-
-/* TEMP — Force carousel layout everywhere for testing; remove after verification */
-.section-71 .open-roles-grid {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  overflow-x: auto !important;
-  gap: 18px !important;
-}
-.section-71 .open-roles-grid > .div-block-1389 {
-  flex: 0 0 100% !important;
-  min-width: 100% !important;
-  background: #fff6c2 !important;
-  border: 2px solid #ff5722 !important;
-}
 
   .purple-text._50-opacity._270px-width, .purple-text._80-opacity._270px-width {
     text-align: center;
@@ -46712,5 +46692,6 @@ a {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
+
 
 
