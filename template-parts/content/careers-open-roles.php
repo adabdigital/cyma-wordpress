@@ -17,7 +17,7 @@ if ( empty( $jobs ) ) {
 <section class="section-71">
   <div class="w-layout-blockcontainer container-62 w-container">
     <h2 class="heading-149" style="margin-bottom: 32px;">Open Roles</h2>
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 24px; width: 100%;">
+    <div class="open-roles-grid" style="display: grid; width: 100%;">
       <?php foreach ( $jobs as $job ) : ?>
         <?php setup_postdata( $job ); ?>
         <div class="div-block-1389" style="padding: 24px; border: 1px solid #e8eef5; border-radius: 16px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column;">

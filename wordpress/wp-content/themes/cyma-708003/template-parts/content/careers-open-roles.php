@@ -17,7 +17,7 @@ if ( empty( $jobs ) ) {
 <section class="section-71">
   <div class="w-layout-blockcontainer container-62 w-container">
     <h2 class="heading-149" style="margin-bottom: 32px;">Open Roles</h2>
-    <div class="w-layout-grid grid-44" style="grid-row-gap: 24px;">
+    <div class="w-layout-grid grid-44 open-roles-grid">
       <?php foreach ( $jobs as $job ) : ?>
         <?php
         setup_postdata( $job );
@@ -40,5 +40,42 @@ if ( empty( $jobs ) ) {
       <?php endforeach; ?>
       <?php wp_reset_postdata(); ?>
     </div>
+    <div class="open-roles-controls">
+      <button class="open-roles-prev" aria-label="Previous">‹</button>
+      <div class="open-roles-dots" aria-hidden="false"></div>
+      <button class="open-roles-next" aria-label="Next">›</button>
+    </div>
+    <script>(function(){
+      if (!window.matchMedia('(max-width: 767px)').matches) return;
+      var grid = document.querySelector('.section-71 .open-roles-grid');
+      var prev = document.querySelector('.section-71 .open-roles-prev');
+      var next = document.querySelector('.section-71 .open-roles-next');
+      var dots = document.querySelector('.section-71 .open-roles-dots');
+      if (!grid || !prev || !next || !dots) return;
+      var slides = Array.prototype.slice.call(grid.children);
+      var count = slides.length;
+      function createDots(){
+        for (var i=0;i<count;i++){
+          var btn=document.createElement('button');
+          btn.className='open-roles-dot';
+          btn.setAttribute('data-index',i);
+          btn.addEventListener('click',function(e){
+            var idx= +e.currentTarget.getAttribute('data-index');
+            grid.scrollTo({left: idx*grid.clientWidth, behavior:'smooth'});
+          });
+          dots.appendChild(btn);
+        }
+      }
+      createDots();
+      var dotButtons = dots.querySelectorAll('.open-roles-dot');
+      function updateActive(){
+        var idx = Math.round(grid.scrollLeft / grid.clientWidth) || 0;
+        dotButtons.forEach(function(b,i){ b.classList.toggle('active', i===idx); });
+      }
+      prev.addEventListener('click', function(){ grid.scrollBy({left: -grid.clientWidth, behavior:'smooth'}); });
+      next.addEventListener('click', function(){ grid.scrollBy({left: grid.clientWidth, behavior:'smooth'}); });
+      grid.addEventListener('scroll', function(){ window.requestAnimationFrame(updateActive); });
+      updateActive();
+    })();</script>
   </div>
 </section>

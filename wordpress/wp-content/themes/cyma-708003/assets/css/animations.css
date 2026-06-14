@@ -199,10 +199,22 @@ a[class*="-btn"].w-inline-block:active .image,
   }
 }
 
-/* Ensure Webflow mobile nav collapse wins over theme overrides */
 @media screen and (max-width: 991px) {
   .w-nav[data-collapse='medium'] .nav-menu-wrapper.w-nav-menu {
-    display: none !important;
+    display: block !important;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease-in-out;
+  }
+
+  .w-nav[data-collapse='medium'] .nav-menu-wrapper.w-nav-menu.w--open,
+  .w-nav[data-collapse='medium'] .nav-menu-wrapper.w-nav-menu[data-nav-menu-open] {
+    display: block !important;
+    max-height: 1000px !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
   }
 
   .w-nav[data-collapse='medium'] .menu-button.w-nav-button {

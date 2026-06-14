@@ -45,7 +45,7 @@ add_action( 'after_setup_theme', 'cyma_708003_setup' );
 function cyma_enqueue_styles() {
     wp_enqueue_style('normalize', get_template_directory_uri() . '/assets/css/normalize.css', [], '1780144474');
     wp_enqueue_style('wordpress', get_template_directory_uri() . '/assets/css/wordpress.css', [], '1780144474');
-    wp_enqueue_style('cyma-style', get_template_directory_uri() . '/assets/css/style.css', [], '1780144474');
+    wp_enqueue_style('cyma-style', get_template_directory_uri() . '/assets/css/style.css', [], time());
     wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1780144490');
 
     wp_add_inline_style(
