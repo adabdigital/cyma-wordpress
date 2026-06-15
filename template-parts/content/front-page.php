@@ -329,9 +329,9 @@
         <h2 class="heading-5" data-textarea="ta412afea7"><?php echo _u('ta412afea7', 'textarea'); ?></h2>
         <p class="paragraph-4" data-textarea="ta58d13c1e"><?php echo _u('ta58d13c1e', 'textarea'); ?></p>
       </div>
-      <div data-delay="4000" data-animation="slide" class="technology-list slider-29 w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="3000" data-infinite="true">
-        <div class="mask-11 w-slider-mask">
-          <div class="slide-16 w-slide">
+      <div class="technology-list slider-29 w-slider-custom">
+        <div class="mask-11 w-slider-mask-custom">
+          <div class="slide-16 w-slide-custom">
             <div class="w-layout-vflex flex-block-18"><img src="<?php echo cyma_get_image(_u('i16bde000', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i16bde000', 'img'))->alt ?>" class="serviceimage" data-img="i16bde000" srcset="<?php echo cyma_get_image(_u('i16bde000', 'img'))->srcset ?>">
               <h4 class="purple-text _2" data-text="tn1324772f"><?php echo _u('tn1324772f','text'); ?></h4>
               <div class="body-text-color _260px" data-textarea="ta69409e74"><?php echo _u('ta69409e74', 'textarea'); ?></div>
@@ -340,7 +340,7 @@
               </a>
             </div>
           </div>
-          <div class="slide-16 w-slide">
+          <div class="slide-16 w-slide-custom">
             <div class="w-layout-vflex flex-block-18"><img src="<?php echo cyma_get_image(_u('in58ed299c', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in58ed299c', 'img'))->alt ?>" class="serviceimage" data-img="in58ed299c" srcset="<?php echo cyma_get_image(_u('in58ed299c', 'img'))->srcset ?>">
               <h4 class="purple-text _2" data-text="tn3c4c418c"><?php echo _u('tn3c4c418c','text'); ?></h4>
               <div class="body-text-color _260px" data-textarea="tan58818ad0"><?php echo _u('tan58818ad0', 'textarea'); ?></div>
@@ -349,7 +349,7 @@
               </a>
             </div>
           </div>
-          <div class="slide-16 w-slide">
+          <div class="slide-16 w-slide-custom">
             <div class="w-layout-vflex flex-block-18"><img src="<?php echo cyma_get_image(_u('in1ceafdbd', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in1ceafdbd', 'img'))->alt ?>" class="serviceimage" data-img="in1ceafdbd" srcset="<?php echo cyma_get_image(_u('in1ceafdbd', 'img'))->srcset ?>">
               <h4 class="purple-text _2" data-text="tn512c2d87"><?php echo _u('tn512c2d87','text'); ?></h4>
               <div class="body-text-color _260px" data-textarea="tan4d06d056"><?php echo _u('tan4d06d056', 'textarea'); ?></div>
@@ -358,7 +358,7 @@
               </a>
             </div>
           </div>
-          <div class="slide-16 w-slide">
+          <div class="slide-16 w-slide-custom">
             <div class="w-layout-vflex flex-block-18"><img src="<?php echo cyma_get_image(_u('in4bd6e9c2', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in4bd6e9c2', 'img'))->alt ?>" class="serviceimage" data-img="in4bd6e9c2" srcset="<?php echo cyma_get_image(_u('in4bd6e9c2', 'img'))->srcset ?>">
               <h4 class="purple-text _2" data-text="t60823de1"><?php echo _u('t60823de1','text'); ?></h4>
               <div class="body-text-color _260px" data-textarea="tada14246"><?php echo _u('tada14246', 'textarea'); ?></div>
@@ -367,7 +367,7 @@
               </a>
             </div>
           </div>
-          <div class="slide-16 w-slide">
+          <div class="slide-16 w-slide-custom">
             <div class="w-layout-vflex flex-block-18"><img src="<?php echo cyma_get_image(_u('i595c90a5', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i595c90a5', 'img'))->alt ?>" class="serviceimage" data-img="i595c90a5" srcset="<?php echo cyma_get_image(_u('i595c90a5', 'img'))->srcset ?>">
               <h4 class="purple-text _2" data-text="t7104442"><?php echo _u('t7104442','text'); ?></h4>
               <div class="body-text-color _260px" data-textarea="ta6b89f81b"><?php echo _u('ta6b89f81b', 'textarea'); ?></div>
@@ -376,7 +376,7 @@
               </a>
             </div>
           </div>
-          <div class="slide-16 w-slide">
+          <div class="slide-16 w-slide-custom">
             <div class="w-layout-vflex flex-block-18"><img src="<?php echo cyma_get_image(_u('i283f6688', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i283f6688', 'img'))->alt ?>" class="serviceimage" data-img="i283f6688" srcset="<?php echo cyma_get_image(_u('i283f6688', 'img'))->srcset ?>">
               <h4 class="purple-text _2" data-text="t1b563558"><?php echo _u('t1b563558','text'); ?></h4>
               <div class="body-text-color _260px" data-textarea="tan38eb2385"><?php echo _u('tan38eb2385', 'textarea'); ?></div>
@@ -385,7 +385,7 @@
               </a>
             </div>
           </div>
-          <div class="slide-16 w-slide">
+          <div class="slide-16 w-slide-custom">
             <div class="w-layout-vflex flex-block-18"><img src="<?php echo cyma_get_image(_u('in58db0043', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in58db0043', 'img'))->alt ?>" class="serviceimage" data-img="in58db0043" srcset="<?php echo cyma_get_image(_u('in58db0043', 'img'))->srcset ?>">
               <h4 class="purple-text _2" data-text="tn1e937170"><?php echo _u('tn1e937170','text'); ?></h4>
               <div class="body-text-color _260px" data-textarea="tan5caeef8f"><?php echo _u('tan5caeef8f', 'textarea'); ?></div>
@@ -394,7 +394,7 @@
               </a>
             </div>
           </div>
-          <div class="slide-16 w-slide">
+          <div class="slide-16 w-slide-custom">
             <div class="w-layout-vflex flex-block-18"><img src="<?php echo cyma_get_image(_u('i48e146e4', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i48e146e4', 'img'))->alt ?>" class="serviceimage" data-img="i48e146e4" srcset="<?php echo cyma_get_image(_u('i48e146e4', 'img'))->srcset ?>">
               <h4 class="purple-text _2" data-text="tn2ccd461a"><?php echo _u('tn2ccd461a','text'); ?></h4>
               <div class="body-text-color _260px" data-textarea="tan736e9af4"><?php echo _u('tan736e9af4', 'textarea'); ?></div>
@@ -403,7 +403,7 @@
               </a>
             </div>
           </div>
-          <div class="slide-16 w-slide">
+          <div class="slide-16 w-slide-custom">
             <div class="w-layout-vflex flex-block-18"><img src="<?php echo cyma_get_image(_u('i48ef5e65', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i48ef5e65', 'img'))->alt ?>" class="serviceimage" data-img="i48ef5e65" srcset="<?php echo cyma_get_image(_u('i48ef5e65', 'img'))->srcset ?>">
               <h4 class="purple-text _2" data-text="t424835da"><?php echo _u('t424835da','text'); ?></h4>
               <div class="body-text-color _260px" data-textarea="ta19a91c4f"><?php echo _u('ta19a91c4f', 'textarea'); ?></div>
@@ -413,8 +413,8 @@
             </div>
           </div>
         </div>
-        <div class="left-arrow-10 w-slider-arrow-left"><img loading="lazy" src="<?php echo cyma_get_image(_u('in556d46ae', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in556d46ae', 'img'))->alt ?>" class="image-17" data-img="in556d46ae" srcset="<?php echo cyma_get_image(_u('in556d46ae', 'img'))->srcset ?>"></div>
-        <div class="right-arrow-16 w-slider-arrow-right"><img loading="lazy" src="<?php echo cyma_get_image(_u('in682a36d7', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in682a36d7', 'img'))->alt ?>" class="image-18" data-img="in682a36d7" srcset="<?php echo cyma_get_image(_u('in682a36d7', 'img'))->srcset ?>"></div>
+        <div class="left-arrow-10 w-slider-arrow-left" id="tech-slider-prev"><img loading="lazy" src="<?php echo cyma_get_image(_u('in556d46ae', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in556d46ae', 'img'))->alt ?>" class="image-17" data-img="in556d46ae" srcset="<?php echo cyma_get_image(_u('in556d46ae', 'img'))->srcset ?>"></div>
+        <div class="right-arrow-16 w-slider-arrow-right" id="tech-slider-next"><img loading="lazy" src="<?php echo cyma_get_image(_u('in682a36d7', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in682a36d7', 'img'))->alt ?>" class="image-18" data-img="in682a36d7" srcset="<?php echo cyma_get_image(_u('in682a36d7', 'img'))->srcset ?>"></div>
         <div class="slide-nav-24 w-slider-nav w-round w-num"></div>
       </div>
       <div data-w-id="3eba46d0-6942-6efc-7246-e8fb426e3476" class="w-layout-grid _4x1-copy">
@@ -674,16 +674,16 @@
         <p class="paragraph-70" data-text="t68478fb0"><?php echo _u('t68478fb0','text'); ?></p>
       </div>
       <div class="industry-list mg-40px-top">
-        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7d2" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
+        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
           <div class="slider-mask portfolio-slider industries w-slider-mask">
-            <div data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7d4" class="mg-right-10px height-520px w-slide">
+            <div class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
                 <div class="div-block-1426">
                   <div>
                     <h1 class="heading-157" data-text="t9fb0226"><?php echo _u('t9fb0226','text'); ?></h1>
                     <div class="text-block-686" data-textarea="tan10ddf25c"><?php echo _u('tan10ddf25c', 'textarea'); ?></div>
-                  </div><img loading="lazy" src="<?php echo cyma_get_image(_u('ina1396a9', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('ina1396a9', 'img'))->alt ?>" class="image-copy-hover_icon" data-img="ina1396a9" srcset="<?php echo cyma_get_image(_u('ina1396a9', 'img'))->srcset ?>">
-                </div><img src="<?php echo cyma_get_image(_u('ina1396a9', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('ina1396a9', 'img'))->alt ?>" data-img="ina1396a9" srcset="<?php echo cyma_get_image(_u('ina1396a9', 'img'))->srcset ?>">
+                  </div><img loading="lazy" src="<?php echo cyma_get_image(_u('ina1396a9', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('ina1396a9', 'img'))->alt ?>" class="image-copy-hover_icon" data-img="ina1396a9" srcset="<?php echo cyma_get_image(_u('ina1396a9', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('ina1396a9', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('ina1396a9', 'img'))->alt ?>" data-img="ina1396a9" srcset="<?php echo cyma_get_image(_u('ina1396a9', 'img'))->srcset ?>">
+                </div>
               </div>
               <div class="slider-content-block service-3">
                 <div class="home-services-content">
@@ -692,7 +692,7 @@
                 </div><img loading="lazy" src="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->alt ?>" class="image-copy-bs" data-img="in5910eb55" srcset="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->srcset ?>">
               </div>
             </div>
-            <div data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7dc" class="mg-right-10px height-520px w-slide">
+            <div class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
                 <div class="div-block-1426">
                   <div>
@@ -708,7 +708,7 @@
                 </div><img loading="lazy" src="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->alt ?>" class="image-copy" data-img="in5910eb55" srcset="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->srcset ?>">
               </div>
             </div>
-            <div data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7e6" class="mg-right-10px height-520px w-slide">
+            <div class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
                 <div class="div-block-1426">
                   <div>
@@ -724,7 +724,7 @@
                 </div><img loading="lazy" src="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->alt ?>" class="image-copy-2bs wid" data-img="in5910eb55" srcset="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->srcset ?>">
               </div>
             </div>
-            <div data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7ee" class="mg-right-10px height-520px w-slide">
+            <div class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
                 <div class="div-block-1426">
                   <div>
@@ -740,7 +740,7 @@
                 </div><img loading="lazy" src="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->alt ?>" class="image-copy-4" data-img="in5910eb55" srcset="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->srcset ?>">
               </div>
             </div>
-            <div data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7f6" class="mg-right-10px height-520px w-slide">
+            <div class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
                 <div class="div-block-1426">
                   <div>
@@ -756,7 +756,7 @@
                 </div><img loading="lazy" src="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->alt ?>" class="image-copy-5" data-img="in5910eb55" srcset="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->srcset ?>">
               </div>
             </div>
-            <div data-w-id="b0970886-c8fa-aed1-1eec-33458a51d806" class="mg-right-10px height-520px w-slide">
+            <div class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
                 <div class="div-block-1426">
                   <div>
@@ -772,7 +772,7 @@
                 </div><img loading="lazy" src="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->alt ?>" class="image-copy-6" data-img="in5910eb55" srcset="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->srcset ?>">
               </div>
             </div>
-            <div data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7fe" class="mg-right-10px height-520px w-slide">
+            <div class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
                 <div class="div-block-1426">
                   <div>
@@ -788,7 +788,7 @@
                 </div><img loading="lazy" src="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->alt ?>" class="image-copy-7" data-img="in5910eb55" srcset="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->srcset ?>">
               </div>
             </div>
-            <div data-w-id="b0970886-c8fa-aed1-1eec-33458a51d80e" class="mg-right-10px height-520px w-slide">
+            <div class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
                 <div class="div-block-1426">
                   <div>
@@ -804,7 +804,7 @@
                 </div><img loading="lazy" src="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->alt ?>" class="image-copy-8" data-img="in5910eb55" srcset="<?php echo cyma_get_image(_u('in5910eb55', 'img'))->srcset ?>">
               </div>
             </div>
-            <div data-w-id="b0970886-c8fa-aed1-1eec-33458a51d816" class="mg-right-10px height-520px w-slide">
+            <div class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
                 <div class="div-block-1426">
                   <div>
@@ -1017,23 +1017,322 @@
     </div>
   </section>
   <section class="section-spacer"></section>
+<style>
+.section-24 .slider-29.w-slider-custom {
+  position: relative;
+  width: 100%;
+}
+.section-24 .mask-11.w-slider-mask-custom {
+  display: flex !important;
+  flex-direction: row;
+  align-items: stretch;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  gap: 18px;
+  padding: 4px 2px 8px;
+  width: 100%;
+  height: auto;
+  transform: none;
+  will-change: auto;
+}
+.section-24 .mask-11.w-slider-mask-custom::-webkit-scrollbar {
+  display: none;
+}
+.section-24 .slide-16.w-slide-custom {
+  all: unset;
+  flex: 0 0 240px;
+  width: 240px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: stretch;
+  align-self: stretch;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  left: auto;
+}
+.section-24 .left-arrow-10,
+.section-24 .right-arrow-16,
+.section-24 .slide-nav-24 {
+  display: none !important;
+}
+.section-24 .technology-list {
+  position: relative;
+}
+.section-24 .w-layout-vflex.flex-block-18 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  height: 100% !important;
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.section-24 .w-layout-vflex.flex-block-18 > .serviceimage {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.section-24 .w-layout-vflex.flex-block-18 > .purple-text._2,
+.section-24 .div-block-1430 .purple-text._2,
+.section-24 .div-block-1431 .purple-text._2,
+.section-24 .div-block-1432 .purple-text._2,
+.section-24 .div-block-1433 .purple-text._2,
+.section-24 .div-block-1434 .purple-text._2,
+.section-24 .div-block-1435 .purple-text._2,
+.section-24 .div-block-1436 .purple-text._2,
+.section-24 .div-block-1437 .purple-text._2,
+.section-24 .div-block-1438 .purple-text._2 {
+  margin-top: 8px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  line-height: 1.3;
+  min-height: calc(15px * 1.3 * 2);
+  flex-shrink: 0;
+}
+.section-24 .w-layout-vflex.flex-block-18 > .body-text-color._260px,
+.section-24 .div-block-1430 .body-text-color._260px,
+.section-24 .div-block-1431 .body-text-color._260px,
+.section-24 .div-block-1432 .body-text-color._260px,
+.section-24 .div-block-1433 .body-text-color._260px,
+.section-24 .div-block-1434 .body-text-color._260px,
+.section-24 .div-block-1435 .body-text-color._260px,
+.section-24 .div-block-1436 .body-text-color._260px,
+.section-24 .div-block-1437 .body-text-color._260px,
+.section-24 .div-block-1438 .body-text-color._260px {
+  font-size: 13px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1 1 auto;
+  min-height: calc(13px * 1.5 * 3);
+  margin-bottom: 0;
+  width: 100%;
+}
+.section-24 .w-layout-vflex.flex-block-18 > a[class*="contact-btn"],
+.section-24 ._4x1-copy a[class*="contact-btn"] {
+  flex-shrink: 0;
+  margin-top: auto;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+.section-24 ._4x1-copy {
+  align-items: stretch !important;
+}
+.section-24 ._4x1-copy .w-layout-vflex.flex-block-18 {
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.section-24 .div-block-1430,
+.section-24 .div-block-1431,
+.section-24 .div-block-1432,
+.section-24 .div-block-1433,
+.section-24 .div-block-1434,
+.section-24 .div-block-1435,
+.section-24 .div-block-1436,
+.section-24 .div-block-1437,
+.section-24 .div-block-1438 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+}
+#tech-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+#tech-btn-prev,
+#tech-btn-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1a4c8b;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.15s;
+  flex-shrink: 0;
+}
+#tech-btn-prev:hover,
+#tech-btn-next:hover {
+  background: #163d70;
+  transform: scale(1.08);
+}
+#tech-btn-prev:active,
+#tech-btn-next:active {
+  transform: scale(0.94);
+}
+#tech-btn-prev img,
+#tech-btn-next img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+.section-2 .w-slide .div-block-1366 {
+  opacity: 0 !important;
+  transform: translateY(15px) !important;
+  transition: opacity 0.4s ease, transform 0.4s ease !important;
+  pointer-events: none !important;
+}
+.section-2 .w-slide:hover .div-block-1366 {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  pointer-events: auto !important;
+}
+.section-2 .w-slide .div-block-1426 img:not(.image-copy-hover_icon) {
+  transition: transform 0.3s ease !important;
+}
+.section-2 .w-slide:hover .div-block-1426 img:not(.image-copy-hover_icon) {
+  transform: translate(3px, -3px) !important;
+}
+</style>
 <script>
-var hamburgerMenu = document.querySelector('.hambuger-menu-main');
-var slider = document.querySelector('.technology-list');
-var leftArrow = document.querySelector('.left-arrow-10');
-var rightArrow = document.querySelector('.right-arrow-16');
+(function() {
+  var hamburgerMenu = document.querySelector('.hambuger-menu-main');
+  function setHamburger() {
+    hamburgerMenu.style.display = window.innerWidth <= 991 ? 'flex' : '';
+  }
+  window.addEventListener('load', setHamburger);
+  window.addEventListener('resize', setHamburger);
 
-window.addEventListener('load', function() {
-  hamburgerMenu.style.display = window.innerWidth <= 991 ? 'flex' : '';
-});
+  function initTechSlider() {
+    if (document.getElementById('tech-nav')) return;
 
-leftArrow.addEventListener('click', function() {
-  slider.scrollBy({ left: -300, behavior: 'smooth' });
-});
+    var container = document.querySelector('.section-24 .container-17');
+    var wfSlider  = document.querySelector('.section-24 .technology-list.w-slider-custom');
+    var mask      = document.querySelector('.section-24 .mask-11.w-slider-mask-custom');
+    var slides    = document.querySelectorAll('.section-24 .mask-11 .slide-16.w-slide-custom');
 
-rightArrow.addEventListener('click', function() {
-  slider.scrollBy({ left: 300, behavior: 'smooth' });
-});
+    if (!container || !wfSlider || !mask || !slides.length) return;
+
+    var wfLeft  = wfSlider.querySelector('.w-slider-arrow-left');
+    var wfRight = wfSlider.querySelector('.w-slider-arrow-right');
+    var wfNav   = wfSlider.querySelector('.w-slider-nav');
+    if (wfLeft)  wfLeft.style.display  = 'none';
+    if (wfRight) wfRight.style.display = 'none';
+    if (wfNav)   wfNav.style.display   = 'none';
+
+    var originalCount = slides.length;
+    for (var i = 0; i < originalCount; i++) {
+      var clone = slides[i].cloneNode(true);
+      mask.appendChild(clone);
+    }
+
+    var prevImg = wfSlider.querySelector('.w-slider-arrow-left img');
+    var nextImg = wfSlider.querySelector('.w-slider-arrow-right img');
+
+    var nav = document.createElement('div');
+    nav.id = 'tech-nav';
+
+    var btnPrev = document.createElement('button');
+    btnPrev.id = 'tech-btn-prev';
+    btnPrev.setAttribute('aria-label', 'Previous');
+    btnPrev.innerHTML = prevImg ? '<img src="' + prevImg.src + '" alt="">' : '&#8592;';
+
+    var btnNext = document.createElement('button');
+    btnNext.id = 'tech-btn-next';
+    btnNext.setAttribute('aria-label', 'Next');
+    btnNext.innerHTML = nextImg ? '<img src="' + nextImg.src + '" alt="">' : '&#8594;';
+
+    nav.appendChild(btnPrev);
+    nav.appendChild(btnNext);
+    container.appendChild(nav);
+
+    var loopWidth = 0;
+    function updateLoopWidth() {
+      if (mask.children.length > originalCount) {
+        loopWidth = mask.children[originalCount].offsetLeft - mask.children[0].offsetLeft;
+      }
+    }
+    updateLoopWidth();
+    window.addEventListener('resize', updateLoopWidth);
+
+    var STEP = 258;
+    var speed = 0.5;
+    var userPaused = false;
+    var buttonPaused = false;
+
+    mask.addEventListener('mouseenter', function() {
+      userPaused = true;
+    });
+    mask.addEventListener('mouseleave', function() {
+      userPaused = false;
+    });
+
+    var buttonTimeout = null;
+    function triggerButtonPause() {
+      buttonPaused = true;
+      if (buttonTimeout) clearTimeout(buttonTimeout);
+      buttonTimeout = setTimeout(function() {
+        buttonPaused = false;
+        if (mask.scrollLeft >= loopWidth) {
+          currentScroll = mask.scrollLeft - loopWidth;
+          mask.scrollLeft = currentScroll;
+        } else {
+          currentScroll = mask.scrollLeft;
+        }
+      }, 1500);
+    }
+
+    btnPrev.addEventListener('click', function() {
+      triggerButtonPause();
+      if (mask.scrollLeft < STEP) {
+        mask.scrollLeft += loopWidth;
+      }
+      var target = mask.scrollLeft - STEP;
+      mask.scrollTo({ left: target, behavior: 'smooth' });
+    });
+
+    btnNext.addEventListener('click', function() {
+      triggerButtonPause();
+      var target = mask.scrollLeft + STEP;
+      mask.scrollTo({ left: target, behavior: 'smooth' });
+    });
+
+    var currentScroll = mask.scrollLeft;
+    function animate() {
+      if (!userPaused && !buttonPaused) {
+        currentScroll += speed;
+        if (currentScroll >= loopWidth) {
+          currentScroll -= loopWidth;
+        }
+        mask.scrollLeft = currentScroll;
+      } else {
+        currentScroll = mask.scrollLeft;
+      }
+      requestAnimationFrame(animate);
+    }
+    requestAnimationFrame(animate);
+  }
+
+  /* try immediately after load, then again after Webflow finishes */
+  window.addEventListener('load', function() {
+    initTechSlider();
+    setTimeout(initTechSlider, 500);
+    setTimeout(initTechSlider, 1200);
+  });
+})();
 </script>
   
   
