@@ -18,6 +18,8 @@
     'head-banner',
   ];
 
+  var REVEAL_DURATION_MS = 1300;
+
   function shouldAnimate(el) {
     if (!el || el.tagName !== 'SECTION') {
       return false;
@@ -47,7 +49,45 @@
 
   function isInViewport(el) {
     var rect = el.getBoundingClientRect();
-    return rect.top < window.innerHeight * 0.9 && rect.bottom > window.innerHeight * 0.1;
+    return rect.top < window.innerHeight * 0.92 && rect.bottom > window.innerHeight * 0.08;
+  }
+
+  function markRevealed(el) {
+    el.classList.add('is-revealed');
+    el.style.removeProperty('--cyma-reveal-delay');
+  }
+
+  function bindRevealCleanup(el) {
+    function onDone(event) {
+      if (event.propertyName !== 'transform' && event.propertyName !== 'opacity') {
+        return;
+      }
+
+      el.removeEventListener('transitionend', onDone);
+      markRevealed(el);
+    }
+
+    el.addEventListener('transitionend', onDone);
+    window.setTimeout(function () {
+      el.removeEventListener('transitionend', onDone);
+      if (el.classList.contains('is-visible')) {
+        markRevealed(el);
+      }
+    }, REVEAL_DURATION_MS + 200);
+  }
+
+  function revealSection(el) {
+    if (el.classList.contains('is-visible')) {
+      return;
+    }
+
+    bindRevealCleanup(el);
+
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        el.classList.add('is-visible');
+      });
+    });
   }
 
   function initSectionAnimations() {
@@ -63,16 +103,16 @@
     blocks.forEach(function (block, index) {
       prepareSection(block);
       block.classList.add('cyma-reveal');
-      block.style.setProperty('--cyma-reveal-delay', Math.min(index * 0.04, 0.2) + 's');
+      block.style.setProperty('--cyma-reveal-delay', Math.min(index * 0.025, 0.12) + 's');
 
       if (isInViewport(block)) {
-        block.classList.add('is-visible');
+        revealSection(block);
       }
     });
 
     if (!('IntersectionObserver' in window)) {
       blocks.forEach(function (block) {
-        block.classList.add('is-visible');
+        revealSection(block);
       });
       return;
     }
@@ -84,13 +124,13 @@
             return;
           }
 
-          entry.target.classList.add('is-visible');
+          revealSection(entry.target);
           observer.unobserve(entry.target);
         });
       },
       {
-        threshold: 0.1,
-        rootMargin: '0px 0px -6% 0px',
+        threshold: [0, 0.05, 0.12],
+        rootMargin: '0px 0px 12% 0px',
       }
     );
 

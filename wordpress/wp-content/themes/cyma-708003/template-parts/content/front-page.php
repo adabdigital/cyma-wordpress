@@ -135,7 +135,7 @@
   </div>
   <section class="section-banner head-banner">
     <div class="w-layout-blockcontainer container head-banner w-container">
-      <div data-delay="6000" data-animation="slide" class="slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="2000" data-infinite="true">
+      <div data-delay="6000" data-animation="slide" class="slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="2000" data-infinite="true">
         <div class="w-slider-mask">
           <div class="w-slide">
             <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video id="d88b7aec-3639-7afe-fb54-2a1a8552447b-video" autoplay="" loop="" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/videos/cyma-desktop_poster.0000000.jpg?v=1780144474'); " muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
@@ -329,7 +329,7 @@
         <h2 class="heading-5" data-textarea="ta412afea7"><?php echo _u('ta412afea7', 'textarea'); ?></h2>
         <p class="paragraph-4" data-textarea="ta58d13c1e"><?php echo _u('ta58d13c1e', 'textarea'); ?></p>
       </div>
-      <div data-delay="4000" data-animation="slide" class="technology-list slider-29 w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="3000" data-infinite="true">
+      <div data-delay="4000" data-animation="slide" class="technology-list slider-29 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="3000" data-infinite="false">
         <div class="mask-11 w-slider-mask">
           <div class="slide-16 w-slide">
             <div class="w-layout-vflex flex-block-18"><img src="<?php echo cyma_get_image(_u('i16bde000', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i16bde000', 'img'))->alt ?>" class="serviceimage" data-img="i16bde000" srcset="<?php echo cyma_get_image(_u('i16bde000', 'img'))->srcset ?>">
@@ -591,7 +591,7 @@
         <p class="paragraph-70" data-text="t68478fb0"><?php echo _u('t68478fb0','text'); ?></p>
       </div>
       <div class="industry-list mg-40px-top">
-        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7d2" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
+        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7d2" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
           <div class="slider-mask portfolio-slider industries w-slider-mask">
             <div data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7d4" class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
@@ -786,7 +786,7 @@
           </div>
         </div>
       </div>
-      <div data-delay="4000" data-animation="slide" class="slider-30 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+      <div data-delay="4000" data-animation="slide" class="slider-30 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
         <div class="mask-12 w-slider-mask">
           <div class="slide-17 w-slide">
             <div class="div-block-1103">
@@ -938,6 +938,7 @@
 var navbar = document.querySelector('.navbar-logo-left-container.shadow-three.header-992');
 var hamburgerMenu = document.querySelector('.hambuger-menu-main');
 var slider = document.querySelector('.technology-list');
+var sliderMask = document.querySelector('.technology-list .mask-11');
 var leftArrow = document.querySelector('.left-arrow-10');
 var rightArrow = document.querySelector('.right-arrow-16');
 
@@ -951,11 +952,11 @@ window.addEventListener('load', function() {
 });
 
 leftArrow.addEventListener('click', function() {
-  slider.scrollBy({ left: -300, behavior: 'smooth' });
+  sliderMask.scrollBy({ left: -300, behavior: 'smooth' });
 });
 
 rightArrow.addEventListener('click', function() {
-  slider.scrollBy({ left: 300, behavior: 'smooth' });
+  sliderMask.scrollBy({ left: 300, behavior: 'smooth' });
 });
 </script>
   

@@ -122,7 +122,7 @@
               <div class="hamburger-lines-3"></div>
             </div>
             <div class="icon-19 w-icon-nav-menu"></div>
-            <a href="<?php echo _u('a23','link'); ?>" class="contact-btn-copy-new w-inline-block" data-link="a23">
+            <a href="<?php echo _u('a-7ed2abb3','link'); ?>" class="contact-btn-copy-new w-inline-block" data-link="a-7ed2abb3">
               <div class="text-block" data-text="t5635a22f"><?php echo _u('t5635a22f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->alt ?>" class="image" data-img="in6837d6cb" srcset="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->srcset ?>">
             </a>
           </div>
@@ -279,7 +279,7 @@
           </div>
         </div>
       </div>
-      <div data-delay="4000" data-animation="slide" class="slider-27 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-w-id="d5d76e2e-d6c0-e386-eae6-e31689d342b1" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+      <div data-delay="4000" data-animation="slide" class="slider-27 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-w-id="d5d76e2e-d6c0-e386-eae6-e31689d342b1" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
         <div class="w-slider-mask">
           <div class="slide-14 w-slide">
             <div class="div-block-1179">
@@ -443,7 +443,7 @@
           </div>
         </div>
       </div>
-      <div data-delay="4000" data-animation="slide" class="slider-30 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+      <div data-delay="4000" data-animation="slide" class="slider-30 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
         <div class="mask-12 w-slider-mask">
           <div class="slide-17 w-slide">
             <div class="div-block-1103">

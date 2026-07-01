@@ -42,6 +42,7 @@
       </div>
     </div>
   </div>
+<?php get_template_part('template-parts/components/breadcrumb-bar'); ?>
   <div class="w-layout-blockcontainer container-16 w-container">
     <div class="div-block-1126">
       <h1 class="heading-42" data-text="tccc773a"><?php echo _u('tccc773a','text'); ?></h1>

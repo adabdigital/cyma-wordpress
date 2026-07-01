@@ -122,7 +122,7 @@
               <div class="hamburger-lines-3"></div>
             </div>
             <div class="icon-19 w-icon-nav-menu"></div>
-            <a href="<?php echo _u('a23','link'); ?>" class="contact-btn-copy-new w-inline-block" data-link="a23">
+            <a href="<?php echo _u('a-7ed2abb3','link'); ?>" class="contact-btn-copy-new w-inline-block" data-link="a-7ed2abb3">
               <div class="text-block" data-text="t5635a22f"><?php echo _u('t5635a22f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->alt ?>" class="image" data-img="in6837d6cb" srcset="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->srcset ?>">
             </a>
           </div>
@@ -133,6 +133,7 @@
       </div>
     </div>
   </div>
+<?php get_template_part('template-parts/components/breadcrumb-bar'); ?>
   <section class="section-74">
     <div class="w-layout-blockcontainer container-65 w-container">
       <div data-w-id="42c51435-242b-b5b0-5cf4-69e7d3224395" style="opacity:0" class="div-block-1392">

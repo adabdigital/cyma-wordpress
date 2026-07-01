@@ -122,7 +122,7 @@
               <div class="hamburger-lines-3"></div>
             </div>
             <div class="icon-19 w-icon-nav-menu"></div>
-            <a href="<?php echo _u('a23','link'); ?>" class="contact-btn-copy-new w-inline-block" data-link="a23">
+            <a href="<?php echo _u('a-7ed2abb3','link'); ?>" class="contact-btn-copy-new w-inline-block" data-link="a-7ed2abb3">
               <div class="text-block" data-text="t5635a22f"><?php echo _u('t5635a22f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->alt ?>" class="image" data-img="in6837d6cb" srcset="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->srcset ?>">
             </a>
           </div>
@@ -186,7 +186,7 @@
           <h2 class="heading-31" data-textarea="ta53958cb2"><?php echo _u('ta53958cb2', 'textarea'); ?></h2>
           <p class="paragraph-9 _1" data-text="tn45508378"><?php echo _u('tn45508378','text'); ?></p>
         </div>
-        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp future w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp future w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
           <div class="slider-mask portfolio-slider industries w-slider-mask">
             <div class="mg-right-10px height-520px _1 w-slide">
               <div class="slider-content-block service-3 journey">

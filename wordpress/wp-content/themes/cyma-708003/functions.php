@@ -46,7 +46,7 @@ function cyma_enqueue_styles() {
     wp_enqueue_style('normalize', get_template_directory_uri() . '/assets/css/normalize.css', [], '1780144474');
     wp_enqueue_style('wordpress', get_template_directory_uri() . '/assets/css/wordpress.css', [], '1780144474');
     wp_enqueue_style('cyma-style', get_template_directory_uri() . '/assets/css/style.css', [], time());
-    wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1780144490');
+    wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1780144510');
 
     wp_add_inline_style(
         'cyma-style',
@@ -66,7 +66,7 @@ function cyma_enqueue_scripts() {
         'cyma-section-animations',
         get_template_directory_uri() . '/assets/js/section-animations.js',
         [],
-        '1780144490',
+        '1780144510',
         true
     );
 }
@@ -279,6 +279,71 @@ function cyma_get_image($key) {
         ];
     }
     return (object)['src' => '', 'alt' => '', 'srcset' => ''];
+}
+
+function cyma_get_breadcrumb_html() {
+    if (!is_page()) {
+        return '';
+    }
+
+    $slug = get_post_field('post_name', get_queried_object_id());
+    $home = home_url('/');
+
+    $trails = array(
+        'legal'                => array(
+            array('Home', $home),
+            array('Legal', '', true),
+        ),
+        'resources'            => array(
+            array('Home', $home),
+            array('Resources', home_url('/resources/'), true),
+        ),
+        'style-guide'          => array(
+            array('Home', $home),
+            array('Style Guide', home_url('/style-guide/'), true),
+        ),
+        'forgot-password'      => array(
+            array('Home', $home),
+            array('Forgot Password', '', true),
+        ),
+        'verification'         => array(
+            array('Home', $home),
+            array('Verification', '', true),
+        ),
+        'create-new-password'  => array(
+            array('Home', $home),
+            array('Create New Password', '', true),
+        ),
+        'password-updated'     => array(
+            array('Home', $home),
+            array('Password Updated', '', true),
+        ),
+        'email-verification'   => array(
+            array('Home', $home),
+            array('Email Verification', '', true),
+        ),
+    );
+
+    if (!isset($trails[$slug])) {
+        return '';
+    }
+
+    $parts = array();
+    foreach ($trails[$slug] as $item) {
+        $label = $item[0];
+        $url   = $item[1];
+        $current = !empty($item[2]);
+
+        if ($url && !$current) {
+            $parts[] = '<a href="' . esc_url($url) . '" class="link-39">' . esc_html($label) . '</a>';
+        } elseif ($url && $current) {
+            $parts[] = '<a href="' . esc_url($url) . '" aria-current="page" class="link-39">' . esc_html($label) . '</a>';
+        } else {
+            $parts[] = '<strong>' . esc_html($label) . '</strong>';
+        }
+    }
+
+    return implode(' • ', $parts);
 }
 
 function cyma_honeypot_field() {

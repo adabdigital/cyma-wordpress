@@ -122,7 +122,7 @@
               <div class="hamburger-lines-3"></div>
             </div>
             <div class="icon-19 w-icon-nav-menu"></div>
-            <a href="<?php echo _u('a23','link'); ?>" class="contact-btn-copy-new w-inline-block" data-link="a23">
+            <a href="<?php echo _u('a-7ed2abb3','link'); ?>" class="contact-btn-copy-new w-inline-block" data-link="a-7ed2abb3">
               <div class="text-block" data-text="t5635a22f"><?php echo _u('t5635a22f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->alt ?>" class="image" data-img="in6837d6cb" srcset="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->srcset ?>">
             </a>
           </div>
@@ -308,7 +308,7 @@
         <p class="paragraph-70" data-text="t68478fb0"><?php echo _u('t68478fb0','text'); ?></p>
       </div>
       <div class="mg-40px-top">
-        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7d2" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
+        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7d2" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
           <div class="slider-mask portfolio-slider industries w-slider-mask">
             <div data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7d4" class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">

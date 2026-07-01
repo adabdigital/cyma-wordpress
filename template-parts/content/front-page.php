@@ -135,7 +135,7 @@
   </div>
   <section class="section-banner head-banner">
     <div class="w-layout-blockcontainer container head-banner w-container">
-      <div data-delay="6000" data-animation="slide" class="slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="2000" data-infinite="true">
+      <div data-delay="6000" data-animation="slide" class="slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="2000" data-infinite="true">
         <div class="w-slider-mask">
           <div class="w-slide">
             <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video id="d88b7aec-3639-7afe-fb54-2a1a8552447b-video" autoplay="" loop="" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/videos/cyma-desktop_poster.0000000.jpg?v=1780144474'); " muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
@@ -674,7 +674,7 @@
         <p class="paragraph-70" data-text="t68478fb0"><?php echo _u('t68478fb0','text'); ?></p>
       </div>
       <div class="industry-list mg-40px-top">
-        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
+        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
           <div class="slider-mask portfolio-slider industries w-slider-mask">
             <div class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
@@ -869,7 +869,7 @@
           </div>
         </div>
       </div>
-      <div data-delay="4000" data-animation="slide" class="slider-30 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+      <div data-delay="4000" data-animation="slide" class="slider-30 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
         <div class="mask-12 w-slider-mask">
           <div class="slide-17 w-slide">
             <div class="div-block-1103">
@@ -1233,12 +1233,6 @@
     if (wfRight) wfRight.style.display = 'none';
     if (wfNav)   wfNav.style.display   = 'none';
 
-    var originalCount = slides.length;
-    for (var i = 0; i < originalCount; i++) {
-      var clone = slides[i].cloneNode(true);
-      mask.appendChild(clone);
-    }
-
     var prevImg = wfSlider.querySelector('.w-slider-arrow-left img');
     var nextImg = wfSlider.querySelector('.w-slider-arrow-right img');
 
@@ -1259,71 +1253,22 @@
     nav.appendChild(btnNext);
     container.appendChild(nav);
 
-    var loopWidth = 0;
-    function updateLoopWidth() {
-      if (mask.children.length > originalCount) {
-        loopWidth = mask.children[originalCount].offsetLeft - mask.children[0].offsetLeft;
-      }
-    }
-    updateLoopWidth();
-    window.addEventListener('resize', updateLoopWidth);
-
     var STEP = 258;
-    var speed = 0.5;
-    var userPaused = false;
-    var buttonPaused = false;
-
-    mask.addEventListener('mouseenter', function() {
-      userPaused = true;
-    });
-    mask.addEventListener('mouseleave', function() {
-      userPaused = false;
-    });
-
-    var buttonTimeout = null;
-    function triggerButtonPause() {
-      buttonPaused = true;
-      if (buttonTimeout) clearTimeout(buttonTimeout);
-      buttonTimeout = setTimeout(function() {
-        buttonPaused = false;
-        if (mask.scrollLeft >= loopWidth) {
-          currentScroll = mask.scrollLeft - loopWidth;
-          mask.scrollLeft = currentScroll;
-        } else {
-          currentScroll = mask.scrollLeft;
-        }
-      }, 1500);
-    }
+    var maxScroll = mask.scrollWidth - mask.clientWidth;
 
     btnPrev.addEventListener('click', function() {
-      triggerButtonPause();
-      if (mask.scrollLeft < STEP) {
-        mask.scrollLeft += loopWidth;
-      }
-      var target = mask.scrollLeft - STEP;
+      var target = Math.max(0, mask.scrollLeft - STEP);
       mask.scrollTo({ left: target, behavior: 'smooth' });
     });
 
     btnNext.addEventListener('click', function() {
-      triggerButtonPause();
-      var target = mask.scrollLeft + STEP;
+      var target = Math.min(maxScroll, mask.scrollLeft + STEP);
       mask.scrollTo({ left: target, behavior: 'smooth' });
     });
 
-    var currentScroll = mask.scrollLeft;
-    function animate() {
-      if (!userPaused && !buttonPaused) {
-        currentScroll += speed;
-        if (currentScroll >= loopWidth) {
-          currentScroll -= loopWidth;
-        }
-        mask.scrollLeft = currentScroll;
-      } else {
-        currentScroll = mask.scrollLeft;
-      }
-      requestAnimationFrame(animate);
-    }
-    requestAnimationFrame(animate);
+    window.addEventListener('resize', function() {
+      maxScroll = mask.scrollWidth - mask.clientWidth;
+    });
   }
 
   /* try immediately after load, then again after Webflow finishes */

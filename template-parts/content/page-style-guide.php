@@ -1,4 +1,5 @@
 
+<?php get_template_part('template-parts/components/breadcrumb-bar'); ?>
   <h1 data-text="tn6d5fea1e"><?php echo _u('tn6d5fea1e','text'); ?></h1>
   <h2 data-text="tn6d5fea1e"><?php echo _u('tn6d5fea1e','text'); ?></h2>
   <h3 data-text="tn6d5fea1e"><?php echo _u('tn6d5fea1e','text'); ?></h3>
@@ -15,7 +16,7 @@
         <p data-text="t68478fb0"><?php echo _u('t68478fb0','text'); ?></p>
       </div>
       <div class="mg-40px-top">
-        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-w-id="8fe47af9-728e-8b1f-784e-a19c652c3027" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-w-id="8fe47af9-728e-8b1f-784e-a19c652c3027" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
           <div class="slider-mask portfolio-slider industries w-slider-mask">
             <div data-w-id="8fe47af9-728e-8b1f-784e-a19c652c3029" class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
