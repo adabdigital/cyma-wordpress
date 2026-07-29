@@ -72,16 +72,36 @@ function cyma_get_content_template_slug( $post_id ) {
 
 /**
  * Whether this page should use CMS post_content on the front-end.
+ * Only after an explicit CYMA seed/save — never for leftover default WP text.
  */
 function cyma_page_uses_cms_content( $post_id = null ) {
 	if ( ! $post_id ) {
 		$post_id = get_the_ID();
 	}
 	$post = get_post( $post_id );
-	if ( ! $post ) {
+	if ( ! $post || 'page' !== $post->post_type ) {
 		return false;
 	}
-	return trim( (string) $post->post_content ) !== '';
+
+	$content = trim( (string) $post->post_content );
+	if ( $content === '' ) {
+		return false;
+	}
+
+	// Ignore classic WordPress starter copy if it somehow landed in a page.
+	if ( stripos( $content, 'Welcome to WordPress. This is your first post.' ) !== false ) {
+		return false;
+	}
+
+	// Prefer design templates until content was intentionally seeded/managed.
+	if ( ! get_post_meta( $post_id, CYMA_PAGE_SEEDED_META, true ) ) {
+		// Still allow CMS HTML that clearly came from the CYMA design.
+		if ( strpos( $content, 'w-nav' ) === false && strpos( $content, 'section-' ) === false ) {
+			return false;
+		}
+	}
+
+	return true;
 }
 
 /**
