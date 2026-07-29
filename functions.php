@@ -290,7 +290,10 @@ function cyma_get_image($key) {
     return (object)['src' => '', 'alt' => '', 'srcset' => ''];
 }
 
-require_once get_template_directory() . '/inc/cms-content.php';
+$cyma_cms_content = get_template_directory() . '/inc/cms-content.php';
+if ( file_exists( $cyma_cms_content ) ) {
+	require_once $cyma_cms_content;
+}
 
 function cyma_get_breadcrumb_html() {
     if (!is_page()) {
