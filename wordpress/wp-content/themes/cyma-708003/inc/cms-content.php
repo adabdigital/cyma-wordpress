@@ -166,7 +166,15 @@ function cyma_render_design_html( $post_id ) {
 	$current_page_data = $previous_data;
 	$post              = $previous_post; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 
-	return is_string( $html ) ? $html : '';
+	if ( ! is_string( $html ) ) {
+		return '';
+	}
+
+	// Keep scripts out of post_content — they break when `<=` is parsed as HTML
+	// and WordPress/browsers can dump the JS as visible text.
+	$html = preg_replace( '#<script\b[^>]*>[\s\S]*?</script>#i', '', $html );
+
+	return $html;
 }
 
 /**
@@ -194,12 +202,20 @@ function cyma_seed_page_content( $post_id, $force = false ) {
 		return false;
 	}
 
-	wp_update_post(
+	// Preserve <video>/<source> markup that WordPress kses would strip.
+	kses_remove_filters();
+	$result = wp_update_post(
 		array(
 			'ID'           => $post_id,
 			'post_content' => $html,
-		)
+		),
+		true
 	);
+	kses_init_filters();
+
+	if ( is_wp_error( $result ) ) {
+		return false;
+	}
 
 	// Drop legacy per-field overrides; whole page is CMS now.
 	delete_post_meta( $post_id, CYMA_CONTENT_META_KEY );
@@ -207,6 +223,72 @@ function cyma_seed_page_content( $post_id, $force = false ) {
 
 	return true;
 }
+
+/**
+ * Allow Webflow banner video markup in page content.
+ */
+function cyma_allow_video_html( $tags, $context ) {
+	if ( 'post' !== $context ) {
+		return $tags;
+	}
+
+	$tags['video'] = array(
+		'id'               => true,
+		'class'            => true,
+		'style'            => true,
+		'autoplay'         => true,
+		'loop'             => true,
+		'muted'            => true,
+		'playsinline'      => true,
+		'controls'         => true,
+		'poster'           => true,
+		'preload'          => true,
+		'width'            => true,
+		'height'           => true,
+		'data-wf-ignore'   => true,
+		'data-object-fit'  => true,
+	);
+
+	$tags['source'] = array(
+		'src'            => true,
+		'type'           => true,
+		'media'          => true,
+		'data-wf-ignore' => true,
+		'data-iframe'    => true,
+	);
+
+	$form_attrs = array(
+		'id'       => true,
+		'class'    => true,
+		'name'     => true,
+		'type'     => true,
+		'value'    => true,
+		'placeholder' => true,
+		'required' => true,
+		'maxlength'=> true,
+		'for'      => true,
+		'action'   => true,
+		'method'   => true,
+		'enctype'  => true,
+		'checked'  => true,
+		'selected' => true,
+		'disabled' => true,
+		'readonly' => true,
+		'autocomplete' => true,
+		'data-name' => true,
+		'data-wait' => true,
+		'data-ajax-action' => true,
+	);
+
+	foreach ( array( 'form', 'input', 'textarea', 'select', 'option', 'label' ) as $tag ) {
+		$tags[ $tag ] = isset( $tags[ $tag ] ) && is_array( $tags[ $tag ] )
+			? array_merge( $tags[ $tag ], $form_attrs )
+			: $form_attrs;
+	}
+
+	return $tags;
+}
+add_filter( 'wp_kses_allowed_html', 'cyma_allow_video_html', 10, 2 );
 
 /**
  * Open roles shortcode — keeps careers listing dynamic inside CMS pages.
@@ -217,6 +299,168 @@ function cyma_open_roles_shortcode() {
 	return ob_get_clean();
 }
 add_shortcode( 'cyma_open_roles', 'cyma_open_roles_shortcode' );
+
+/**
+ * Featured jobs slider shortcode — pulls published explore-careers posts.
+ */
+function cyma_featured_jobs_shortcode() {
+	ob_start();
+	get_template_part( 'template-parts/content/careers-featured-jobs' );
+	return ob_get_clean();
+}
+add_shortcode( 'cyma_featured_jobs', 'cyma_featured_jobs_shortcode' );
+
+/**
+ * On Job Seekers CMS HTML, replace the static Webflow featured slider with live openings.
+ */
+function cyma_replace_job_seekers_featured_slider( $content ) {
+	if ( ! is_page( array( 'job-seekers', 'explore-careers' ) ) || ! is_string( $content ) || $content === '' ) {
+		return $content;
+	}
+	if ( false === strpos( $content, 'slider-27' ) ) {
+		return $content;
+	}
+
+	$dynamic = do_shortcode( '[cyma_featured_jobs]' );
+	if ( $dynamic === '' ) {
+		return $content;
+	}
+
+	$replaced = preg_replace(
+		'#<div[^>]*class="[^"]*\bslider-27\b[^"]*"[^>]*>[\s\S]*?</div>\s*</div>(?=\s*</section>)#i',
+		$dynamic,
+		$content,
+		1
+	);
+
+	return is_string( $replaced ) && $replaced !== '' ? $replaced : $content;
+}
+
+/**
+ * On explore-careers / job-seekers CMS HTML, point Explore Career CTAs at the
+ * Trusted by Talent section and ensure that section has a stable anchor id.
+ */
+function cyma_explore_careers_scroll_anchor( $content ) {
+	if ( ! is_page( array( 'job-seekers', 'explore-careers' ) ) || ! is_string( $content ) || $content === '' ) {
+		return $content;
+	}
+
+	// Add id on Trusted by Talent section if missing.
+	if ( false === strpos( $content, 'id="trusted-by-talent"' ) ) {
+		$with_id = preg_replace(
+			'#<section(\s[^>]*\bclass="[^"]*\bsection-28\b[^"]*"[^>]*)>#i',
+			'<section id="trusted-by-talent"$1>',
+			$content,
+			1
+		);
+		if ( is_string( $with_id ) && $with_id !== '' ) {
+			$content = $with_id;
+		}
+	}
+
+	$content = preg_replace_callback(
+		'#<a\b([^>]*\bclass="[^"]*"[^>]*)>#i',
+		static function ( $matches ) {
+			$attrs = $matches[1];
+			$class_attr = '';
+			if ( preg_match( '/\bclass="([^"]*)"/i', $attrs, $cm ) ) {
+				$class_attr = $cm[1];
+			}
+			$class_tokens = preg_split( '/\s+/', trim( $class_attr ) );
+			$is_hero      = in_array( 'contact-btn-copy-js-btn', $class_tokens, true );
+			// Mid-page Explore CTA only (exclude open-role "View Role" buttons that reuse the class).
+			$is_explore   = in_array( 'contact-btn-exploreinjobseeksers', $class_tokens, true )
+				&& false !== strpos( $attrs, 'data-link="a2643837b"' );
+
+			if ( ! $is_hero && ! $is_explore ) {
+				return $matches[0];
+			}
+
+			if ( preg_match( '/\bhref="/i', $attrs ) ) {
+				$attrs = preg_replace( '/\bhref="[^"]*"/i', 'href="#trusted-by-talent"', $attrs, 1 );
+			} else {
+				$attrs .= ' href="#trusted-by-talent"';
+			}
+
+			return '<a' . $attrs . '>';
+		},
+		$content
+	);
+
+	return is_string( $content ) ? $content : '';
+}
+
+/**
+ * Home header Contact Us is a non-linked .contact pill — make it a CTA to /contact-us/.
+ */
+function cyma_link_home_contact_cta( $content ) {
+	if ( ! is_front_page() || ! is_string( $content ) || $content === '' ) {
+		return $content;
+	}
+	if ( false === strpos( $content, 'class="contact"' ) ) {
+		return $content;
+	}
+	// Already a link (exact class token "contact", not contact-btn*).
+	if ( preg_match( '/<a\b[^>]*\bclass="(?:[^"]*\s)?contact(?:\s[^"]*)?"/i', $content ) ) {
+		return $content;
+	}
+
+	$url = home_url( '/contact-us/' );
+	if ( function_exists( '_u' ) ) {
+		$resolved = _u( 'a8559f6b', 'link' );
+		if ( is_string( $resolved ) && $resolved !== '' && $resolved !== '#' ) {
+			$url = $resolved;
+		}
+	}
+
+	$replaced = preg_replace(
+		'#<div(\s[^>]*\bclass="contact"[^>]*)>(\s*<div[^>]*\btext-block-440\b[^>]*>[\s\S]*?</div>\s*<img[^>]*\bcall-icon-blue\b[^>]*>\s*<img[^>]*\bcall-icon-dark\b[^>]*>\s*)</div>#i',
+		'<a href="' . esc_url( $url ) . '"$1 data-link="a8559f6b">$2</a>',
+		$content,
+		1
+	);
+
+	return is_string( $replaced ) && $replaced !== '' ? $replaced : $content;
+}
+
+/**
+ * Contact Us CMS HTML lost <form>/<input> to kses — inject a working form.
+ */
+function cyma_replace_contact_form( $content ) {
+	if ( ! is_page( 'contact-us' ) || ! is_string( $content ) || $content === '' ) {
+		return $content;
+	}
+	if ( false === strpos( $content, 'form-block-3-copy' ) && false === strpos( $content, 'Get in Touch' ) ) {
+		return $content;
+	}
+
+	ob_start();
+	get_template_part( 'template-parts/content/contact-form' );
+	$form = ob_get_clean();
+	if ( $form === '' ) {
+		return $content;
+	}
+
+	// Replace from the first broken form wrapper through the last leftover .w-form block.
+	$replaced = preg_replace(
+		'#<div[^>]*id="Business-Form---Contact-Us"[^>]*>[\s\S]*?</div>\s*<div class="w-form">[\s\S]*?</div>(?=\s*</div>\s*</div>\s*</div>\s*</section>)#i',
+		$form,
+		$content,
+		1
+	);
+
+	if ( ! is_string( $replaced ) || $replaced === $content ) {
+		// Fallback: swap only the first form-block-3-copy section.
+		$replaced = preg_replace(
+			'#<div[^>]*class="[^"]*form-block-3-copy[^"]*"[^>]*>[\s\S]*?</div>\s*<div class="w-form">[\s\S]*?</div>#i',
+			$form,
+			$content,
+			1
+		);
+	}
+
+	return is_string( $replaced ) && $replaced !== '' ? $replaced : $content;
+}
 
 /* -------------------------------------------------------------------------- */
 /* Editor experience: classic editor, one document per page                   */
@@ -243,9 +487,71 @@ function cyma_setup_cms_content_filters() {
 	}
 	if ( cyma_page_uses_cms_content( get_queried_object_id() ) ) {
 		remove_filter( 'the_content', 'wpautop' );
+		add_filter( 'the_content', 'cyma_strip_inline_scripts_from_content', 8 );
+		add_filter( 'the_content', 'cyma_fix_broken_sf_symbol_icons', 9 );
+		add_filter( 'the_content', 'cyma_replace_job_seekers_featured_slider', 12 );
+		add_filter( 'the_content', 'cyma_replace_contact_form', 13 );
+		add_filter( 'the_content', 'cyma_link_home_contact_cta', 14 );
+		add_filter( 'the_content', 'cyma_explore_careers_scroll_anchor', 15 );
 	}
 }
 add_action( 'wp', 'cyma_setup_cms_content_filters' );
+
+/**
+ * Never print raw page scripts via the_content (avoids visible JS text).
+ */
+function cyma_strip_inline_scripts_from_content( $content ) {
+	return preg_replace( '#<script\b[^>]*>[\s\S]*?</script>#i', '', $content );
+}
+
+/**
+ * Webflow exported SF Symbol icons with Unicode filenames (e.g. 􀯐.svg).
+ * Those became "/assets/images/.svg" in the WP theme map — rewrite by class.
+ */
+function cyma_fix_broken_sf_symbol_icons( $content ) {
+	if ( ! is_string( $content ) || false === strpos( $content, 'images/.svg' ) ) {
+		return $content;
+	}
+
+	$map = array(
+		'image-9-copy-1-copy-tailor-copy-sys1' => 'sf-symbol-sys-1.svg',
+		'image-9-copy-2-copy-tail2-copysys2'   => 'sf-symbol-sys-2.svg',
+		'image-9-copy-2-copy-tail2'            => 'sf-symbol-tailored-2.svg',
+		'image-9-copy-3-copy-tail4'            => 'sf-symbol-product-3.svg',
+		'image-9-copy-1'                      => 'sf-symbol-product-1.svg',
+		'image-9-copy-2'                      => 'sf-symbol-product-2.svg',
+		'image-9-copy-3'                      => 'sf-symbol-product-3.svg',
+		'sys3'                                => 'sf-symbol-sys-3.svg',
+	);
+
+	$base = trailingslashit( get_template_directory_uri() ) . 'assets/images/';
+
+	return preg_replace_callback(
+		'/<img\b[^>]*>/i',
+		function ( $matches ) use ( $map, $base ) {
+			$tag = $matches[0];
+			if ( false === strpos( $tag, 'images/.svg' ) ) {
+				return $tag;
+			}
+			if ( ! preg_match( '/\bclass="([^"]*)"/i', $tag, $class_match ) ) {
+				return $tag;
+			}
+			$classes = preg_split( '/\s+/', trim( $class_match[1] ) );
+			foreach ( $map as $class => $file ) {
+				if ( in_array( $class, $classes, true ) ) {
+					return preg_replace(
+						'#src="[^"]*images/\.svg"#i',
+						'src="' . esc_url( $base . $file ) . '"',
+						$tag,
+						1
+					);
+				}
+			}
+			return $tag;
+		},
+		$content
+	);
+}
 
 function cyma_cms_admin_notice() {
 	$screen = get_current_screen();

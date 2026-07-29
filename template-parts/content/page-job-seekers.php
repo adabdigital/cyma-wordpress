@@ -150,7 +150,7 @@
             <a href="<?php echo _u('a-7ed2abb3','link'); ?>" class="aboutus-banner-btn w-inline-block" data-link="a-7ed2abb3">
               <div class="text-block" data-text="t2ee6d719"><?php echo _u('t2ee6d719','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in4da69620', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in4da69620', 'img'))->alt ?>" class="image" data-img="in4da69620" srcset="<?php echo cyma_get_image(_u('in4da69620', 'img'))->srcset ?>">
             </a>
-            <a href="<?php echo _u('a2643837b','link'); ?>" class="contact-btn-copy-js-btn w-inline-block" data-link="a2643837b">
+            <a href="#trusted-by-talent" class="contact-btn-copy-js-btn w-inline-block" data-link="a2643837b">
               <div class="text-block" data-text="tn20c94e15"><?php echo _u('tn20c94e15','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in4da69620', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in4da69620', 'img'))->alt ?>" class="image" data-img="in4da69620" srcset="<?php echo cyma_get_image(_u('in4da69620', 'img'))->srcset ?>">
             </a>
           </div>
@@ -260,7 +260,7 @@
                 <div data-textarea="tan781fd32d"><?php echo _u('tan781fd32d', 'textarea'); ?></div>
               </div>
             </div>
-            <a href="<?php echo _u('a2643837b','link'); ?>" class="contact-btn-exploreinjobseeksers w-inline-block" data-link="a2643837b">
+            <a href="#trusted-by-talent" class="contact-btn-exploreinjobseeksers w-inline-block" data-link="a2643837b">
               <div class="text-block-483" data-text="t15309273"><?php echo _u('t15309273','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in4da69620', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in4da69620', 'img'))->alt ?>" class="image arrow-2" data-img="in4da69620" srcset="<?php echo cyma_get_image(_u('in4da69620', 'img'))->srcset ?>">
             </a>
           </div>
@@ -268,7 +268,7 @@
         </div>
       </div>
     </section>
-    <section class="section-28">
+    <section id="trusted-by-talent" class="section-28">
       <div data-w-id="5393aaa0-2765-504c-13e5-c929ebd2e25e" class="div-block-1175">
         <h1 class="heading-57" data-textarea="tan32b29b65"><?php echo _u('tan32b29b65', 'textarea'); ?></h1>
         <div class="text-block-484" data-text="tn6006dc3f"><?php echo _u('tn6006dc3f','text'); ?></div>

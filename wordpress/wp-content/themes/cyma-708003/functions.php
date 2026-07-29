@@ -46,11 +46,15 @@ function cyma_enqueue_styles() {
     wp_enqueue_style('normalize', get_template_directory_uri() . '/assets/css/normalize.css', [], '1780144474');
     wp_enqueue_style('wordpress', get_template_directory_uri() . '/assets/css/wordpress.css', [], '1780144474');
     wp_enqueue_style('cyma-style', get_template_directory_uri() . '/assets/css/style.css', [], time());
-    wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1780144550');
+    wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1785359001');
 
     wp_add_inline_style(
         'cyma-style',
-        '[data-w-id]:not(section.cyma-reveal), [style*="opacity:0"]:not(section.cyma-reveal) { opacity: 1 !important; }'
+        /* Keep Webflow fade-ins visible, but do not break intentional hover overlays
+           (e.g. industry cards .div-block-1366) that use opacity:0 as their idle state. */
+        '[data-w-id]:not(section.cyma-reveal):not(.mg-right-10px):not(.div-block-1366),'
+        . '[style*="opacity:0"]:not(section.cyma-reveal):not(.div-block-1366):not(.mg-right-10px)'
+        . '{ opacity: 1 !important; }'
     );
 
     // Remove WordPress default styles that might conflict
@@ -67,6 +71,15 @@ function cyma_enqueue_scripts() {
         get_template_directory_uri() . '/assets/js/section-animations.js',
         [],
         '1780144510',
+        true
+    );
+
+    // Navbar scrolled state (home + white-header pages)
+    wp_enqueue_script(
+        'cyma-home-ui',
+        get_template_directory_uri() . '/assets/js/home-ui.js',
+        [],
+        '1780144603',
         true
     );
 }
@@ -293,6 +306,11 @@ function cyma_get_image($key) {
 $cyma_cms_content = get_template_directory() . '/inc/cms-content.php';
 if ( file_exists( $cyma_cms_content ) ) {
 	require_once $cyma_cms_content;
+}
+
+$cyma_contact_handler = get_template_directory() . '/inc/contact-form-handler.php';
+if ( file_exists( $cyma_contact_handler ) ) {
+	require_once $cyma_contact_handler;
 }
 
 function cyma_get_breadcrumb_html() {

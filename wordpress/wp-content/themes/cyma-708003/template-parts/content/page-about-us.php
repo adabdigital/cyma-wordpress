@@ -295,17 +295,17 @@
           </div>
           <div data-w-tab="Tab 2" class="tab-pane-tab-2-5 w-tab-pane">
             <div class="w-layout-hflex flex-block-8">
-              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('in22b92970', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in22b92970', 'img'))->alt ?>" class="image-9-copy-1" data-img="in22b92970" srcset="<?php echo cyma_get_image(_u('in22b92970', 'img'))->srcset ?>">
+              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('i_sf_prod1', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i_sf_prod1', 'img'))->alt ?>" class="image-9-copy-1" data-img="i_sf_prod1" srcset="<?php echo cyma_get_image(_u('i_sf_prod1', 'img'))->srcset ?>">
                 <h6 class="_22px-text-copy white-text-copy font-weight-semibold-copy text-h" data-text="t4e0c2954"><?php echo _u('t4e0c2954','text'); ?></h6>
                 <p class="paragraph-2-copy _400px-width-copy" data-text="t4fb6db40"><?php echo _u('t4fb6db40','text'); ?></p>
               </div>
               <div class="div-block-10"></div>
-              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('in22b92970', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in22b92970', 'img'))->alt ?>" class="image-9-copy-2" data-img="in22b92970" srcset="<?php echo cyma_get_image(_u('in22b92970', 'img'))->srcset ?>">
+              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('i_sf_prod2', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i_sf_prod2', 'img'))->alt ?>" class="image-9-copy-2" data-img="i_sf_prod2" srcset="<?php echo cyma_get_image(_u('i_sf_prod2', 'img'))->srcset ?>">
                 <h6 class="_22px-text-copy white-text-copy font-weight-semibold-copy" data-text="t586cddfc"><?php echo _u('t586cddfc','text'); ?></h6>
                 <p class="paragraph-2-copy _400px-width-copy" data-text="t218b0e03"><?php echo _u('t218b0e03','text'); ?></p>
               </div>
               <div class="div-block-10"></div>
-              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('in22b92970', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in22b92970', 'img'))->alt ?>" class="image-9-copy-3" data-img="in22b92970" srcset="<?php echo cyma_get_image(_u('in22b92970', 'img'))->srcset ?>">
+              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('i_sf_prod3', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i_sf_prod3', 'img'))->alt ?>" class="image-9-copy-3" data-img="i_sf_prod3" srcset="<?php echo cyma_get_image(_u('i_sf_prod3', 'img'))->srcset ?>">
                 <h6 class="_22px-text white-text font-weight-semibold" data-text="t58ff00cf"><?php echo _u('t58ff00cf','text'); ?></h6>
                 <p class="paragraph-2 _400px-width" data-text="t2bd722fd"><?php echo _u('t2bd722fd','text'); ?></p>
               </div>
@@ -318,12 +318,12 @@
                 <p class="paragraph-2-copy _400px-width-copy" data-text="tn5c07ef68"><?php echo _u('tn5c07ef68','text'); ?></p>
               </div>
               <div class="div-block-10"></div>
-              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('in22b92970', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in22b92970', 'img'))->alt ?>" class="image-9-copy-2-copy-tail2" data-img="in22b92970" srcset="<?php echo cyma_get_image(_u('in22b92970', 'img'))->srcset ?>">
+              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('i_sf_tail2', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i_sf_tail2', 'img'))->alt ?>" class="image-9-copy-2-copy-tail2" data-img="i_sf_tail2" srcset="<?php echo cyma_get_image(_u('i_sf_tail2', 'img'))->srcset ?>">
                 <h6 class="_22px-text-copy white-text-copy font-weight-semibold-copy" data-text="t710b856e"><?php echo _u('t710b856e','text'); ?></h6>
                 <p class="paragraph-2-copy _400px-width-copy" data-text="t63f4b713"><?php echo _u('t63f4b713','text'); ?></p>
               </div>
               <div class="div-block-10"></div>
-              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('in22b92970', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in22b92970', 'img'))->alt ?>" class="image-9-copy-3-copy-tail4" data-img="in22b92970" srcset="<?php echo cyma_get_image(_u('in22b92970', 'img'))->srcset ?>">
+              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('i_sf_tail3', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i_sf_tail3', 'img'))->alt ?>" class="image-9-copy-3-copy-tail4" data-img="i_sf_tail3" srcset="<?php echo cyma_get_image(_u('i_sf_tail3', 'img'))->srcset ?>">
                 <h6 class="_22px-text white-text font-weight-semibold" data-text="tn77366fc1"><?php echo _u('tn77366fc1','text'); ?></h6>
                 <p class="paragraph-2 _400px-width" data-text="t30f5c46a"><?php echo _u('t30f5c46a','text'); ?></p>
               </div>
@@ -331,17 +331,17 @@
           </div>
           <div data-w-tab="Tab 4" class="tab-pane-tab-4-2 w-tab-pane">
             <div class="w-layout-hflex flex-block-8">
-              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('in22b92970', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in22b92970', 'img'))->alt ?>" class="image-9-copy-1-copy-tailor-copy-sys1" data-img="in22b92970" srcset="<?php echo cyma_get_image(_u('in22b92970', 'img'))->srcset ?>">
+              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('i_sf_sys1', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i_sf_sys1', 'img'))->alt ?>" class="image-9-copy-1-copy-tailor-copy-sys1" data-img="i_sf_sys1" srcset="<?php echo cyma_get_image(_u('i_sf_sys1', 'img'))->srcset ?>">
                 <h6 class="_22px-text-copy white-text-copy font-weight-semibold-copy text-h" data-text="tn38820fdd"><?php echo _u('tn38820fdd','text'); ?></h6>
                 <p class="paragraph-2-copy _400px-width-copy" data-text="t5d5f6d6"><?php echo _u('t5d5f6d6','text'); ?></p>
               </div>
               <div class="div-block-10"></div>
-              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('in22b92970', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in22b92970', 'img'))->alt ?>" class="image-9-copy-2-copy-tail2-copysys2" data-img="in22b92970" srcset="<?php echo cyma_get_image(_u('in22b92970', 'img'))->srcset ?>">
+              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('i_sf_sys2', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i_sf_sys2', 'img'))->alt ?>" class="image-9-copy-2-copy-tail2-copysys2" data-img="i_sf_sys2" srcset="<?php echo cyma_get_image(_u('i_sf_sys2', 'img'))->srcset ?>">
                 <h6 class="_22px-text-copy white-text-copy font-weight-semibold-copy" data-text="t52b8c3c6"><?php echo _u('t52b8c3c6','text'); ?></h6>
                 <p class="paragraph-2-copy _400px-width-copy" data-text="t30824437"><?php echo _u('t30824437','text'); ?></p>
               </div>
               <div class="div-block-10"></div>
-              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('in22b92970', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in22b92970', 'img'))->alt ?>" class="sys3" data-img="in22b92970" srcset="<?php echo cyma_get_image(_u('in22b92970', 'img'))->srcset ?>">
+              <div class="_12px-spacing _400px-width"><img src="<?php echo cyma_get_image(_u('i_sf_sys3', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i_sf_sys3', 'img'))->alt ?>" class="sys3" data-img="i_sf_sys3" srcset="<?php echo cyma_get_image(_u('i_sf_sys3', 'img'))->srcset ?>">
                 <h6 class="_22px-text white-text font-weight-semibold" data-text="tnfd1323d"><?php echo _u('tnfd1323d','text'); ?></h6>
                 <p class="paragraph-2 _400px-width" data-text="t754404e7"><?php echo _u('t754404e7','text'); ?></p>
               </div>

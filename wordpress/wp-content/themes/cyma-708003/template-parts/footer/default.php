@@ -33,15 +33,24 @@ document.addEventListener("DOMContentLoaded", function() {
 .hamburger-lines-2-copy,
 .hamburger-lines-3 {
   height: 2.3px;
-  background-color: #ffffff !important;
+  /* Brand blue by default — white headers (job-seekers, about, etc.) */
+  background-color: #0562A7 !important;
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) !important;
   transform-origin: center !important;
 }
 
-.menu-button.is-scrolled .hamburger-lines-1,
-.menu-button.is-scrolled .hamburger-lines-2,
-.menu-button.is-scrolled .hamburger-lines-2-copy,
-.menu-button.is-scrolled .hamburger-lines-3 {
+/* Transparent/dark hero nav (home): white bars until the header solidifies on scroll */
+.header-992:not(.white) .hamburger-lines-1,
+.header-992:not(.white) .hamburger-lines-2,
+.header-992:not(.white) .hamburger-lines-2-copy,
+.header-992:not(.white) .hamburger-lines-3 {
+  background-color: #ffffff !important;
+}
+
+.header-992:not(.white) .menu-button.is-scrolled .hamburger-lines-1,
+.header-992:not(.white) .menu-button.is-scrolled .hamburger-lines-2,
+.header-992:not(.white) .menu-button.is-scrolled .hamburger-lines-2-copy,
+.header-992:not(.white) .menu-button.is-scrolled .hamburger-lines-3 {
   background-color: #0562A7 !important;
 }
 
@@ -61,11 +70,6 @@ document.addEventListener("DOMContentLoaded", function() {
   position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(-45deg) !important;
-}
-
-.menu-button.is-active.is-scrolled .hamburger-lines-1,
-.menu-button.is-active.is-scrolled .hamburger-lines-3 {
-  background-color: #0562A7 !important;
 }
 </style>
 <script>

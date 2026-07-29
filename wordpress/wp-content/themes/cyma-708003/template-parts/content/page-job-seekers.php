@@ -150,7 +150,7 @@
             <a href="<?php echo _u('a-7ed2abb3','link'); ?>" class="aboutus-banner-btn w-inline-block" data-link="a-7ed2abb3">
               <div class="text-block" data-text="t2ee6d719"><?php echo _u('t2ee6d719','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in4da69620', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in4da69620', 'img'))->alt ?>" class="image" data-img="in4da69620" srcset="<?php echo cyma_get_image(_u('in4da69620', 'img'))->srcset ?>">
             </a>
-            <a href="<?php echo _u('a2643837b','link'); ?>" class="contact-btn-copy-js-btn w-inline-block" data-link="a2643837b">
+            <a href="#trusted-by-talent" class="contact-btn-copy-js-btn w-inline-block" data-link="a2643837b">
               <div class="text-block" data-text="tn20c94e15"><?php echo _u('tn20c94e15','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in4da69620', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in4da69620', 'img'))->alt ?>" class="image" data-img="in4da69620" srcset="<?php echo cyma_get_image(_u('in4da69620', 'img'))->srcset ?>">
             </a>
           </div>
@@ -260,7 +260,7 @@
                 <div data-textarea="tan781fd32d"><?php echo _u('tan781fd32d', 'textarea'); ?></div>
               </div>
             </div>
-            <a href="<?php echo _u('a2643837b','link'); ?>" class="contact-btn-exploreinjobseeksers w-inline-block" data-link="a2643837b">
+            <a href="#trusted-by-talent" class="contact-btn-exploreinjobseeksers w-inline-block" data-link="a2643837b">
               <div class="text-block-483" data-text="t15309273"><?php echo _u('t15309273','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in4da69620', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in4da69620', 'img'))->alt ?>" class="image arrow-2" data-img="in4da69620" srcset="<?php echo cyma_get_image(_u('in4da69620', 'img'))->srcset ?>">
             </a>
           </div>
@@ -268,7 +268,7 @@
         </div>
       </div>
     </section>
-    <section class="section-28">
+    <section id="trusted-by-talent" class="section-28">
       <div data-w-id="5393aaa0-2765-504c-13e5-c929ebd2e25e" class="div-block-1175">
         <h1 class="heading-57" data-textarea="tan32b29b65"><?php echo _u('tan32b29b65', 'textarea'); ?></h1>
         <div class="text-block-484" data-text="tn6006dc3f"><?php echo _u('tn6006dc3f','text'); ?></div>
@@ -283,74 +283,7 @@
           </div>
         </div>
       </div>
-      <div data-delay="4000" data-animation="slide" class="slider-27 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-w-id="d5d76e2e-d6c0-e386-eae6-e31689d342b1" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-        <div class="w-slider-mask">
-          <div class="slide-14 w-slide">
-            <div class="div-block-1179">
-              <div class="text-block-487" data-text="t51fe20cb"><?php echo _u('t51fe20cb','text'); ?></div>
-              <h1 class="heading-59" data-text="t429c5741"><?php echo _u('t429c5741','text'); ?></h1>
-              <div class="div-block-1181">
-                <div class="div-block-1180"><img src="<?php echo cyma_get_image(_u('i48f9d9c5', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i48f9d9c5', 'img'))->alt ?>" data-img="i48f9d9c5" srcset="<?php echo cyma_get_image(_u('i48f9d9c5', 'img'))->srcset ?>">
-                  <div class="text-block-489" data-text="tn62a8001a"><?php echo _u('tn62a8001a','text'); ?></div>
-                </div>
-                <div class="text-block-492"></div>
-                <div class="text-block-491" data-text="tne756a0"><?php echo _u('tne756a0','text'); ?></div>
-              </div>
-              <div class="text-block-493" data-text="t31d10d85"><?php echo _u('t31d10d85','text'); ?></div>
-              <div class="div-block-1182">
-                <div class="text-block-494" data-text="t7dd286da"><?php echo _u('t7dd286da','text'); ?></div>
-                <div class="text-block-494" data-text="tfedd"><?php echo _u('tfedd','text'); ?></div>
-                <div class="text-block-494" data-text="tn71f114c"><?php echo _u('tn71f114c','text'); ?></div>
-                <div class="text-block-494-copy-mv" data-text="t79cfaa7d"><?php echo _u('t79cfaa7d','text'); ?></div>
-              </div>
-              <div class="div-block-1332">
-                <div class="text-block-494-copy-1" data-text="t79cfaa7d"><?php echo _u('t79cfaa7d','text'); ?></div>
-              </div>
-              <div class="div-block-1184">
-                <div class="div-block-1183"><img src="<?php echo cyma_get_image(_u('in6c668469', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in6c668469', 'img'))->alt ?>" class="image-49" data-img="in6c668469" srcset="<?php echo cyma_get_image(_u('in6c668469', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in6c586ce8', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in6c586ce8', 'img'))->alt ?>" class="image-50" data-img="in6c586ce8" srcset="<?php echo cyma_get_image(_u('in6c586ce8', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in6c4a5567', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in6c4a5567', 'img'))->alt ?>" class="image-51" data-img="in6c4a5567" srcset="<?php echo cyma_get_image(_u('in6c4a5567', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in6c3c3de6', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in6c3c3de6', 'img'))->alt ?>" class="image-52" data-img="in6c3c3de6" srcset="<?php echo cyma_get_image(_u('in6c3c3de6', 'img'))->srcset ?>">
-                  <div class="text-block-495" data-text="t1774b9"><?php echo _u('t1774b9','text'); ?></div>
-                </div>
-                <div class="text-block-496" data-text="t6b28086b"><?php echo _u('t6b28086b','text'); ?></div>
-              </div>
-              <a href="<?php echo esc_url( cyma_get_apply_url( _u( 't429c5741', 'text' ) ) ); ?>" class="featuredjobcontent-btn w-inline-block">
-                <div class="text-block-497" data-text="tn45e051c"><?php echo _u('tn45e051c','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->alt ?>" class="image-150" data-img="in75c75f65" srcset="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->srcset ?>">
-              </a>
-            </div>
-          </div>
-          <div class="slide-15 w-slide">
-            <div class="div-block-1179">
-              <div class="text-block-487" data-text="t51fe20cb"><?php echo _u('t51fe20cb','text'); ?></div>
-              <h1 class="heading-59" data-textarea="tan524844c9"><?php echo _u('tan524844c9', 'textarea'); ?></h1>
-              <div class="div-block-1181">
-                <div class="div-block-1180"><img src="<?php echo cyma_get_image(_u('i48f9d9c5', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i48f9d9c5', 'img'))->alt ?>" data-img="i48f9d9c5" srcset="<?php echo cyma_get_image(_u('i48f9d9c5', 'img'))->srcset ?>">
-                  <div class="text-block-489" data-text="tn62a8001a"><?php echo _u('tn62a8001a','text'); ?></div>
-                </div>
-                <div class="text-block-492"></div>
-                <div class="text-block-491" data-text="t27e2034f"><?php echo _u('t27e2034f','text'); ?></div>
-              </div>
-              <div class="text-block-493" data-text="tn1851e616"><?php echo _u('tn1851e616','text'); ?></div>
-              <div class="div-block-1182">
-                <div class="text-block-494" data-text="t7dd286da"><?php echo _u('t7dd286da','text'); ?></div>
-                <div class="text-block-494" data-text="tn709ce304"><?php echo _u('tn709ce304','text'); ?></div>
-                <div class="text-block-494" data-text="tn71f114c"><?php echo _u('tn71f114c','text'); ?></div>
-                <div class="text-block-494-copy-s" data-text="tn605c22c0"><?php echo _u('tn605c22c0','text'); ?></div>
-              </div>
-              <div class="div-block-1333">
-                <div class="text-block-494-copy-new" data-text="tn605c22c0"><?php echo _u('tn605c22c0','text'); ?></div>
-              </div>
-              <div class="div-block-1184">
-                <div class="div-block-1183"><img src="<?php echo cyma_get_image(_u('in6c668469', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in6c668469', 'img'))->alt ?>" class="image-49" data-img="in6c668469" srcset="<?php echo cyma_get_image(_u('in6c668469', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in6c586ce8', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in6c586ce8', 'img'))->alt ?>" class="image-50" data-img="in6c586ce8" srcset="<?php echo cyma_get_image(_u('in6c586ce8', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in6c4a5567', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in6c4a5567', 'img'))->alt ?>" class="image-51" data-img="in6c4a5567" srcset="<?php echo cyma_get_image(_u('in6c4a5567', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in6c3c3de6', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in6c3c3de6', 'img'))->alt ?>" class="image-52" data-img="in6c3c3de6" srcset="<?php echo cyma_get_image(_u('in6c3c3de6', 'img'))->srcset ?>">
-                  <div class="text-block-495" data-text="t1774b9"><?php echo _u('t1774b9','text'); ?></div>
-                </div>
-                <div class="text-block-496" data-text="t6b28086b"><?php echo _u('t6b28086b','text'); ?></div>
-              </div>
-              <a href="<?php echo esc_url( cyma_get_apply_url( _u( 'tan524844c9', 'textarea' ) ) ); ?>" class="featuredjobcontent-btn w-inline-block">
-                <div class="text-block-497" data-text="tn45e051c"><?php echo _u('tn45e051c','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->alt ?>" class="image-151" data-img="in75c75f65" srcset="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->srcset ?>">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php get_template_part( 'template-parts/content/careers-featured-jobs' ); ?>
     </section>
     <section class="section-29">
       <div class="w-layout-blockcontainer container-23 w-container">

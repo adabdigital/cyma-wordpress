@@ -126,9 +126,9 @@
               <div class="text-block" data-text="t5635a22f"><?php echo _u('t5635a22f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->alt ?>" class="image" data-img="in6837d6cb" srcset="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->srcset ?>">
             </a>
           </div>
-          <div data-w-id="068a00d5-12dd-6e08-95b2-305c6f972842" class="contact">
+          <a href="<?php echo _u('a8559f6b','link'); ?>" data-w-id="068a00d5-12dd-6e08-95b2-305c6f972842" class="contact w-inline-block" data-link="a8559f6b">
             <div data-w-id="068a00d5-12dd-6e08-95b2-305c6f972843" class="text-block-440" data-text="t7f2746de"><?php echo _u('t7f2746de','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in442991b0', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in442991b0', 'img'))->alt ?>" class="image call-icon-blue" data-img="in442991b0" srcset="<?php echo cyma_get_image(_u('in442991b0', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('i30ac0760', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i30ac0760', 'img'))->alt ?>" class="call-icon-dark" data-img="i30ac0760" srcset="<?php echo cyma_get_image(_u('i30ac0760', 'img'))->srcset ?>">
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -591,7 +591,7 @@
         <p class="paragraph-70" data-text="t68478fb0"><?php echo _u('t68478fb0','text'); ?></p>
       </div>
       <div class="industry-list mg-40px-top">
-        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7d2" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
+        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7d2" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
           <div class="slider-mask portfolio-slider industries w-slider-mask">
             <div data-w-id="b0970886-c8fa-aed1-1eec-33458a51d7d4" class="mg-right-10px height-520px w-slide">
               <div class="div-block-1366">
@@ -786,7 +786,7 @@
           </div>
         </div>
       </div>
-      <div data-delay="4000" data-animation="slide" class="slider-30 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+      <div data-delay="4000" data-animation="slide" class="slider-30 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
         <div class="mask-12 w-slider-mask">
           <div class="slide-17 w-slide">
             <div class="div-block-1103">
@@ -934,29 +934,4 @@
     </div>
   </section>
   <section class="section-spacer"></section>
-<script>
-var navbar = document.querySelector('.navbar-logo-left-container.shadow-three.header-992');
-var hamburgerMenu = document.querySelector('.hambuger-menu-main');
-var slider = document.querySelector('.technology-list');
-var sliderMask = document.querySelector('.technology-list .mask-11');
-var leftArrow = document.querySelector('.left-arrow-10');
-var rightArrow = document.querySelector('.right-arrow-16');
-
-window.addEventListener('scroll', function() {
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
-});
-
-window.addEventListener('load', function() {
-  hamburgerMenu.style.display = window.innerWidth <= 991 ? 'flex' : '';
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
-});
-
-leftArrow.addEventListener('click', function() {
-  sliderMask.scrollBy({ left: -300, behavior: 'smooth' });
-});
-
-rightArrow.addEventListener('click', function() {
-  sliderMask.scrollBy({ left: 300, behavior: 'smooth' });
-});
-</script>
   

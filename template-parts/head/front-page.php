@@ -11,7 +11,39 @@
 }
 
 .navbar-logo-left-container.shadow-three.header-992 {
+  background-color: #ffffff0d !important;
+}
+
+.navbar-logo-left-container.shadow-three.header-992.scrolled {
   background-color: #fff !important;
+}
+
+.navbar-logo-left-container.shadow-three.header-992.scrolled * {
+  color: #1a73e8 !important;
+}
+
+/* Keep header CTA solid brand blue on scrolled white nav */
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact,
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact-btn,
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact-btn-copy-nav-about,
+.navbar-logo-left-container.shadow-three.header-992.scrolled [class*="contact-btn-copy-nav"] {
+  background-color: #0562a7 !important;
+  background-image: none !important;
+}
+
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact .text-block-440,
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact-btn .text-block,
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact-btn-copy-nav-about .text-block-440,
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact-btn-copy-nav-about .text-block-440.blue {
+  color: #fff !important;
+}
+
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact .call-icon-blue {
+  display: none !important;
+}
+
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact .call-icon-dark {
+  display: inline-block !important;
 }
 
 .section-24 .mask-11 .w-slide {
@@ -43,7 +75,6 @@
 
 .section-24 ._4x1-copy {
   display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
   align-items: stretch !important;
 }
 

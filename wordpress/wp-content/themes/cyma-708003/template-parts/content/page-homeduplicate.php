@@ -35,9 +35,9 @@
               <div class="text-block" data-text="t5635a22f"><?php echo _u('t5635a22f','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->alt ?>" class="image" data-img="in6837d6cb" srcset="<?php echo cyma_get_image(_u('in6837d6cb', 'img'))->srcset ?>">
             </a>
           </div>
-          <div class="contact">
+          <a href="<?php echo _u('a8559f6b','link'); ?>" class="contact w-inline-block" data-link="a8559f6b">
             <div class="text-block-440-copy" data-text="t7f2746de"><?php echo _u('t7f2746de','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in3a7dbb22', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in3a7dbb22', 'img'))->alt ?>" class="image call-icon-blue" data-img="in3a7dbb22" srcset="<?php echo cyma_get_image(_u('in3a7dbb22', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('i42ea5a96', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i42ea5a96', 'img'))->alt ?>" class="call-icon-dark" data-img="i42ea5a96" srcset="<?php echo cyma_get_image(_u('i42ea5a96', 'img'))->srcset ?>">
-          </div>
+          </a>
         </div>
       </div>
     </div>
