@@ -2,10 +2,35 @@
 /**
  * Create or update all CYMA theme pages from _data/frontend-editor/page-*.json.
  *
- * Run inside Docker:
+ * Run from project root (Windows / Mac / Linux):
+ *   php import-all-pages.php
+ *
+ * Or inside Docker:
  *   docker exec cyma-wordpress php /var/www/html/wp-content/themes/cyma-708003/import-all-pages.php
  */
-require_once '/var/www/html/wp-load.php';
+
+$wp_load = null;
+$candidates = array(
+	dirname( __FILE__, 4 ) . '/wp-load.php',                 // themes/cyma → wordpress/wp-load.php
+	dirname( __FILE__, 5 ) . '/wordpress/wp-load.php',       // repo root → wordpress/wp-load.php
+	__DIR__ . '/../../../../wp-load.php',
+	'/var/www/html/wp-load.php',                             // Docker default
+);
+
+foreach ( $candidates as $candidate ) {
+	if ( is_string( $candidate ) && file_exists( $candidate ) ) {
+		$wp_load = $candidate;
+		break;
+	}
+}
+
+if ( ! $wp_load ) {
+	fwrite( STDERR, "ERROR: Could not find wp-load.php. Run this from the WordPress project, or use:\n" );
+	fwrite( STDERR, "  docker exec cyma-wordpress php /var/www/html/wp-content/themes/cyma-708003/import-all-pages.php\n" );
+	exit( 1 );
+}
+
+require_once $wp_load;
 
 $title_map = array(
     'front-page'                        => 'Home',

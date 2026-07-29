@@ -135,7 +135,7 @@
   </div>
   <section class="section-banner head-banner">
     <div class="w-layout-blockcontainer container head-banner w-container">
-      <div data-delay="6000" data-animation="slide" class="slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="2000" data-infinite="true">
+      <div data-delay="3000" data-animation="slide" class="slider w-slider" data-autoplay="true" data-easing="ease-in-out" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="900" data-infinite="true">
         <div class="w-slider-mask">
           <div class="w-slide">
             <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video id="d88b7aec-3639-7afe-fb54-2a1a8552447b-video" autoplay="" loop="" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/videos/cyma-desktop_poster.0000000.jpg?v=1780144474'); " muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">

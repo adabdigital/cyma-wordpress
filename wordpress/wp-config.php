@@ -124,15 +124,21 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strpos($_SERVER['HTTP_X_FORWARD
 }
 // (we include this by default because reverse proxying is extremely common in container environments)
 
-// Public preview tunnels (e.g. cloudflared trycloudflare.com) — avoid redirect to localhost:8081
-if ( isset( $_SERVER['HTTP_HOST'] ) && strpos( $_SERVER['HTTP_HOST'], 'trycloudflare.com' ) !== false ) {
-	$preview_scheme = ( ! empty( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] !== 'off' ) ? 'https' : 'http';
-	if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ) {
-		$preview_scheme = 'https';
+// Keep site URL aligned with the current request host (local preview + Cloudflare tunnels).
+if ( isset( $_SERVER['HTTP_HOST'] ) && ! defined( 'WP_HOME' ) ) {
+	$host = $_SERVER['HTTP_HOST'];
+	$is_preview_tunnel = strpos( $host, 'trycloudflare.com' ) !== false;
+	$is_local_preview  = preg_match( '/^(localhost|127\.0\.0\.1)(:\d+)?$/', $host );
+
+	if ( $is_preview_tunnel || $is_local_preview ) {
+		$scheme = ( ! empty( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] !== 'off' ) ? 'https' : 'http';
+		if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ) {
+			$scheme = 'https';
+		}
+		$dynamic_url = $scheme . '://' . $host;
+		define( 'WP_HOME', $dynamic_url );
+		define( 'WP_SITEURL', $dynamic_url );
 	}
-	$preview_url    = $preview_scheme . '://' . $_SERVER['HTTP_HOST'];
-	define( 'WP_HOME', $preview_url );
-	define( 'WP_SITEURL', $preview_url );
 }
 
 if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {

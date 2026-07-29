@@ -86,6 +86,7 @@
       </div>
     </div>
   </section>
+<?php get_template_part('template-parts/components/breadcrumb-bar'); ?>
   <div class="bgimg innovation-bg">
     <section class="section-banner">
       <div class="w-layout-blockcontainer container center-flex w-container">

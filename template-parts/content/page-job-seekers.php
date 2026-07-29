@@ -134,7 +134,11 @@
     </div>
   </div>
   <section class="section-25-copy">
-    <div class="text-block-476" data-text="t1ee467b6"><?php echo _u('t1ee467b6','text'); ?></div>
+    <?php if (is_page('explore-careers')) : ?>
+      <div class="text-block-476 cyma-breadcrumb"><?php echo cyma_get_breadcrumb_html(); ?></div>
+    <?php else : ?>
+      <div class="text-block-476" data-text="t1ee467b6"><?php echo _u('t1ee467b6','text'); ?></div>
+    <?php endif; ?>
   </section>
   <section class="hero_section-jobseekers">
     <div class="container-copy-js">
@@ -279,7 +283,7 @@
           </div>
         </div>
       </div>
-      <div data-delay="4000" data-animation="slide" class="slider-27 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-w-id="d5d76e2e-d6c0-e386-eae6-e31689d342b1" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+      <div data-delay="4000" data-animation="slide" class="slider-27 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-w-id="d5d76e2e-d6c0-e386-eae6-e31689d342b1" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
         <div class="w-slider-mask">
           <div class="slide-14 w-slide">
             <div class="div-block-1179">
@@ -443,7 +447,7 @@
           </div>
         </div>
       </div>
-      <div data-delay="4000" data-animation="slide" class="slider-30 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+      <div data-delay="4000" data-animation="slide" class="slider-30 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
         <div class="mask-12 w-slider-mask">
           <div class="slide-17 w-slide">
             <div class="div-block-1103">

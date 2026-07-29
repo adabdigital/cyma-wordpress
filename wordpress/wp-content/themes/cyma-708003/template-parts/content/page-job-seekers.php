@@ -134,7 +134,11 @@
     </div>
   </div>
   <section class="section-25-copy">
-    <div class="text-block-476" data-text="t1ee467b6"><?php echo _u('t1ee467b6','text'); ?></div>
+    <?php if (is_page('explore-careers')) : ?>
+      <div class="text-block-476 cyma-breadcrumb"><?php echo cyma_get_breadcrumb_html(); ?></div>
+    <?php else : ?>
+      <div class="text-block-476" data-text="t1ee467b6"><?php echo _u('t1ee467b6','text'); ?></div>
+    <?php endif; ?>
   </section>
   <section class="hero_section-jobseekers">
     <div class="container-copy-js">

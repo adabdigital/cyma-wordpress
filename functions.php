@@ -46,7 +46,7 @@ function cyma_enqueue_styles() {
     wp_enqueue_style('normalize', get_template_directory_uri() . '/assets/css/normalize.css', [], '1780144474');
     wp_enqueue_style('wordpress', get_template_directory_uri() . '/assets/css/wordpress.css', [], '1780144474');
     wp_enqueue_style('cyma-style', get_template_directory_uri() . '/assets/css/style.css', [], time());
-    wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1780144510');
+    wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1780144550');
 
     wp_add_inline_style(
         'cyma-style',
@@ -181,6 +181,9 @@ $current_page_data = [];
 function load_page_data($page_slug) {
     global $current_page_data;
     $current_page_data = get_page_data($page_slug);
+    if ( function_exists( 'cyma_apply_content_overrides_to_page_data' ) ) {
+        cyma_apply_content_overrides_to_page_data( $page_slug );
+    }
 }
 
 function cyma_resolve_link($url) {
@@ -259,7 +262,10 @@ function cyma_get_image($key) {
     // Handle if key is already an array (from nested _u call)
     if (is_array($key)) {
         // If it's already an image data array, convert to object
-        if (isset($key['src'])) {
+        if (isset($key['src']) || isset($key['attachment_id'])) {
+            if ( function_exists( 'cyma_normalize_image_data' ) ) {
+                return cyma_normalize_image_data( $key );
+            }
             $src = get_template_directory_uri() . $key['src'];
             return (object)[
                 'src' => $src,
@@ -271,6 +277,9 @@ function cyma_get_image($key) {
     }
     if (isset($current_page_data['img'][$key])) {
         $img_data = $current_page_data['img'][$key];
+        if ( function_exists( 'cyma_normalize_image_data' ) ) {
+            return cyma_normalize_image_data( $img_data );
+        }
         $src = get_template_directory_uri() . $img_data['src'];
         return (object)[
             'src' => $src,
@@ -280,6 +289,8 @@ function cyma_get_image($key) {
     }
     return (object)['src' => '', 'alt' => '', 'srcset' => ''];
 }
+
+require_once get_template_directory() . '/inc/cms-content.php';
 
 function cyma_get_breadcrumb_html() {
     if (!is_page()) {
@@ -321,6 +332,14 @@ function cyma_get_breadcrumb_html() {
         'email-verification'   => array(
             array('Home', $home),
             array('Email Verification', '', true),
+        ),
+        'homeduplicate'        => array(
+            array('Home', $home),
+            array('Home (Duplicate)', '', true),
+        ),
+        'explore-careers'      => array(
+            array('Home', $home),
+            array('Explore Careers', home_url('/explore-careers/'), true),
         ),
     );
 
