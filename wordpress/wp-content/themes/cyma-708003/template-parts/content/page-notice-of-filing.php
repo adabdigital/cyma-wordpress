@@ -133,47 +133,13 @@
       </div>
     </div>
   </div>
-  <section class="section-62">
+  <section class="section-62" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/bg-notice.png');background-size:cover;background-position:center;background-repeat:no-repeat">
     <div class="w-layout-blockcontainer container-51 w-container">
       <div data-w-id="bad65874-5ef5-b15e-3239-64023e8e661a" style="opacity:0"><img src="<?php echo cyma_get_image(_u('i7b3db37d', 'img'))->src ?>" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px, 100vw" srcset="<?php echo cyma_get_image(_u('i7b3db37d', 'img'))->srcset ?>" alt="<?php echo cyma_get_image(_u('i7b3db37d', 'img'))->alt ?>" class="image-115" data-img="i7b3db37d"><img src="<?php echo cyma_get_image(_u('i68449e26', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i68449e26', 'img'))->alt ?>" class="image-115-copy" data-img="i68449e26" srcset="<?php echo cyma_get_image(_u('i68449e26', 'img'))->srcset ?>">
         <div data-w-id="7e51501a-f075-3a76-1038-657c019843ca" style="opacity:0" class="text-block-534-copy-et-copy-noticeoffiling" data-textarea="tan64fcd642"><?php echo _u('tan64fcd642', 'textarea'); ?></div>
         <h1 class="heading-120" data-text="tn1a79b566"><?php echo _u('tn1a79b566','text'); ?></h1>
       </div>
       <div class="div-block-1293">
-        <div data-w-id="67e0c06c-3523-93a2-2775-fc282742d4f0" style="opacity:0" class="div-block-1292">
-          <h1 class="heading-121" data-text="t677e402a"><?php echo _u('t677e402a','text'); ?></h1>
-          <div class="div-block-1289">
-            <h1 class="heading-122" data-text="tn705184dd"><?php echo _u('tn705184dd','text'); ?></h1>
-            <div class="text-block-621" data-text="tn14bd3a03"><?php echo _u('tn14bd3a03','text'); ?></div>
-          </div>
-          <div class="div-block-1290">
-            <div class="text-block-622" data-textarea="ta1aeb3788"><?php echo _u('ta1aeb3788', 'textarea'); ?></div>
-            <div class="text-block-622" data-textarea="tan1daa4155"><?php echo _u('tan1daa4155', 'textarea'); ?></div>
-            <div class="text-block-622" data-textarea="tane52b73e"><?php echo _u('tane52b73e', 'textarea'); ?></div>
-            <div class="text-block-622" data-textarea="ta77c32717"><?php echo _u('ta77c32717', 'textarea'); ?></div>
-          </div>
-          <div class="div-block-1291">
-            <div class="text-block-623" data-text="t684b41b1"><?php echo _u('t684b41b1','text'); ?></div>
-            <div class="text-block-625" data-textarea="tan56f5567d"><?php echo _u('tan56f5567d', 'textarea'); ?></div>
-          </div>
-        </div>
-        <div data-w-id="9a498819-e320-eb2e-5764-63a5a9f827bd" style="opacity:0" class="div-block-1292">
-          <h1 class="heading-121" data-text="t59484334"><?php echo _u('t59484334','text'); ?></h1>
-          <div class="div-block-1289">
-            <h1 class="heading-122" data-text="tn705184dd"><?php echo _u('tn705184dd','text'); ?></h1>
-            <div class="text-block-621" data-text="tn3fb2e077"><?php echo _u('tn3fb2e077','text'); ?></div>
-          </div>
-          <div class="div-block-1290">
-            <div class="text-block-622" data-textarea="tan3863d945"><?php echo _u('tan3863d945', 'textarea'); ?></div>
-            <div class="text-block-622" data-textarea="tan1daa4155"><?php echo _u('tan1daa4155', 'textarea'); ?></div>
-            <div class="text-block-622" data-textarea="tane52b73e"><?php echo _u('tane52b73e', 'textarea'); ?></div>
-            <div class="text-block-622" data-textarea="ta77c32717"><?php echo _u('ta77c32717', 'textarea'); ?></div>
-          </div>
-          <div class="div-block-1291">
-            <div class="text-block-623" data-text="t684b41b1"><?php echo _u('t684b41b1','text'); ?></div>
-            <div class="text-block-625" data-textarea="tan56f5567d"><?php echo _u('tan56f5567d', 'textarea'); ?></div>
-          </div>
-        </div>
         <div data-w-id="799d9988-aca0-e1c9-6160-ef2302e008d0" style="opacity:0" class="div-block-1292">
           <h1 class="heading-121" data-text="tn62fe9e54"><?php echo _u('tn62fe9e54','text'); ?></h1>
           <div class="div-block-1289">
@@ -182,40 +148,6 @@
           </div>
           <div class="div-block-1290">
             <div class="text-block-622" data-textarea="tan735cf28e"><?php echo _u('tan735cf28e', 'textarea'); ?></div>
-            <div class="text-block-622" data-textarea="tan1daa4155"><?php echo _u('tan1daa4155', 'textarea'); ?></div>
-            <div class="text-block-622" data-textarea="tane52b73e"><?php echo _u('tane52b73e', 'textarea'); ?></div>
-            <div class="text-block-622" data-textarea="ta77c32717"><?php echo _u('ta77c32717', 'textarea'); ?></div>
-          </div>
-          <div class="div-block-1291">
-            <div class="text-block-623" data-text="t684b41b1"><?php echo _u('t684b41b1','text'); ?></div>
-            <div class="text-block-625" data-textarea="tan56f5567d"><?php echo _u('tan56f5567d', 'textarea'); ?></div>
-          </div>
-        </div>
-        <div data-w-id="966c9664-1c58-31f7-907a-983fb62899fb" style="opacity:0" class="div-block-1292">
-          <h1 class="heading-121" data-text="t78d356b9"><?php echo _u('t78d356b9','text'); ?></h1>
-          <div class="div-block-1289">
-            <h1 class="heading-122" data-text="tn705184dd"><?php echo _u('tn705184dd','text'); ?></h1>
-            <div class="text-block-621" data-text="t212f9aea"><?php echo _u('t212f9aea','text'); ?></div>
-          </div>
-          <div class="div-block-1290">
-            <div class="text-block-622" data-textarea="tan78ca8969"><?php echo _u('tan78ca8969', 'textarea'); ?></div>
-            <div class="text-block-622" data-textarea="tan1daa4155"><?php echo _u('tan1daa4155', 'textarea'); ?></div>
-            <div class="text-block-622" data-textarea="tane52b73e"><?php echo _u('tane52b73e', 'textarea'); ?></div>
-            <div class="text-block-622" data-textarea="ta77c32717"><?php echo _u('ta77c32717', 'textarea'); ?></div>
-          </div>
-          <div class="div-block-1291">
-            <div class="text-block-623" data-text="t684b41b1"><?php echo _u('t684b41b1','text'); ?></div>
-            <div class="text-block-625" data-textarea="tan56f5567d"><?php echo _u('tan56f5567d', 'textarea'); ?></div>
-          </div>
-        </div>
-        <div data-w-id="8c0dc3c5-919f-3621-9b85-b4787e61a78a" style="opacity:0" class="div-block-1292-copy">
-          <h1 class="heading-121" data-text="t1def60a4"><?php echo _u('t1def60a4','text'); ?></h1>
-          <div class="div-block-1289">
-            <h1 class="heading-122" data-text="tn705184dd"><?php echo _u('tn705184dd','text'); ?></h1>
-            <div class="text-block-621" data-text="t2f465b06"><?php echo _u('t2f465b06','text'); ?></div>
-          </div>
-          <div class="div-block-1290">
-            <div class="text-block-622" data-textarea="tan1970eac0"><?php echo _u('tan1970eac0', 'textarea'); ?></div>
             <div class="text-block-622" data-textarea="tan1daa4155"><?php echo _u('tan1daa4155', 'textarea'); ?></div>
             <div class="text-block-622" data-textarea="tane52b73e"><?php echo _u('tane52b73e', 'textarea'); ?></div>
             <div class="text-block-622" data-textarea="ta77c32717"><?php echo _u('ta77c32717', 'textarea'); ?></div>

@@ -133,7 +133,7 @@
       </div>
     </div>
   </div>
-  <section class="section-78">
+  <section class="section-78" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/bg-insights1.png');background-size:contain;background-position:bottom right;background-repeat:no-repeat">
     <div data-w-id="a30c53b1-c8f4-e0f5-c258-4e4297b105cd" style="opacity:0" class="w-layout-blockcontainer container-68 w-container">
       <div class="div-block-1423">
         <div class="text-block-688" data-textarea="ta7e36f3c0"><?php echo _u('ta7e36f3c0', 'textarea'); ?></div>
@@ -156,7 +156,7 @@
       <div class="div-block-1424"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px" srcset="<?php echo cyma_get_image(_u('i69378577', 'img'))->srcset ?>" alt="<?php echo cyma_get_image(_u('i69378577', 'img'))->alt ?>" src="<?php echo cyma_get_image(_u('i69378577', 'img'))->src ?>" loading="lazy" class="image-223" data-img="i69378577"></div>
     </div>
   </section>
-  <section class="section-33">
+  <section class="section-33" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/bg-insights2.png');background-size:contain;background-position:bottom right;background-repeat:no-repeat">
     <div class="w-layout-blockcontainer container-59 w-container">
       <div data-w-id="83cc16dc-f598-1e0d-7084-da5bff4e2598">
         <h1 class="heading-72" data-text="t743aeebf"><?php echo _u('t743aeebf','text'); ?></h1>

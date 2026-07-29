@@ -141,6 +141,7 @@
       </div>
       <div class="div-block-1294">
         <h1 data-w-id="f7128fdc-cf73-8fcf-8b84-91e82c661800" style="opacity:0" class="heading-123" data-text="tn355411b6"><?php echo _u('tn355411b6','text'); ?></h1>
+        <div style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/bg-lca1.png');background-size:cover;background-position:center;background-repeat:no-repeat;padding:20px 0">
         <div data-w-id="e8eb8d0c-7c75-5dc5-5229-bb0c9c17ff3d" style="opacity:0" class="div-block-1295">
           <h1 class="heading-125" data-text="tbf12ad5"><?php echo _u('tbf12ad5','text'); ?></h1>
           <ul role="list" class="list-4">
@@ -180,6 +181,8 @@
           </ul>
           <div class="text-block-627" data-text="tn550d020a"><?php echo _u('tn550d020a','text'); ?></div>
         </div>
+        </div>
+        <div style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/bg-lca2.png');background-size:cover;background-position:center;background-repeat:no-repeat;padding:20px 0">
         <div data-w-id="82449123-9f74-7eef-b54d-93988759591e" style="opacity:0" class="div-block-1295">
           <h1 class="heading-125" data-text="tbf12ad5"><?php echo _u('tbf12ad5','text'); ?></h1>
           <ul role="list" class="list-4">
@@ -206,6 +209,8 @@
           </ul>
           <div class="text-block-627" data-text="tn550d020a"><?php echo _u('tn550d020a','text'); ?></div>
         </div>
+        </div>
+        <div style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/bg-lca3.png');background-size:cover;background-position:center;background-repeat:no-repeat;padding:20px 0">
         <div data-w-id="95cc46ec-722e-572e-e78e-3c65e40de9e7" style="opacity:0" class="div-block-1295">
           <h1 class="heading-125" data-text="tbf12ad5"><?php echo _u('tbf12ad5','text'); ?></h1>
           <ul role="list" class="list-4">
@@ -231,6 +236,7 @@
             <li class="list-item-25" data-text="t2a4ef47b"><?php echo _u('t2a4ef47b','text'); ?></li>
           </ul>
           <div class="text-block-627" data-text="tn550d020a"><?php echo _u('tn550d020a','text'); ?></div>
+        </div>
         </div>
       </div>
     </div>

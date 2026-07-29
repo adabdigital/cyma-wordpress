@@ -133,7 +133,7 @@
       </div>
     </div>
   </div>
-  <section class="section-11">
+  <section class="section-11" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/bg-industries.png');background-size:cover;background-position:center;background-repeat:no-repeat">
     <div class="text-block-672" data-textarea="ta6e8a5b5b"><?php echo _u('ta6e8a5b5b', 'textarea'); ?></div>
     <div class="w-layout-blockcontainer container-61 w-container">
       <div data-w-id="ea07a742-82ab-dcc6-edff-540c25c9f16f" style="opacity:0">
@@ -182,187 +182,190 @@
   <section class="section-13">
     <div class="w-layout-blockcontainer container-15 w-container">
       <h2 data-w-id="4b337abb-307f-7672-3ff2-f4233ad448ab" style="opacity:0" class="heading-39" data-textarea="tanaee29aa"><?php echo _u('tanaee29aa', 'textarea'); ?></h2>
-      <div class="w-layout-grid grid-10">
-        <div data-w-id="ad9e11ef-e80a-bf2d-ec17-8e45d50e5eb7" class="div-block-1123"><img src="<?php echo cyma_get_image(_u('i2e8a0894', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i2e8a0894', 'img'))->alt ?>" class="image-44" data-img="i2e8a0894" srcset="<?php echo cyma_get_image(_u('i2e8a0894', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in31e0f96b', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in31e0f96b', 'img'))->alt ?>" class="image-44-copy-mv" data-img="in31e0f96b" srcset="<?php echo cyma_get_image(_u('in31e0f96b', 'img'))->srcset ?>">
-          <div class="div-block-1124">
-            <h3 class="heading-41" data-text="t79d5a869"><?php echo _u('t79d5a869','text'); ?></h3>
-            <p class="paragraph-20" data-text="tn654aa7f9"><?php echo _u('tn654aa7f9','text'); ?></p>
-            <div class="w-layout-grid grid-11 width">
-              <div class="div-block-1134"><img src="<?php echo cyma_get_image(_u('in4a703449', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in4a703449', 'img'))->alt ?>" class="image-43" data-img="in4a703449" srcset="<?php echo cyma_get_image(_u('in4a703449', 'img'))->srcset ?>">
-                <div class="text-block-464" data-textarea="tan4d443e08"><?php echo _u('tan4d443e08', 'textarea'); ?></div>
+      <div class="w-layout-grid grid-10" style="align-items:start">
+        <div data-w-id="ad9e11ef-e80a-bf2d-ec17-8e45d50e5eb7" class="div-block-1123" style="flex-flow:column;height:auto;padding-bottom:20px"><img src="<?php echo cyma_get_image(_u('i2e8a0894', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i2e8a0894', 'img'))->alt ?>" class="image-44" style="display:none" data-img="i2e8a0894" srcset="<?php echo cyma_get_image(_u('i2e8a0894', 'img'))->srcset ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-banking.png" loading="lazy" alt="Banking" class="image-44-copy-mv" style="display:inline-flex;width:100%;max-width:none;height:auto;border-radius:15px;object-fit:cover" data-img="in31e0f96b">
+          <div class="div-block-1124" style="align-items:center;text-align:center;padding-top:15px">
+            <h3 class="heading-41" style="width:100%;text-align:center" data-text="t79d5a869"><?php echo _u('t79d5a869','text'); ?></h3>
+            <p class="paragraph-20" style="width:100%;text-align:center" data-text="tn654aa7f9"><?php echo _u('tn654aa7f9','text'); ?></p>
+            <div class="w-layout-grid grid-11 width" style="grid-template-columns:1fr 1fr 1fr 1fr;grid-column-gap:12px;grid-row-gap:12px;width:100%;place-items:center">
+              <div class="div-block-1134" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in4a703449', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in4a703449', 'img'))->alt ?>" class="image-43" data-img="in4a703449" srcset="<?php echo cyma_get_image(_u('in4a703449', 'img'))->srcset ?>">
+                <div class="text-block-464" style="text-align:center" style="text-align:center" data-textarea="tan4d443e08"><?php echo _u('tan4d443e08', 'textarea'); ?></div>
               </div>
-              <div class="div-block-1135"><img src="<?php echo cyma_get_image(_u('i686bf1', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i686bf1', 'img'))->alt ?>" class="image-43" data-img="i686bf1" srcset="<?php echo cyma_get_image(_u('i686bf1', 'img'))->srcset ?>">
-                <div class="text-block-465" data-textarea="ta1ad41b18"><?php echo _u('ta1ad41b18', 'textarea'); ?></div>
+              <div class="div-block-1135" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i686bf1', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i686bf1', 'img'))->alt ?>" class="image-43" data-img="i686bf1" srcset="<?php echo cyma_get_image(_u('i686bf1', 'img'))->srcset ?>">
+                <div class="text-block-465" style="text-align:center" style="text-align:center" data-textarea="ta1ad41b18"><?php echo _u('ta1ad41b18', 'textarea'); ?></div>
               </div>
-              <div class="div-block-1136"><img src="<?php echo cyma_get_image(_u('i441f5cfb', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i441f5cfb', 'img'))->alt ?>" class="image-43" data-img="i441f5cfb" srcset="<?php echo cyma_get_image(_u('i441f5cfb', 'img'))->srcset ?>">
-                <div class="text-block-466" data-textarea="tan7b4d721e"><?php echo _u('tan7b4d721e', 'textarea'); ?></div>
+              <div class="div-block-1136" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i441f5cfb', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i441f5cfb', 'img'))->alt ?>" class="image-43" data-img="i441f5cfb" srcset="<?php echo cyma_get_image(_u('i441f5cfb', 'img'))->srcset ?>">
+                <div class="text-block-466" style="text-align:center" style="text-align:center" data-textarea="tan7b4d721e"><?php echo _u('tan7b4d721e', 'textarea'); ?></div>
               </div>
-              <div class="div-block-1137"><img src="<?php echo cyma_get_image(_u('i65a565d', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i65a565d', 'img'))->alt ?>" class="image-43" data-img="i65a565d" srcset="<?php echo cyma_get_image(_u('i65a565d', 'img'))->srcset ?>">
-                <div class="text-block-467" data-textarea="tan6dfe7470"><?php echo _u('tan6dfe7470', 'textarea'); ?></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-w-id="1a178e0c-6521-602a-0d58-1a8c1afbcf66" class="div-block-1123"><img src="<?php echo cyma_get_image(_u('i27240a8', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i27240a8', 'img'))->alt ?>" class="image-44" data-img="i27240a8" srcset="<?php echo cyma_get_image(_u('i27240a8', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in42d1d447', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in42d1d447', 'img'))->alt ?>" class="image-44-copy-mv" data-img="in42d1d447" srcset="<?php echo cyma_get_image(_u('in42d1d447', 'img'))->srcset ?>">
-          <div class="div-block-1124">
-            <h3 class="heading-41" data-textarea="tan79a3356d"><?php echo _u('tan79a3356d', 'textarea'); ?></h3>
-            <p class="paragraph-21" data-text="t464eb6d0"><?php echo _u('t464eb6d0','text'); ?></p>
-            <div class="w-layout-grid grid-11">
-              <div id="w-node-_1a178e0c-6521-602a-0d58-1a8c1afbcf70-1ec3ccf7" class="div-block-1138"><img src="<?php echo cyma_get_image(_u('i76db6c6f', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i76db6c6f', 'img'))->alt ?>" class="image-43" data-img="i76db6c6f" srcset="<?php echo cyma_get_image(_u('i76db6c6f', 'img'))->srcset ?>">
-                <div class="text-block-464" data-text="tn2705fdf6"><?php echo _u('tn2705fdf6','text'); ?></div>
-              </div>
-              <div class="div-block-1139"><img src="<?php echo cyma_get_image(_u('in32786ed', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in32786ed', 'img'))->alt ?>" class="image-43" data-img="in32786ed" srcset="<?php echo cyma_get_image(_u('in32786ed', 'img'))->srcset ?>">
-                <div class="text-block-465" data-text="tn116c047"><?php echo _u('tn116c047','text'); ?></div>
-              </div>
-              <div class="div-block-1140"><img src="<?php echo cyma_get_image(_u('i2f8d5c37', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i2f8d5c37', 'img'))->alt ?>" class="image-43" data-img="i2f8d5c37" srcset="<?php echo cyma_get_image(_u('i2f8d5c37', 'img'))->srcset ?>">
-                <div class="text-block-466 _1" data-text="t1995128e"><?php echo _u('t1995128e','text'); ?></div>
-              </div>
-              <div class="div-block-1141"><img src="<?php echo cyma_get_image(_u('in7d22a86', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in7d22a86', 'img'))->alt ?>" class="image-43" data-img="in7d22a86" srcset="<?php echo cyma_get_image(_u('in7d22a86', 'img'))->srcset ?>">
-                <div class="text-block-467" data-text="tn518568b6"><?php echo _u('tn518568b6','text'); ?></div>
+              <div class="div-block-1137" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i65a565d', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i65a565d', 'img'))->alt ?>" class="image-43" data-img="i65a565d" srcset="<?php echo cyma_get_image(_u('i65a565d', 'img'))->srcset ?>">
+                <div class="text-block-467" style="text-align:center" style="text-align:center" data-textarea="tan6dfe7470"><?php echo _u('tan6dfe7470', 'textarea'); ?></div>
               </div>
             </div>
           </div>
         </div>
-        <div data-w-id="3e71276b-4300-0822-d170-035bb2321f44" class="div-block-1123"><img src="<?php echo cyma_get_image(_u('i5d62acbb', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i5d62acbb', 'img'))->alt ?>" class="image-44" data-img="i5d62acbb" srcset="<?php echo cyma_get_image(_u('i5d62acbb', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in42c3bcc6', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in42c3bcc6', 'img'))->alt ?>" class="image-44-copy-mv" data-img="in42c3bcc6" srcset="<?php echo cyma_get_image(_u('in42c3bcc6', 'img'))->srcset ?>">
-          <div class="div-block-1124">
-            <h3 class="heading-41" data-textarea="ta67f66b26"><?php echo _u('ta67f66b26', 'textarea'); ?></h3>
-            <p class="paragraph-22 newcolor" data-text="t956dfd3"><?php echo _u('t956dfd3','text'); ?></p>
-            <div class="w-layout-grid grid-11">
-              <div class="div-block-1142"><img src="<?php echo cyma_get_image(_u('i24cc0aab', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i24cc0aab', 'img'))->alt ?>" class="image-43" data-img="i24cc0aab" srcset="<?php echo cyma_get_image(_u('i24cc0aab', 'img'))->srcset ?>">
-                <div class="text-block-464" data-text="tnbdd017b"><?php echo _u('tnbdd017b','text'); ?></div>
+        
+        <div data-w-id="1a178e0c-6521-602a-0d58-1a8c1afbcf66" class="div-block-1123" style="flex-flow:column;height:auto;padding-bottom:20px"><img src="<?php echo cyma_get_image(_u('i27240a8', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i27240a8', 'img'))->alt ?>" class="image-44" style="display:none" data-img="i27240a8" srcset="<?php echo cyma_get_image(_u('i27240a8', 'img'))->srcset ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-automotive.png" loading="lazy" alt="Automotive" class="image-44-copy-mv" style="display:inline-flex;width:100%;max-width:none;height:auto;border-radius:15px;object-fit:cover" data-img="in42d1d447">
+          <div class="div-block-1124" style="align-items:center;text-align:center;padding-top:15px">
+            <h3 class="heading-41" style="width:100%;text-align:center" data-textarea="tan79a3356d"><?php echo _u('tan79a3356d', 'textarea'); ?></h3>
+            <p class="paragraph-21" style="width:100%;text-align:center" data-text="t464eb6d0"><?php echo _u('t464eb6d0','text'); ?></p>
+            <div class="w-layout-grid grid-11" style="grid-template-columns:1fr 1fr 1fr 1fr;grid-column-gap:12px;grid-row-gap:12px;width:100%;place-items:center">
+              <div id="w-node-_1a178e0c-6521-602a-0d58-1a8c1afbcf70-1ec3ccf7" class="div-block-1138" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i76db6c6f', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i76db6c6f', 'img'))->alt ?>" class="image-43" data-img="i76db6c6f" srcset="<?php echo cyma_get_image(_u('i76db6c6f', 'img'))->srcset ?>">
+                <div class="text-block-464" style="text-align:center" data-text="tn2705fdf6"><?php echo _u('tn2705fdf6','text'); ?></div>
               </div>
-              <div class="div-block-1143"><img src="<?php echo cyma_get_image(_u('in40bd0ed', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in40bd0ed', 'img'))->alt ?>" class="image-43" data-img="in40bd0ed" srcset="<?php echo cyma_get_image(_u('in40bd0ed', 'img'))->srcset ?>">
-                <div class="text-block-465" data-text="t5737d032"><?php echo _u('t5737d032','text'); ?></div>
+              <div class="div-block-1139" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in32786ed', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in32786ed', 'img'))->alt ?>" class="image-43" data-img="in32786ed" srcset="<?php echo cyma_get_image(_u('in32786ed', 'img'))->srcset ?>">
+                <div class="text-block-465" style="text-align:center" data-text="tn116c047"><?php echo _u('tn116c047','text'); ?></div>
               </div>
-              <div class="div-block-1144"><img src="<?php echo cyma_get_image(_u('in3cebf616', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in3cebf616', 'img'))->alt ?>" class="image-43" data-img="in3cebf616" srcset="<?php echo cyma_get_image(_u('in3cebf616', 'img'))->srcset ?>">
-                <div class="text-block-466" data-text="tn4b0246f3"><?php echo _u('tn4b0246f3','text'); ?></div>
+              <div class="div-block-1140" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i2f8d5c37', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i2f8d5c37', 'img'))->alt ?>" class="image-43" data-img="i2f8d5c37" srcset="<?php echo cyma_get_image(_u('i2f8d5c37', 'img'))->srcset ?>">
+                <div class="text-block-466 _1" style="text-align:center" data-text="t1995128e"><?php echo _u('t1995128e','text'); ?></div>
               </div>
-              <div class="div-block-1145"><img src="<?php echo cyma_get_image(_u('in21d0b1a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in21d0b1a', 'img'))->alt ?>" class="image-43" data-img="in21d0b1a" srcset="<?php echo cyma_get_image(_u('in21d0b1a', 'img'))->srcset ?>">
-                <div class="text-block-467" data-text="tn3706543a"><?php echo _u('tn3706543a','text'); ?></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-w-id="9ef98d99-b614-25e9-f6a2-e2ebf6d18c73" class="div-block-1123"><img src="<?php echo cyma_get_image(_u('in5f816d3', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in5f816d3', 'img'))->alt ?>" class="image-44" data-img="in5f816d3" srcset="<?php echo cyma_get_image(_u('in5f816d3', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in42b5a545', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in42b5a545', 'img'))->alt ?>" class="image-44-copy-mv" data-img="in42b5a545" srcset="<?php echo cyma_get_image(_u('in42b5a545', 'img'))->srcset ?>">
-          <div class="div-block-1124">
-            <h3 class="heading-41" data-text="t39785a26"><?php echo _u('t39785a26','text'); ?></h3>
-            <p class="paragraph-23 newcolor" data-text="tn2c18be1f"><?php echo _u('tn2c18be1f','text'); ?></p>
-            <div class="w-layout-grid grid-11">
-              <div class="div-block-1146"><img src="<?php echo cyma_get_image(_u('i18fe78ed', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i18fe78ed', 'img'))->alt ?>" class="image-43" data-img="i18fe78ed" srcset="<?php echo cyma_get_image(_u('i18fe78ed', 'img'))->srcset ?>">
-                <div class="text-block-464" data-text="t2bc0c237"><?php echo _u('t2bc0c237','text'); ?></div>
-              </div>
-              <div class="div-block-1147"><img src="<?php echo cyma_get_image(_u('in51f8f401', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in51f8f401', 'img'))->alt ?>" class="image-43" data-img="in51f8f401" srcset="<?php echo cyma_get_image(_u('in51f8f401', 'img'))->srcset ?>">
-                <div class="text-block-465" data-text="tn62d32b76"><?php echo _u('tn62d32b76','text'); ?></div>
-              </div>
-              <div class="div-block-1148"><img src="<?php echo cyma_get_image(_u('in1d5c166a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in1d5c166a', 'img'))->alt ?>" class="image-43" data-img="in1d5c166a" srcset="<?php echo cyma_get_image(_u('in1d5c166a', 'img'))->srcset ?>">
-                <div class="text-block-466" data-text="tn6061a7dc"><?php echo _u('tn6061a7dc','text'); ?></div>
-              </div>
-              <div class="div-block-1149"><img src="<?php echo cyma_get_image(_u('i7c51f583', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i7c51f583', 'img'))->alt ?>" class="image-43" data-img="i7c51f583" srcset="<?php echo cyma_get_image(_u('i7c51f583', 'img'))->srcset ?>">
-                <div class="text-block-467" data-text="tn3f8c8d97"><?php echo _u('tn3f8c8d97','text'); ?></div>
+              <div class="div-block-1141" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in7d22a86', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in7d22a86', 'img'))->alt ?>" class="image-43" data-img="in7d22a86" srcset="<?php echo cyma_get_image(_u('in7d22a86', 'img'))->srcset ?>">
+                <div class="text-block-467" style="text-align:center" data-text="tn518568b6"><?php echo _u('tn518568b6','text'); ?></div>
               </div>
             </div>
           </div>
         </div>
-        <div data-w-id="851d5a47-a038-2f10-58d4-7211c8a117db" class="div-block-1123"><img src="<?php echo cyma_get_image(_u('i2c9fb3a4', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i2c9fb3a4', 'img'))->alt ?>" class="image-44" data-img="i2c9fb3a4" srcset="<?php echo cyma_get_image(_u('i2c9fb3a4', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in42a78dc4', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in42a78dc4', 'img'))->alt ?>" class="image-44-copy-mv" data-img="in42a78dc4" srcset="<?php echo cyma_get_image(_u('in42a78dc4', 'img'))->srcset ?>">
-          <div class="div-block-1124">
-            <h3 class="heading-41" data-textarea="tan118af464"><?php echo _u('tan118af464', 'textarea'); ?></h3>
-            <p class="paragraph-24" data-text="tn36208b98"><?php echo _u('tn36208b98','text'); ?></p>
-            <div class="w-layout-grid grid-11">
-              <div class="div-block-1150"><img src="<?php echo cyma_get_image(_u('i1ccd2f05', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i1ccd2f05', 'img'))->alt ?>" class="image-43" data-img="i1ccd2f05" srcset="<?php echo cyma_get_image(_u('i1ccd2f05', 'img'))->srcset ?>">
-                <div class="text-block-464" data-text="t168b43e9"><?php echo _u('t168b43e9','text'); ?></div>
+        <div data-w-id="3e71276b-4300-0822-d170-035bb2321f44" class="div-block-1123" style="flex-flow:column;height:auto;padding-bottom:20px"><img src="<?php echo cyma_get_image(_u('i5d62acbb', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i5d62acbb', 'img'))->alt ?>" class="image-44" style="display:none" data-img="i5d62acbb" srcset="<?php echo cyma_get_image(_u('i5d62acbb', 'img'))->srcset ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-energy.png" loading="lazy" alt="Energy" class="image-44-copy-mv" style="display:inline-flex;width:100%;max-width:none;height:auto;border-radius:15px;object-fit:cover" data-img="in42c3bcc6">
+          <div class="div-block-1124" style="align-items:center;text-align:center;padding-top:15px">
+            <h3 class="heading-41" style="width:100%;text-align:center" data-textarea="ta67f66b26"><?php echo _u('ta67f66b26', 'textarea'); ?></h3>
+            <p class="paragraph-22 newcolor" style="width:100%;text-align:center" data-text="t956dfd3"><?php echo _u('t956dfd3','text'); ?></p>
+            <div class="w-layout-grid grid-11" style="grid-template-columns:1fr 1fr 1fr 1fr;grid-column-gap:12px;grid-row-gap:12px;width:100%;place-items:center">
+              <div class="div-block-1142" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i24cc0aab', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i24cc0aab', 'img'))->alt ?>" class="image-43" data-img="i24cc0aab" srcset="<?php echo cyma_get_image(_u('i24cc0aab', 'img'))->srcset ?>">
+                <div class="text-block-464" style="text-align:center" style="text-align:center" data-text="tnbdd017b"><?php echo _u('tnbdd017b','text'); ?></div>
               </div>
-              <div class="div-block-1151"><img src="<?php echo cyma_get_image(_u('i1cdb4686', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i1cdb4686', 'img'))->alt ?>" class="image-43" data-img="i1cdb4686" srcset="<?php echo cyma_get_image(_u('i1cdb4686', 'img'))->srcset ?>">
-                <div class="text-block-465" data-text="tn76a46e26"><?php echo _u('tn76a46e26','text'); ?></div>
+              <div class="div-block-1143" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in40bd0ed', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in40bd0ed', 'img'))->alt ?>" class="image-43" data-img="in40bd0ed" srcset="<?php echo cyma_get_image(_u('in40bd0ed', 'img'))->srcset ?>">
+                <div class="text-block-465" style="text-align:center" style="text-align:center" data-text="t5737d032"><?php echo _u('t5737d032','text'); ?></div>
               </div>
-              <div class="div-block-1152"><img src="<?php echo cyma_get_image(_u('i1cf77588', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i1cf77588', 'img'))->alt ?>" class="image-43" data-img="i1cf77588" srcset="<?php echo cyma_get_image(_u('i1cf77588', 'img'))->srcset ?>">
-                <div class="text-block-466" data-text="t54b20396"><?php echo _u('t54b20396','text'); ?></div>
+              <div class="div-block-1144" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in3cebf616', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in3cebf616', 'img'))->alt ?>" class="image-43" data-img="in3cebf616" srcset="<?php echo cyma_get_image(_u('in3cebf616', 'img'))->srcset ?>">
+                <div class="text-block-466" style="text-align:center" style="text-align:center" data-text="tn4b0246f3"><?php echo _u('tn4b0246f3','text'); ?></div>
               </div>
-              <div class="div-block-1153"><img src="<?php echo cyma_get_image(_u('i1ce95e07', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i1ce95e07', 'img'))->alt ?>" class="image-43" data-img="i1ce95e07" srcset="<?php echo cyma_get_image(_u('i1ce95e07', 'img'))->srcset ?>">
-                <div class="text-block-467" data-text="t72e239ba"><?php echo _u('t72e239ba','text'); ?></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-w-id="ff7e02e0-2448-0d20-8cae-b5429b158ac8" class="div-block-1123"><img src="<?php echo cyma_get_image(_u('in178e2a36', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in178e2a36', 'img'))->alt ?>" class="image-44" data-img="in178e2a36" srcset="<?php echo cyma_get_image(_u('in178e2a36', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in42997643', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in42997643', 'img'))->alt ?>" class="image-44-copy-mv" data-img="in42997643" srcset="<?php echo cyma_get_image(_u('in42997643', 'img'))->srcset ?>">
-          <div class="div-block-1124">
-            <h3 class="heading-41" data-textarea="ta6ef07ea1"><?php echo _u('ta6ef07ea1', 'textarea'); ?></h3>
-            <p class="paragraph-25" data-text="t30650dab"><?php echo _u('t30650dab','text'); ?></p>
-            <div class="w-layout-grid grid-11">
-              <div class="div-block-1154"><img src="<?php echo cyma_get_image(_u('i18c61ae9', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i18c61ae9', 'img'))->alt ?>" class="image-43" data-img="i18c61ae9" srcset="<?php echo cyma_get_image(_u('i18c61ae9', 'img'))->srcset ?>">
-                <div class="text-block-464" data-textarea="tanf2d4a92"><?php echo _u('tanf2d4a92', 'textarea'); ?></div>
-              </div>
-              <div class="div-block-1155"><img src="<?php echo cyma_get_image(_u('in5231e44a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in5231e44a', 'img'))->alt ?>" class="image-43" data-img="in5231e44a" srcset="<?php echo cyma_get_image(_u('in5231e44a', 'img'))->srcset ?>">
-                <div class="text-block-465" data-text="tn6e765030"><?php echo _u('tn6e765030','text'); ?></div>
-              </div>
-              <div class="div-block-1156"><img src="<?php echo cyma_get_image(_u('i4dd69cad', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i4dd69cad', 'img'))->alt ?>" class="image-43" data-img="i4dd69cad" srcset="<?php echo cyma_get_image(_u('i4dd69cad', 'img'))->srcset ?>">
-                <div class="text-block-466 _1" data-text="tn3f5742ae"><?php echo _u('tn3f5742ae','text'); ?></div>
-              </div>
-              <div class="div-block-1157"><img src="<?php echo cyma_get_image(_u('in485cecd1', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in485cecd1', 'img'))->alt ?>" class="image-43" data-img="in485cecd1" srcset="<?php echo cyma_get_image(_u('in485cecd1', 'img'))->srcset ?>">
-                <div class="text-block-467" data-text="t3d41f0a7"><?php echo _u('t3d41f0a7','text'); ?></div>
+              <div class="div-block-1145" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in21d0b1a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in21d0b1a', 'img'))->alt ?>" class="image-43" data-img="in21d0b1a" srcset="<?php echo cyma_get_image(_u('in21d0b1a', 'img'))->srcset ?>">
+                <div class="text-block-467" style="text-align:center" style="text-align:center" data-text="tn3706543a"><?php echo _u('tn3706543a','text'); ?></div>
               </div>
             </div>
           </div>
         </div>
-        <div data-w-id="0ac66039-2bc7-2752-bb9f-7dc75a24a2d2" class="div-block-1123"><img src="<?php echo cyma_get_image(_u('in22239bd', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in22239bd', 'img'))->alt ?>" class="image-44" data-img="in22239bd" srcset="<?php echo cyma_get_image(_u('in22239bd', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in428b5ec2', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in428b5ec2', 'img'))->alt ?>" class="image-44-copy-mv" data-img="in428b5ec2" srcset="<?php echo cyma_get_image(_u('in428b5ec2', 'img'))->srcset ?>">
-          <div class="div-block-1124">
-            <h3 class="heading-41" data-text="tn588e3929"><?php echo _u('tn588e3929','text'); ?></h3>
-            <p class="paragraph-26" data-text="tn5d89f682"><?php echo _u('tn5d89f682','text'); ?></p>
-            <div class="w-layout-grid grid-11">
-              <div class="div-block-1158"><img src="<?php echo cyma_get_image(_u('i18d4326a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i18d4326a', 'img'))->alt ?>" class="image-43" data-img="i18d4326a" srcset="<?php echo cyma_get_image(_u('i18d4326a', 'img'))->srcset ?>">
-                <div class="text-block-464" data-textarea="ta7bb12704"><?php echo _u('ta7bb12704', 'textarea'); ?></div>
+        <div data-w-id="9ef98d99-b614-25e9-f6a2-e2ebf6d18c73" class="div-block-1123" style="flex-flow:column;height:auto;padding-bottom:20px"><img src="<?php echo cyma_get_image(_u('in5f816d3', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in5f816d3', 'img'))->alt ?>" class="image-44" style="display:none" data-img="in5f816d3" srcset="<?php echo cyma_get_image(_u('in5f816d3', 'img'))->srcset ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-healthcare.png" loading="lazy" alt="Healthcare" class="image-44-copy-mv" style="display:inline-flex;width:100%;max-width:none;height:auto;border-radius:15px;object-fit:cover" data-img="in42b5a545">
+          <div class="div-block-1124" style="align-items:center;text-align:center;padding-top:15px">
+            <h3 class="heading-41" style="width:100%;text-align:center" data-text="t39785a26"><?php echo _u('t39785a26','text'); ?></h3>
+            <p class="paragraph-23 newcolor" style="width:100%;text-align:center" data-text="tn2c18be1f"><?php echo _u('tn2c18be1f','text'); ?></p>
+            <div class="w-layout-grid grid-11" style="grid-template-columns:1fr 1fr 1fr 1fr;grid-column-gap:12px;grid-row-gap:12px;width:100%;place-items:center">
+              <div class="div-block-1146" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i18fe78ed', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i18fe78ed', 'img'))->alt ?>" class="image-43" data-img="i18fe78ed" srcset="<?php echo cyma_get_image(_u('i18fe78ed', 'img'))->srcset ?>">
+                <div class="text-block-464" style="text-align:center" style="text-align:center" data-text="t2bc0c237"><?php echo _u('t2bc0c237','text'); ?></div>
               </div>
-              <div class="div-block-1159"><img src="<?php echo cyma_get_image(_u('in7d6d6e95', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in7d6d6e95', 'img'))->alt ?>" class="image-43" data-img="in7d6d6e95" srcset="<?php echo cyma_get_image(_u('in7d6d6e95', 'img'))->srcset ?>">
-                <div class="text-block-465" data-textarea="tan6c3f4af5"><?php echo _u('tan6c3f4af5', 'textarea'); ?></div>
+              <div class="div-block-1147" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in51f8f401', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in51f8f401', 'img'))->alt ?>" class="image-43" data-img="in51f8f401" srcset="<?php echo cyma_get_image(_u('in51f8f401', 'img'))->srcset ?>">
+                <div class="text-block-465" style="text-align:center" style="text-align:center" data-text="tn62d32b76"><?php echo _u('tn62d32b76','text'); ?></div>
               </div>
-              <div class="div-block-1160"><img src="<?php echo cyma_get_image(_u('i4dac562a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i4dac562a', 'img'))->alt ?>" class="image-43" data-img="i4dac562a" srcset="<?php echo cyma_get_image(_u('i4dac562a', 'img'))->srcset ?>">
-                <div class="text-block-466" data-text="t694d13eb"><?php echo _u('t694d13eb','text'); ?></div>
+              <div class="div-block-1148" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in1d5c166a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in1d5c166a', 'img'))->alt ?>" class="image-43" data-img="in1d5c166a" srcset="<?php echo cyma_get_image(_u('in1d5c166a', 'img'))->srcset ?>">
+                <div class="text-block-466" style="text-align:center" style="text-align:center" data-text="tn6061a7dc"><?php echo _u('tn6061a7dc','text'); ?></div>
               </div>
-              <div class="div-block-1161"><img src="<?php echo cyma_get_image(_u('in48873354', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in48873354', 'img'))->alt ?>" class="image-43" data-img="in48873354" srcset="<?php echo cyma_get_image(_u('in48873354', 'img'))->srcset ?>">
-                <div class="text-block-467" data-text="t23880afb"><?php echo _u('t23880afb','text'); ?></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-w-id="a55ced21-a758-eebf-9469-3d958876309f" class="div-block-1123"><img src="<?php echo cyma_get_image(_u('i7f131da0', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i7f131da0', 'img'))->alt ?>" class="image-44" data-img="i7f131da0" srcset="<?php echo cyma_get_image(_u('i7f131da0', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in427d4741', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in427d4741', 'img'))->alt ?>" class="image-44-copy-mv" data-img="in427d4741" srcset="<?php echo cyma_get_image(_u('in427d4741', 'img'))->srcset ?>">
-          <div class="div-block-1124">
-            <h3 class="heading-41" data-textarea="ta7d79098f"><?php echo _u('ta7d79098f', 'textarea'); ?></h3>
-            <p class="paragraph-27" data-text="tn4aaeef4a"><?php echo _u('tn4aaeef4a','text'); ?></p>
-            <div class="w-layout-grid grid-11">
-              <div class="div-block-1162"><img src="<?php echo cyma_get_image(_u('i18e249eb', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i18e249eb', 'img'))->alt ?>" class="image-43" data-img="i18e249eb" srcset="<?php echo cyma_get_image(_u('i18e249eb', 'img'))->srcset ?>">
-                <div class="text-block-464" data-textarea="ta1a40e2a3"><?php echo _u('ta1a40e2a3', 'textarea'); ?></div>
-              </div>
-              <div class="div-block-1163"><img src="<?php echo cyma_get_image(_u('in7d5f5714', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in7d5f5714', 'img'))->alt ?>" class="image-43" data-img="in7d5f5714" srcset="<?php echo cyma_get_image(_u('in7d5f5714', 'img'))->srcset ?>">
-                <div class="text-block-465" data-text="tn2193358b"><?php echo _u('tn2193358b','text'); ?></div>
-              </div>
-              <div class="div-block-1164"><img src="<?php echo cyma_get_image(_u('i4dba6dab', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i4dba6dab', 'img'))->alt ?>" class="image-43" data-img="i4dba6dab" srcset="<?php echo cyma_get_image(_u('i4dba6dab', 'img'))->srcset ?>">
-                <div class="text-block-466" data-textarea="tan3d652869"><?php echo _u('tan3d652869', 'textarea'); ?></div>
-              </div>
-              <div class="div-block-1165"><img src="<?php echo cyma_get_image(_u('in48791bd3', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in48791bd3', 'img'))->alt ?>" class="image-43" data-img="in48791bd3" srcset="<?php echo cyma_get_image(_u('in48791bd3', 'img'))->srcset ?>">
-                <div class="text-block-467" data-text="t4133bdfa"><?php echo _u('t4133bdfa','text'); ?></div>
+              <div class="div-block-1149" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i7c51f583', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i7c51f583', 'img'))->alt ?>" class="image-43" data-img="i7c51f583" srcset="<?php echo cyma_get_image(_u('i7c51f583', 'img'))->srcset ?>">
+                <div class="text-block-467" style="text-align:center" style="text-align:center" data-text="tn3f8c8d97"><?php echo _u('tn3f8c8d97','text'); ?></div>
               </div>
             </div>
           </div>
         </div>
-        <div data-w-id="5b9b4238-1386-a7dc-7d03-5746eb6064df" class="div-block-1123"><img src="<?php echo cyma_get_image(_u('i1abb54b1', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i1abb54b1', 'img'))->alt ?>" class="image-44" data-img="i1abb54b1" srcset="<?php echo cyma_get_image(_u('i1abb54b1', 'img'))->srcset ?>"><img src="<?php echo cyma_get_image(_u('in426f2fc0', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in426f2fc0', 'img'))->alt ?>" class="image-44-copy-mv" data-img="in426f2fc0" srcset="<?php echo cyma_get_image(_u('in426f2fc0', 'img'))->srcset ?>">
-          <div class="div-block-1124">
-            <h3 class="heading-41" data-text="t332b7f24"><?php echo _u('t332b7f24','text'); ?></h3>
-            <p class="paragraph-28" data-text="tne3f73f3"><?php echo _u('tne3f73f3','text'); ?></p>
-            <div class="w-layout-grid grid-11">
-              <div class="div-block-1166"><img src="<?php echo cyma_get_image(_u('i18f0616c', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i18f0616c', 'img'))->alt ?>" class="image-43" data-img="i18f0616c" srcset="<?php echo cyma_get_image(_u('i18f0616c', 'img'))->srcset ?>">
-                <div class="text-block-464" data-text="tn33c2b828"><?php echo _u('tn33c2b828','text'); ?></div>
+        <div data-w-id="851d5a47-a038-2f10-58d4-7211c8a117db" class="div-block-1123" style="flex-flow:column;height:auto;padding-bottom:20px"><img src="<?php echo cyma_get_image(_u('i2c9fb3a4', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i2c9fb3a4', 'img'))->alt ?>" class="image-44" style="display:none" data-img="i2c9fb3a4" srcset="<?php echo cyma_get_image(_u('i2c9fb3a4', 'img'))->srcset ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-manufacturing.png" loading="lazy" alt="Manufacturing" class="image-44-copy-mv" style="display:inline-flex;width:100%;max-width:none;height:auto;border-radius:15px;object-fit:cover" data-img="in42a78dc4">
+          <div class="div-block-1124" style="align-items:center;text-align:center;padding-top:15px">
+            <h3 class="heading-41" style="width:100%;text-align:center" data-textarea="tan118af464"><?php echo _u('tan118af464', 'textarea'); ?></h3>
+            <p class="paragraph-24" style="width:100%;text-align:center" data-text="tn36208b98"><?php echo _u('tn36208b98','text'); ?></p>
+            <div class="w-layout-grid grid-11" style="grid-template-columns:1fr 1fr 1fr 1fr;grid-column-gap:12px;grid-row-gap:12px;width:100%;place-items:center">
+              <div class="div-block-1150" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i1ccd2f05', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i1ccd2f05', 'img'))->alt ?>" class="image-43" data-img="i1ccd2f05" srcset="<?php echo cyma_get_image(_u('i1ccd2f05', 'img'))->srcset ?>">
+                <div class="text-block-464" style="text-align:center" style="text-align:center" data-text="t168b43e9"><?php echo _u('t168b43e9','text'); ?></div>
               </div>
-              <div class="div-block-1167"><img src="<?php echo cyma_get_image(_u('in7d432812', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in7d432812', 'img'))->alt ?>" class="image-43" data-img="in7d432812" srcset="<?php echo cyma_get_image(_u('in7d432812', 'img'))->srcset ?>">
-                <div class="text-block-465" data-text="t1def5bf3"><?php echo _u('t1def5bf3','text'); ?></div>
+              <div class="div-block-1151" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i1cdb4686', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i1cdb4686', 'img'))->alt ?>" class="image-43" data-img="i1cdb4686" srcset="<?php echo cyma_get_image(_u('i1cdb4686', 'img'))->srcset ?>">
+                <div class="text-block-465" style="text-align:center" style="text-align:center" data-text="tn76a46e26"><?php echo _u('tn76a46e26','text'); ?></div>
               </div>
-              <div class="div-block-1168"><img src="<?php echo cyma_get_image(_u('i4dc8852c', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i4dc8852c', 'img'))->alt ?>" class="image-43" data-img="i4dc8852c" srcset="<?php echo cyma_get_image(_u('i4dc8852c', 'img'))->srcset ?>">
-                <div class="text-block-466" data-text="tn47d8b73e"><?php echo _u('tn47d8b73e','text'); ?></div>
+              <div class="div-block-1152" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i1cf77588', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i1cf77588', 'img'))->alt ?>" class="image-43" data-img="i1cf77588" srcset="<?php echo cyma_get_image(_u('i1cf77588', 'img'))->srcset ?>">
+                <div class="text-block-466" style="text-align:center" style="text-align:center" data-text="t54b20396"><?php echo _u('t54b20396','text'); ?></div>
               </div>
-              <div class="div-block-1169"><img src="<?php echo cyma_get_image(_u('in486b0452', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in486b0452', 'img'))->alt ?>" class="image-43" data-img="in486b0452" srcset="<?php echo cyma_get_image(_u('in486b0452', 'img'))->srcset ?>">
-                <div class="text-block-467" data-text="tn59776d53"><?php echo _u('tn59776d53','text'); ?></div>
+              <div class="div-block-1153" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i1ce95e07', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i1ce95e07', 'img'))->alt ?>" class="image-43" data-img="i1ce95e07" srcset="<?php echo cyma_get_image(_u('i1ce95e07', 'img'))->srcset ?>">
+                <div class="text-block-467" style="text-align:center" style="text-align:center" data-text="t72e239ba"><?php echo _u('t72e239ba','text'); ?></div>
               </div>
             </div>
           </div>
         </div>
+        <div data-w-id="ff7e02e0-2448-0d20-8cae-b5429b158ac8" class="div-block-1123" style="flex-flow:column;height:auto;padding-bottom:20px"><img src="<?php echo cyma_get_image(_u('in178e2a36', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in178e2a36', 'img'))->alt ?>" class="image-44" style="display:none" data-img="in178e2a36" srcset="<?php echo cyma_get_image(_u('in178e2a36', 'img'))->srcset ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-retail.png" loading="lazy" alt="Retail" class="image-44-copy-mv" style="display:inline-flex;width:100%;max-width:none;height:auto;border-radius:15px;object-fit:cover" data-img="in42997643">
+          <div class="div-block-1124" style="align-items:center;text-align:center;padding-top:15px">
+            <h3 class="heading-41" style="width:100%;text-align:center" data-textarea="ta6ef07ea1"><?php echo _u('ta6ef07ea1', 'textarea'); ?></h3>
+            <p class="paragraph-25" style="width:100%;text-align:center" data-text="t30650dab"><?php echo _u('t30650dab','text'); ?></p>
+            <div class="w-layout-grid grid-11" style="grid-template-columns:1fr 1fr 1fr 1fr;grid-column-gap:12px;grid-row-gap:12px;width:100%;place-items:center">
+              <div class="div-block-1154" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i18c61ae9', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i18c61ae9', 'img'))->alt ?>" class="image-43" data-img="i18c61ae9" srcset="<?php echo cyma_get_image(_u('i18c61ae9', 'img'))->srcset ?>">
+                <div class="text-block-464" style="text-align:center" style="text-align:center" data-textarea="tanf2d4a92"><?php echo _u('tanf2d4a92', 'textarea'); ?></div>
+              </div>
+              <div class="div-block-1155" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in5231e44a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in5231e44a', 'img'))->alt ?>" class="image-43" data-img="in5231e44a" srcset="<?php echo cyma_get_image(_u('in5231e44a', 'img'))->srcset ?>">
+                <div class="text-block-465" style="text-align:center" style="text-align:center" data-text="tn6e765030"><?php echo _u('tn6e765030','text'); ?></div>
+              </div>
+              <div class="div-block-1156" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i4dd69cad', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i4dd69cad', 'img'))->alt ?>" class="image-43" data-img="i4dd69cad" srcset="<?php echo cyma_get_image(_u('i4dd69cad', 'img'))->srcset ?>">
+                <div class="text-block-466 _1" style="text-align:center" style="text-align:center" data-text="tn3f5742ae"><?php echo _u('tn3f5742ae','text'); ?></div>
+              </div>
+              <div class="div-block-1157" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in485cecd1', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in485cecd1', 'img'))->alt ?>" class="image-43" data-img="in485cecd1" srcset="<?php echo cyma_get_image(_u('in485cecd1', 'img'))->srcset ?>">
+                <div class="text-block-467" style="text-align:center" style="text-align:center" data-text="t3d41f0a7"><?php echo _u('t3d41f0a7','text'); ?></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="0ac66039-2bc7-2752-bb9f-7dc75a24a2d2" class="div-block-1123" style="flex-flow:column;height:auto;padding-bottom:20px"><img src="<?php echo cyma_get_image(_u('in22239bd', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in22239bd', 'img'))->alt ?>" class="image-44" style="display:none" data-img="in22239bd" srcset="<?php echo cyma_get_image(_u('in22239bd', 'img'))->srcset ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-telecommunicatioin.png" loading="lazy" alt="Telecommunicatioin" class="image-44-copy-mv" style="display:inline-flex;width:100%;max-width:none;height:auto;border-radius:15px;object-fit:cover" data-img="in428b5ec2">
+          <div class="div-block-1124" style="align-items:center;text-align:center;padding-top:15px">
+            <h3 class="heading-41" style="width:100%;text-align:center" data-text="tn588e3929"><?php echo _u('tn588e3929','text'); ?></h3>
+            <p class="paragraph-26" style="width:100%;text-align:center" data-text="tn5d89f682"><?php echo _u('tn5d89f682','text'); ?></p>
+            <div class="w-layout-grid grid-11" style="grid-template-columns:1fr 1fr 1fr 1fr;grid-column-gap:12px;grid-row-gap:12px;width:100%;place-items:center">
+              <div class="div-block-1158" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i18d4326a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i18d4326a', 'img'))->alt ?>" class="image-43" data-img="i18d4326a" srcset="<?php echo cyma_get_image(_u('i18d4326a', 'img'))->srcset ?>">
+                <div class="text-block-464" style="text-align:center" style="text-align:center" data-textarea="ta7bb12704"><?php echo _u('ta7bb12704', 'textarea'); ?></div>
+              </div>
+              <div class="div-block-1159" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in7d6d6e95', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in7d6d6e95', 'img'))->alt ?>" class="image-43" data-img="in7d6d6e95" srcset="<?php echo cyma_get_image(_u('in7d6d6e95', 'img'))->srcset ?>">
+                <div class="text-block-465" style="text-align:center" style="text-align:center" data-textarea="tan6c3f4af5"><?php echo _u('tan6c3f4af5', 'textarea'); ?></div>
+              </div>
+              <div class="div-block-1160" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i4dac562a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i4dac562a', 'img'))->alt ?>" class="image-43" data-img="i4dac562a" srcset="<?php echo cyma_get_image(_u('i4dac562a', 'img'))->srcset ?>">
+                <div class="text-block-466" style="text-align:center" style="text-align:center" data-text="t694d13eb"><?php echo _u('t694d13eb','text'); ?></div>
+              </div>
+              <div class="div-block-1161" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in48873354', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in48873354', 'img'))->alt ?>" class="image-43" data-img="in48873354" srcset="<?php echo cyma_get_image(_u('in48873354', 'img'))->srcset ?>">
+                <div class="text-block-467" style="text-align:center" style="text-align:center" data-text="t23880afb"><?php echo _u('t23880afb','text'); ?></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="a55ced21-a758-eebf-9469-3d958876309f" class="div-block-1123" style="flex-flow:column;height:auto;padding-bottom:20px"><img src="<?php echo cyma_get_image(_u('i7f131da0', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i7f131da0', 'img'))->alt ?>" class="image-44" style="display:none" data-img="i7f131da0" srcset="<?php echo cyma_get_image(_u('i7f131da0', 'img'))->srcset ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-government.png" loading="lazy" alt="Government" class="image-44-copy-mv" style="display:inline-flex;width:100%;max-width:none;height:auto;border-radius:15px;object-fit:cover" data-img="in427d4741">
+          <div class="div-block-1124" style="align-items:center;text-align:center;padding-top:15px">
+            <h3 class="heading-41" style="width:100%;text-align:center" data-textarea="ta7d79098f"><?php echo _u('ta7d79098f', 'textarea'); ?></h3>
+            <p class="paragraph-27" style="width:100%;text-align:center" data-text="tn4aaeef4a"><?php echo _u('tn4aaeef4a','text'); ?></p>
+            <div class="w-layout-grid grid-11" style="grid-template-columns:1fr 1fr 1fr 1fr;grid-column-gap:12px;grid-row-gap:12px;width:100%;place-items:center">
+              <div class="div-block-1162" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i18e249eb', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i18e249eb', 'img'))->alt ?>" class="image-43" data-img="i18e249eb" srcset="<?php echo cyma_get_image(_u('i18e249eb', 'img'))->srcset ?>">
+                <div class="text-block-464" style="text-align:center" data-textarea="ta1a40e2a3"><?php echo _u('ta1a40e2a3', 'textarea'); ?></div>
+              </div>
+              <div class="div-block-1163" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in7d5f5714', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in7d5f5714', 'img'))->alt ?>" class="image-43" data-img="in7d5f5714" srcset="<?php echo cyma_get_image(_u('in7d5f5714', 'img'))->srcset ?>">
+                <div class="text-block-465" style="text-align:center" data-text="tn2193358b"><?php echo _u('tn2193358b','text'); ?></div>
+              </div>
+              <div class="div-block-1164" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i4dba6dab', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i4dba6dab', 'img'))->alt ?>" class="image-43" data-img="i4dba6dab" srcset="<?php echo cyma_get_image(_u('i4dba6dab', 'img'))->srcset ?>">
+                <div class="text-block-466" style="text-align:center" data-textarea="tan3d652869"><?php echo _u('tan3d652869', 'textarea'); ?></div>
+              </div>
+              <div class="div-block-1165" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in48791bd3', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in48791bd3', 'img'))->alt ?>" class="image-43" data-img="in48791bd3" srcset="<?php echo cyma_get_image(_u('in48791bd3', 'img'))->srcset ?>">
+                <div class="text-block-467" style="text-align:center" data-text="t4133bdfa"><?php echo _u('t4133bdfa','text'); ?></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="5b9b4238-1386-a7dc-7d03-5746eb6064df" class="div-block-1123" style="flex-flow:column;height:auto;padding-bottom:20px;grid-column:1/3;max-width:50%;margin:0 auto"><img src="<?php echo cyma_get_image(_u('i1abb54b1', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i1abb54b1', 'img'))->alt ?>" class="image-44" style="display:none" data-img="i1abb54b1" srcset="<?php echo cyma_get_image(_u('i1abb54b1', 'img'))->srcset ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-insurance.png" loading="lazy" alt="Insurance" class="image-44-copy-mv" style="display:inline-flex;width:100%;max-width:none;height:auto;border-radius:15px;object-fit:cover" data-img="in426f2fc0">
+          <div class="div-block-1124" style="align-items:center;text-align:center;padding-top:15px">
+            <h3 class="heading-41" style="width:100%;text-align:center" data-text="t332b7f24"><?php echo _u('t332b7f24','text'); ?></h3>
+            <p class="paragraph-28" style="width:100%;text-align:center" data-text="tne3f73f3"><?php echo _u('tne3f73f3','text'); ?></p>
+            <div class="w-layout-grid grid-11" style="grid-template-columns:1fr 1fr 1fr 1fr;grid-column-gap:12px;grid-row-gap:12px;width:100%;place-items:center">
+              <div class="div-block-1166" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i18f0616c', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i18f0616c', 'img'))->alt ?>" class="image-43" data-img="i18f0616c" srcset="<?php echo cyma_get_image(_u('i18f0616c', 'img'))->srcset ?>">
+                <div class="text-block-464" style="text-align:center" data-text="tn33c2b828"><?php echo _u('tn33c2b828','text'); ?></div>
+              </div>
+              <div class="div-block-1167" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in7d432812', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in7d432812', 'img'))->alt ?>" class="image-43" data-img="in7d432812" srcset="<?php echo cyma_get_image(_u('in7d432812', 'img'))->srcset ?>">
+                <div class="text-block-465" style="text-align:center" data-text="t1def5bf3"><?php echo _u('t1def5bf3','text'); ?></div>
+              </div>
+              <div class="div-block-1168" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('i4dc8852c', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i4dc8852c', 'img'))->alt ?>" class="image-43" data-img="i4dc8852c" srcset="<?php echo cyma_get_image(_u('i4dc8852c', 'img'))->srcset ?>">
+                <div class="text-block-466" style="text-align:center" data-text="tn47d8b73e"><?php echo _u('tn47d8b73e','text'); ?></div>
+              </div>
+              <div class="div-block-1169" style="display:flex;flex-direction:column;align-items:center;text-align:center"><img src="<?php echo cyma_get_image(_u('in486b0452', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in486b0452', 'img'))->alt ?>" class="image-43" data-img="in486b0452" srcset="<?php echo cyma_get_image(_u('in486b0452', 'img'))->srcset ?>">
+                <div class="text-block-467" style="text-align:center" data-text="tn59776d53"><?php echo _u('tn59776d53','text'); ?></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
       </div>
     </div>
   </section>

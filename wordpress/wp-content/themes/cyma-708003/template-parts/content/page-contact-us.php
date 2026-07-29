@@ -222,30 +222,30 @@
         <div data-w-id="dbada51d-1582-cd5a-f83f-87a057816a38" style="opacity:0" class="white-bg-copy-globaloffices _20px-padding">
           <div class="text-block-444" data-text="tn10587972"><?php echo _u('tn10587972','text'); ?></div>
           <h1 class="heading-55" data-textarea="ta74efaa82"><?php echo _u('ta74efaa82', 'textarea'); ?></h1>
-          <div class="div-block-1097"><img src="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->alt ?>" class="image-12" data-img="i48f9cd8a" srcset="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->srcset ?>">
+          <div class="div-block-1097" style="justify-content:flex-start;align-items:flex-start"><img src="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->alt ?>" class="image-12" data-img="i48f9cd8a" srcset="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->srcset ?>">
             <div class="text-block-445" data-text="tn7983ced3"><?php echo _u('tn7983ced3','text'); ?></div>
           </div>
-          <div class="div-block-1098"><img src="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->alt ?>" class="image-13" data-img="i38ca2cf" srcset="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->srcset ?>">
+          <div class="div-block-1098" style="display:none"><img src="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->alt ?>" class="image-13" data-img="i38ca2cf" srcset="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->srcset ?>">
             <div class="text-block-445" data-text="tnc63a09"><?php echo _u('tnc63a09','text'); ?></div>
           </div>
         </div>
         <div data-w-id="2096d243-d33c-d1f8-a23a-e9657503160e" style="opacity:0" class="white-bg-copy-globaloffices _20px-padding">
           <div class="text-block-444" data-text="t3f4e9b9"><?php echo _u('t3f4e9b9','text'); ?></div>
           <h1 class="heading-55" data-textarea="tan22acd8bb"><?php echo _u('tan22acd8bb', 'textarea'); ?></h1>
-          <div class="div-block-1097"><img src="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->alt ?>" class="image-12" data-img="i48f9cd8a" srcset="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->srcset ?>">
+          <div class="div-block-1097" style="justify-content:flex-start;align-items:flex-start"><img src="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->alt ?>" class="image-12" data-img="i48f9cd8a" srcset="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->srcset ?>">
             <div class="text-block-445" data-text="t150a0e6e"><?php echo _u('t150a0e6e','text'); ?></div>
           </div>
-          <div class="div-block-1098"><img src="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->alt ?>" class="image-13" data-img="i38ca2cf" srcset="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->srcset ?>">
+          <div class="div-block-1098" style="display:none"><img src="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->alt ?>" class="image-13" data-img="i38ca2cf" srcset="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->srcset ?>">
             <div class="text-block-445" data-text="tnc63a09"><?php echo _u('tnc63a09','text'); ?></div>
           </div>
         </div>
         <div data-w-id="5724b83d-1400-05c6-ff19-695e4efbaae5" style="opacity:0" class="white-bg-copy-globaloffices _20px-padding">
           <div class="text-block-444" data-text="t4383917"><?php echo _u('t4383917','text'); ?></div>
           <h1 class="heading-55" data-textarea="tan1bd5db86"><?php echo _u('tan1bd5db86', 'textarea'); ?></h1>
-          <div class="div-block-1097"><img src="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->alt ?>" class="image-12" data-img="i48f9cd8a" srcset="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->srcset ?>">
+          <div class="div-block-1097" style="justify-content:flex-start;align-items:flex-start"><img src="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->alt ?>" class="image-12" data-img="i48f9cd8a" srcset="<?php echo cyma_get_image(_u('i48f9cd8a', 'img'))->srcset ?>">
             <div class="text-block-445" data-text="tn5c5de83d"><?php echo _u('tn5c5de83d','text'); ?></div>
           </div>
-          <div class="div-block-1098"><img src="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->alt ?>" class="image-13" data-img="i38ca2cf" srcset="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->srcset ?>">
+          <div class="div-block-1098" style="display:none"><img src="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->alt ?>" class="image-13" data-img="i38ca2cf" srcset="<?php echo cyma_get_image(_u('i38ca2cf', 'img'))->srcset ?>">
             <div class="text-block-445" data-text="tnc63a09"><?php echo _u('tnc63a09','text'); ?></div>
           </div>
         </div>
@@ -261,6 +261,10 @@
           <div class="div-block-5">
             <p class="_14px-text grey-text _12px" data-textarea="tan2045e04f"><?php echo _u('tan2045e04f', 'textarea'); ?></p>
           </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:15px">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone.png" loading="lazy" alt="Phone" style="width:16px;height:16px">
+          <span style="color:#333;font-size:14px">+1 860 791 6356</span>
         </div>
       </div>
       <div class="w-layout-grid grid">
