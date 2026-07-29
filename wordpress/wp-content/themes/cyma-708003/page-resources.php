@@ -7,7 +7,7 @@ load_page_data('page-resources');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-resources');
+        cyma_the_page_content( 'page-resources' );
     endwhile;
     ?>
 </main>

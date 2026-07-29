@@ -7,7 +7,7 @@ load_page_data('front-page');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/front-page');
+        cyma_the_page_content( 'front-page' );
     endwhile;
     ?>
 </main>

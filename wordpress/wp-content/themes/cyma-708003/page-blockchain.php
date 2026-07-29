@@ -7,7 +7,7 @@ load_page_data('page-blockchain');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-blockchain');
+        cyma_the_page_content( 'page-blockchain' );
     endwhile;
     ?>
 </main>

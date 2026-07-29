@@ -7,7 +7,7 @@ load_page_data('page-style-guide');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-style-guide');
+        cyma_the_page_content( 'page-style-guide' );
     endwhile;
     ?>
 </main>

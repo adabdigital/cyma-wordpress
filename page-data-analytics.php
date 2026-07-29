@@ -7,7 +7,7 @@ load_page_data('page-data-analytics');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-data-analytics');
+        cyma_the_page_content( 'page-data-analytics' );
     endwhile;
     ?>
 </main>

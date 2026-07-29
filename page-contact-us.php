@@ -7,7 +7,7 @@ load_page_data('page-contact-us');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-contact-us');
+        cyma_the_page_content( 'page-contact-us' );
     endwhile;
     ?>
 </main>

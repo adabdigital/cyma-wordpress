@@ -7,7 +7,7 @@ load_page_data('page-job-seekers');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-job-seekers');
+        cyma_the_page_content( 'page-job-seekers' );
     endwhile;
     ?>
 </main>

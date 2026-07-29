@@ -7,7 +7,7 @@ load_page_data('page-cyber-security');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-cyber-security');
+        cyma_the_page_content( 'page-cyber-security' );
     endwhile;
     ?>
 </main>

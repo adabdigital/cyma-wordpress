@@ -7,7 +7,7 @@ load_page_data('page-software-development');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-software-development');
+        cyma_the_page_content( 'page-software-development' );
     endwhile;
     ?>
 </main>

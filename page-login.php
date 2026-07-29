@@ -7,7 +7,7 @@ load_page_data('page-login');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-login');
+        cyma_the_page_content( 'page-login' );
     endwhile;
     ?>
 </main>

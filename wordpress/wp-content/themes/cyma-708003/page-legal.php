@@ -7,7 +7,7 @@ load_page_data('page-legal');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-legal');
+        cyma_the_page_content( 'page-legal' );
     endwhile;
     ?>
 </main>

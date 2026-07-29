@@ -7,7 +7,7 @@ load_page_data('page-emerging-technologies');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-emerging-technologies');
+        cyma_the_page_content( 'page-emerging-technologies' );
     endwhile;
     ?>
 </main>

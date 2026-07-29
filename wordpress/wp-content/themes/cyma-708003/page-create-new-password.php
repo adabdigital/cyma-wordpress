@@ -7,7 +7,7 @@ load_page_data('page-create-new-password');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-create-new-password');
+        cyma_the_page_content( 'page-create-new-password' );
     endwhile;
     ?>
 </main>

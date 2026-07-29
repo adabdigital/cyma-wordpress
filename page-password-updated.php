@@ -7,7 +7,7 @@ load_page_data('page-password-updated');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-password-updated');
+        cyma_the_page_content( 'page-password-updated' );
     endwhile;
     ?>
 </main>

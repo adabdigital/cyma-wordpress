@@ -7,7 +7,7 @@ load_page_data('page-technology-services');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-technology-services');
+        cyma_the_page_content( 'page-technology-services' );
     endwhile;
     ?>
 </main>

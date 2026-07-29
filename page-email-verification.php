@@ -7,7 +7,7 @@ load_page_data('page-email-verification');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-email-verification');
+        cyma_the_page_content( 'page-email-verification' );
     endwhile;
     ?>
 </main>

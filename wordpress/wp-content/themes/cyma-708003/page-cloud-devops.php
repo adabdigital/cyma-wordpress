@@ -7,7 +7,7 @@ load_page_data('page-cloud-devops');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-cloud-devops');
+        cyma_the_page_content( 'page-cloud-devops' );
     endwhile;
     ?>
 </main>

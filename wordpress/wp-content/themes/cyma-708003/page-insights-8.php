@@ -7,7 +7,7 @@ load_page_data('page-insights-8');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-insights-8');
+        cyma_the_page_content( 'page-insights-8' );
     endwhile;
     ?>
 </main>

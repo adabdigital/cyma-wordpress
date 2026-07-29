@@ -7,7 +7,7 @@ load_page_data('page-h1b-lca');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-h1b-lca');
+        cyma_the_page_content( 'page-h1b-lca' );
     endwhile;
     ?>
 </main>

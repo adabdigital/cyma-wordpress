@@ -7,7 +7,7 @@ load_page_data('page-quality-assurance-and-testing');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-quality-assurance-and-testing');
+        cyma_the_page_content( 'page-quality-assurance-and-testing' );
     endwhile;
     ?>
 </main>

@@ -161,6 +161,18 @@ docker exec cyma-wordpress php /var/www/html/wp-content/themes/cyma-708003/impor
 
 This creates the `explore-careers` page and imports job listings from `_data/data.json` (e.g. `/explore-careers/data-engineer/`).
 
+## Editing page content in WordPress admin
+
+Each CYMA page is **fully CMS-backed**: the entire page HTML lives in the WordPress page editor (classic editor), not as individual field controls.
+
+1. Open **http://localhost:8081/wp-admin**
+2. Go to **Pages → All Pages** and edit any page
+3. Edit the full page content in the main editor, then click **Update**
+
+Optional: **Tools → CYMA Content Seed** re-imports design HTML into WordPress (check “Overwrite” to replace existing CMS content).
+
+Job listings under **Careers** remain separate custom posts. On Explore Careers, the shortcode `[cyma_open_roles]` renders the live jobs list.
+
 ## Share a public preview link (optional)
 
 To share the local site with someone else without deploying, use a Cloudflare quick tunnel.

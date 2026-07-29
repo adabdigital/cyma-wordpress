@@ -7,7 +7,7 @@ load_page_data('page-sign-up');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-sign-up');
+        cyma_the_page_content( 'page-sign-up' );
     endwhile;
     ?>
 </main>

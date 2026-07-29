@@ -7,7 +7,7 @@ load_page_data('page-it-infrastructure');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-it-infrastructure');
+        cyma_the_page_content( 'page-it-infrastructure' );
     endwhile;
     ?>
 </main>

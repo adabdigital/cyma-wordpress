@@ -7,7 +7,7 @@ load_page_data('page-notice-of-filing');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-notice-of-filing');
+        cyma_the_page_content( 'page-notice-of-filing' );
     endwhile;
     ?>
 </main>

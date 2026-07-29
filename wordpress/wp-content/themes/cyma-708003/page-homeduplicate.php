@@ -7,7 +7,7 @@ load_page_data('page-homeduplicate');
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part('template-parts/content/page-homeduplicate');
+        cyma_the_page_content( 'page-homeduplicate' );
     endwhile;
     ?>
 </main>

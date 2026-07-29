@@ -1,6 +1,6 @@
 <?php
 /**
- * Careers listing — uses Job Seekers page content (Webflow collection page was not exported separately).
+ * Careers listing — CMS page content, with dynamic open roles via [cyma_open_roles].
  */
 get_header();
 load_page_data( 'page-job-seekers' );
@@ -10,8 +10,11 @@ load_page_data( 'page-job-seekers' );
     <?php
     while ( have_posts() ) :
         the_post();
-        get_template_part( 'template-parts/content/page-job-seekers' );
-        get_template_part( 'template-parts/content/careers-open-roles' );
+        cyma_the_page_content( 'page-job-seekers' );
+        // Fallback when page is not yet seeded into CMS:
+        if ( ! cyma_page_uses_cms_content( get_the_ID() ) ) {
+            get_template_part( 'template-parts/content/careers-open-roles' );
+        }
     endwhile;
     ?>
 </main>
