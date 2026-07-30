@@ -138,11 +138,10 @@
       <div data-delay="3000" data-animation="slide" class="slider w-slider" data-autoplay="true" data-easing="ease-in-out" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="900" data-infinite="true">
         <div class="w-slider-mask">
           <div class="w-slide">
-            <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video id="d88b7aec-3639-7afe-fb54-2a1a8552447b-video" autoplay="" loop="" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/videos/cyma-desktop_poster.0000000.jpg?v=1780144474'); " muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-                <source src="<?php echo _u('i45d98845','iframe'); ?>" data-wf-ignore="true" data-iframe="i45d98845">
-                <source src="<?php echo _u('i7304125f','iframe'); ?>" data-wf-ignore="true" data-iframe="i7304125f">
+            <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video id="d88b7aec-3639-7afe-fb54-2a1a8552447b-video" autoplay="" loop="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/bg-home-banner.mp4" type="video/mp4">
               </video>
-              <div class="banner-image-copy _1-copy bottom">
+              <div class="banner-image-copy _1-copy bottom" style="justify-content:center;align-items:center;display:flex;flex-direction:column;padding-bottom:0">
                 <div class="hyper-text" data-text="tn8b086eb"><?php echo _u('tn8b086eb','text'); ?></div>
                 <h1 class="heading-150 w" data-textarea="ta232fbabd"><?php echo _u('ta232fbabd', 'textarea'); ?></h1>
                 <div class="header-description" data-text="tn322862cd"><?php echo _u('tn322862cd','text'); ?></div>
@@ -151,11 +150,10 @@
                 </a>
               </div>
             </div>
-            <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-copy-mobile-view w-background-video w-background-video-atom"><video id="8e1a1577-e737-6990-32c2-f0350a93dc00-video" autoplay="" loop="" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/videos/cyma-mobile_poster.0000000.jpg?v=1780144474'); " muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-                <source src="<?php echo _u('i56457a43','iframe'); ?>" data-wf-ignore="true" data-iframe="i56457a43">
-                <source src="<?php echo _u('i183b7cdd','iframe'); ?>" data-wf-ignore="true" data-iframe="i183b7cdd">
+            <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-copy-mobile-view w-background-video w-background-video-atom"><video id="8e1a1577-e737-6990-32c2-f0350a93dc00-video" autoplay="" loop="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/bg-home-banner.mp4" type="video/mp4">
               </video>
-              <div class="banner-image-copy--mobileview _1-copy bottom">
+              <div class="banner-image-copy--mobileview _1-copy bottom" style="justify-content:center;align-items:center;display:flex;flex-direction:column;padding-bottom:0">
                 <div class="hyper-text" data-text="tn8b086eb"><?php echo _u('tn8b086eb','text'); ?></div>
                 <h1 class="heading-150" data-textarea="ta232fbabd"><?php echo _u('ta232fbabd', 'textarea'); ?></h1>
                 <div class="header-description pad" data-text="tn322862cd"><?php echo _u('tn322862cd','text'); ?></div>
