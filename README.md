@@ -2,15 +2,26 @@
 
 WordPress theme converted from Webflow for CYMA Systems. Runs locally with Docker.
 
+> **GitHub Pages note:** Pages only serves static files and cannot run WordPress/PHP/MySQL.
+> This repo publishes a **static HTML preview** (from `.img-scan` snapshots) via GitHub Actions.
+> Live production WordPress stays on [cymasys.com](https://cymasys.com/) (GoDaddy).
+> Static preview: `https://adabdigital.github.io/cyma-wordpress/` (or the Pages URL shown in repo Settings → Pages).
+
 ## Quick start
 
 ```bash
-git clone https://github.com/adeemad/cyma-wordpress.git
+git clone https://github.com/adabdigital/cyma-wordpress.git
 cd cyma-wordpress
 docker compose up -d
 ```
 
 Open **http://localhost:8081**
+
+Rebuild the static Pages preview locally:
+
+```bash
+python3 scripts/build-static-preview.py
+```
 
 ## Edit content in WordPress
 

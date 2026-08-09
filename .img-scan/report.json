@@ -1,0 +1,1064 @@
+{
+  "page_404_counts": {
+    "/": 0,
+    "/about-us/": 15,
+    "/contact-us/": 1,
+    "/industries/": 19,
+    "/business-solutions/": 4,
+    "/technology-services/": 2,
+    "/job-seekers/": 5,
+    "/explore-careers/": 5,
+    "/case-studies/": 3,
+    "/insights-2/": 1,
+    "/resources/": 0,
+    "/legal/": 0,
+    "/software-development/": 1,
+    "/ai/": 5,
+    "/cloud-devops/": 2,
+    "/cyber-security/": 9,
+    "/data-analytics/": 3
+  },
+  "broken": {
+    "cyma-prod": [
+      {
+        "file": "about-hero-img-1.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/about-hero-img-1.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:about-hero-img-1.png"
+        ]
+      },
+      {
+        "file": "ai-banner1.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/ai-banner1.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:ai-banner1.png"
+        ]
+      },
+      {
+        "file": "ai-banner2.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/ai-banner2.png",
+        "pages": 1,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:ai-banner2.png"
+        ]
+      },
+      {
+        "file": "automotiveservices.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/automotiveservices.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:automotiveservices.png"
+        ]
+      },
+      {
+        "file": "awsredshift.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/awsredshift.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:awsredshift.svg"
+        ]
+      },
+      {
+        "file": "awssecurityhub.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/awssecurityhub.svg",
+        "pages": 1,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:awssecurityhub.svg"
+        ]
+      },
+      {
+        "file": "azuread.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/azuread.svg",
+        "pages": 1,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:azuread.svg"
+        ]
+      },
+      {
+        "file": "banking-finance.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/banking-finance.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:banking-finance.png"
+        ]
+      },
+      {
+        "file": "bs-execution.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/bs-execution.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:bs-execution.png"
+        ]
+      },
+      {
+        "file": "business-solution1.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/business-solution1.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:business-solution1.png"
+        ]
+      },
+      {
+        "file": "casestudies2.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/casestudies2.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:casestudies2.png"
+        ]
+      },
+      {
+        "file": "chooseus_ai.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/chooseus_ai.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:chooseus_ai.png"
+        ]
+      },
+      {
+        "file": "clouddevops-1.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/clouddevops-1.png",
+        "pages": 1,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:clouddevops-1.png"
+        ]
+      },
+      {
+        "file": "clouddevops-2.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/clouddevops-2.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:clouddevops-2.png"
+        ]
+      },
+      {
+        "file": "contactus_banner.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/contactus_banner.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:contactus_banner.png"
+        ]
+      },
+      {
+        "file": "crowdstrike.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/crowdstrike.svg",
+        "pages": 1,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:crowdstrike.svg"
+        ]
+      },
+      {
+        "file": "cybersecurity-1.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/cybersecurity-1.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:cybersecurity-1.png"
+        ]
+      },
+      {
+        "file": "cybersecurity-2.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/cybersecurity-2.png",
+        "pages": 1,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:cybersecurity-2.png"
+        ]
+      },
+      {
+        "file": "cybersecurity-sec-2.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/cybersecurity-sec-2.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:cybersecurity-sec-2.png"
+        ]
+      },
+      {
+        "file": "dataanalytics-1.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/dataanalytics-1.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:dataanalytics-1.png"
+        ]
+      },
+      {
+        "file": "digitaltransormationai.jpg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/digitaltransormationai.jpg",
+        "pages": 2,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:digitaltransormationai.jpg"
+        ]
+      },
+      {
+        "file": "energyservices.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/energyservices.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:energyservices.png"
+        ]
+      },
+      {
+        "file": "enhancingdata.jpg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/enhancingdata.jpg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:enhancingdata.jpg"
+        ]
+      },
+      {
+        "file": "explorecarrerpaths.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/explorecarrerpaths.png",
+        "pages": 2,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:explorecarrerpaths.png"
+        ]
+      },
+      {
+        "file": "frame-1000007163.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007163.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:frame-1000007163.svg"
+        ]
+      },
+      {
+        "file": "frame-1000007166.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007166.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:frame-1000007166.svg"
+        ]
+      },
+      {
+        "file": "frame-1000007167.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007167.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:frame-1000007167.svg"
+        ]
+      },
+      {
+        "file": "frame-1000007168.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007168.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:frame-1000007168.svg"
+        ]
+      },
+      {
+        "file": "frame-1000007170-1.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007170-1.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:frame-1000007170-1.svg"
+        ]
+      },
+      {
+        "file": "frame-1000007171.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007171.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:frame-1000007171.svg"
+        ]
+      },
+      {
+        "file": "frame-1000007172.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007172.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:frame-1000007172.svg"
+        ]
+      },
+      {
+        "file": "frame-1000007173.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007173.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:frame-1000007173.svg"
+        ]
+      },
+      {
+        "file": "frame-1000007174.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007174.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:frame-1000007174.svg"
+        ]
+      },
+      {
+        "file": "frame-1000007175.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007175.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:frame-1000007175.svg"
+        ]
+      },
+      {
+        "file": "frame-1000007176.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007176.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:frame-1000007176.svg"
+        ]
+      },
+      {
+        "file": "frame-1000007177.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007177.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:frame-1000007177.svg"
+        ]
+      },
+      {
+        "file": "gdpr.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/gdpr.svg",
+        "pages": 1,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:gdpr.svg"
+        ]
+      },
+      {
+        "file": "gover-icon.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/gover-icon.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:gover-icon.png"
+        ]
+      },
+      {
+        "file": "healthlife.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/healthlife.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:healthlife.png"
+        ]
+      },
+      {
+        "file": "image-automotive.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-automotive.png",
+        "pages": 1,
+        "occ": 1,
+        "local": [
+          "LOCAL_V2:image-automotive.png"
+        ]
+      },
+      {
+        "file": "image-banking.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-banking.png",
+        "pages": 1,
+        "occ": 1,
+        "local": [
+          "LOCAL_V2:image-banking.png"
+        ]
+      },
+      {
+        "file": "image-energy.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-energy.png",
+        "pages": 1,
+        "occ": 1,
+        "local": [
+          "LOCAL_V2:image-energy.png"
+        ]
+      },
+      {
+        "file": "image-government.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-government.png",
+        "pages": 1,
+        "occ": 1,
+        "local": [
+          "LOCAL_V2:image-government.png"
+        ]
+      },
+      {
+        "file": "image-healthcare.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-healthcare.png",
+        "pages": 1,
+        "occ": 1,
+        "local": [
+          "LOCAL_V2:image-healthcare.png"
+        ]
+      },
+      {
+        "file": "image-insurance.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-insurance.png",
+        "pages": 1,
+        "occ": 1,
+        "local": [
+          "LOCAL_V2:image-insurance.png"
+        ]
+      },
+      {
+        "file": "image-manufacturing.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-manufacturing.png",
+        "pages": 1,
+        "occ": 1,
+        "local": [
+          "LOCAL_V2:image-manufacturing.png"
+        ]
+      },
+      {
+        "file": "image-retail.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-retail.png",
+        "pages": 1,
+        "occ": 1,
+        "local": [
+          "LOCAL_V2:image-retail.png"
+        ]
+      },
+      {
+        "file": "image-telecommunicatioin.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-telecommunicatioin.png",
+        "pages": 1,
+        "occ": 1,
+        "local": [
+          "LOCAL_V2:image-telecommunicatioin.png"
+        ]
+      },
+      {
+        "file": "insurance-img.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/insurance-img.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:insurance-img.png"
+        ]
+      },
+      {
+        "file": "jb.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/jb.png",
+        "pages": 2,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:jb.png"
+        ]
+      },
+      {
+        "file": "jobseekers.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/jobseekers.png",
+        "pages": 2,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:jobseekers.png"
+        ]
+      },
+      {
+        "file": "jobseekersheader1.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/jobseekersheader1.png",
+        "pages": 2,
+        "occ": 8,
+        "local": [
+          "LOCAL_V2:jobseekersheader1.png"
+        ]
+      },
+      {
+        "file": "jobseekersheader2.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/jobseekersheader2.png",
+        "pages": 2,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:jobseekersheader2.png"
+        ]
+      },
+      {
+        "file": "manifacture-img.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/manifacture-img.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:manifacture-img.png"
+        ]
+      },
+      {
+        "file": "mask-group-29.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/mask-group-29.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:mask-group-29.png"
+        ]
+      },
+      {
+        "file": "mask-group-36.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/mask-group-36.png",
+        "pages": 1,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:mask-group-36.png"
+        ]
+      },
+      {
+        "file": "pci.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/pci.svg",
+        "pages": 1,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:pci.svg"
+        ]
+      },
+      {
+        "file": "retail_1.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/retail_1.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:retail_1.png"
+        ]
+      },
+      {
+        "file": "scada.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/scada.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:scada.svg"
+        ]
+      },
+      {
+        "file": "scvto.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/scvto.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:scvto.svg"
+        ]
+      },
+      {
+        "file": "smarttech.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/smarttech.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:smarttech.png"
+        ]
+      },
+      {
+        "file": "softwaredev.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/softwaredev.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:softwaredev.png"
+        ]
+      },
+      {
+        "file": "ssplunk.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/ssplunk.svg",
+        "pages": 1,
+        "occ": 4,
+        "local": [
+          "LOCAL_V2:ssplunk.svg"
+        ]
+      },
+      {
+        "file": "strategic-consulting.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/strategic-consulting.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:strategic-consulting.png"
+        ]
+      },
+      {
+        "file": "tableau.svg",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/tableau.svg",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:tableau.svg"
+        ]
+      },
+      {
+        "file": "technology-service.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/technology-service.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:technology-service.png"
+        ]
+      },
+      {
+        "file": "techservices.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/techservices.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:techservices.png"
+        ]
+      },
+      {
+        "file": "telecommunication-img.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/telecommunication-img.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:telecommunication-img.png"
+        ]
+      },
+      {
+        "file": "workforce-solutions.png",
+        "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/workforce-solutions.png",
+        "pages": 1,
+        "occ": 2,
+        "local": [
+          "LOCAL_V2:workforce-solutions.png"
+        ]
+      }
+    ],
+    "cyma-prod-v2": [],
+    "other": []
+  },
+  "priority": [
+    {
+      "file": "jobseekersheader1.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/jobseekersheader1.png",
+      "pages": 2,
+      "occ": 8
+    },
+    {
+      "file": "digitaltransormationai.jpg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/digitaltransormationai.jpg",
+      "pages": 2,
+      "occ": 4
+    },
+    {
+      "file": "explorecarrerpaths.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/explorecarrerpaths.png",
+      "pages": 2,
+      "occ": 4
+    },
+    {
+      "file": "jb.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/jb.png",
+      "pages": 2,
+      "occ": 4
+    },
+    {
+      "file": "jobseekers.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/jobseekers.png",
+      "pages": 2,
+      "occ": 4
+    },
+    {
+      "file": "jobseekersheader2.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/jobseekersheader2.png",
+      "pages": 2,
+      "occ": 4
+    },
+    {
+      "file": "ai-banner2.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/ai-banner2.png",
+      "pages": 1,
+      "occ": 4
+    },
+    {
+      "file": "awssecurityhub.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/awssecurityhub.svg",
+      "pages": 1,
+      "occ": 4
+    },
+    {
+      "file": "azuread.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/azuread.svg",
+      "pages": 1,
+      "occ": 4
+    },
+    {
+      "file": "clouddevops-1.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/clouddevops-1.png",
+      "pages": 1,
+      "occ": 4
+    },
+    {
+      "file": "crowdstrike.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/crowdstrike.svg",
+      "pages": 1,
+      "occ": 4
+    },
+    {
+      "file": "cybersecurity-2.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/cybersecurity-2.png",
+      "pages": 1,
+      "occ": 4
+    },
+    {
+      "file": "gdpr.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/gdpr.svg",
+      "pages": 1,
+      "occ": 4
+    },
+    {
+      "file": "mask-group-36.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/mask-group-36.png",
+      "pages": 1,
+      "occ": 4
+    },
+    {
+      "file": "pci.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/pci.svg",
+      "pages": 1,
+      "occ": 4
+    },
+    {
+      "file": "ssplunk.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/ssplunk.svg",
+      "pages": 1,
+      "occ": 4
+    },
+    {
+      "file": "about-hero-img-1.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/about-hero-img-1.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "ai-banner1.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/ai-banner1.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "automotiveservices.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/automotiveservices.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "awsredshift.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/awsredshift.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "banking-finance.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/banking-finance.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "bs-execution.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/bs-execution.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "business-solution1.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/business-solution1.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "casestudies2.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/casestudies2.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "chooseus_ai.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/chooseus_ai.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "clouddevops-2.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/clouddevops-2.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "contactus_banner.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/contactus_banner.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "cybersecurity-1.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/cybersecurity-1.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "cybersecurity-sec-2.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/cybersecurity-sec-2.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "dataanalytics-1.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/dataanalytics-1.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "energyservices.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/energyservices.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "enhancingdata.jpg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/enhancingdata.jpg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "frame-1000007163.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007163.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "frame-1000007166.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007166.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "frame-1000007167.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007167.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "frame-1000007168.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007168.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "frame-1000007170-1.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007170-1.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "frame-1000007171.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007171.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "frame-1000007172.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007172.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "frame-1000007173.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007173.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "frame-1000007174.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007174.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "frame-1000007175.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007175.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "frame-1000007176.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007176.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "frame-1000007177.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/frame-1000007177.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "gover-icon.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/gover-icon.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "healthlife.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/healthlife.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "insurance-img.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/insurance-img.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "manifacture-img.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/manifacture-img.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "mask-group-29.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/mask-group-29.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "retail_1.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/retail_1.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "scada.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/scada.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "scvto.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/scvto.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "smarttech.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/smarttech.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "softwaredev.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/softwaredev.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "strategic-consulting.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/strategic-consulting.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "tableau.svg",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/tableau.svg",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "technology-service.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/technology-service.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "techservices.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/techservices.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "telecommunication-img.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/telecommunication-img.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "workforce-solutions.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/workforce-solutions.png",
+      "pages": 1,
+      "occ": 2
+    },
+    {
+      "file": "image-automotive.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-automotive.png",
+      "pages": 1,
+      "occ": 1
+    },
+    {
+      "file": "image-banking.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-banking.png",
+      "pages": 1,
+      "occ": 1
+    },
+    {
+      "file": "image-energy.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-energy.png",
+      "pages": 1,
+      "occ": 1
+    },
+    {
+      "file": "image-government.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-government.png",
+      "pages": 1,
+      "occ": 1
+    },
+    {
+      "file": "image-healthcare.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-healthcare.png",
+      "pages": 1,
+      "occ": 1
+    },
+    {
+      "file": "image-insurance.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-insurance.png",
+      "pages": 1,
+      "occ": 1
+    },
+    {
+      "file": "image-manufacturing.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-manufacturing.png",
+      "pages": 1,
+      "occ": 1
+    },
+    {
+      "file": "image-retail.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-retail.png",
+      "pages": 1,
+      "occ": 1
+    },
+    {
+      "file": "image-telecommunicatioin.png",
+      "url": "https://cymasys.com/wp-content/themes/cyma-prod/assets/images/image-telecommunicatioin.png",
+      "pages": 1,
+      "occ": 1
+    }
+  ]
+}
