@@ -1,0 +1,1086 @@
+/* In-page smooth scroll + fixed-header offset for career CTAs */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+#trusted-by-talent {
+  scroll-margin-top: 110px;
+}
+
+/* Scroll-reveal: fade + rise when each section enters the viewport */
+
+section.cyma-reveal {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+section.cyma-reveal:not(.is-visible) {
+  opacity: 0 !important;
+  transform: translate3d(0, 20px, 0);
+  transition: none;
+  will-change: opacity, transform;
+}
+
+section.cyma-reveal.is-visible {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 1.05s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--cyma-reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+
+section.cyma-reveal.is-revealed {
+  will-change: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  section.cyma-reveal:not(.is-visible),
+  section.cyma-reveal.is-visible,
+  section.cyma-reveal.is-revealed {
+    opacity: 1 !important;
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
+}
+
+/* Breadcrumbs — consistent text/link color across all pages */
+.cyma-breadcrumb,
+.text-block-476,
+.text-block-478,
+.text-block-523,
+.text-block-534,
+[class^="text-block-534"],
+[class*=" text-block-534"],
+.text-block-638,
+.text-block-670,
+.text-block-670-copy,
+.text-block-671,
+.text-block-672,
+.text-block-677,
+.text-block-688 {
+  color: #5e6269 !important;
+}
+
+.cyma-breadcrumb a,
+.cyma-breadcrumb strong,
+.text-block-476 a,
+.text-block-476 strong,
+.text-block-478 a,
+.text-block-478 strong,
+.text-block-523 a,
+.text-block-523 strong,
+.text-block-523 [class*="bold-text"],
+.text-block-534 a,
+.text-block-534 strong,
+.text-block-534 [class*="bold-text"],
+[class^="text-block-534"] a,
+[class^="text-block-534"] strong,
+[class^="text-block-534"] [class*="bold-text"],
+[class*=" text-block-534"] a,
+[class*=" text-block-534"] strong,
+[class*=" text-block-534"] [class*="bold-text"],
+.text-block-638 a,
+.text-block-638 strong,
+.text-block-670 a,
+.text-block-670 strong,
+.text-block-670 [class*="bold-text"],
+.text-block-670-copy a,
+.text-block-670-copy strong,
+.text-block-670-copy [class*="bold-text"],
+.text-block-671 a,
+.text-block-671 strong,
+.text-block-672 a,
+.text-block-672 strong,
+.text-block-677 a,
+.text-block-677 strong,
+.text-block-677 span,
+.text-block-677 [class*="bold-text"],
+.text-block-688 a,
+.text-block-688 strong {
+  color: #5e6269 !important;
+}
+
+/* Header dropdowns */
+.w-nav .w-dropdown-list.w--open {
+  transform-origin: top center;
+  animation: cyma-dropdown-open 0.48s cubic-bezier(0.16, 1, 0.3, 1) both;
+  will-change: opacity, transform;
+}
+
+.w-nav .w-dropdown-toggle .w-icon-dropdown-toggle,
+.w-nav .w-dropdown-toggle [class*="image-220"],
+.w-nav .w-dropdown-toggle [class*="image-221"] {
+  transition: transform 0.42s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.w-nav .w-dropdown-toggle.w--open .w-icon-dropdown-toggle,
+.w-nav .w-dropdown-toggle.w--open [class*="image-220"],
+.w-nav .w-dropdown-toggle.w--open [class*="image-221"] {
+  transform: rotate(180deg);
+}
+
+@keyframes cyma-dropdown-open {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .w-nav .w-dropdown-list.w--open {
+    animation-duration: 0.55s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .w-nav .w-dropdown-list.w--open {
+    animation: none;
+  }
+
+  .w-nav .w-dropdown-toggle .w-icon-dropdown-toggle,
+  .w-nav .w-dropdown-toggle [class*="image-220"],
+  .w-nav .w-dropdown-toggle [class*="image-221"] {
+    transition: none;
+  }
+}
+
+/* “Driving Impact Across Industries” cards
+   Idle = dark image card; hover = light .div-block-1366 overlay.
+   Do not scale the dark layer — it peeks through the rounded overlay edges. */
+.industry-list .mg-right-10px.height-520px {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.industry-list .slider-content-block {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  transition: opacity 0.35s ease;
+}
+
+.industry-list .div-block-1366 {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: 2;
+  box-sizing: border-box;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  border-radius: inherit;
+  opacity: 0 !important;
+  pointer-events: none;
+  transform: none !important;
+  transition: opacity 0.35s ease;
+}
+
+.industry-list .div-block-1366 .heading-157,
+.industry-list .div-block-1366 .text-block-686 {
+  transform: none;
+}
+
+.industry-list .div-block-1366 .image-copy-hover_icon {
+  transition: transform 0.35s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .industry-list .mg-right-10px.height-520px:hover .slider-content-block,
+  .industry-list .mg-right-10px.height-520px:focus-within .slider-content-block {
+    opacity: 0;
+  }
+
+  .industry-list .mg-right-10px.height-520px:hover .div-block-1366,
+  .industry-list .mg-right-10px.height-520px:focus-within .div-block-1366 {
+    opacity: 1 !important;
+    pointer-events: auto;
+  }
+
+  .industry-list .mg-right-10px.height-520px:hover .div-block-1366 .image-copy-hover_icon,
+  .industry-list .mg-right-10px.height-520px:focus-within .div-block-1366 .image-copy-hover_icon {
+    transform: translate3d(2px, -2px, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .industry-list .slider-content-block,
+  .industry-list .div-block-1366,
+  .industry-list .div-block-1366 .image-copy-hover_icon {
+    transition: none;
+  }
+}
+
+/* Homepage banner slider
+   Do NOT force transform/backface on .w-slider-mask or .w-slide — Webflow
+   positions slides with inline transforms, and those GPU layers can blank
+   CSS background-images on .banner-image._2 / ._3. */
+.head-banner .slider {
+  transform: translate3d(0, 0, 0);
+}
+
+.head-banner .banner-image._2,
+.head-banner .banner-image._3 {
+  background-color: #061428;
+  background-repeat: no-repeat;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+.head-banner .slider .w-slide[aria-hidden="false"] .hyper-text {
+  animation: cyma-banner-content-in 0.72s 0.16s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.head-banner .slider .w-slide[aria-hidden="false"] h1 {
+  animation: cyma-banner-content-in 0.82s 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.head-banner .slider .w-slide[aria-hidden="false"] .header-description {
+  animation: cyma-banner-content-in 0.82s 0.34s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.head-banner .slider .w-slide[aria-hidden="false"] [class*="contact-btn-copy-home"] {
+  animation: cyma-banner-content-in 0.82s 0.43s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.head-banner .slider .w-slide[aria-hidden="false"] > .banner-image,
+.head-banner .slider .w-slide[aria-hidden="false"] > [class*="background-video"] {
+  animation: cyma-banner-media-in 1.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.head-banner .slide-nav .w-slider-dot {
+  transition:
+    width 0.38s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.3s ease,
+    background-color 0.3s ease;
+}
+
+@keyframes cyma-banner-content-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes cyma-banner-media-in {
+  from {
+    opacity: 0.88;
+    transform: scale(1.018);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .head-banner .slider .w-slide[aria-hidden="false"] .hyper-text,
+  .head-banner .slider .w-slide[aria-hidden="false"] h1,
+  .head-banner .slider .w-slide[aria-hidden="false"] .header-description,
+  .head-banner .slider .w-slide[aria-hidden="false"] [class*="contact-btn-copy-home"],
+  .head-banner .slider .w-slide[aria-hidden="false"] > .banner-image,
+  .head-banner .slider .w-slide[aria-hidden="false"] > [class*="background-video"] {
+    animation: none;
+  }
+}
+
+/* Subtle button hover & click interactions */
+
+.cyma-btn,
+[class*="contact-btn"],
+a.w-inline-block[class*="btn"],
+a[class*="-btn"].w-inline-block,
+.button-primary,
+.button-primary-2,
+.w-button,
+input.w-button[type="submit"],
+button.w-button {
+  transition:
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.28s ease,
+    border-color 0.28s ease,
+    color 0.28s ease;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.cyma-btn:hover,
+[class*="contact-btn"]:hover,
+a.w-inline-block[class*="btn"]:hover,
+a[class*="-btn"].w-inline-block:hover,
+.button-primary:hover,
+.button-primary-2:hover,
+.w-button:hover,
+input.w-button[type="submit"]:hover,
+button.w-button:hover {
+  transform: translate3d(0, -2px, 0) scale(1.02);
+  box-shadow: 0 8px 24px rgba(5, 98, 167, 0.22);
+}
+
+[class*="contact-btn"].extra-small:hover,
+.contact-btn.extra-small:hover,
+[class*="contact-btn--"]:hover,
+a.w-inline-block[class*="btn"].extra-small:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cyma-btn:active,
+[class*="contact-btn"]:active,
+a.w-inline-block[class*="btn"]:active,
+a[class*="-btn"].w-inline-block:active,
+.button-primary:active,
+.button-primary-2:active,
+.w-button:active,
+input.w-button[type="submit"]:active,
+button.w-button:active {
+  transform: translate3d(0, 0, 0) scale(0.98);
+  box-shadow: 0 2px 8px rgba(5, 98, 167, 0.14);
+  transition-duration: 0.1s;
+}
+
+/* Keep header / nav controls stable */
+.w-nav-menu [class*="contact-btn"],
+.w-nav-menu [class*="contact-btn"]:hover,
+.w-nav-menu [class*="contact-btn"]:active,
+.menu-button [class*="contact-btn"],
+.menu-button [class*="contact-btn"]:hover,
+.menu-button [class*="contact-btn"]:active,
+.navbar-wrapper .contact-btn,
+.navbar-wrapper .contact-btn:hover,
+.navbar-wrapper .contact-btn:active {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Arrow / icon nudge inside buttons */
+[class*="contact-btn"] img,
+[class*="contact-btn"] .image,
+[class*="contact-btn"] .image-copy-home,
+[class*="contact-btn"] .image-copy-home2,
+[class*="contact-btn"] .image-copy-home3,
+a.w-inline-block[class*="btn"] img,
+a.w-inline-block[class*="btn"] .image,
+a[class*="-btn"].w-inline-block img,
+a[class*="-btn"].w-inline-block .image,
+.button-primary img,
+.button-primary-2 img,
+.w-button img {
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[class*="contact-btn"]:hover img,
+[class*="contact-btn"]:hover .image,
+[class*="contact-btn"]:hover .image-copy-home,
+[class*="contact-btn"]:hover .image-copy-home2,
+[class*="contact-btn"]:hover .image-copy-home3,
+a.w-inline-block[class*="btn"]:hover img,
+a.w-inline-block[class*="btn"]:hover .image,
+a[class*="-btn"].w-inline-block:hover img,
+a[class*="-btn"].w-inline-block:hover .image,
+.button-primary:hover img,
+.button-primary-2:hover img,
+.w-button:hover img {
+  transform: translate3d(4px, 0, 0);
+}
+
+[class*="contact-btn"]:active img,
+[class*="contact-btn"]:active .image,
+[class*="contact-btn"]:active .image-copy-home,
+[class*="contact-btn"]:active .image-copy-home2,
+[class*="contact-btn"]:active .image-copy-home3,
+a.w-inline-block[class*="btn"]:active img,
+a.w-inline-block[class*="btn"]:active .image,
+a[class*="-btn"].w-inline-block:active img,
+a[class*="-btn"].w-inline-block:active .image,
+.button-primary:active img,
+.button-primary-2:active img,
+.w-button:active img {
+  transform: translate3d(1px, 0, 0);
+  transition-duration: 0.1s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cyma-btn,
+  [class*="contact-btn"],
+  a.w-inline-block[class*="btn"],
+  a[class*="-btn"].w-inline-block,
+  .button-primary,
+  .button-primary-2,
+  .w-button,
+  input.w-button[type="submit"],
+  button.w-button {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .cyma-btn:hover,
+  [class*="contact-btn"]:hover,
+  a.w-inline-block[class*="btn"]:hover,
+  a[class*="-btn"].w-inline-block:hover,
+  .button-primary:hover,
+  .button-primary-2:hover,
+  .w-button:hover,
+  input.w-button[type="submit"]:hover,
+  button.w-button:hover,
+  .cyma-btn:active,
+  [class*="contact-btn"]:active,
+  a.w-inline-block[class*="btn"]:active,
+  a[class*="-btn"].w-inline-block:active,
+  .button-primary:active,
+  .button-primary-2:active,
+  .w-button:active,
+  input.w-button[type="submit"]:active,
+  button.w-button:active {
+    transform: none;
+    box-shadow: none;
+  }
+
+  [class*="contact-btn"]:hover img,
+  [class*="contact-btn"]:hover .image,
+  [class*="contact-btn"]:active img,
+  [class*="contact-btn"]:active .image,
+  a.w-inline-block[class*="btn"]:hover img,
+  a.w-inline-block[class*="btn"]:active img,
+  .button-primary:hover img,
+  .button-primary-2:hover img,
+  .w-button:hover img {
+    transform: none;
+  }
+}
+
+/* Homepage header shell — fixed nav collapses the wrapper to 0 width */
+.section-3 {
+  width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .section-3 {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .w-nav[data-collapse='medium'] .nav-menu-wrapper.w-nav-menu {
+    display: block !important;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease-in-out;
+  }
+
+  .w-nav[data-collapse='medium'] .nav-menu-wrapper.w-nav-menu.w--open,
+  .w-nav[data-collapse='medium'] .nav-menu-wrapper.w-nav-menu[data-nav-menu-open] {
+    display: block !important;
+    max-height: 1000px !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .w-nav[data-collapse='medium'] .menu-button.w-nav-button {
+    display: block !important;
+  }
+
+  /* Mobile/tablet header: Logo | Hamburger only (Contact Us is in the drawer) */
+  .header-992 .navbar-wrapper,
+  .header-992 .navbar-wrapper.nav-white {
+    display: grid !important;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 0;
+  }
+
+  .header-992 .navbar-brand {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .header-992 .menu-button.w-nav-button {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 0 !important;
+    justify-self: end;
+  }
+
+  .header-992 .nav-menu-wrapper.w-nav-menu {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    z-index: 100;
+  }
+
+  /* Mobile drawer: unify link/dropdown row styling */
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-menu-two {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    padding: 8px 20px 4px;
+  }
+
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-menu-two > li {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 16px 0 !important;
+    border-bottom: 1px solid rgba(139, 172, 246, 0.27) !important;
+    box-sizing: border-box;
+  }
+
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-menu-two > li:last-child {
+    border-bottom: none !important;
+  }
+
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-link,
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-link.nav-color,
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-link.nav-color.w--current,
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-link._1,
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-link-copy,
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-link-copy-bu,
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-link-copy-bussiness,
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-link-copy-legal,
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-link-copy-res,
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-link-copy-copy-l,
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-link-copy-copy-res,
+  .w-nav .nav-menu-wrapper.w-nav-menu .text-block-628,
+  .w-nav .nav-menu-wrapper.w-nav-menu .text-block-628-copy-l,
+  .w-nav .nav-menu-wrapper.w-nav-menu .text-block-628-copy-res,
+  .w-nav .nav-menu-wrapper.w-nav-menu .text-block-629,
+  .w-nav .nav-menu-wrapper.w-nav-menu .text-block-629-copy_legal,
+  .w-nav .nav-menu-wrapper.w-nav-menu .text-block-629-copy_res {
+    color: #0562a7 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.04em !important;
+    text-decoration: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto;
+    flex: 1 1 auto;
+    display: flex !important;
+    align-items: center;
+  }
+
+  /*
+   * Webflow nav duplicates each dropdown label: a desktop <a> plus a
+   * mobile toggle text-block. Hide the standalone <a> when a dropdown exists
+   * (covers home + about/job-seekers class name variants).
+   */
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-menu-two > li:has(.w-dropdown) > a {
+    display: none !important;
+  }
+
+  .w-nav .nav-menu-wrapper.w-nav-menu .nav-menu-two > li:has(.w-dropdown) {
+    flex-wrap: wrap;
+  }
+
+  .w-nav .nav-menu-wrapper.w-nav-menu .w-dropdown {
+    width: 100%;
+  }
+
+  .w-nav .nav-menu-wrapper.w-nav-menu .w-dropdown-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .w-nav .nav-menu-wrapper.w-nav-menu .image-219,
+  .w-nav .nav-menu-wrapper.w-nav-menu .image-220,
+  .w-nav .nav-menu-wrapper.w-nav-menu .image-220-copy-l,
+  .w-nav .nav-menu-wrapper.w-nav-menu .image-220-copy-l1,
+  .w-nav .nav-menu-wrapper.w-nav-menu .image-220-copy-r,
+  .w-nav .nav-menu-wrapper.w-nav-menu .image-220-copy-r1,
+  .w-nav .nav-menu-wrapper.w-nav-menu .image-221,
+  .w-nav .nav-menu-wrapper.w-nav-menu .image-221-copy-l,
+  .w-nav .nav-menu-wrapper.w-nav-menu .image-221-copy-l1,
+  .w-nav .nav-menu-wrapper.w-nav-menu .image-221-copy-r,
+  .w-nav .nav-menu-wrapper.w-nav-menu .image-221-copy-r1 {
+    flex: 0 0 auto;
+    width: 12px;
+    height: auto;
+    margin: 0 0 0 12px !important;
+  }
+
+  .w-nav .nav-menu-wrapper.w-nav-menu .div-block-1408 {
+    width: 100%;
+    padding: 18px 20px 8px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .w-nav .nav-menu-wrapper.w-nav-menu .contact-btn--mv,
+  .w-nav .nav-menu-wrapper.w-nav-menu .contact-btn--mv.blue-copy-mv {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    grid-column-gap: 28px;
+    column-gap: 28px;
+  }
+
+  .w-nav .nav-menu-wrapper.w-nav-menu .div-block-1409 {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  /* Mobile horizontal swipe for Industries + Insights cards */
+  .industry-list .w-slider-mask.portfolio-slider.industries,
+  .slider-30 .mask-12.w-slider-mask {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  .industry-list .w-slider-mask.portfolio-slider.industries::-webkit-scrollbar,
+  .slider-30 .mask-12.w-slider-mask::-webkit-scrollbar {
+    display: none;
+  }
+
+  .industry-list .w-slide,
+  .slider-30 .w-slide {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    transform: none !important;
+    flex: 0 0 auto !important;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .industry-list .mg-right-10px.height-520px.w-slide {
+    width: min(292px, 82vw) !important;
+    margin-right: 12px !important;
+  }
+
+  .slider-30 .w-slide {
+    width: min(309px, 82vw) !important;
+    margin-right: 12px !important;
+  }
+
+  .industry-list .w-slider,
+  .slider-30.w-slider {
+    touch-action: pan-x;
+  }
+}
+
+/* Prevent window-level horizontal scrollbar; keep nested carousels scrollable */
+html, body { overflow-x: clip; }
+
+.logov3_component { max-width: 100%; min-width: 0; overflow: hidden; }
+.section-banner.bg.map, .container.map { max-width: 100%; overflow-x: clip; }
+
+.section-24, .section-24 .container-17, .technology-list.slider-29.w-slider {
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+.section-24 { overflow-x: clip; }
+.technology-list .mask-11.w-slider-mask { min-width: 0 !important; }
+
+/* Technology That Thinks Ahead — native horizontal scroll; stop at last card
+   (Webflow multi-item slider parks the last slide at the left and leaves empty space). */
+.technology-list.slider-29.w-slider {
+  touch-action: pan-x;
+}
+
+.technology-list .mask-11.w-slider-mask {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: stretch;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  white-space: normal !important;
+}
+
+.technology-list .mask-11.w-slider-mask::-webkit-scrollbar {
+  display: none;
+}
+
+.technology-list .mask-11 .w-slide {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  transform: none !important;
+  flex: 0 0 auto !important;
+  scroll-snap-align: start;
+}
+
+.technology-list .mask-11 .w-slide:last-child {
+  margin-right: 0 !important;
+}
+
+/* Contact Us form — Webflow hides .form-block-3-copy (desktop draft); show injected form */
+.form-block-3-copy.cyma-contact-form,
+.cyma-contact-form.form-block-3-copy {
+  display: block !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.cyma-contact-form.cyma-contact-form--success .w-form-done,
+.cyma-contact-form.cyma-contact-form--error .w-form-fail {
+  display: block !important;
+}
+
+.div-block-1092:has(.cyma-contact-form) {
+  height: auto !important;
+  min-height: 483px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+}
+
+/* Contact Us form — restore fields + submit button after CMS kses stripping */
+.cyma-contact-form .text-field.w-input,
+.cyma-contact-form .select-field-2.w-select,
+.cyma-contact-form .select-field-3.w-select {
+  display: block !important;
+  width: 100% !important;
+  min-height: 44px;
+  margin-top: 8px;
+  padding: 10px 14px !important;
+  border: 1px solid #c9d4e3 !important;
+  border-radius: 10px !important;
+  background: #fff !important;
+  color: #1a1a1a !important;
+  box-sizing: border-box;
+  appearance: auto;
+  -webkit-appearance: menulist;
+}
+
+.cyma-contact-form textarea.text-field.w-input {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.cyma-contact-form .cyma-contact-submit-wrap,
+.cyma-contact-form .div-block-1439 {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.cyma-contact-form .div-block-1384 {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background-color: #0562a7 !important;
+  border-radius: 40px !important;
+  padding: 5px 5px 5px 18px !important;
+  width: auto !important;
+  min-width: 190px;
+}
+
+.cyma-contact-form .submit-button-2.w-button {
+  background: transparent !important;
+  color: #fff !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  line-height: 16px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+.cyma-contact-form .image-208 {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .cyma-contact-form .div-block-1080 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cyma-contact-form .div-block-1087,
+  .cyma-contact-form .div-block-1390 {
+    width: 100% !important;
+  }
+}
+
+/* Home header Contact Us pill is now an <a> CTA */
+a.contact {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+/* Header Contact Us — balanced text/icon padding (desktop only; hidden on mobile/tablet) */
+@media screen and (min-width: 992px) {
+  .header-992 .contact,
+  .header-992 a.contact,
+  .header-992 .contact-btn-copy-nav-about.blue {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+    grid-column-gap: 10px !important;
+    grid-row-gap: 10px !important;
+    padding: 5px 5px 5px 16px !important;
+    box-sizing: border-box;
+    line-height: 1;
+  }
+}
+
+.header-992 .contact .text-block-440,
+.header-992 a.contact .text-block-440,
+.header-992 .contact-btn-copy-nav-about .text-block-440,
+.header-992 .contact-btn-copy-nav-about .text-block-440.blue {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.15 !important;
+  white-space: nowrap;
+  display: block;
+}
+
+.header-992 .contact .call-icon-blue,
+.header-992 .contact .call-icon-dark,
+.header-992 .contact-btn-copy-nav-about .image.contact-us,
+.header-992 .contact-btn-copy-nav-about .image.contact-us.h-38 {
+  width: 38px !important;
+  height: 38px !important;
+  max-width: 38px !important;
+  flex: 0 0 38px;
+  margin: 0 !important;
+}
+
+/* Default (white pill): green icon only — do not force display on both */
+.header-992 .contact .call-icon-blue {
+  display: block !important;
+}
+
+.header-992 .contact .call-icon-dark {
+  display: none !important;
+}
+
+.header-992 .contact-btn-copy-nav-about .image.contact-us,
+.header-992 .contact-btn-copy-nav-about .image.contact-us.h-38 {
+  display: block;
+}
+
+/* Header Contact Us CTA — brand blue on white / scrolled navs
+   Home uses .contact (white pill over dark hero); inner pages use .contact-btn-copy-nav-about.blue */
+.header-992.white .contact-btn-copy-nav-about,
+.header-992.white .contact-btn-copy-nav-about.blue,
+.header-992.scrolled .contact,
+.header-992.scrolled .contact-btn-copy-nav-about,
+.header-992.scrolled .contact-btn-copy-nav-about.blue,
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact,
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact-btn,
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact-btn-copy-nav-about {
+  background-color: #0562a7 !important;
+  background-image: none !important;
+}
+
+.header-992.white .contact-btn-copy-nav-about .text-block-440,
+.header-992.white .contact-btn-copy-nav-about .text-block-440.blue,
+.header-992.scrolled .contact .text-block-440,
+.header-992.scrolled .contact-btn-copy-nav-about .text-block-440,
+.header-992.scrolled .contact-btn-copy-nav-about .text-block-440.blue,
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact .text-block-440,
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact-btn .text-block,
+.navbar-logo-left-container.shadow-three.header-992.scrolled .contact-btn-copy-nav-about .text-block-440 {
+  color: #fff !important;
+}
+
+/* Scrolled blue pill: hide green, show light/blue icon */
+.header-992.scrolled .contact .call-icon-blue {
+  display: none !important;
+}
+
+.header-992.scrolled .contact .call-icon-dark {
+  display: block !important;
+}
+
+/* Industries — Tailored Solutions for Every Sector cards */
+.section-13 .w-layout-grid.grid-10 {
+  align-items: stretch !important;
+}
+
+.section-13 .grid-10 .div-block-1123 {
+  display: flex !important;
+  flex-flow: column nowrap !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  height: 100% !important;
+  box-sizing: border-box;
+  padding: 0 0 24px !important;
+  overflow: hidden;
+}
+
+/* Normalize odd last card (Insurance) to same column width, centered */
+@media screen and (min-width: 992px) {
+  .section-13 .grid-10 .div-block-1123:last-child:nth-child(odd) {
+    grid-column: 1 / -1 !important;
+    width: calc(50% - 10px) !important;
+    max-width: calc(50% - 10px) !important;
+    justify-self: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+.section-13 .grid-10 .div-block-1123 > .image-44-copy-mv,
+.section-13 .grid-10 .div-block-1123 > img.image-44-copy-mv {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9.5;
+  object-fit: cover !important;
+  object-position: center;
+  border-radius: 15px 15px 0 0 !important;
+  flex: 0 0 auto;
+  align-self: stretch;
+}
+
+.section-13 .grid-10 .div-block-1123 .div-block-1124 {
+  display: flex !important;
+  flex-flow: column nowrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: center !important;
+  width: 100%;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  padding: 16px 16px 0 !important;
+}
+
+.section-13 .grid-10 .div-block-1123 .heading-41 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  white-space: nowrap !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: clamp(20px, 2.15vw, 34px) !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.04em;
+}
+
+/* CMS seed used <br> inside some titles — collapse to one line */
+.section-13 .grid-10 .div-block-1123 .heading-41 br {
+  display: none !important;
+}
+
+.section-13 .grid-10 .div-block-1123 [class^="paragraph-2"] {
+  width: 100% !important;
+  max-width: 100%;
+  text-align: center;
+  margin: 0;
+  min-height: 3.75em; /* keep body block height steady across 2–3 line blurbs */
+  flex: 0 0 auto;
+}
+
+.section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 {
+  width: 100% !important;
+  margin-top: auto;
+  place-items: center;
+  align-content: start;
+}
+
+@media screen and (max-width: 991px) {
+  .section-13 .grid-10 .div-block-1123:last-child:nth-child(odd) {
+    grid-column: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .section-13 .grid-10 .div-block-1123 .heading-41 {
+    font-size: clamp(18px, 4.2vw, 28px) !important;
+  }
+}
+
+/* FINAL: hide header Contact Us on mobile/tablet (drawer has its own CTA).
+   Must stay last so it beats earlier display:inline-flex !important rules. */
+@media screen and (max-width: 991px) {
+  body .navbar-logo-left-container.header-992.w-nav .navbar-wrapper > a.contact,
+  body .navbar-logo-left-container.header-992.w-nav .navbar-wrapper > .contact,
+  body .navbar-logo-left-container.header-992.w-nav .navbar-wrapper > a.contact.w-inline-block,
+  body .navbar-logo-left-container.header-992.w-nav .navbar-wrapper > .contact-btn-copy-nav-about,
+  body .navbar-logo-left-container.header-992.w-nav .navbar-wrapper > .contact-btn-copy-nav-about.blue,
+  body .navbar-logo-left-container.header-992.w-nav .navbar-wrapper > a.contact-btn-copy-nav-about.blue.w-inline-block,
+  body .navbar-logo-left-container.header-992.w-nav .menu-button > a.contact-btn,
+  body .navbar-logo-left-container.header-992.w-nav .menu-button > a.contact-btn-copy-new,
+  body .navbar-logo-left-container.header-992.w-nav .menu-button > [class*="contact-btn"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    max-width: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    left: -9999px !important;
+  }
+}

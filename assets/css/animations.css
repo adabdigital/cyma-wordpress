@@ -230,13 +230,20 @@ section.cyma-reveal.is-revealed {
   }
 }
 
-/* Homepage banner slider */
-.head-banner .slider,
-.head-banner .slider .w-slider-mask,
-.head-banner .slider .w-slide {
+/* Homepage banner slider
+   Do NOT force transform/backface on .w-slider-mask or .w-slide — Webflow
+   positions slides with inline transforms, and those GPU layers can blank
+   CSS background-images on .banner-image._2 / ._3. */
+.head-banner .slider {
   transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+}
+
+.head-banner .banner-image._2,
+.head-banner .banner-image._3 {
+  background-color: #061428;
+  background-repeat: no-repeat;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
 }
 
 .head-banner .slider .w-slide[aria-hidden="false"] .hyper-text {

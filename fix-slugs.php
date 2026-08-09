@@ -24,7 +24,7 @@ foreach ($map as $old => $new) {
 }
 
 // Create remaining pages from JSON that don't exist yet
-$dir = '/var/www/html/wp-content/themes/cyma-708003/_data/frontend-editor';
+$dir = '/var/www/html/wp-content/themes/cyma-prod-v2/_data/frontend-editor';
 foreach (glob($dir . '/page-*.json') as $file) {
     $key = basename($file, '.json');
     $slug = preg_replace('/^page-/', '', $key);

@@ -1,6 +1,6 @@
 # Running CYMA WordPress Locally
 
-This project runs WordPress in Docker. The custom theme is **cyma-708003**, converted from Webflow. Page content is loaded from JSON files in the theme — no Udesly plugin is required.
+This project runs WordPress in Docker. The custom theme is **cyma-prod-v2**, converted from Webflow. Page content is loaded from JSON files in the theme — no Udesly plugin is required.
 
 ## Prerequisites
 
@@ -58,19 +58,19 @@ cyma-wordpress/
 ├── docker-compose.yml          # WordPress + MySQL services
 ├── wordpress/                  # WordPress install (mounted into container)
 │   ├── wp-config.php           # Includes preview-tunnel URL handling
-│   └── wp-content/themes/cyma-708003/   # Active theme (edit this)
+│   └── wp-content/themes/cyma-prod-v2/   # Active theme (edit this)
 │       ├── _data/frontend-editor/       # Page content (JSON)
 │       ├── assets/                      # CSS, JS, images, videos
 │       └── template-parts/              # Page templates
 └── LOCAL-WORDPRESS.md          # This file
 ```
 
-The repo root also contains theme source files that mirror the active theme. **When developing locally, edit files under `wordpress/wp-content/themes/cyma-708003/`** — that is what Docker serves.
+The repo root also contains theme source files that mirror the active theme. **When developing locally, edit files under `wordpress/wp-content/themes/cyma-prod-v2/`** — that is what Docker serves.
 
 After editing root-level theme copies, sync them into the active theme if needed:
 
 ```bash
-THEME="wordpress/wp-content/themes/cyma-708003"
+THEME="wordpress/wp-content/themes/cyma-prod-v2"
 cp header.php footer.php functions.php "$THEME/"
 cp -r assets/css assets/js "$THEME/assets/" 2>/dev/null || true
 ```
@@ -86,7 +86,7 @@ If this is a fresh install, complete the WordPress setup wizard at http://localh
 ### Activate the theme
 
 1. Go to **Appearance → Themes**
-2. Activate **cyma-708003**
+2. Activate **cyma-prod-v2**
 
 ### Set the homepage
 
@@ -104,7 +104,7 @@ Navigation links and buttons resolve template slugs like `page-about-us` to Word
 ### Option A: Run the import script (basic pages)
 
 ```bash
-docker exec cyma-wordpress php /var/www/html/wp-content/themes/cyma-708003/import-pages.php
+docker exec cyma-wordpress php /var/www/html/wp-content/themes/cyma-prod-v2/import-pages.php
 ```
 
 This creates a subset of core pages. Extend `import-pages.php` if you need additional slugs.
@@ -116,7 +116,7 @@ Run this once inside the WordPress container to create a page for every JSON fil
 ```bash
 docker exec cyma-wordpress php -r "
 require '/var/www/html/wp-load.php';
-\$dir = '/var/www/html/wp-content/themes/cyma-708003/_data/frontend-editor';
+\$dir = '/var/www/html/wp-content/themes/cyma-prod-v2/_data/frontend-editor';
 foreach (glob(\$dir . '/page-*.json') as \$file) {
     \$key = basename(\$file, '.json');
     \$slug = preg_replace('/^page-/', '', \$key);
@@ -156,7 +156,7 @@ See `_data/frontend-editor/` for the full list of available pages.
 The **Explore Careers** page (`/explore-careers/`) and individual job posts are not created by the basic page import. Run:
 
 ```bash
-docker exec cyma-wordpress php /var/www/html/wp-content/themes/cyma-708003/import-careers.php
+docker exec cyma-wordpress php /var/www/html/wp-content/themes/cyma-prod-v2/import-careers.php
 ```
 
 This creates the `explore-careers` page and imports job listings from `_data/data.json` (e.g. `/explore-careers/data-engineer/`).
