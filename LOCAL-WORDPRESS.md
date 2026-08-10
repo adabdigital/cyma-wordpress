@@ -255,6 +255,13 @@ docker exec cyma-wordpress wp option get siteurl --allow-root
 
 ## Troubleshooting
 
+### Homepage is blank / `index.php` looks empty
+
+- Do **not** open the theme’s `index.php` or `front-page.php` in a browser by themselves. They are short stubs; real markup is in `template-parts/content/front-page.php`.
+- Do **not** point XAMPP/WAMP only at the theme folder or the repo root. Serve the full `wordpress/` install (or use Docker) and open **http://localhost:8081**.
+- After activating **cyma-prod-v2**, set **Settings → Reading → A static page** to your Home page so WordPress uses `front-page.php`.
+- For a no-PHP preview, open `docs/index.html` or https://adabdigital.github.io/cyma-wordpress/ — there is no root `index.html`.
+
 ### Port 8081 already in use
 
 Change the host port in `docker-compose.yml`:

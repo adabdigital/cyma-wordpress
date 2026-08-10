@@ -1,20 +1,17 @@
 <?php
+/**
+ * Main template fallback.
+ *
+ * Used when no more-specific template matches (e.g. Reading is still
+ * "Your latest posts"). Always render the homepage so the site is never blank.
+ */
+get_header();
+load_page_data( 'front-page' );
+?>
 
+<main>
+	<?php get_template_part( 'template-parts/content/front-page' ); ?>
+</main>
 
-$args = [
-    'wfPage' => '68b1441fc7751893e8b8b17d',
-    'body' => '',
-    'head' => 'head/front-page',
-];   
-
-     
-get_header('', $args);
-
-;
-
-$args = [
-  'footer' => 'footer/front-page',
-];  
-
-
-get_footer('', $args);
+<?php
+get_footer();

@@ -13,7 +13,19 @@ cd cyma-wordpress
 docker compose up -d
 ```
 
-Open **http://localhost:8081**
+Open **http://localhost:8081** (not the repo root, and not `index.php` in the theme folder).
+
+### What to open (especially on Windows)
+
+| Goal | Open this |
+|------|-----------|
+| Static HTML preview (no PHP) | `docs/index.html` in a browser, or https://adabdigital.github.io/cyma-wordpress/ |
+| Full WordPress site | Run Docker above, then **http://localhost:8081** |
+| Theme source | `wordpress/wp-content/themes/cyma-prod-v2/` (needs WordPress; do not point XAMPP/WAMP only at this folder) |
+
+There is **no** `index.html` at the repo root. Root/`theme` `index.php` and `front-page.php` are short PHP stubs on purpose — page markup lives in `template-parts/content/`. Opening those stubs alone looks “empty” and will not render the site.
+
+XAMPP/WAMP: use the full `wordpress/` tree (or Docker), activate **cyma-prod-v2**, then **Settings → Reading → A static page** for the homepage. Theme-only folders cannot run WordPress.
 
 Rebuild the static Pages preview locally:
 
