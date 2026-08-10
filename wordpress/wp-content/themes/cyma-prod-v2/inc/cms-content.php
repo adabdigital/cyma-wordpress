@@ -174,6 +174,14 @@ function cyma_render_design_html( $post_id ) {
 	// and WordPress/browsers can dump the JS as visible text.
 	$html = preg_replace( '#<script\b[^>]*>[\s\S]*?</script>#i', '', $html );
 
+	// Store LCA postings as a shortcode so CPT edits stay live after seeding.
+	if ( $post_obj && 'h1b-lca' === $post_obj->post_name && function_exists( 'cyma_lca_replace_static_blocks' ) ) {
+		$html = cyma_lca_replace_static_blocks(
+			$html,
+			"\n<!-- wp:shortcode -->\n[cyma_lca_postings]\n<!-- /wp:shortcode -->\n"
+		);
+	}
+
 	return $html;
 }
 

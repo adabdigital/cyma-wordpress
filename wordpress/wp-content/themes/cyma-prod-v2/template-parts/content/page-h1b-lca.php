@@ -142,7 +142,7 @@
       <div class="div-block-1294">
         <h1 data-w-id="f7128fdc-cf73-8fcf-8b84-91e82c661800" style="opacity:0" class="heading-123" data-text="tn355411b6"><?php echo _u('tn355411b6','text'); ?></h1>
         <p class="text-block-627"><?php echo esc_html( cyma_lca_preamble_text() ); ?></p>
-        <?php get_template_part( 'template-parts/content/lca-postings' ); ?>
+        <?php echo do_shortcode( '[cyma_lca_postings]' ); ?>
       </div>
     </div>
   </section>

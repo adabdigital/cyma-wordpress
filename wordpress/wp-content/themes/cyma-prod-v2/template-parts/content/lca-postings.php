@@ -30,9 +30,11 @@ foreach ( $chunks as $chunk_index => $chunk ) :
 			<li class="list-item-24"><?php echo esc_html( $posting['location'] ); ?></li>
 			<li class="list-item-25"><?php echo esc_html( cyma_lca_inspection_text() ); ?></li>
 		</ul>
+		<?php if ( ! empty( $posting['doc'] ) ) : ?>
 		<p class="text-block-627" style="margin-top:12px">
 			<a href="<?php echo esc_url( $posting['doc'] ); ?>" target="_blank" rel="noopener noreferrer">Download LCA posting (<?php echo esc_html( $posting['doc_label'] ); ?>)</a>
 		</p>
+		<?php endif; ?>
 		<div class="text-block-627"><?php echo esc_html( cyma_lca_complaint_text() ); ?></div>
 	</div>
 	<?php endforeach; ?>
