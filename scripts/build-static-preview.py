@@ -22,6 +22,12 @@ BANNER = """
 .cyma-static-banner{position:sticky;top:0;z-index:99999;background:#0b3d66;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:10px 16px;text-align:center}
 .cyma-static-banner a{color:#9ad0ff}
 .cyma-static-banner strong{font-weight:700}
+/* Snapshots may embed a blunt opacity:1 override; keep industry idle overlays hidden. */
+.industry-list .div-block-1366{opacity:0!important;pointer-events:none}
+.industry-list .mg-right-10px.height-520px:hover .div-block-1366,
+.industry-list .mg-right-10px.height-520px:focus-within .div-block-1366{opacity:1!important;pointer-events:auto}
+.industry-list .mg-right-10px.height-520px:hover .slider-content-block,
+.industry-list .mg-right-10px.height-520px:focus-within .slider-content-block{opacity:0}
 </style>
 <div class="cyma-static-banner" role="note">
   <strong>Static GitHub Pages preview</strong> — not a live WordPress site.
@@ -50,7 +56,9 @@ def main() -> None:
 
     assets_out = OUT / "assets"
     assets_out.mkdir()
-    for sub in ("css", "js"):
+    # CSS backgrounds (e.g. industry cards) resolve to ../images/* from assets/css/.
+    # Copy images/videos too — css/js alone leaves those URLs as 404 on Pages.
+    for sub in ("css", "js", "images", "videos"):
         src = THEME_ASSETS / sub
         if src.exists():
             shutil.copytree(src, assets_out / sub)
@@ -89,9 +97,24 @@ def main() -> None:
             return match.group(0)
 
         html = re.sub(r'href="([^"]+)"', repl_href, html)
+        # Rewrite theme asset URLs (css/js/images/videos) to the local docs/assets copy.
+        # Snapshots may reference cyma-prod or cyma-prod-v2; both map to theme assets.
         html = re.sub(
-            r"https?://(?:www\.)?cymasys\.com/wp-content/themes/cyma-prod(?:-v2)?/assets/(css|js)/([^\"?#]+)",
+            r"https?://(?:www\.)?cymasys\.com/wp-content/themes/cyma-prod(?:-v2)?/assets/(css|js|images|videos)/([^\"'?#]+)",
             lambda m: f"{prefix}assets/{m.group(1)}/{m.group(2)}",
+            html,
+        )
+        html = re.sub(
+            r"/wp-content/themes/cyma-prod(?:-v2)?/assets/(css|js|images|videos)/([^\"'?#]+)",
+            lambda m: f"{prefix}assets/{m.group(1)}/{m.group(2)}",
+            html,
+        )
+        # Neutralize legacy blunt opacity override baked into page head snapshots.
+        html = re.sub(
+            r"\[data-w-id\],\s*\[style\*=\"opacity:0\"\]\s*\{\s*opacity:\s*1\s*!important;\s*\}",
+            "[data-w-id]:not(section.cyma-reveal):not(.mg-right-10px):not(.div-block-1366),"
+            '[style*="opacity:0"]:not(section.cyma-reveal):not(.div-block-1366):not(.mg-right-10px)'
+            "{opacity:1!important;}",
             html,
         )
         html = re.sub(

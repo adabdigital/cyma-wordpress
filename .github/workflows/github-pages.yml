@@ -9,6 +9,8 @@ on:
       - "scripts/build-static-preview.py"
       - "wordpress/wp-content/themes/cyma-prod-v2/assets/css/**"
       - "wordpress/wp-content/themes/cyma-prod-v2/assets/js/**"
+      - "wordpress/wp-content/themes/cyma-prod-v2/assets/images/**"
+      - "wordpress/wp-content/themes/cyma-prod-v2/assets/videos/**"
       - ".github/workflows/github-pages.yml"
   workflow_dispatch:
 

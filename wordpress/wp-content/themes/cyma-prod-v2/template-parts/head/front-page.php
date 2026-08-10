@@ -6,7 +6,10 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/wordpress.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
 <style>
-[data-w-id], [style*="opacity:0"] {
+/* Keep Webflow fade-ins visible, but do not force industry hover overlays open.
+   .div-block-1366 idle state is opacity:0; .mg-right-10px hosts those cards. */
+[data-w-id]:not(section.cyma-reveal):not(.mg-right-10px):not(.div-block-1366),
+[style*="opacity:0"]:not(section.cyma-reveal):not(.div-block-1366):not(.mg-right-10px) {
   opacity: 1 !important;
 }
 
