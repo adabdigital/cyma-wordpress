@@ -493,6 +493,7 @@ function cyma_setup_cms_content_filters() {
 		remove_filter( 'the_content', 'wpautop' );
 		add_filter( 'the_content', 'cyma_strip_inline_scripts_from_content', 8 );
 		add_filter( 'the_content', 'cyma_fix_broken_sf_symbol_icons', 9 );
+		add_filter( 'the_content', 'cyma_fix_broken_theme_1webp_urls', 10 );
 		add_filter( 'the_content', 'cyma_replace_job_seekers_featured_slider', 12 );
 		add_filter( 'the_content', 'cyma_replace_contact_form', 13 );
 		add_filter( 'the_content', 'cyma_link_home_contact_cta', 14 );
@@ -506,6 +507,88 @@ add_action( 'wp', 'cyma_setup_cms_content_filters' );
  */
 function cyma_strip_inline_scripts_from_content( $content ) {
 	return preg_replace( '#<script\b[^>]*>[\s\S]*?</script>#i', '', $content );
+}
+
+/**
+ * Stale CMS HTML sometimes bakes image URLs as /wp-content/themes/1.webp
+ * (theme folder + /assets/images/ path stripped during an earlier seed/replace).
+ * Rewrite live using data-img keys from frontend-editor JSON.
+ *
+ * @param string $content HTML.
+ * @return string
+ */
+function cyma_fix_broken_theme_1webp_urls( $content ) {
+	if ( ! is_string( $content ) || false === strpos( $content, 'themes/1.webp' ) ) {
+		return $content;
+	}
+
+	$post_id = get_queried_object_id();
+	$slug    = function_exists( 'cyma_get_content_template_slug' ) ? cyma_get_content_template_slug( $post_id ) : '';
+	if ( ! $slug ) {
+		$post = get_post( $post_id );
+		$slug = $post ? 'page-' . $post->post_name : '';
+	}
+
+	$map = array();
+	$file = get_template_directory() . '/_data/frontend-editor/' . $slug . '.json';
+	if ( file_exists( $file ) ) {
+		$data = json_decode( (string) file_get_contents( $file ), true );
+		if ( ! empty( $data['img'] ) && is_array( $data['img'] ) ) {
+			foreach ( $data['img'] as $key => $img ) {
+				if ( is_array( $img ) && ! empty( $img['src'] ) ) {
+					$map[ $key ] = $img['src'];
+				}
+			}
+		}
+	}
+
+	$theme = get_template_directory_uri();
+
+	$content = preg_replace_callback(
+		'#<img\b[^>]*>#i',
+		function ( $matches ) use ( $map, $theme ) {
+			$tag = $matches[0];
+			if ( false === stripos( $tag, 'themes/1.webp' ) ) {
+				return $tag;
+			}
+			if ( ! preg_match( '#\bdata-img=(["\'])([^"\']+)\1#i', $tag, $dm ) ) {
+				return $tag;
+			}
+			$key = $dm[2];
+			if ( empty( $map[ $key ] ) ) {
+				return $tag;
+			}
+			$src = $map[ $key ];
+			if ( ! preg_match( '#^https?://#i', $src ) ) {
+				$src = $theme . $src;
+			}
+			$tag = preg_replace( '#\bsrc=(["\'])[^"\']*\1#i', 'src="' . esc_url( $src ) . '"', $tag, 1 );
+			if ( preg_match( '#\bsrcset=#i', $tag ) ) {
+				$tag = preg_replace( '#\bsrcset=(["\'])[^"\']*\1#i', 'srcset="' . esc_url( $src ) . '"', $tag, 1 );
+			}
+			return $tag;
+		},
+		$content
+	);
+
+	$section_bgs = array(
+		'section-11' => '/assets/images/bg-industries.webp',
+		'section-62' => '/assets/images/bg-notice.webp',
+		'section-78' => '/assets/images/bg-insights1.webp',
+		'section-33' => '/assets/images/bg-insights2.webp',
+	);
+	foreach ( $section_bgs as $section_class => $rel ) {
+		$src     = $theme . $rel;
+		$content = preg_replace_callback(
+			'#(<section\b[^>]*\bclass=(["\'])(?:[^"\']*\s)?' . preg_quote( $section_class, '#' ) . '(?:\s[^"\']*)?\2[^>]*\bstyle=(["\'])[^"\']*?background-image\s*:\s*url\()(?:\\\\?&apos;|&apos;|\'|")https?://[^)"\']*?/wp-content/themes/1\.webp(?:\?[^)"\']*)?(?:\\\\?&apos;|&apos;|\'|")(\)[^"\']*\3[^>]*>)#i',
+			function ( $m ) use ( $src ) {
+				return $m[1] . '&apos;' . esc_url( $src ) . '&apos;' . $m[4];
+			},
+			$content
+		);
+	}
+
+	return $content;
 }
 
 /**

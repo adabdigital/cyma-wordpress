@@ -272,6 +272,9 @@ function cyma_resolve_link($url) {
     }
 
     if (preg_match('#^https?://#i', $url)) {
+        if ( function_exists( 'cyma_upgrade_http_url' ) ) {
+            return cyma_upgrade_http_url( $url );
+        }
         return $url;
     }
 
@@ -307,6 +310,9 @@ function cyma_resolve_asset($path) {
     }
 
     if (preg_match('#^https?://#i', $path)) {
+        if ( function_exists( 'cyma_upgrade_http_url' ) ) {
+            return cyma_upgrade_http_url( $path );
+        }
         return $path;
     }
 
@@ -368,6 +374,11 @@ function cyma_get_image($key) {
         ];
     }
     return (object)['src' => '', 'alt' => '', 'srcset' => ''];
+}
+
+$cyma_https = get_template_directory() . '/inc/https.php';
+if ( file_exists( $cyma_https ) ) {
+	require_once $cyma_https;
 }
 
 $cyma_lca_postings = get_template_directory() . '/inc/lca-postings.php';
