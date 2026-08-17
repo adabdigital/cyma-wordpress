@@ -155,7 +155,7 @@
               </div>
               <div class="text-field-wrapper"><label for="email-" class="field-label-4">Email ID*</label><input class="text-field-3 w-input" maxlength="256" name="contact[email]" data-name="Email 3" placeholder="Enter Your Email ID" type="email" id="Email-3" data-ms-member="email" required=""></div>
               <div class="div-block-1397"><label for="contact[password-]" class="field-label-5">Create Password*</label><input data-show="true" class="text-field-4 w-input" maxlength="256" name="contact[password-]" data-name="Password 3" placeholder="Create Password " type="password" id="Password-3" data-ms-member="password" required=""></div>
-              <div class="text-block-681">By cotinuing, you agree to our Terms of Service &amp; Privacy Policy.</div>
+              <div class="text-block-681">By continuing, you agree to our Terms of Service &amp; Privacy Policy.</div>
               <div class="div-block-1398"><input type="submit" data-wait="Please wait..." class="submit-button-3 w-button" value="Create Account"><img src="<?php echo cyma_get_image(_u('in4da69620', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in4da69620', 'img'))->alt ?>" class="image-216" data-img="in4da69620" srcset="<?php echo cyma_get_image(_u('in4da69620', 'img'))->srcset ?>"></div>
             <?php cyma_honeypot_field() ?></form>
             <div class="w-form-done">
