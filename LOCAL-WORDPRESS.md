@@ -328,6 +328,30 @@ docker compose logs db
 
 Ensure Docker Desktop is running and you have enough disk space for the MySQL volume.
 
+## “Not secure” in the browser
+
+| URL | Expected padlock? |
+|-----|-------------------|
+| http://localhost:8081 | No — local Docker is plain HTTP on purpose |
+| https://cymasys.com | Yes — production HTTPS (Sucuri + GoDaddy cert) |
+| https://adabdigital.github.io/cyma-wordpress/ | Yes — GitHub Pages HTTPS |
+
+**Root cause for “some users” (typical):** they are on local Docker HTTP, a
+preview tunnel, or an old bookmark — not a broken production certificate.
+Production currently has a valid GoDaddy cert (apex + www), HTTP→HTTPS `301`
+via Sucuri, and no mixed-content `http://` assets on the live homepage.
+
+If production still shows **Not secure** for a visitor on `https://cymasys.com`:
+
+1. Confirm they are not on `localhost` / a tunnel URL.
+2. In hosting: cert expiry/chain, Sucuri SSL mode (Full/Strict, not Flexible),
+   and WordPress **Settings → General** URLs both `https://cymasys.com`.
+3. Optionally enable HSTS at Sucuri once monitoring is in place (theme does
+   **not** send HSTS).
+
+Theme helpers: `wordpress/wp-content/themes/cyma-prod-v2/inc/https.php`
+(localhost-safe). Optional Apache sample: `docs/htaccess-https.sample.md`.
+
 ## Production note
 
 This Docker setup is for **local development**. For production, use proper secrets management, HTTPS, strong database passwords, and a hosting environment suited to WordPress (managed WP, VPS, etc.).

@@ -160,6 +160,32 @@ add_filter( 'content_url', 'cyma_force_https_url_scheme', 1, 2 );
 add_filter( 'plugins_url', 'cyma_force_https_url_scheme', 1, 3 );
 add_filter( 'script_loader_src', 'cyma_upgrade_http_url', 20 );
 add_filter( 'style_loader_src', 'cyma_upgrade_http_url', 20 );
+add_filter( 'wp_get_attachment_url', 'cyma_upgrade_http_url', 20 );
+
+/**
+ * Upgrade http:// URLs inside calculated image srcset sources.
+ *
+ * @param array $sources Srcset sources from wp_calculate_image_srcset.
+ * @return array
+ */
+function cyma_upgrade_http_srcset_sources( $sources ) {
+	if ( ! is_array( $sources ) || cyma_is_local_https_exempt_host() ) {
+		return $sources;
+	}
+
+	if ( ! cyma_request_is_https() && ! cyma_is_production_host() ) {
+		return $sources;
+	}
+
+	foreach ( $sources as $width => $source ) {
+		if ( ! empty( $source['url'] ) ) {
+			$sources[ $width ]['url'] = cyma_upgrade_http_url( $source['url'] );
+		}
+	}
+
+	return $sources;
+}
+add_filter( 'wp_calculate_image_srcset', 'cyma_upgrade_http_srcset_sources', 20 );
 
 /**
  * Soft-upgrade common http:// leftovers in post content on HTTPS pages.

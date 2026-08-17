@@ -15,6 +15,8 @@ docker compose up -d
 
 Open **http://localhost:8081** (not the repo root, and not `index.php` in the theme folder).
 
+Browsers will label local HTTP as **Not secure** — that is expected for Docker. Production (`https://cymasys.com`) uses HTTPS; GitHub Pages is HTTPS as well.
+
 ### What to open (especially on Windows)
 
 | Goal | Open this |
