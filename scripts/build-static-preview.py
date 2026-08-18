@@ -79,7 +79,7 @@ def main() -> None:
     assets_out.mkdir()
     # CSS backgrounds (e.g. industry cards) resolve to ../images/* from assets/css/.
     # Copy images/videos too — css/js alone leaves those URLs as 404 on Pages.
-    for sub in ("css", "js", "images", "videos"):
+    for sub in ("css", "js", "images", "videos", "docs"):
         src = THEME_ASSETS / sub
         if src.exists():
             shutil.copytree(src, assets_out / sub)
@@ -121,12 +121,12 @@ def main() -> None:
         # Rewrite theme asset URLs (css/js/images/videos) to the local docs/assets copy.
         # Snapshots may reference cyma-prod or cyma-prod-v2; both map to theme assets.
         html = re.sub(
-            r"https?://(?:www\.)?cymasys\.com/wp-content/themes/cyma-prod(?:-v2)?/assets/(css|js|images|videos)/([^\"'?#]+)",
+            r"https?://(?:www\.)?cymasys\.com/wp-content/themes/cyma-prod(?:-v2)?/assets/(css|js|images|videos|docs)/([^\"'?#]+)",
             lambda m: f"{prefix}assets/{m.group(1)}/{m.group(2)}",
             html,
         )
         html = re.sub(
-            r"/wp-content/themes/cyma-prod(?:-v2)?/assets/(css|js|images|videos)/([^\"'?#]+)",
+            r"/wp-content/themes/cyma-prod(?:-v2)?/assets/(css|js|images|videos|docs)/([^\"'?#]+)",
             lambda m: f"{prefix}assets/{m.group(1)}/{m.group(2)}",
             html,
         )
