@@ -57,6 +57,27 @@ BANNER = """
 </div>
 """
 
+DICE_URL = "https://www.dice.com/jobs?filters.clientBrandNameFilter=Cyma+Systems+Inc"
+
+
+def rewrite_dice_ctas(html: str) -> str:
+    """Point legacy career CTA anchors at Dice in static snapshots."""
+
+    def repl_anchor(match: re.Match[str]) -> str:
+        anchor = match.group(0)
+        if 'data-link="a2643837b"' not in anchor:
+            return anchor
+        if 'href="' not in anchor:
+            return anchor
+        anchor = re.sub(r'href="[^"]*"', f'href="{DICE_URL}"', anchor, count=1)
+        if "target=" not in anchor:
+            anchor = anchor.replace("<a ", '<a target="_blank" rel="noopener noreferrer" ', 1)
+        elif "rel=" not in anchor:
+            anchor = anchor.replace('target="_blank"', 'target="_blank" rel="noopener noreferrer"', 1)
+        return anchor
+
+    return re.sub(r"<a\b[^>]*>[\s\S]*?</a>", repl_anchor, html, flags=re.I)
+
 
 def main() -> None:
     if not SRC.exists():
@@ -118,6 +139,7 @@ def main() -> None:
             return match.group(0)
 
         html = re.sub(r'href="([^"]+)"', repl_href, html)
+        html = rewrite_dice_ctas(html)
         # Rewrite theme asset URLs (css/js/images/videos) to the local docs/assets copy.
         # Snapshots may reference cyma-prod or cyma-prod-v2; both map to theme assets.
         html = re.sub(
