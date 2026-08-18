@@ -46,7 +46,7 @@ function cyma_enqueue_styles() {
     wp_enqueue_style('normalize', get_template_directory_uri() . '/assets/css/normalize.css', [], '1780144474');
     wp_enqueue_style('wordpress', get_template_directory_uri() . '/assets/css/wordpress.css', [], '1780144474');
     wp_enqueue_style('cyma-style', get_template_directory_uri() . '/assets/css/style.css', [], time());
-    wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1787095002');
+    wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1787096501');
 
     wp_add_inline_style(
         'cyma-style',
@@ -92,7 +92,7 @@ function cyma_enqueue_scripts() {
         'cyma-home-ui',
         get_template_directory_uri() . '/assets/js/home-ui.js',
         [],
-        '1785905451',
+        '1787095801',
         true
     );
 }

@@ -199,7 +199,7 @@
       </div>
     </div>
   </section>
-  <section class="section-16">
+  <section class="section-16 cyma-tech-tags">
     <div class="w-layout-blockcontainer container-19 w-container">
       <div data-w-id="edf13624-5144-b7bf-b3b3-d3716a15fa8f" style="opacity:0" class="div-block-1391">
         <h1 class="heading-99" data-textarea="tan6fd13f5a"><?php echo _u('tan6fd13f5a', 'textarea'); ?></h1>
@@ -210,13 +210,12 @@
         <div class="text-block-472" data-text="tn6c253137"><?php echo _u('tn6c253137','text'); ?></div>
         <div class="text-block-472" data-text="tn512c2d87"><?php echo _u('tn512c2d87','text'); ?></div>
         <div class="text-block-472" data-text="tn239451cc"><?php echo _u('tn239451cc','text'); ?></div>
-        <div class="text-block-472-copy-1" data-text="t7742b382"><?php echo _u('t7742b382','text'); ?></div>
       </div>
       <div data-w-id="3a8a4b0b-e6af-8dd2-5855-72d2033d4216" style="opacity:0" class="div-block-1170">
+        <div class="text-block-472" data-text="t7742b382"><?php echo _u('t7742b382','text'); ?></div>
         <div class="text-block-472" data-text="t7a2f761a"><?php echo _u('t7a2f761a','text'); ?></div>
         <div class="text-block-472" data-text="t4dce6a65"><?php echo _u('t4dce6a65','text'); ?></div>
-        <div class="text-block-472-copy _472" data-text="t7742b382"><?php echo _u('t7742b382','text'); ?></div>
-        <div class="text-block-472-1" data-text="tn45b59b9c"><?php echo _u('tn45b59b9c','text'); ?></div>
+        <div class="text-block-472" data-text="tn45b59b9c"><?php echo _u('tn45b59b9c','text'); ?></div>
       </div>
       <div data-w-id="7cdedbe7-762f-104c-d638-63760d84e102" class="div-block-1235">
         <div class="text-block-472-copy" data-text="t1c83b0e5"><?php echo _u('t1c83b0e5','text'); ?></div>
@@ -233,9 +232,6 @@
       <div data-w-id="24cf500a-c965-2078-f60d-da3b28bc120f" class="div-block-1238">
         <div class="text-block-472-copy" data-text="tn45b59b9c"><?php echo _u('tn45b59b9c','text'); ?></div>
         <div class="text-block-472-copy" data-text="tn512c2d87"><?php echo _u('tn512c2d87','text'); ?></div>
-      </div>
-      <div data-w-id="a976bd1d-d124-f92b-1c53-569a38c61be4" class="div-block-1239">
-        <div class="text-block-472-copy" data-text="t7742b382"><?php echo _u('t7742b382','text'); ?></div>
       </div>
       <a data-w-id="f766238a-6676-3a22-9de6-c3f707d77f80" href="<?php echo $cyma_dice_url; ?>" target="_blank" rel="noopener noreferrer" class="contact-btn-copy-js-btn-copy-highdemand w-inline-block" data-link="a2643837b">
         <div class="text-block-481" data-text="tn77b3f950"><?php echo _u('tn77b3f950','text'); ?></div><img loading="lazy" src="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->alt ?>" class="image-83" data-img="in75c75f65" srcset="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->srcset ?>">

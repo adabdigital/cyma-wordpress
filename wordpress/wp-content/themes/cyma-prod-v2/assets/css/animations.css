@@ -1162,11 +1162,66 @@ a.contact {
   flex: 0 0 auto;
 }
 
+/* Industry 4-icon rows (Banking, Automotive, Healthcare, Manufacturing, …)
+   Equal columns, shared icon baseline, labels wrap inside their cell. */
 .section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  grid-column-gap: 12px !important;
+  column-gap: 12px !important;
+  grid-row-gap: 12px !important;
+  row-gap: 12px !important;
   width: 100% !important;
   margin-top: auto;
-  place-items: center;
+  place-items: start center !important;
+  align-items: start !important;
+  justify-items: center !important;
   align-content: start;
+  box-sizing: border-box;
+}
+
+.section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 > * {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 .image-43 {
+  display: block !important;
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 40px !important;
+  max-height: 40px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  flex: 0 0 40px !important;
+  margin: 0 auto 8px !important;
+}
+
+.section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 .text-block-464,
+.section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 .text-block-465,
+.section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 .text-block-466,
+.section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 .text-block-467 {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  min-height: 3.75em; /* 3 lines at 1.25 — 2-line and 3-line labels share a top edge */
+  margin: 0;
+  padding: 0 !important;
+  box-sizing: border-box;
+  font-size: 12px !important;
+  line-height: 1.25 !important;
+  font-weight: 500;
+  text-align: center !important;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 @media screen and (max-width: 991px) {
@@ -1180,6 +1235,28 @@ a.contact {
 
   .section-13 .grid-10 .div-block-1123 .heading-41 {
     font-size: clamp(18px, 4.2vw, 28px) !important;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 {
+    grid-column-gap: 8px !important;
+    column-gap: 8px !important;
+  }
+
+  .section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 .image-43 {
+    width: 32px !important;
+    height: 32px !important;
+    max-width: 32px !important;
+    max-height: 32px !important;
+    flex-basis: 32px !important;
+  }
+
+  .section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 .text-block-464,
+  .section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 .text-block-465,
+  .section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 .text-block-466,
+  .section-13 .grid-10 .div-block-1123 .w-layout-grid.grid-11 .text-block-467 {
+    font-size: 10px !important;
   }
 }
 
@@ -1197,7 +1274,7 @@ a.contact {
 }
 
 .section-29 .div-block-1186 {
-  padding-top: 12px; /* was 20px desktop / 30px tablet */
+  padding-top: 40px; /* subtitle → steps; keep icon→title tight below */
 }
 
 .section-29 .div-block-1187 {
@@ -1531,6 +1608,46 @@ section.section-28 {
   }
 }
 
+/* Legal title pages (Notice of Filing .section-62, H1B-LCA .section-69).
+   Same navbar + first-section layout as other inner pages, but the title is a
+   large centered .heading-120 sitting in a nested wrapper (breadcrumb is not a
+   direct section child). 120px under an ~100px fixed header leaves ~10–20px —
+   bump clearance so these titles sit comfortably below the nav. */
+.navbar-logo-left-2 + section.section-62,
+.navbar-logo-left-2 + section.section-69 {
+  padding-top: 176px !important;
+}
+
+.section-62 .text-block-534-copy-et-copy-noticeoffiling,
+.section-69 .text-block-534-copy-et-copy-noticeoffiling-copy-h1b {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.section-62 h1.heading-120,
+.section-69 h1.heading-120-copy {
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-logo-left-2 + section.section-62,
+  .navbar-logo-left-2 + section.section-69 {
+    padding-top: 148px !important;
+  }
+
+  .section-62 h1.heading-120,
+  .section-69 h1.heading-120-copy {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .navbar-logo-left-2 + section.section-62,
+  .navbar-logo-left-2 + section.section-69 {
+    padding-top: 124px !important;
+  }
+}
+
 /* FINAL: hide header Contact Us on mobile/tablet (drawer has its own CTA).
    Must stay last so it beats earlier display:inline-flex !important rules. */
 @media screen and (max-width: 991px) {
@@ -1556,5 +1673,40 @@ section.section-28 {
     pointer-events: none !important;
     position: absolute !important;
     left: -9999px !important;
+  }
+}
+
+/* Stat count-up / acronym fade (Together bar, About Us, Job Seekers) */
+.cyma-stat-count {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.cyma-stat-acronym {
+  display: inline-block;
+  will-change: opacity, transform;
+}
+
+.cyma-stat-acronym:not(.is-visible) {
+  opacity: 0;
+  transform: translate3d(0, 14px, 0);
+}
+
+.cyma-stat-acronym.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.95s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cyma-stat-acronym:not(.is-visible),
+  .cyma-stat-acronym.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    will-change: auto;
   }
 }
