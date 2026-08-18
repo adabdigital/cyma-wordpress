@@ -1,0 +1,102 @@
+/* About Us — "Milestone That Shaped Us" timeline only.
+   Do not reuse these selectors for homepage/industry sliders. */
+
+.section-6 .slider-wrapper.future.w-slider {
+  position: relative;
+  z-index: 3;
+  isolation: isolate;
+  height: auto !important;
+  background: transparent;
+  overflow: visible;
+  padding-bottom: 72px;
+}
+
+.section-6 .slider-wrapper.future .w-slider-mask {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: stretch;
+  width: 100% !important;
+  height: auto !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  z-index: 1;
+}
+
+.section-6 .slider-wrapper.future .w-slider-mask::-webkit-scrollbar {
+  display: none;
+}
+
+.section-6 .slider-wrapper.future .w-slide {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  transform: none !important;
+  flex: 0 0 31%;
+  min-width: min(280px, 85vw);
+  height: auto !important;
+}
+
+/* Headings the user underlined: reduce a little, keep year < title hierarchy */
+.section-6 .slider-wrapper.future .journey-card-h4 {
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.section-6 .slider-wrapper.future .w-slider-arrow-left,
+.section-6 .slider-wrapper.future .w-slider-arrow-right {
+  top: auto !important;
+  bottom: 12px !important;
+  left: auto !important;
+  z-index: 6;
+  pointer-events: auto !important;
+  cursor: pointer;
+  overflow: visible !important;
+  margin: 0 !important;
+}
+
+.section-6 .slider-wrapper.future .line-square-arrow-2-copy-slide1.slider-button-right---top-left-copy {
+  right: 68px !important;
+  inset: auto 68px 12px auto !important;
+}
+
+.section-6 .slider-wrapper.future .line-square-arrow-2-copy-slide2.slider-button-right---top-right-copy {
+  right: 16px !important;
+  inset: auto 16px 12px auto !important;
+}
+
+.section-6 .slider-wrapper.future .w-slider-arrow-left img,
+.section-6 .slider-wrapper.future .w-slider-arrow-right img {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 991px) {
+  .section-6 .slider-wrapper.future .journey-card-h4 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .section-6 .slider-wrapper.future .w-slide {
+    flex-basis: 42%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-6 .slider-wrapper.future .journey-card-h4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .section-6 .slider-wrapper.future .w-slide {
+    flex-basis: auto;
+    min-width: min(260px, 82vw);
+  }
+
+  .section-6 .slider-wrapper.future.w-slider {
+    padding-bottom: 64px;
+  }
+}

@@ -5,11 +5,29 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/normalize.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/wordpress.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/milestone-timeline.css?v=1787095004">
 <style>
 /* Keep Webflow fade-ins visible, but do not force industry hover overlays open. */
 [data-w-id]:not(section.cyma-reveal):not(.mg-right-10px):not(.div-block-1366),
 [style*="opacity:0"]:not(section.cyma-reveal):not(.div-block-1366):not(.mg-right-10px) {
   opacity: 1 !important;
+}
+
+/* About Us — Strategic Consulting (section-22) only */
+.section-22 .flex-block-19 > .paragraph-30 {
+  max-width: 380px;
+}
+.section-22 .flex-block-15 > p._16px-text,
+.section-22 .flex-block-16 > p._16px-text,
+.section-22 .flex-block-17 > p._16px-text,
+.section-22 .flex-block-17 > p._16px-text span,
+.section-22 .flex-block-17 > p._16px-text span._20px-text.purple-text.font-weight-semibold.t {
+  color: #0562a7;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  width: auto;
+  margin-top: 0;
 }
 </style>
 <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="14007ead-c505-2082-d047-952fc658a003"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="3dc55b7f-dc19-5aa4-1b18-f586f37b9b7b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="8bf2d266-1458-d4b6-877d-504045e2e17b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="901b54b3-7e33-3314-f9b5-c0719c3fb5e0"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2dca566f-f6ce-cc9d-82f7-8fb46d371717"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2dca566f-f6ce-cc9d-82f7-8fb46d37171f"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2dca566f-f6ce-cc9d-82f7-8fb46d371727"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2dca566f-f6ce-cc9d-82f7-8fb46d37172f"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="bb8b4160-1cc7-03ac-5f34-fce3cbfcdd80"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c63ca701-3014-fff9-2def-9b0b4ad4e7ce"] {opacity:0;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="14007ead-c505-2082-d047-952fc658a003"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="3dc55b7f-dc19-5aa4-1b18-f586f37b9b7b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="8bf2d266-1458-d4b6-877d-504045e2e17b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="901b54b3-7e33-3314-f9b5-c0719c3fb5e0"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2dca566f-f6ce-cc9d-82f7-8fb46d371717"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2dca566f-f6ce-cc9d-82f7-8fb46d37171f"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2dca566f-f6ce-cc9d-82f7-8fb46d371727"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2dca566f-f6ce-cc9d-82f7-8fb46d37172f"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="bb8b4160-1cc7-03ac-5f34-fce3cbfcdd80"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c63ca701-3014-fff9-2def-9b0b4ad4e7ce"] {opacity:0;}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="14007ead-c505-2082-d047-952fc658a003"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="3dc55b7f-dc19-5aa4-1b18-f586f37b9b7b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="8bf2d266-1458-d4b6-877d-504045e2e17b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="901b54b3-7e33-3314-f9b5-c0719c3fb5e0"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2dca566f-f6ce-cc9d-82f7-8fb46d371717"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2dca566f-f6ce-cc9d-82f7-8fb46d37171f"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2dca566f-f6ce-cc9d-82f7-8fb46d371727"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="2dca566f-f6ce-cc9d-82f7-8fb46d37172f"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="bb8b4160-1cc7-03ac-5f34-fce3cbfcdd80"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c63ca701-3014-fff9-2def-9b0b4ad4e7ce"] {opacity:0;}}@media (max-width:479px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="bb8b4160-1cc7-03ac-5f34-fce3cbfcdd80"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="c63ca701-3014-fff9-2def-9b0b4ad4e7ce"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="8bf2d266-1458-d4b6-877d-504045e2e17b"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="901b54b3-7e33-3314-f9b5-c0719c3fb5e0"] {opacity:0;}}</style>

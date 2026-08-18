@@ -319,13 +319,11 @@ function cyma_featured_jobs_shortcode() {
 add_shortcode( 'cyma_featured_jobs', 'cyma_featured_jobs_shortcode' );
 
 /**
- * On Job Seekers CMS HTML, replace the static Webflow featured slider with live openings.
+ * On Job Seekers CMS HTML, replace the featured slider with live openings
+ * plus the Dice CTA card (also injects the CTA when no slider is present).
  */
 function cyma_replace_job_seekers_featured_slider( $content ) {
 	if ( ! is_page( array( 'job-seekers', 'explore-careers' ) ) || ! is_string( $content ) || $content === '' ) {
-		return $content;
-	}
-	if ( false === strpos( $content, 'slider-27' ) ) {
 		return $content;
 	}
 
@@ -334,14 +332,37 @@ function cyma_replace_job_seekers_featured_slider( $content ) {
 		return $content;
 	}
 
-	$replaced = preg_replace(
-		'#<div[^>]*class="[^"]*\bslider-27\b[^"]*"[^>]*>[\s\S]*?</div>\s*</div>(?=\s*</section>)#i',
-		$dynamic,
-		$content,
-		1
-	);
+	if ( false !== strpos( $content, 'cyma-featured-jobs-row' ) ) {
+		$replaced = preg_replace(
+			'#<div[^>]*class="[^"]*\bcyma-featured-jobs-row\b[^"]*"[^>]*>[\s\S]*?</div>(?=\s*</section>)#i',
+			$dynamic,
+			$content,
+			1
+		);
+		return is_string( $replaced ) && $replaced !== '' ? $replaced : $content;
+	}
 
-	return is_string( $replaced ) && $replaced !== '' ? $replaced : $content;
+	if ( false !== strpos( $content, 'slider-27' ) ) {
+		$replaced = preg_replace(
+			'#<div[^>]*class="[^"]*\bslider-27\b[^"]*"[^>]*>[\s\S]*?</div>\s*</div>(?=\s*</section>)#i',
+			$dynamic,
+			$content,
+			1
+		);
+		return is_string( $replaced ) && $replaced !== '' ? $replaced : $content;
+	}
+
+	if ( false !== strpos( $content, 'section-28' ) || false !== strpos( $content, 'trusted-by-talent' ) ) {
+		$replaced = preg_replace(
+			'#(<section[^>]*(?:id="trusted-by-talent"|class="[^"]*\bsection-28\b)[^>]*>[\s\S]*?)(</section>)#i',
+			'$1' . $dynamic . '$2',
+			$content,
+			1
+		);
+		return is_string( $replaced ) && $replaced !== '' ? $replaced : $content;
+	}
+
+	return $content;
 }
 
 /**

@@ -1,4 +1,5 @@
 <script type="text/javascript">var $ = window.jQuery;</script><script src="<?php echo get_template_directory_uri(); ?>/assets/js/webflow.js?v=1780144474" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/milestone-timeline.js?v=1787095004" type="text/javascript"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 const menuButton = document.querySelector(".w-nav-button");

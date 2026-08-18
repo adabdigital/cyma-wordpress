@@ -186,7 +186,7 @@
           <h2 class="heading-31" data-textarea="ta53958cb2"><?php echo _u('ta53958cb2', 'textarea'); ?></h2>
           <p class="paragraph-9 _1" data-text="tn45508378"><?php echo _u('tn45508378','text'); ?></p>
         </div>
-        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp future w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+        <div data-delay="4000" data-animation="slide" class="slider-wrapper buttons-center---mbp future w-slider cyma-milestone-timeline" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
           <div class="slider-mask portfolio-slider industries w-slider-mask">
             <div class="mg-right-10px height-520px _1 w-slide">
               <div class="slider-content-block service-3 journey">

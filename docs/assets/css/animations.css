@@ -1061,6 +1061,33 @@ a.contact {
   }
 }
 
+/* About Us — Strategic Consulting (section-22) only.
+   Wrap the intro to two lines; make all three topic headings blue and 14px. */
+.section-22 .flex-block-19 > .paragraph-30 {
+  max-width: 380px;
+}
+
+.section-22 .flex-block-15 > p._16px-text,
+.section-22 .flex-block-16 > p._16px-text,
+.section-22 .flex-block-17 > p._16px-text {
+  color: #0562a7;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+}
+
+.section-22 .flex-block-17 > p._16px-text span,
+.section-22 .flex-block-17 > p._16px-text span._20px-text,
+.section-22 .flex-block-17 > p._16px-text span._20px-text.purple-text.font-weight-semibold.t {
+  color: #0562a7;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  width: auto;
+  margin-top: 0;
+  letter-spacing: normal;
+}
+
 /* FINAL: hide header Contact Us on mobile/tablet (drawer has its own CTA).
    Must stay last so it beats earlier display:inline-flex !important rules. */
 @media screen and (max-width: 991px) {
