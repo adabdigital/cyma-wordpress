@@ -17,6 +17,27 @@ SRC = ROOT / ".img-scan"
 OUT = ROOT / "docs"
 THEME_ASSETS = ROOT / "wordpress" / "wp-content" / "themes" / "cyma-prod-v2" / "assets"
 
+# Snapshots still say .png/.jpg after the theme raster files were converted to WebP.
+RASTER_ASSET_RE = re.compile(
+    r"((?:(?:\.\./)*assets/(?:images|videos)/|\.\./(?:images|videos)/)[^\"'?#\s,)]+)\.(png|jpe?g)",
+    re.I,
+)
+
+
+def rewrite_raster_to_webp(text: str, assets_root: Path) -> str:
+    """Rewrite local PNG/JPEG asset URLs to .webp when that file exists."""
+
+    def repl(match: re.Match[str]) -> str:
+        rel = match.group(1)
+        name = Path(rel).name
+        kind = "videos" if "/videos/" in rel.replace("\\", "/") else "images"
+        if (assets_root / kind / f"{name}.webp").is_file():
+            return f"{rel}.webp"
+        return match.group(0)
+
+    return RASTER_ASSET_RE.sub(repl, text)
+
+
 BANNER = """
 <style id="cyma-static-preview-banner">
 .cyma-static-banner{position:sticky;top:0;z-index:99999;background:#0b3d66;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:10px 16px;text-align:center}
@@ -137,7 +158,17 @@ def main() -> None:
                 '<meta name="robots" content="noindex,nofollow">\n</head>',
                 1,
             )
+        html = rewrite_raster_to_webp(html, assets_out)
         return html
+
+    css_dir = assets_out / "css"
+    if css_dir.exists():
+        for css in css_dir.glob("*.css"):
+            rewritten = rewrite_raster_to_webp(
+                css.read_text(encoding="utf-8", errors="replace"),
+                assets_out,
+            )
+            css.write_text(rewritten, encoding="utf-8")
 
     for slug, src in pages.items():
         html = rewrite_html(src.read_text(encoding="utf-8", errors="replace"), slug)
