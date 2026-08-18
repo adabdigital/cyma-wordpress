@@ -106,6 +106,10 @@ function cyma_register_careers_post_type() {
 }
 add_action( 'init', 'cyma_register_careers_post_type' );
 
+function cyma_get_dice_jobs_url() {
+    return 'https://www.dice.com/jobs?filters.clientBrandNameFilter=Cyma+Systems+Inc';
+}
+
 function cyma_get_career_meta( $key, $post_id = null ) {
     if ( ! $post_id ) {
         $post_id = get_the_ID();
@@ -202,6 +206,10 @@ function load_page_data($page_slug) {
 function cyma_resolve_link($url) {
     if (empty($url) || $url === '#') {
         return '#';
+    }
+
+    if ($url === 'explore-careers' || $url === 'page-explore-careers') {
+        return cyma_get_dice_jobs_url();
     }
 
     if (preg_match('#^https?://#i', $url)) {

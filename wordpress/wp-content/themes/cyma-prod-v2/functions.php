@@ -271,6 +271,10 @@ function cyma_resolve_link($url) {
         return '#';
     }
 
+    if ($url === 'explore-careers' || $url === 'page-explore-careers') {
+        return cyma_get_dice_jobs_url();
+    }
+
     if (preg_match('#^https?://#i', $url)) {
         if ( function_exists( 'cyma_upgrade_http_url' ) ) {
             return cyma_upgrade_http_url( $url );
