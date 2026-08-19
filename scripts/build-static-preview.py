@@ -16,6 +16,10 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / ".img-scan"
 OUT = ROOT / "docs"
 THEME_ASSETS = ROOT / "wordpress" / "wp-content" / "themes" / "cyma-prod-v2" / "assets"
+PRESERVE_PATHS = (
+    Path("h1b-lca/index.html"),
+    Path("htaccess-https.sample.md"),
+)
 
 # Snapshots still say .png/.jpg after the theme raster files were converted to WebP.
 RASTER_ASSET_RE = re.compile(
@@ -91,6 +95,12 @@ def main() -> None:
         raise SystemExit(f"No page_*.html files in {SRC}")
 
     available = set(pages)
+
+    preserved_files: dict[Path, str] = {}
+    for rel_path in PRESERVE_PATHS:
+        existing = OUT / rel_path
+        if existing.exists():
+            preserved_files[rel_path] = existing.read_text(encoding="utf-8", errors="replace")
 
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -214,6 +224,11 @@ def main() -> None:
         '<body><p>Page not in static preview. <a href="./">Home</a></p></body></html>\n',
         encoding="utf-8",
     )
+
+    for rel_path, content in preserved_files.items():
+        dest = OUT / rel_path
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(content, encoding="utf-8")
 
     subprocess.run(["du", "-sh", str(OUT)], check=False)
     print(f"Built {len(pages)} pages into {OUT}")
