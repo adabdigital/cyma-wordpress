@@ -112,7 +112,7 @@ function cyma_register_careers_post_type() {
                 'slug'       => 'explore-careers',
                 'with_front' => false,
             ),
-            'supports'     => array( 'title', 'editor', 'custom-fields' ),
+            'supports'     => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
             'show_in_rest' => true,
         )
     );
@@ -159,6 +159,10 @@ function cyma_register_cms_post_types() {
 add_action( 'init', 'cyma_register_cms_post_types' );
 
 function cyma_get_dice_jobs_url() {
+	$stored = get_option( 'cyma_dice_jobs_url', '' );
+	if ( is_string( $stored ) && $stored !== '' ) {
+		return $stored;
+	}
 	return 'https://www.dice.com/jobs?filters.clientBrandNameFilter=Cyma+Systems+Inc';
 }
 
@@ -393,6 +397,11 @@ if ( file_exists( $cyma_lca_postings ) ) {
 $cyma_cms_content = get_template_directory() . '/inc/cms-content.php';
 if ( file_exists( $cyma_cms_content ) ) {
 	require_once $cyma_cms_content;
+}
+
+$cyma_cpt_editors = get_template_directory() . '/inc/cms-cpt-editors.php';
+if ( file_exists( $cyma_cpt_editors ) ) {
+	require_once $cyma_cpt_editors;
 }
 
 $cyma_contact_handler = get_template_directory() . '/inc/contact-form-handler.php';

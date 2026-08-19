@@ -182,6 +182,33 @@ function cyma_render_design_html( $post_id ) {
 		);
 	}
 
+	if ( $post_obj && 'case-studies' === $post_obj->post_name ) {
+		$replaced = preg_replace(
+			'#<section class="section-65">[\s\S]*?</section>#i',
+			'<section class="section-65"><div class="w-layout-blockcontainer container-55 w-container"><div class="w-dyn-list">[cyma_case_studies]</div></div></section>',
+			$html,
+			1
+		);
+		if ( is_string( $replaced ) && $replaced !== '' ) {
+			$html = $replaced;
+		}
+	}
+
+	if ( $post_obj && 'insights' === $post_obj->post_name ) {
+		$replaced = preg_replace(
+			'#<section class="section-65">[\s\S]*?</section>#i',
+			'<section class="section-65"><div class="w-layout-blockcontainer container-55 w-container">[cyma_insights_list]</div></section>',
+			$html,
+			1
+		);
+		if ( is_string( $replaced ) && $replaced !== '' ) {
+			$html = $replaced;
+		}
+		if ( false === strpos( $html, '[cyma_insights_list]' ) ) {
+			$html .= "\n[cyma_insights_list]\n";
+		}
+	}
+
 	return $html;
 }
 
@@ -317,6 +344,68 @@ function cyma_featured_jobs_shortcode() {
 	return ob_get_clean();
 }
 add_shortcode( 'cyma_featured_jobs', 'cyma_featured_jobs_shortcode' );
+
+function cyma_case_studies_shortcode() {
+	ob_start();
+	get_template_part( 'template-parts/content/case-studies-list' );
+	return ob_get_clean();
+}
+add_shortcode( 'cyma_case_studies', 'cyma_case_studies_shortcode' );
+
+function cyma_insights_list_shortcode() {
+	ob_start();
+	get_template_part( 'template-parts/content/insights-articles-list' );
+	return ob_get_clean();
+}
+add_shortcode( 'cyma_insights_list', 'cyma_insights_list_shortcode' );
+
+/**
+ * Keep Case Studies listing live from the Case Studies CPT.
+ * Runs before do_shortcode (priority 11) so the shortcode can expand.
+ */
+function cyma_replace_case_studies_list_in_cms( $content ) {
+	if ( ! is_page( 'case-studies' ) || ! is_string( $content ) || $content === '' ) {
+		return $content;
+	}
+	if ( false !== strpos( $content, '[cyma_case_studies]' ) ) {
+		return $content;
+	}
+
+	$replaced = preg_replace(
+		'#<section class="section-65">[\s\S]*?</section>#i',
+		'<section class="section-65"><div class="w-layout-blockcontainer container-55 w-container"><div class="w-dyn-list">[cyma_case_studies]</div></div></section>',
+		$content,
+		1
+	);
+
+	return is_string( $replaced ) && $replaced !== '' ? $replaced : $content;
+}
+
+/**
+ * Keep Insights hub listing live from Pages + Insights CPT.
+ * Runs before do_shortcode (priority 11) so the shortcode can expand.
+ */
+function cyma_replace_insights_list_in_cms( $content ) {
+	if ( ! is_page( 'insights' ) || ! is_string( $content ) || $content === '' ) {
+		return $content;
+	}
+	if ( false !== strpos( $content, '[cyma_insights_list]' ) ) {
+		return $content;
+	}
+
+	$replaced = preg_replace(
+		'#<section class="section-65">[\s\S]*?</section>#i',
+		'<section class="section-65"><div class="w-layout-blockcontainer container-55 w-container">[cyma_insights_list]</div></section>',
+		$content,
+		1
+	);
+
+	if ( is_string( $replaced ) && $replaced !== '' && $replaced !== $content ) {
+		return $replaced;
+	}
+
+	return $content . "\n[cyma_insights_list]\n";
+}
 
 /**
  * On Job Seekers CMS HTML, replace the featured slider with live openings
@@ -515,6 +604,8 @@ function cyma_setup_cms_content_filters() {
 		add_filter( 'the_content', 'cyma_strip_inline_scripts_from_content', 8 );
 		add_filter( 'the_content', 'cyma_fix_broken_sf_symbol_icons', 9 );
 		add_filter( 'the_content', 'cyma_fix_broken_theme_1webp_urls', 10 );
+		add_filter( 'the_content', 'cyma_replace_case_studies_list_in_cms', 10 );
+		add_filter( 'the_content', 'cyma_replace_insights_list_in_cms', 10 );
 		add_filter( 'the_content', 'cyma_replace_job_seekers_featured_slider', 12 );
 		add_filter( 'the_content', 'cyma_replace_contact_form', 13 );
 		add_filter( 'the_content', 'cyma_link_home_contact_cta', 14 );
@@ -663,16 +754,28 @@ function cyma_fix_broken_sf_symbol_icons( $content ) {
 
 function cyma_cms_admin_notice() {
 	$screen = get_current_screen();
-	if ( ! $screen || 'page' !== $screen->id ) {
+	if ( ! $screen ) {
 		return;
 	}
 
-	$post_id = isset( $_GET['post'] ) ? absint( $_GET['post'] ) : 0; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
-	if ( ! $post_id || ! cyma_page_has_design_template( $post_id ) ) {
+	if ( 'page' === $screen->id ) {
+		$post_id = isset( $_GET['post'] ) ? absint( $_GET['post'] ) : 0; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		if ( ! $post_id || ! cyma_page_has_design_template( $post_id ) ) {
+			return;
+		}
+		echo '<div class="notice notice-info"><p><strong>CYMA page:</strong> Edit the <em>entire page</em> in the content editor below (HTML). Header/footer chrome and styles still come from the theme. Use <strong>Tools → CYMA Content Seed</strong> to re-import design HTML if needed.</p></div>';
 		return;
 	}
 
-	echo '<div class="notice notice-info"><p><strong>CYMA page:</strong> Edit the <em>entire page</em> in the content editor below (HTML). Header/footer chrome and styles still come from the theme. Use <strong>Tools → CYMA Content Seed</strong> to re-import design HTML if needed.</p></div>';
+	$cpt_hints = array(
+		'casestudies'      => 'Edit this case study’s title, featured image, details, and body. It appears on the Case Studies page automatically.',
+		'insights'         => 'Edit this article’s title, excerpt, featured image, and body. It appears on Insights automatically.',
+		'explore-careers'  => 'Edit this role’s title, location, type, skills, and description. Featured openings on Job Seekers pull from published Careers posts.',
+		'lca_posting'      => 'Edit this LCA posting’s details and document. It appears on the H-1B LCA page automatically.',
+	);
+	if ( isset( $cpt_hints[ $screen->id ] ) ) {
+		echo '<div class="notice notice-info"><p><strong>CYMA CMS:</strong> ' . esc_html( $cpt_hints[ $screen->id ] ) . '</p></div>';
+	}
 }
 add_action( 'admin_notices', 'cyma_cms_admin_notice' );
 
