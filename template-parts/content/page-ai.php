@@ -145,7 +145,7 @@
       </div>
     </div>
   </section>
-  <div class="bgimg">
+  <div class="bgimg cyma-ai-waves">
     <section class="section-45">
       <div class="w-layout-blockcontainer container-35 w-container">
         <h1 data-w-id="bfd5f707-7fc4-ac48-92dd-500949dd7a9a" style="opacity:0" class="heading-91" data-textarea="tan53040f31"><?php echo _u('tan53040f31', 'textarea'); ?></h1>
@@ -163,7 +163,7 @@
         <div data-w-id="886bb18c-bb23-1109-6810-2b2ad83ab3d5" class="div-block-1224-copy"><img src="<?php echo cyma_get_image(_u('i3c189801', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i3c189801', 'img'))->alt ?>" class="image-67-copy" data-img="i3c189801" srcset="<?php echo cyma_get_image(_u('i3c189801', 'img'))->srcset ?>"></div>
       </div>
     </section>
-    <section class="section-42-copy">
+    <section class="section-42-copy cyma-predictive-intel">
       <div class="w-layout-blockcontainer container-33-copy w-container">
         <div data-w-id="3353645c-477b-f66b-f286-88f2d0be5015" style="opacity:0" class="div-block-1356">
           <h1 class="heading-88-copy" data-textarea="tan10ee295f"><?php echo _u('tan10ee295f', 'textarea'); ?></h1>

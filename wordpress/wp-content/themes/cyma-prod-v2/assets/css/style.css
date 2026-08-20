@@ -18049,6 +18049,19 @@ a {
   overflow: visible;
 }
 
+.form-wrapper-2.cyma-wp-admin-login {
+  align-items: flex-start;
+  gap: 0;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-wrapper-2.cyma-wp-admin-login .contact-btn-copy-js-btn {
+  width: auto;
+  align-self: flex-start;
+}
+
 .forgot-password-link {
   float: right;
   color: #409c86;
@@ -46821,3 +46834,234 @@ a {
 }
 
 
+
+/* Blockchain (/blockchain/): Seamless Integration card spacing — section-40-copy._1 only */
+.section-40-copy._1 .div-block-1217-copy {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 32px;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.section-40-copy._1 .div-block-1216-copy-bc,
+.section-40-copy._1 .div-block-1216-copy-bc-2,
+.section-40-copy._1 .div-block-1216-copy-bc3 {
+  flex: 1 1 0;
+  width: auto;
+  max-width: 360px;
+  box-sizing: border-box;
+}
+
+/* Blockchain: Our Core Blockchain Capabilities — single line on desktop */
+.section-46-copy .heading-93-copy-d,
+.section-46-copy .heading-93-copy-copy-mv {
+  white-space: nowrap;
+}
+
+.section-46-copy .heading-93-copy-d br,
+.section-46-copy .heading-93-copy-copy-mv br {
+  display: none;
+}
+
+/* AI: Our Core AI Capabilities — single line on desktop */
+.section-46 .heading-93,
+.section-46 .heading-93-copy-1 {
+  white-space: nowrap;
+}
+
+.section-46 .heading-93 br,
+.section-46 .heading-93-copy-1 br {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .section-40-copy._1 .div-block-1217-copy {
+    gap: 24px;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-40-copy._1 .div-block-1217-copy {
+    flex-flow: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section-40-copy._1 .div-block-1216-copy-bc,
+  .section-40-copy._1 .div-block-1216-copy-bc-2,
+  .section-40-copy._1 .div-block-1216-copy-bc3 {
+    max-width: none;
+    width: auto;
+    flex: 1 1 auto;
+  }
+
+  .section-46-copy .heading-93-copy-d,
+  .section-46-copy .heading-93-copy-copy-mv {
+    white-space: normal;
+  }
+
+  .section-46 .heading-93,
+  .section-46 .heading-93-copy-1 {
+    white-space: normal;
+  }
+}
+
+/* AI (/ai/): The Power of Predictive Intelligence — scoped Mounika fixes */
+.bgimg.cyma-ai-waves,
+.bgimg:has(> .section-42-copy) {
+  position: relative;
+  background-image: none;
+}
+
+.bgimg.cyma-ai-waves::before,
+.bgimg:has(> .section-42-copy)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url('../images/bg.webp');
+  background-position: 50% 69%;
+  background-size: cover;
+  opacity: 0.28;
+}
+
+.bgimg.cyma-ai-waves > *,
+.bgimg:has(> .section-42-copy) > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .section-42-copy.cyma-predictive-intel .div-block-1219-copy,
+  .section-42-copy .div-block-1219-copy {
+    width: 100%;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+
+  .section-42-copy.cyma-predictive-intel .div-block-1218,
+  .section-42-copy .div-block-1218 {
+    flex: 0 0 264px;
+    width: 264px;
+    max-width: 264px;
+    box-sizing: border-box;
+  }
+
+  /* Keep Anticipate / Automate / Optimize descriptions on ~2 lines */
+  .section-42-copy.cyma-predictive-intel .text-block-545-copy.t1,
+  .section-42-copy.cyma-predictive-intel .text-block-545-copy.t2,
+  .section-42-copy.cyma-predictive-intel .text-block-545-copy.t3,
+  .section-42-copy .text-block-545-copy.t1,
+  .section-42-copy .text-block-545-copy.t2,
+  .section-42-copy .text-block-545-copy.t3 {
+    width: 100%;
+    max-width: 260px;
+    line-height: 1.35;
+    box-sizing: border-box;
+  }
+
+  /* Stretch dotted connectors so they visually bridge the icon gaps */
+  .section-42-copy.cyma-predictive-intel .div-block-1220-copy,
+  .section-42-copy.cyma-predictive-intel .div-block-1220-copy.b1,
+  .section-42-copy .div-block-1220-copy,
+  .section-42-copy .div-block-1220-copy.b1 {
+    flex: 1 1 140px;
+    width: auto !important;
+    min-width: 120px;
+    max-width: 280px;
+    align-self: center;
+    margin-left: -78px;
+    margin-right: -78px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-42-copy.cyma-predictive-intel .div-block-1219-copy,
+  .section-42-copy .div-block-1219-copy {
+    max-width: 1080px;
+  }
+
+  .section-42-copy.cyma-predictive-intel .div-block-1220-copy,
+  .section-42-copy.cyma-predictive-intel .div-block-1220-copy.b1,
+  .section-42-copy .div-block-1220-copy,
+  .section-42-copy .div-block-1220-copy.b1 {
+    min-width: 160px;
+    max-width: 320px;
+    margin-left: -82px;
+    margin-right: -82px;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .section-42-copy.cyma-predictive-intel .div-block-1218,
+  .section-42-copy .div-block-1218 {
+    flex: 0 0 200px;
+    width: 200px;
+    max-width: 200px;
+  }
+
+  .section-42-copy.cyma-predictive-intel .text-block-545-copy.t1,
+  .section-42-copy.cyma-predictive-intel .text-block-545-copy.t2,
+  .section-42-copy.cyma-predictive-intel .text-block-545-copy.t3,
+  .section-42-copy .text-block-545-copy.t1,
+  .section-42-copy .text-block-545-copy.t2,
+  .section-42-copy .text-block-545-copy.t3 {
+    max-width: 196px;
+    width: 100%;
+  }
+
+  .section-42-copy.cyma-predictive-intel .div-block-1220-copy,
+  .section-42-copy.cyma-predictive-intel .div-block-1220-copy.b1,
+  .section-42-copy .div-block-1220-copy,
+  .section-42-copy .div-block-1220-copy.b1 {
+    margin-left: -36px;
+    margin-right: -36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bgimg.cyma-ai-waves::before,
+  .bgimg:has(> .section-42-copy)::before {
+    background-image: url('../images/bg_mv_lines.webp');
+    background-position: 50%;
+  }
+}
+
+/* Case study cards: space between tech pills and Read More CTA
+   (AI page section-47 cards; listing cards that still include Technologies Used) */
+.section-47 .div-block-1230 .transformingbusiness-ai-btn {
+  margin-top: 20px;
+}
+
+.div-block-1230:has(.text-block-556) .transformingbusiness-ai-btn,
+.div-block-1230:has(.div-block-1232) .transformingbusiness-ai-btn,
+.div-block-1230:has(.div-block-1232-copy-ai) .transformingbusiness-ai-btn {
+  margin-top: 20px;
+}
+
+.div-block-1383:has(.text-block-556) .transformingbusiness-ai-btn,
+.div-block-1383:has(.div-block-1232-copy-h) .transformingbusiness-ai-btn {
+  margin-top: 20px;
+}

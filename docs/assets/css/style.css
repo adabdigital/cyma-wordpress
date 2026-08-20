@@ -18049,6 +18049,19 @@ a {
   overflow: visible;
 }
 
+.form-wrapper-2.cyma-wp-admin-login {
+  align-items: flex-start;
+  gap: 0;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-wrapper-2.cyma-wp-admin-login .contact-btn-copy-js-btn {
+  width: auto;
+  align-self: flex-start;
+}
+
 .forgot-password-link {
   float: right;
   color: #409c86;

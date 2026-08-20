@@ -505,6 +505,34 @@ function cyma_explore_careers_scroll_anchor( $content ) {
 }
 
 /**
+ * Stale CMS HTML often points Insights nav (data-link a207e37db) at /insights-2/
+ * (first article) instead of the Insights hub at /insights/.
+ */
+function cyma_fix_insights_hub_nav_links( $content ) {
+	if ( ! is_string( $content ) || $content === '' || false === strpos( $content, 'a207e37db' ) ) {
+		return $content;
+	}
+
+	$url = home_url( '/insights/' );
+
+	$replaced = preg_replace_callback(
+		'#<a\b([^>]*\bdata-link="a207e37db"[^>]*)>#i',
+		static function ( $matches ) use ( $url ) {
+			$attrs = $matches[1];
+			if ( preg_match( '/\bhref="/i', $attrs ) ) {
+				$attrs = preg_replace( '/\bhref="[^"]*"/i', 'href="' . esc_url( $url ) . '"', $attrs, 1 );
+			} else {
+				$attrs .= ' href="' . esc_url( $url ) . '"';
+			}
+			return '<a' . $attrs . '>';
+		},
+		$content
+	);
+
+	return is_string( $replaced ) && $replaced !== '' ? $replaced : $content;
+}
+
+/**
  * Home header Contact Us is a non-linked .contact pill — make it a CTA to /contact-us/.
  */
 function cyma_link_home_contact_cta( $content ) {
@@ -595,6 +623,37 @@ function cyma_disable_wpautop_on_cms_pages( $content ) {
 	return $content;
 }
 
+/**
+ * Login page: replace Memberstack form with a WP Admin login button.
+ */
+function cyma_replace_login_form_with_wp_admin( $content ) {
+	if ( ! is_page( 'login' ) || ! is_string( $content ) || $content === '' ) {
+		return $content;
+	}
+	if ( false !== strpos( $content, 'cyma-wp-admin-login' ) ) {
+		return $content;
+	}
+
+	$admin_url = esc_url( admin_url() );
+	$arrow     = esc_url( get_template_directory_uri() . '/assets/images/signupbtn.svg' );
+	$button    = '<div class="form-wrapper-2 cyma-wp-admin-login">'
+		. '<h1 class="heading-151">Employee Login</h1>'
+		. '<p class="paragraph-38" style="margin:12px 0 24px">Sign in to the WordPress admin dashboard.</p>'
+		. '<a href="' . $admin_url . '" class="contact-btn-copy-js-btn w-inline-block">'
+		. '<div class="text-block">WP Admin Login</div>'
+		. '<img loading="lazy" src="' . $arrow . '" alt="" class="image">'
+		. '</a></div>';
+
+	$replaced = preg_replace(
+		'#<div[^>]*class="[^"]*\bform-wrapper-2\b[^"]*"[^>]*>[\s\S]*?</div>\s*(?=</div>\s*</div>\s*</section>)#i',
+		$button,
+		$content,
+		1
+	);
+
+	return is_string( $replaced ) && $replaced !== '' ? $replaced : $content;
+}
+
 function cyma_setup_cms_content_filters() {
 	if ( ! is_page() ) {
 		return;
@@ -604,12 +663,15 @@ function cyma_setup_cms_content_filters() {
 		add_filter( 'the_content', 'cyma_strip_inline_scripts_from_content', 8 );
 		add_filter( 'the_content', 'cyma_fix_broken_sf_symbol_icons', 9 );
 		add_filter( 'the_content', 'cyma_fix_broken_theme_1webp_urls', 10 );
+		add_filter( 'the_content', 'cyma_fix_legal_hero_banner', 10 );
 		add_filter( 'the_content', 'cyma_replace_case_studies_list_in_cms', 10 );
 		add_filter( 'the_content', 'cyma_replace_insights_list_in_cms', 10 );
+		add_filter( 'the_content', 'cyma_replace_login_form_with_wp_admin', 11 );
 		add_filter( 'the_content', 'cyma_replace_job_seekers_featured_slider', 12 );
 		add_filter( 'the_content', 'cyma_replace_contact_form', 13 );
 		add_filter( 'the_content', 'cyma_link_home_contact_cta', 14 );
 		add_filter( 'the_content', 'cyma_explore_careers_scroll_anchor', 15 );
+		add_filter( 'the_content', 'cyma_fix_insights_hub_nav_links', 16 );
 	}
 }
 add_action( 'wp', 'cyma_setup_cms_content_filters' );
@@ -701,6 +763,124 @@ function cyma_fix_broken_theme_1webp_urls( $content ) {
 	}
 
 	return $content;
+}
+
+/**
+ * Notice of Filing / H1B-LCA hero: keep passport banner + section background
+ * correct even when CMS HTML has broken theme paths, missing src, or opacity:0
+ * wrappers that hide the first paint under the sticky header.
+ *
+ * @param string $content HTML.
+ * @return string
+ */
+function cyma_fix_legal_hero_banner( $content ) {
+	if ( ! is_string( $content ) || $content === '' ) {
+		return $content;
+	}
+	if ( ! is_page( array( 'notice-of-filing', 'h1b-lca' ) ) ) {
+		return $content;
+	}
+	if ( false === strpos( $content, 'image-115' ) && false === strpos( $content, 'section-62' ) && false === strpos( $content, 'section-69' ) ) {
+		return $content;
+	}
+
+	$theme = get_template_directory_uri();
+	$class_assets = array(
+		'image-115'      => '/assets/images/noticeoffiling.webp',
+		'image-115-copy' => '/assets/images/nof.webp',
+	);
+
+	$content = preg_replace_callback(
+		'#<img\b[^>]*>#i',
+		function ( $matches ) use ( $theme, $class_assets ) {
+			$tag = $matches[0];
+			if ( ! preg_match( '#\bclass=(["\'])([^"\']*)\1#i', $tag, $cm ) ) {
+				return $tag;
+			}
+			$classes = preg_split( '/\s+/', trim( $cm[2] ) );
+			$rel     = '';
+			foreach ( $class_assets as $class => $path ) {
+				if ( in_array( $class, $classes, true ) ) {
+					$rel = $path;
+					break;
+				}
+			}
+			if ( $rel === '' ) {
+				return $tag;
+			}
+
+			$src = $theme . $rel;
+			$broken = (
+				! preg_match( '#\bsrc=(["\'])([^"\']*)\1#i', $tag, $sm )
+				|| $sm[2] === ''
+				|| false !== stripos( $sm[2], 'themes/1.webp' )
+				|| false !== stripos( $sm[2], '/assets/images/1.webp' )
+				|| ! preg_match( '#noticeoffiling|nof\.webp#i', $sm[2] )
+			);
+
+			if ( $broken ) {
+				if ( preg_match( '#\bsrc=#i', $tag ) ) {
+					$tag = preg_replace( '#\bsrc=(["\'])[^"\']*\1#i', 'src="' . esc_url( $src ) . '"', $tag, 1 );
+				} else {
+					$tag = preg_replace( '#^<img\b#i', '<img src="' . esc_url( $src ) . '"', $tag, 1 );
+				}
+			}
+
+			if ( preg_match( '#\bsrcset=#i', $tag ) ) {
+				if ( ! preg_match( '#\bsrcset=(["\'])([^"\']*)\1#i', $tag, $ssm ) || false !== stripos( $ssm[2], 'themes/1.webp' ) || $ssm[2] === '' ) {
+					$tag = preg_replace( '#\bsrcset=(["\'])[^"\']*\1#i', 'srcset="' . esc_url( $src ) . '"', $tag, 1 );
+				}
+			}
+
+			// Hero banner should load immediately (avoids lazy+opacity race under sticky nav).
+			if ( in_array( 'image-115', $classes, true ) ) {
+				if ( preg_match( '#\bloading=#i', $tag ) ) {
+					$tag = preg_replace( '#\bloading=(["\'])[^"\']*\1#i', 'loading="eager"', $tag, 1 );
+				} else {
+					$tag = preg_replace( '#^<img\b#i', '<img loading="eager"', $tag, 1 );
+				}
+				if ( ! preg_match( '#\bfetchpriority=#i', $tag ) ) {
+					$tag = preg_replace( '#^<img\b#i', '<img fetchpriority="high"', $tag, 1 );
+				}
+			}
+
+			return $tag;
+		},
+		$content
+	);
+
+	// Ensure Notice of Filing section background (H1B uses image banner only).
+	if ( is_page( 'notice-of-filing' ) && false !== strpos( $content, 'section-62' ) ) {
+		$bg = $theme . '/assets/images/bg-notice.webp';
+		$content = preg_replace_callback(
+			'#<section\b([^>]*\bclass=(["\'])(?:[^"\']*\s)?section-62(?:\s[^"\']*)?\2)([^>]*)>#i',
+			function ( $m ) use ( $bg ) {
+				$open  = $m[1] . $m[3];
+				$style = 'background-image:url(&apos;' . esc_url( $bg ) . '&apos;);background-size:cover;background-position:center;background-repeat:no-repeat';
+				if ( preg_match( '#\bstyle=#i', $open ) ) {
+					$open = preg_replace( '#\bstyle=(["\'])[^"\']*\1#i', 'style="' . $style . '"', $open, 1 );
+				} else {
+					$open .= ' style="' . $style . '"';
+				}
+				return '<section' . $open . '>';
+			},
+			$content,
+			1
+		);
+	}
+
+	// First-paint visibility for hero stack (banner + breadcrumbs + title + cards).
+	$content = preg_replace_callback(
+		'#(<section\b[^>]*\b(?:section-62|section-69)\b[^>]*>)([\s\S]*?)(</section>)#i',
+		function ( $m ) {
+			$inner = preg_replace( '#\sstyle=(["\'])\s*opacity\s*:\s*0;?\s*\1#i', '', $m[2] );
+			return $m[1] . $inner . $m[3];
+		},
+		$content,
+		1
+	);
+
+	return is_string( $content ) ? $content : '';
 }
 
 /**

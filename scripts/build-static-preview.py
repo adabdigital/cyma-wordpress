@@ -62,6 +62,7 @@ BANNER = """
 """
 
 DICE_URL = "https://www.dice.com/jobs?filters.clientBrandNameFilter=Cyma+Systems+Inc"
+INSIGHTS_NAV_KEY = 'data-link="a207e37db"'
 
 
 def rewrite_dice_ctas(html: str) -> str:
@@ -81,6 +82,27 @@ def rewrite_dice_ctas(html: str) -> str:
         return anchor
 
     return re.sub(r"<a\b[^>]*>[\s\S]*?</a>", repl_anchor, html, flags=re.I)
+
+
+def rewrite_insights_nav(html: str, slug: str) -> str:
+    """Point Insights nav (a207e37db) at the hub, not article insights-2."""
+
+    if slug == "insights":
+        hub = "./"
+    elif slug == "home":
+        hub = "./insights/"
+    else:
+        hub = "../insights/"
+
+    def repl_open(match: re.Match[str]) -> str:
+        anchor = match.group(0)
+        if INSIGHTS_NAV_KEY not in anchor:
+            return anchor
+        if 'href="' not in anchor:
+            return anchor[:-1] + f' href="{hub}">'
+        return re.sub(r'href="[^"]*"', f'href="{hub}"', anchor, count=1)
+
+    return re.sub(r"<a\b[^>]*>", repl_open, html, flags=re.I)
 
 
 def main() -> None:
@@ -150,6 +172,7 @@ def main() -> None:
 
         html = re.sub(r'href="([^"]+)"', repl_href, html)
         html = rewrite_dice_ctas(html)
+        html = rewrite_insights_nav(html, slug)
         # Rewrite theme asset URLs (css/js/images/videos) to the local docs/assets copy.
         # Snapshots may reference cyma-prod or cyma-prod-v2; both map to theme assets.
         html = re.sub(

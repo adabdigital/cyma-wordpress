@@ -144,56 +144,13 @@
         <div data-w-id="03949a8f-55b8-ac5f-9783-f945847247fa" class="div-block-1393"><img src="<?php echo cyma_get_image(_u('i1ba1578e', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i1ba1578e', 'img'))->alt ?>" class="image-215" data-img="i1ba1578e" srcset="<?php echo cyma_get_image(_u('i1ba1578e', 'img'))->srcset ?>">
           <div class="text-block-679" data-text="tn9994de9"><?php echo _u('tn9994de9','text'); ?></div>
         </div>
-        <div data-w-id="22138f78-09b4-4846-3391-1bed31adce9c" class="form-wrapper-2">
-          <div class="w-form">
-            <form id="wf-form-signup" name="wf-form-signup" data-name="signup" redirect="/" data-redirect="/" method="get" data-ms-form="login" data-wf-page-id="6989c1c492a5a0374d98cba1" data-wf-element-id="22138f78-09b4-4846-3391-1bed31adce9e" data-ajax-action="contact">
-              <div class="div-block-1395">
-                <h1 class="heading-151">Login to Your Account</h1>
-              </div>
-              <div class="div-block-1399"><label for="email-" class="field-label-6">Email ID*</label><input class="text-field-5 w-input" maxlength="256" name="contact[email]" data-name="Email 3" placeholder="Enter Your Email ID" type="email" id="Email-3" data-ms-member="email" required=""></div>
-              <div class="div-block-1400"><label for="contact[password-]" class="field-label-7">Password*</label><input class="text-field-6 w-input" maxlength="256" name="contact[password-]" data-name="Password 3" placeholder="Enter Your Password" type="password" id="Password-3" data-ms-member="password" required=""></div>
-              <div>
-                <div class="relative w-clearfix">
-                  <a href="<?php echo _u('a-5b94cdfb','link'); ?>" class="forgot-password-link" data-link="a-5b94cdfb">Forgot password?</a>
-                  <div class="tour-step">
-                    <div class="tooltip-anchor right">
-                      <div data-cy="step5" class="tooltip-wrapper">
-                        <div class="tooltip-navigation top">
-                          <div class="tooltip-author-wrap"><img alt="<?php echo cyma_get_image(_u('if46d824', 'img'))->alt ?>" loading="lazy" src="<?php echo cyma_get_image(_u('if46d824', 'img'))->src ?>" class="tooltip-author" data-img="if46d824" srcset="<?php echo cyma_get_image(_u('if46d824', 'img'))->srcset ?>">
-                            <div><strong>Duncan</strong> from Memberstack</div>
-                          </div>
-                          <a href="<?php echo _u('a23','link'); ?>" class="tooltip-close w-inline-block" data-link="a23">
-                            <div class="tooltip-svg w-embed"><svg xmlns="http://www.w3.org/2000/svg" height="auto" viewBox="0 0 24 24" width="1000px" fill="currentColor">
-                                <path d="M0 0h24v24H0V0z" fill="none"></path>
-                                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path>
-                              </svg></div>
-                          </a>
-                        </div>
-                        <div class="tooltip-container">
-                          <div class="tooltip-title">Click "Forgot password" to get started</div>
-                          <div class="relative">Memberstack 2.0 will enable 100% custom password reset UI's. Here's an example...<br></div>
-                        </div>
-                        <div class="tooltip-navigation">
-                          <div>Step 1 of 4</div>
-                        </div>
-                        <div class="tooltip-diamond left"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="div-block-1398"><input type="submit" data-wait="Please wait..." class="submit-button-4 w-button" value="Login"><img src="<?php echo cyma_get_image(_u('in4da69620', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in4da69620', 'img'))->alt ?>" class="image-216" data-img="in4da69620" srcset="<?php echo cyma_get_image(_u('in4da69620', 'img'))->srcset ?>"></div>
-            <?php cyma_honeypot_field() ?></form>
-            <div class="w-form-done">
-              <div data-text="t5a0ea5a1"><?php echo _u('t5a0ea5a1','text'); ?></div>
-            </div>
-            <div class="w-form-fail">
-              <div data-text="tn7c112e99"><?php echo _u('tn7c112e99','text'); ?></div>
-            </div>
-          </div>
-          <div>
-            <div class="text-block-683" data-text="tn501ffd34"><?php echo _u('tn501ffd34','text'); ?></div>
-          </div>
+        <div data-w-id="22138f78-09b4-4846-3391-1bed31adce9c" class="form-wrapper-2 cyma-wp-admin-login">
+          <h1 class="heading-151">Employee Login</h1>
+          <p class="paragraph-38" style="margin:12px 0 24px">Sign in to the WordPress admin dashboard.</p>
+          <a href="<?php echo esc_url( admin_url() ); ?>" class="contact-btn-copy-js-btn w-inline-block">
+            <div class="text-block">WP Admin Login</div>
+            <img loading="lazy" src="<?php echo esc_url( cyma_get_image( _u( 'in4da69620', 'img' ) )->src ); ?>" alt="" class="image" data-img="in4da69620">
+          </a>
         </div>
       </div>
     </div>
