@@ -105,6 +105,55 @@ def rewrite_insights_nav(html: str, slug: str) -> str:
     return re.sub(r"<a\b[^>]*>", repl_open, html, flags=re.I)
 
 
+def rewrite_static_copy(html: str, slug: str) -> str:
+    """Apply copy corrections and remove retired presentation elements."""
+
+    replacements = {
+        "Seize the Next Oppertunity": "Seize the Next Opportunity.",
+        "Explore Career Oppertunities": "Explore Career Opportunities.",
+        "techbusinesses": "tech businesses",
+        "unique your business needs": "your unique business needs",
+        "Cloud & Devops": "Cloud & DevOps",
+        "Cloud &amp; Devops": "Cloud &amp; DevOps",
+        "Software That Deliver Real Results": "Software That Delivers Real Results",
+        "By cotinuing": "By continuing",
+        "fortune 1000 companies": "Fortune 1000 companies",
+        "Manichester, CT 060442": "Manchester, CT 06042",
+    }
+    for old, new in replacements.items():
+        html = html.replace(old, new)
+    html = re.sub(r"Cloud\s*&(?:amp;)?\s*Devops", "Cloud &amp; DevOps", html, flags=re.I)
+
+    # Keep only LinkedIn and Facebook in the repeated footer markup.
+    html = re.sub(
+        r'<a[^>]*data-link=["\']a-4058cb70["\'][^>]*>[\s\S]*?</a>',
+        "",
+        html,
+        flags=re.I,
+    )
+    html = re.sub(
+        r'<a[^>]*data-link=["\']a23["\'][^>]*>[\s\S]*?</a>',
+        "",
+        html,
+        flags=re.I,
+    )
+    html = re.sub(
+        r'<a[^>]*>[^<]*<img[^>]*class=["\'][^"\']*image-(?:110|111)[^"\']*["\'][^>]*>[^<]*</a>',
+        "",
+        html,
+        flags=re.I,
+    )
+
+    if slug == "home":
+        html = re.sub(
+            r'<div class="hyper-text"[^>]*>\s*(?:Unlock New Possibilities|Workforce Solutions)\s*</div>',
+            "",
+            html,
+            flags=re.I,
+        )
+    return html
+
+
 def main() -> None:
     if not SRC.exists():
         raise SystemExit(f"Missing source snapshots: {SRC}")
@@ -214,6 +263,7 @@ def main() -> None:
                 1,
             )
         html = rewrite_raster_to_webp(html, assets_out)
+        html = rewrite_static_copy(html, slug)
         return html
 
     css_dir = assets_out / "css"
@@ -251,9 +301,10 @@ def main() -> None:
     for rel_path, content in preserved_files.items():
         dest = OUT / rel_path
         dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_text(content, encoding="utf-8")
+        dest.write_text(rewrite_static_copy(content, rel_path.parent.name), encoding="utf-8")
 
-    subprocess.run(["du", "-sh", str(OUT)], check=False)
+    if shutil.which("du"):
+        subprocess.run(["du", "-sh", str(OUT)], check=False)
     print(f"Built {len(pages)} pages into {OUT}")
 
 
