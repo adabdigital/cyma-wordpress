@@ -151,6 +151,29 @@ def rewrite_static_copy(html: str, slug: str) -> str:
             html,
             flags=re.I,
         )
+
+    if slug == "job-seekers":
+        news_urls = iter(
+            [
+                "https://cymasys.com/insights-2/",
+                "https://cymasys.com/insights-3/",
+                "https://cymasys.com/insights-4/",
+            ] * 2
+        )
+
+        def link_news_card(match: re.Match[str]) -> str:
+            url = next(news_urls)
+            class_name = match.group(1)
+            content = match.group(2)
+            return f'<a href="{url}" class="{class_name}" target="_blank" rel="noopener noreferrer">{content}</a>'
+
+        html = re.sub(
+            r'<div class="(div-block-1105[^\"]*)">([\s\S]*?<img[^>]*>\s*)</div>',
+            link_news_card,
+            html,
+            count=6,
+            flags=re.I,
+        )
     return html
 
 
