@@ -142,7 +142,7 @@
                 <source src="<?php echo _u('i45d98845','iframe'); ?>" data-wf-ignore="true" data-iframe="i45d98845">
                 <source src="<?php echo _u('i7304125f','iframe'); ?>" data-wf-ignore="true" data-iframe="i7304125f">
               </video>
-              <div class="banner-image-copy _1-copy bottom">
+              <div class="banner-image-copy _1-copy bottom" style="padding-bottom: 300px;">
                 <div class="hyper-text" data-text="tn8b086eb"><?php echo _u('tn8b086eb','text'); ?></div>
                 <h1 class="heading-150 w" data-textarea="ta232fbabd"><?php echo _u('ta232fbabd', 'textarea'); ?></h1>
                 <div class="header-description" data-text="tn322862cd"><?php echo _u('tn322862cd','text'); ?></div>
