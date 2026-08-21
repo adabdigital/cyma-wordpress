@@ -125,6 +125,21 @@ def rewrite_insights_nav(html: str, slug: str) -> str:
     return re.sub(r"<a\b[^>]*>", repl_open, html, flags=re.I)
 
 
+def rewrite_legal_nav(html: str, slug: str) -> str:
+    """Keep Legal dropdown links inside the static GitHub Pages site."""
+
+    prefix = "" if slug == "home" else "../"
+    html = html.replace(
+        'href="https://cymasys.com/notice-of-filing/"',
+        f'href="{prefix}notice-of-filing/"',
+    )
+    html = html.replace(
+        'href="https://cymasys.com/h1b-lca/"',
+        f'href="{prefix}h1b-lca/"',
+    )
+    return html
+
+
 def rewrite_static_copy(html: str, slug: str) -> str:
     """Apply copy corrections and remove retired presentation elements."""
 
@@ -265,6 +280,7 @@ def main() -> None:
         html = re.sub(r'href="([^"]+)"', repl_href, html)
         html = rewrite_dice_ctas(html)
         html = rewrite_insights_nav(html, slug)
+        html = rewrite_legal_nav(html, slug)
         # Rewrite theme asset URLs (css/js/images/videos) to the local docs/assets copy.
         # Snapshots may reference cyma-prod or cyma-prod-v2; both map to theme assets.
         html = re.sub(
@@ -347,6 +363,19 @@ def main() -> None:
         dest = OUT / rel_path
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(rewrite_static_copy(content, rel_path.parent.name), encoding="utf-8")
+
+    notice_dir = OUT / "notice-of-filing"
+    notice_dir.mkdir(parents=True, exist_ok=True)
+    (notice_dir / "index.html").write_text(
+        '<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8">'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">'
+        '<title>Notice of Filing | CYMA</title>'
+        '<link rel="stylesheet" href="../assets/css/style.css"></head>'
+        '<body><main style="max-width:900px;margin:120px auto;padding:24px;font-family:Arial,sans-serif">'
+        '<h1>Notice of Filing</h1><p>CYMA Systems, Inc. Notice of Filing information.</p>'
+        '<p><a href="../">Return to Home</a></p></main></body></html>',
+        encoding="utf-8",
+    )
 
     if shutil.which("du"):
         subprocess.run(["du", "-sh", str(OUT)], check=False)
