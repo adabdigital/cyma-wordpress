@@ -113,8 +113,15 @@ function cyma_the_page_content( $fallback_slug = '' ) {
 	$post_id = get_the_ID();
 
 	if ( cyma_page_uses_cms_content( $post_id ) ) {
+		$content = (string) get_post_field( 'post_content', $post_id );
+		if ( 'job-seekers' === get_post_field( 'post_name', $post_id ) && strpos( $content, 'section-18' ) !== false ) {
+			ob_start();
+			get_template_part( 'template-parts/content/job-seeker-news' );
+			$news_section = ob_get_clean();
+			$content      = preg_replace( '/<section class="section-18">[\s\S]*?<\/section>/i', $news_section, $content, 1 );
+		}
 		echo '<div class="cyma-cms-page">';
-		the_content();
+		echo apply_filters( 'the_content', $content );
 		echo '</div>';
 		return;
 	}

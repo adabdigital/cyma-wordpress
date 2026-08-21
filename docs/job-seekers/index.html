@@ -822,5 +822,23 @@ document.addEventListener('DOMContentLoaded', function() {
   observer.observe(overlay, { attributes: true, attributeFilter: ['style'] });
 });
 </script>
+
+<script>
+(function () {
+    var feedUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('https://feeds.bbci.co.uk/news/technology/rss.xml');
+    var terms = /(ai|artificial intelligence|cloud|cybersecurity|data|devops|machine learning|software|technology|tech)/i;
+    var selectors = '.div-block-1106-copy-js, .slider-30 .w-slider-mask';
+    var escapeHtml = function (value) { return String(value).replace(/[&<>'"]/g, function (character) { return {'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character]; }); };
+    var render = function (items) {
+        var cards = items.filter(function (item) { return terms.test(item.title + ' ' + item.description); }).slice(0, 3).map(function (item) {
+            var date = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'}) : '';
+            return '<article class="div-block-1103"><div class="div-block-1104"><div class="text-block-449">News</div><div class="text-block-450">' + escapeHtml(date) + '</div></div><h3 class="heading-17">' + escapeHtml(item.title) + '</h3><div class="text-block-453">' + escapeHtml(item.description || '') + '</div><a class="div-block-1105" href="' + escapeHtml(item.link) + '" target="_blank" rel="noopener noreferrer"><span class="text-block-454">Read More</span><span aria-hidden="true">&#8599;</span></a></article>';
+        }).join('');
+        if (!cards) return;
+        document.querySelectorAll(selectors).forEach(function (container) { container.innerHTML = cards; });
+    };
+    fetch(feedUrl).then(function (response) { return response.json(); }).then(function (data) { if (data.items) render(data.items); }).catch(function () {});
+}());
+</script>
 </body>
 </html>
