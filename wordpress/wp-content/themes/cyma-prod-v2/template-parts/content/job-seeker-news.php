@@ -99,14 +99,16 @@ if ( empty( $news_posts ) && empty( $live_news ) ) {
 		var status = document.querySelector('.job-seeker-news-status');
 		if (!container || !status) return;
 		var feed = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('https://feeds.bbci.co.uk/news/technology/rss.xml');
-		fetch(feed).then(function (response) { return response.json(); }).then(function (data) {
+		var fallback = [{ title: 'Latest BBC Technology News', description: 'Read the latest technology news from BBC.', link: 'https://www.bbc.com/news/technology' }];
+		var timeout = new Promise(function (_, reject) { setTimeout(function () { reject(new Error('Feed timeout')); }, 5000); });
+		Promise.race([fetch(feed).then(function (response) { return response.json(); }), timeout]).then(function (data) {
 			var items = (data.items || []).slice(0, 3);
-			if (!items.length) throw new Error('No items');
+			if (!items.length) items = fallback;
 			container.innerHTML = items.map(function (item) {
 				return '<article class="div-block-1103"><h3 class="heading-17">' + item.title + '</h3><div class="text-block-453">' + (item.description || '') + '</div><a href="' + item.link + '" class="div-block-1105" target="_blank" rel="noopener noreferrer"><span class="text-block-454">Read More</span><span aria-hidden="true">&#8599;</span></a></article>';
 			}).join('');
 			status.remove();
-		}).catch(function () { status.textContent = 'Technology news is temporarily unavailable.'; });
+		}).catch(function () { status.textContent = ''; container.innerHTML = '<article class="div-block-1103"><h3 class="heading-17">Latest BBC Technology News</h3><a href="https://www.bbc.com/news/technology" class="div-block-1105" target="_blank" rel="noopener noreferrer"><span class="text-block-454">Read More</span></a></article>'; });
 	}());
 	</script>
 	<?php

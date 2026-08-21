@@ -67,7 +67,7 @@ LIVE_NEWS_SCRIPT = """
 <script>
 (function () {
     var feedUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('https://feeds.bbci.co.uk/news/technology/rss.xml');
-    var terms = /\b(ai|artificial intelligence|cloud|cybersecurity|data|devops|machine learning|software|technology|tech)\b/i;
+    var terms = /\\b(ai|artificial intelligence|cloud|cybersecurity|data|devops|machine learning|software|technology|tech)\\b/i;
     var selectors = '.div-block-1106-copy-js, .slider-30 .w-slider-mask';
     var escapeHtml = function (value) { return String(value).replace(/[&<>'"]/g, function (character) { return {'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character]; }); };
     var render = function (items) {
@@ -78,8 +78,10 @@ LIVE_NEWS_SCRIPT = """
         if (!cards) return;
         document.querySelectorAll(selectors).forEach(function (container) { container.innerHTML = cards; });
     };
+    var fallbackItems = [{title:'Latest BBC Technology News', description:'Read the latest technology news from BBC.', link:'https://www.bbc.com/news/technology'}];
     document.querySelectorAll(selectors).forEach(function (container) { container.innerHTML = '<p>Loading technology news...</p>'; });
-    fetch(feedUrl).then(function (response) { return response.json(); }).then(function (data) { if (data.items) render(data.items); }).catch(function () { document.querySelectorAll(selectors).forEach(function (container) { container.innerHTML = '<p>Technology news is temporarily unavailable.</p>'; }); });
+    var timeout = new Promise(function (_, reject) { setTimeout(function () { reject(new Error('Feed timeout')); }, 5000); });
+    Promise.race([fetch(feedUrl).then(function (response) { return response.json(); }), timeout]).then(function (data) { if (data.items) render(data.items); else render(fallbackItems); }).catch(function () { render(fallbackItems); });
 }());
 </script>
 """
