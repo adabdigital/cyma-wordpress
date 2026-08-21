@@ -78,7 +78,8 @@ LIVE_NEWS_SCRIPT = """
         if (!cards) return;
         document.querySelectorAll(selectors).forEach(function (container) { container.innerHTML = cards; });
     };
-    fetch(feedUrl).then(function (response) { return response.json(); }).then(function (data) { if (data.items) render(data.items); }).catch(function () {});
+    document.querySelectorAll(selectors).forEach(function (container) { container.innerHTML = '<p>Loading technology news...</p>'; });
+    fetch(feedUrl).then(function (response) { return response.json(); }).then(function (data) { if (data.items) render(data.items); }).catch(function () { document.querySelectorAll(selectors).forEach(function (container) { container.innerHTML = '<p>Technology news is temporarily unavailable.</p>'; }); });
 }());
 </script>
 """
