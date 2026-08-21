@@ -1,1 +1,1 @@
-<link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri() . '/assets/css/animations.css'); ?>?v=1787096501">
+<link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri() . '/assets/css/animations.css'); ?>?v=1787202201">

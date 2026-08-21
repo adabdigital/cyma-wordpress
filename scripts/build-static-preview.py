@@ -16,6 +16,10 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / ".img-scan"
 OUT = ROOT / "docs"
 THEME_ASSETS = ROOT / "wordpress" / "wp-content" / "themes" / "cyma-prod-v2" / "assets"
+PRESERVE_PATHS = (
+    Path("h1b-lca/index.html"),
+    Path("htaccess-https.sample.md"),
+)
 
 # Snapshots still say .png/.jpg after the theme raster files were converted to WebP.
 RASTER_ASSET_RE = re.compile(
@@ -58,6 +62,7 @@ BANNER = """
 """
 
 DICE_URL = "https://www.dice.com/jobs?filters.clientBrandNameFilter=Cyma+Systems+Inc"
+INSIGHTS_NAV_KEY = 'data-link="a207e37db"'
 
 
 def rewrite_dice_ctas(html: str) -> str:
@@ -79,6 +84,27 @@ def rewrite_dice_ctas(html: str) -> str:
     return re.sub(r"<a\b[^>]*>[\s\S]*?</a>", repl_anchor, html, flags=re.I)
 
 
+def rewrite_insights_nav(html: str, slug: str) -> str:
+    """Point Insights nav (a207e37db) at the hub, not article insights-2."""
+
+    if slug == "insights":
+        hub = "./"
+    elif slug == "home":
+        hub = "./insights/"
+    else:
+        hub = "../insights/"
+
+    def repl_open(match: re.Match[str]) -> str:
+        anchor = match.group(0)
+        if INSIGHTS_NAV_KEY not in anchor:
+            return anchor
+        if 'href="' not in anchor:
+            return anchor[:-1] + f' href="{hub}">'
+        return re.sub(r'href="[^"]*"', f'href="{hub}"', anchor, count=1)
+
+    return re.sub(r"<a\b[^>]*>", repl_open, html, flags=re.I)
+
+
 def main() -> None:
     if not SRC.exists():
         raise SystemExit(f"Missing source snapshots: {SRC}")
@@ -91,6 +117,12 @@ def main() -> None:
         raise SystemExit(f"No page_*.html files in {SRC}")
 
     available = set(pages)
+
+    preserved_files: dict[Path, str] = {}
+    for rel_path in PRESERVE_PATHS:
+        existing = OUT / rel_path
+        if existing.exists():
+            preserved_files[rel_path] = existing.read_text(encoding="utf-8", errors="replace")
 
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -140,6 +172,7 @@ def main() -> None:
 
         html = re.sub(r'href="([^"]+)"', repl_href, html)
         html = rewrite_dice_ctas(html)
+        html = rewrite_insights_nav(html, slug)
         # Rewrite theme asset URLs (css/js/images/videos) to the local docs/assets copy.
         # Snapshots may reference cyma-prod or cyma-prod-v2; both map to theme assets.
         html = re.sub(
@@ -214,6 +247,11 @@ def main() -> None:
         '<body><p>Page not in static preview. <a href="./">Home</a></p></body></html>\n',
         encoding="utf-8",
     )
+
+    for rel_path, content in preserved_files.items():
+        dest = OUT / rel_path
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(content, encoding="utf-8")
 
     subprocess.run(["du", "-sh", str(OUT)], check=False)
     print(f"Built {len(pages)} pages into {OUT}")

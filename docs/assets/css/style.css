@@ -18049,6 +18049,19 @@ a {
   overflow: visible;
 }
 
+.form-wrapper-2.cyma-wp-admin-login {
+  align-items: flex-start;
+  gap: 0;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-wrapper-2.cyma-wp-admin-login .contact-btn-copy-js-btn {
+  width: auto;
+  align-self: flex-start;
+}
+
 .forgot-password-link {
   float: right;
   color: #409c86;
@@ -46733,6 +46746,90 @@ a {
   }
   .slider-27 .w-slider-mask::-webkit-scrollbar {
     display: none !important;
+  }
+}
+
+/* Job Seekers: High-Demand Technologies tag pills only */
+.section-16.cyma-tech-tags .div-block-1170,
+.section-16 .div-block-1170 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px 17px;
+  width: 100%;
+}
+
+.section-16.cyma-tech-tags .div-block-1170 > [class*="text-block-472"],
+.section-16 .div-block-1170 > [class*="text-block-472"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+  height: 56px;
+  min-height: 56px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: #0562a7;
+  background-color: #f9fbff;
+  border: 1px solid #d6e4ef;
+  border-radius: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .section-16.cyma-tech-tags .div-block-1235,
+  .section-16.cyma-tech-tags .div-block-1236,
+  .section-16.cyma-tech-tags .div-block-1237,
+  .section-16.cyma-tech-tags .div-block-1238,
+  .section-16.cyma-tech-tags .div-block-1239,
+  .section-16 .div-block-1235,
+  .section-16 .div-block-1236,
+  .section-16 .div-block-1237,
+  .section-16 .div-block-1238,
+  .section-16 .div-block-1239 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-16.cyma-tech-tags [class*="div-block-123"] > [class*="text-block-472"],
+  .section-16 [class*="div-block-123"] > [class*="text-block-472"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: auto;
+    height: 48px;
+    min-height: 48px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section-16.cyma-tech-tags [class*="div-block-123"] > [class*="text-block-472"],
+  .section-16 [class*="div-block-123"] > [class*="text-block-472"] {
+    height: 44px;
+    min-height: 44px;
+    padding: 8px 12px;
+    font-size: 13px;
   }
 }
 

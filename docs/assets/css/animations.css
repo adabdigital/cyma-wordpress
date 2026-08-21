@@ -769,6 +769,46 @@ html, body { overflow-x: clip; }
   margin-right: 0 !important;
 }
 
+/* Homepage heading+description → content gap.
+   Tech slider was 20px; other title-block sections use .mg-40px-top (40px). */
+.section-24 .title-block + .technology-list.slider-29,
+.section-copy .title-block + .mg-40px-top,
+.section-2 .title-block + .industry-list,
+.section-banner.lines-bg .title-block + ._7x1.mg-40px-top,
+.bgimg.innovation-bg .paragraph-69 + .mg-40px-top {
+  margin-top: 40px;
+}
+
+.section-24 .title-block.grid-2x1 > .paragraph-4 {
+  margin-bottom: 0;
+}
+
+/* Technology cards: pack header, description, and CTA; extra height stays below CTA */
+.section-24 .mask-11 .flex-block-18,
+.section-24 ._4x1-copy .flex-block-18 {
+  gap: 4px;
+  row-gap: 4px;
+  justify-content: flex-start !important;
+}
+
+.section-24 .mask-11 .flex-block-18 > .purple-text._2,
+.section-24 ._4x1-copy .flex-block-18 .purple-text._2 {
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.section-24 .mask-11 .flex-block-18 > .body-text-color._260px,
+.section-24 ._4x1-copy .flex-block-18 .body-text-color._260px {
+  flex: 0 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-24 .mask-11 .flex-block-18 > a[class*="contact-btn"],
+.section-24 ._4x1-copy .flex-block-18 > a[class*="contact-btn"] {
+  margin-top: 6px !important;
+}
+
 /* Contact Us form — Webflow hides .form-block-3-copy (desktop draft); show injected form */
 .form-block-3-copy.cyma-contact-form,
 .cyma-contact-form.form-block-3-copy {
@@ -817,8 +857,8 @@ html, body { overflow-x: clip; }
 .cyma-contact-form .cyma-contact-submit-wrap,
 .cyma-contact-form .div-block-1439 {
   display: flex;
-  justify-content: center;
-  margin-top: 22px;
+  justify-content: flex-start;
+  margin-top: 8px;
 }
 
 .cyma-contact-form .div-block-1384 {
@@ -831,6 +871,7 @@ html, body { overflow-x: clip; }
   padding: 5px 5px 5px 18px !important;
   width: auto !important;
   min-width: 190px;
+  margin-top: 0;
 }
 
 .cyma-contact-form .submit-button-2.w-button {
@@ -862,6 +903,87 @@ html, body { overflow-x: clip; }
   .cyma-contact-form .div-block-1087,
   .cyma-contact-form .div-block-1390 {
     width: 100% !important;
+  }
+}
+
+/* Contact Us — Get in Touch split card (image + form). Scoped only to this section. */
+.cyma-contact-form .field-label,
+.section-14 .cyma-contact-form .field-label,
+.section-14 .div-block-1092 .field-label {
+  text-transform: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.section-14 .cyma-contact-form .form-3 {
+  grid-row-gap: 12px !important;
+  row-gap: 12px !important;
+}
+
+.section-14 .cyma-contact-form .div-block-1080,
+.section-14 .cyma-contact-form .div-block-1347 {
+  margin-top: 0 !important;
+}
+
+.section-14 .cyma-contact-form textarea.text-field.w-input {
+  min-height: 96px;
+}
+
+.section-14 .cyma-contact-form .cyma-contact-submit-wrap,
+.section-14 .cyma-contact-form .div-block-1439 {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px !important;
+}
+
+.section-14 .cyma-contact-form .div-block-1384 {
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section-14 .grid-2 {
+    align-items: stretch !important;
+    place-items: stretch !important;
+  }
+
+  .section-14 .div-block-1093 {
+    position: relative !important;
+    display: block !important;
+    align-self: stretch !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100%;
+  }
+
+  .section-14 .image-11 {
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+  }
+
+  .section-14 .div-block-1092:has(.cyma-contact-form) {
+    height: auto !important;
+    align-self: stretch;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-14 .image-11 {
+    border-radius: 30px;
+  }
+
+  .section-14 .div-block-1092 {
+    border-radius: 30px;
   }
 }
 
@@ -1090,7 +1212,7 @@ a.contact {
   width: 100% !important;
   max-width: 100% !important;
   min-width: 0 !important;
-  min-height: 3.75em;
+  min-height: 3.75em; /* 3 lines at 1.25 — 2-line and 3-line labels share a top edge */
   margin: 0;
   padding: 0 !important;
   box-sizing: border-box;
@@ -1138,6 +1260,70 @@ a.contact {
   }
 }
 
+/* Transparent Process (job-seekers / explore-careers .section-29)
+   Tighten vertical rhythm — especially icon → step title. Do not reuse these
+   selectors globally (heading-61 is also used on open-role cards). */
+.section-29 .div-block-1334 .heading-60 {
+  margin-top: 0;
+  margin-bottom: 4px; /* was 10px from h1 */
+}
+
+.section-29 .div-block-1334 .text-block-503 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-29 .div-block-1186 {
+  padding-top: 40px; /* subtitle → steps; keep icon→title tight below */
+}
+
+.section-29 .div-block-1187 {
+  grid-row-gap: 4px; /* was 7px */
+  row-gap: 4px;
+}
+
+.section-29 .div-block-1187 > img {
+  display: block; /* kill inline-block baseline gap under the circle */
+  margin: 0;
+}
+
+.section-29 .div-block-1187 .text-block-499,
+.section-29 .div-block-1187 .text-block-500,
+.section-29 .div-block-1187 .text-block-501 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Primary marked gap: circular icon → bold step title */
+.section-29 .div-block-1187 .heading-61 {
+  margin-top: -4px; /* pull title toward icon; other step gaps stay at 4px */
+  margin-bottom: 0;
+  line-height: 1.2; /* was 31px on 24px (~1.29) */
+}
+
+.section-29 .div-block-1187 .text-block-498 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+/* Mobile stacked steps */
+.section-29 .div-block-1337 .heading-61-copy {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.25;
+}
+
+.section-29 .div-block-1337 .text-block-498-copy {
+  margin-top: 4px; /* was 6px */
+  margin-bottom: 0;
+}
+
+.section-29 .div-block-1337 .text-block-499-copy {
+  margin: 0;
+  line-height: 1.2;
+}
+
 /* About Us — Strategic Consulting (section-22) only.
    Wrap the intro to two lines; make all three topic headings blue and 14px. */
 .section-22 .flex-block-19 > .paragraph-30 {
@@ -1165,6 +1351,432 @@ a.contact {
   letter-spacing: normal;
 }
 
+/* Dice open-roles CTA card — Trusted by Talent (#trusted-by-talent / .section-28)
+   Scoped to this careers block only. Fills the empty right of the stats card
+   (and sits after featured job cards when those are present). */
+#trusted-by-talent.section-28,
+section.section-28 {
+  align-items: stretch;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+#trusted-by-talent .div-block-1175,
+.section-28 > .div-block-1175 {
+  flex: 0 1 520px;
+  width: 100%;
+  max-width: 540px;
+  box-sizing: border-box;
+}
+
+#trusted-by-talent .text-block-484,
+.section-28 > .div-block-1175 > .text-block-484 {
+  max-width: 22.5rem;
+  padding-right: 0;
+  margin-bottom: 32px;
+  line-height: 1.45;
+}
+
+.cyma-featured-jobs-row {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: stretch;
+  gap: 10px;
+  min-width: 0;
+}
+
+.cyma-featured-jobs-row .slider-27 {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.cyma-featured-jobs-row .left-arrow-14,
+.cyma-featured-jobs-row .right-arrow-14 {
+  right: 8px;
+}
+
+.cyma-featured-jobs-row .left-arrow-14 {
+  left: 8px;
+  right: auto;
+}
+
+.cyma-dice-cta-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex: 1 1 280px;
+  min-width: 260px;
+  max-width: 438px;
+  height: 441px;
+  padding: 28px 24px;
+  background-color: #f3f8ff;
+  border: 1px solid #cedeff;
+  border-radius: 20px;
+}
+
+.cyma-featured-jobs-row:not(.has-jobs) .cyma-dice-cta-card {
+  max-width: none;
+}
+
+.cyma-dice-cta-card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.cyma-dice-cta-card__badge {
+  color: #0562a7;
+  background-color: #fff;
+  border: 1px solid #cedeff;
+  border-radius: 109px;
+  padding: 5px 12px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.cyma-dice-cta-card__title {
+  color: var(--rich-blue, #061128);
+  margin: 0;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.cyma-dice-cta-card__text {
+  color: #0562a7;
+  margin: 0;
+  max-width: 22rem;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.cyma-dice-cta-card__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 20px;
+  padding: 8px 8px 8px 20px;
+  color: #f4f6f9;
+  background-color: #0562a7;
+  border: 1px solid #204db0;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.cyma-dice-cta-card__btn:hover {
+  background-color: #034e86;
+}
+
+.cyma-dice-cta-card__btn-label {
+  color: #f4f6f9;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cyma-dice-cta-card__btn-icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  #trusted-by-talent .div-block-1175,
+  .section-28 > .div-block-1175 {
+    flex: 1 1 auto;
+    max-width: none;
+    height: auto;
+  }
+
+  .cyma-featured-jobs-row {
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .cyma-dice-cta-card {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    min-height: 0;
+    margin-right: 15px;
+  }
+}
+
+/* ==========================================================================
+   Inner-page heroes — header→hero spacing + heading size
+   Homepage video banner is excluded (.navbar-logo-left / .head-banner).
+   Covers About, Job Seekers, Industries, Tech Services, Business Solutions,
+   Contact, Case Studies, and service subpages (all use .navbar-logo-left-2).
+   --------------------------------------------------------------------------
+   Before (desktop / 1440+):
+     Fixed header ~88px.
+     About: .section-25.margin = margin 120px auto 60px + padding-top 10px
+            + .text-block-476 margin-top 20px → ~150px to breadcrumbs, then
+            60px to H1. .heading-8 = 64px / 68px.
+     Job Seekers: .section-25-copy padding-top 100px (crumbs tucked under nav);
+            .heading-8-copy = 64px / 68px + padding-top 36px.
+     Tech Services: .section-34 margin-top 140px; .heading-79 = 64px / 68px.
+   After:
+     First section padding-top 120px, margin-top/bottom 0 (~32px under nav).
+     Breadcrumb→H1 8px. Hero H1 48px / 1.15 (~52px line-height).
+   ========================================================================== */
+
+.navbar-logo-left-2 + section {
+  box-sizing: border-box;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 120px !important;
+}
+
+.navbar-logo-left-2 + section + .hero_section,
+.navbar-logo-left-2 + section + .hero_section-jobseekers,
+.navbar-logo-left-2 + section + .hero-business,
+.navbar-logo-left-2 + section + .bgimg {
+  margin-top: 0 !important;
+}
+
+.hero_section.margin,
+.hero_section-jobseekers,
+.hero-business.margin {
+  margin-top: 0;
+}
+
+.navbar-logo-left-2 + section > .text-block-476,
+.navbar-logo-left-2 + section > .text-block-478,
+.navbar-logo-left-2 + section > .text-block-671,
+.navbar-logo-left-2 + section > .text-block-672,
+.navbar-logo-left-2 + section > [class*="text-block-534"],
+.navbar-logo-left-2 + section .text-block-476,
+.navbar-logo-left-2 + section .cyma-breadcrumb,
+.navbar-logo-left-2 + section .div-block-1094 > .text-block-478 {
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+  padding-top: 0 !important;
+}
+
+.hero_section h1.heading-8,
+.hero-business h1.heading-8,
+.section-11 h1.heading-8,
+.hero_section-jobseekers h1.heading-8-copy,
+.section-14 h1.heading-54,
+.navbar-logo-left-2 + section h1[class^="heading-79"] {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 12px;
+  font-size: 48px !important;
+  line-height: 1.15 !important;
+  font-weight: 400;
+}
+
+.hero_section h1.heading-8 [class*="text-span"],
+.hero-business h1.heading-8 [class*="text-span"],
+.section-11 h1.heading-8 [class*="text-span"],
+.hero_section-jobseekers h1.heading-8-copy [class*="text-span"],
+.navbar-logo-left-2 + section h1[class^="heading-79"] [class*="text-span"] {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-logo-left-2 + section {
+    padding-top: 100px !important;
+  }
+
+  .hero_section h1.heading-8,
+  .hero-business h1.heading-8,
+  .section-11 h1.heading-8,
+  .hero_section-jobseekers h1.heading-8-copy,
+  .section-14 h1.heading-54,
+  .navbar-logo-left-2 + section h1[class^="heading-79"] {
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .navbar-logo-left-2 + section {
+    padding-top: 88px !important;
+  }
+}
+
+/* Legal title pages (Notice of Filing .section-62, H1B-LCA .section-69).
+   Hero banner (.image-115) is the first content under a fixed header; breadcrumbs
+   sit under the banner inside a nested wrapper. Clear the sticky nav, keep the
+   passport/map banner visible, and give crumbs breathing room under the banner. */
+.navbar-logo-left-2 + section.section-62,
+.navbar-logo-left-2 + section.section-69 {
+  padding-top: 112px !important;
+}
+
+/* Desktop/tablet: force the legal hero banner (style.css hides .image-115 only
+   inside the 479px breakpoint — keep that mobile swap, but never lose the banner). */
+.section-62 .image-115,
+.section-69 .image-115 {
+  display: block !important;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  margin: 0;
+  vertical-align: top;
+}
+
+.section-62 .image-115-copy,
+.section-69 .image-115-copy {
+  display: none !important;
+}
+
+.section-62 .text-block-534-copy-et-copy-noticeoffiling,
+.section-69 .text-block-534-copy-et-copy-noticeoffiling-copy-h1b {
+  margin-top: 28px !important;
+  margin-bottom: 8px !important;
+  padding-top: 4px !important;
+  position: relative;
+  z-index: 1;
+}
+
+.section-62 h1.heading-120,
+.section-69 h1.heading-120-copy {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-logo-left-2 + section.section-62,
+  .navbar-logo-left-2 + section.section-69 {
+    padding-top: 100px !important;
+  }
+
+  .section-62 .text-block-534-copy-et-copy-noticeoffiling,
+  .section-69 .text-block-534-copy-et-copy-noticeoffiling-copy-h1b {
+    margin-top: 24px !important;
+  }
+
+  .section-62 h1.heading-120,
+  .section-69 h1.heading-120-copy {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .navbar-logo-left-2 + section.section-62,
+  .navbar-logo-left-2 + section.section-69 {
+    padding-top: 88px !important;
+  }
+
+  .section-62 .image-115,
+  .section-69 .image-115 {
+    display: none !important;
+  }
+
+  .section-62 .image-115-copy,
+  .section-69 .image-115-copy {
+    display: block !important;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+  }
+
+  .section-62 .text-block-534-copy-et-copy-noticeoffiling,
+  .section-69 .text-block-534-copy-et-copy-noticeoffiling-copy-h1b {
+    margin-top: 20px !important;
+    padding-left: 0;
+  }
+}
+
+/* ==========================================================================
+   Quality Assurance & Testing (/quality-assurance-and-testing/) hero only
+   --------------------------------------------------------------------------
+   1) Breadcrumb→H1 gap: .div-block-1204-copy-qa-testing used padding-top 60px
+      + justify-content:center inside a 382px flex row (~119px gap).
+   2) Banner crop: image column is height:382px while .image-59 is 425px at
+      1440+, and .container-27-copy-qa-testing keeps padding-right:0 so the
+      rounded banner sits flush against the viewport (html/body overflow-x:clip).
+   Scoped to .section-38--qa-testing so other service heroes stay untouched.
+   ========================================================================== */
+
+.section-38--qa-testing {
+  overflow: visible !important;
+}
+
+.section-38--qa-testing .container-27-copy-qa-testing {
+  overflow: visible !important;
+  padding-right: 40px !important;
+  box-sizing: border-box;
+}
+
+.section-38--qa-testing .container-27-copy-qa-testing > .text-block-534-copy-qa-testing {
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+  padding-top: 0 !important;
+}
+
+.section-38--qa-testing .qa-testing {
+  align-items: flex-start !important;
+  overflow: visible !important;
+}
+
+.section-38--qa-testing .div-block-1204-copy-qa-testing {
+  padding-top: 0 !important;
+  justify-content: flex-start !important;
+}
+
+.section-38--qa-testing .div-block-1205--qa-testing {
+  /* Keep Webflow’s fixed frame so the relatively-positioned overlay
+     doesn’t inflate the flex row; allow paint outside the frame. */
+  height: 382px !important;
+  overflow: visible !important;
+  position: relative;
+}
+
+.section-38--qa-testing .image-59--qa-testing,
+.section-38--qa-testing .image-58--qa-testing-copy-ds,
+.section-38--qa-testing .image-58--qa-testing-copy-mv {
+  max-width: none;
+}
+
+/* Keep desktop overlay paired with the 1440+ .image-59 height (425px).
+   Base Webflow rules target unused .image-58--qa-testing; HTML uses *-copy-ds. */
+@media screen and (min-width: 1440px) {
+  .section-38--qa-testing .div-block-1205--qa-testing {
+    height: 425px !important;
+  }
+
+  .section-38--qa-testing .image-58--qa-testing-copy-ds {
+    height: 241px !important;
+    top: -323px !important;
+    left: -241px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section-38--qa-testing .container-27-copy-qa-testing {
+    padding-right: 40px !important;
+  }
+
+  .section-38--qa-testing .div-block-1205--qa-testing {
+    height: 382px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-38--qa-testing .container-27-copy-qa-testing {
+    padding-right: 15px !important;
+  }
+
+  .section-38--qa-testing .div-block-1205--qa-testing {
+    height: auto !important;
+  }
+}
+
 /* FINAL: hide header Contact Us on mobile/tablet (drawer has its own CTA).
    Must stay last so it beats earlier display:inline-flex !important rules. */
 @media screen and (max-width: 991px) {
@@ -1190,5 +1802,40 @@ a.contact {
     pointer-events: none !important;
     position: absolute !important;
     left: -9999px !important;
+  }
+}
+
+/* Stat count-up / acronym fade (Together bar, About Us, Job Seekers) */
+.cyma-stat-count {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.cyma-stat-acronym {
+  display: inline-block;
+  will-change: opacity, transform;
+}
+
+.cyma-stat-acronym:not(.is-visible) {
+  opacity: 0;
+  transform: translate3d(0, 14px, 0);
+}
+
+.cyma-stat-acronym.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.95s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cyma-stat-acronym:not(.is-visible),
+  .cyma-stat-acronym.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    will-change: auto;
   }
 }

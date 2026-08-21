@@ -46,7 +46,7 @@ function cyma_enqueue_styles() {
     wp_enqueue_style('normalize', get_template_directory_uri() . '/assets/css/normalize.css', [], '1780144474');
     wp_enqueue_style('wordpress', get_template_directory_uri() . '/assets/css/wordpress.css', [], '1780144474');
     wp_enqueue_style('cyma-style', get_template_directory_uri() . '/assets/css/style.css', [], time());
-    wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1787096501');
+    wp_enqueue_style('cyma-animations', get_template_directory_uri() . '/assets/css/animations.css', ['cyma-style'], '1787202201');
 
     wp_add_inline_style(
         'cyma-style',
@@ -337,6 +337,10 @@ function _u($key, $type = '') {
     if (!empty($type) && isset($current_page_data[$type][$key])) {
         $value = $current_page_data[$type][$key];
         if ($type === 'link') {
+            // Insights hub key must never resolve to article slug insights-2.
+            if ( $key === 'a207e37db' && in_array( $value, array( 'insights-2', 'page-insights-2' ), true ) ) {
+                $value = 'insights';
+            }
             return cyma_resolve_link($value);
         }
         if ($type === 'iframe') {

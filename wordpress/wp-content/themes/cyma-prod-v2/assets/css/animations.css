@@ -1609,42 +1609,171 @@ section.section-28 {
 }
 
 /* Legal title pages (Notice of Filing .section-62, H1B-LCA .section-69).
-   Same navbar + first-section layout as other inner pages, but the title is a
-   large centered .heading-120 sitting in a nested wrapper (breadcrumb is not a
-   direct section child). 120px under an ~100px fixed header leaves ~10–20px —
-   bump clearance so these titles sit comfortably below the nav. */
+   Hero banner (.image-115) is the first content under a fixed header; breadcrumbs
+   sit under the banner inside a nested wrapper. Clear the sticky nav, keep the
+   passport/map banner visible, and give crumbs breathing room under the banner. */
 .navbar-logo-left-2 + section.section-62,
 .navbar-logo-left-2 + section.section-69 {
-  padding-top: 176px !important;
+  padding-top: 112px !important;
+}
+
+/* Desktop/tablet: force the legal hero banner (style.css hides .image-115 only
+   inside the 479px breakpoint — keep that mobile swap, but never lose the banner). */
+.section-62 .image-115,
+.section-69 .image-115 {
+  display: block !important;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  margin: 0;
+  vertical-align: top;
+}
+
+.section-62 .image-115-copy,
+.section-69 .image-115-copy {
+  display: none !important;
 }
 
 .section-62 .text-block-534-copy-et-copy-noticeoffiling,
 .section-69 .text-block-534-copy-et-copy-noticeoffiling-copy-h1b {
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 28px !important;
+  margin-bottom: 8px !important;
+  padding-top: 4px !important;
+  position: relative;
+  z-index: 1;
 }
 
 .section-62 h1.heading-120,
 .section-69 h1.heading-120-copy {
-  margin-top: 24px;
+  margin-top: 16px;
 }
 
 @media screen and (max-width: 991px) {
   .navbar-logo-left-2 + section.section-62,
   .navbar-logo-left-2 + section.section-69 {
-    padding-top: 148px !important;
+    padding-top: 100px !important;
+  }
+
+  .section-62 .text-block-534-copy-et-copy-noticeoffiling,
+  .section-69 .text-block-534-copy-et-copy-noticeoffiling-copy-h1b {
+    margin-top: 24px !important;
   }
 
   .section-62 h1.heading-120,
   .section-69 h1.heading-120-copy {
-    margin-top: 20px;
+    margin-top: 12px;
   }
 }
 
 @media screen and (max-width: 479px) {
   .navbar-logo-left-2 + section.section-62,
   .navbar-logo-left-2 + section.section-69 {
-    padding-top: 124px !important;
+    padding-top: 88px !important;
+  }
+
+  .section-62 .image-115,
+  .section-69 .image-115 {
+    display: none !important;
+  }
+
+  .section-62 .image-115-copy,
+  .section-69 .image-115-copy {
+    display: block !important;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+  }
+
+  .section-62 .text-block-534-copy-et-copy-noticeoffiling,
+  .section-69 .text-block-534-copy-et-copy-noticeoffiling-copy-h1b {
+    margin-top: 20px !important;
+    padding-left: 0;
+  }
+}
+
+/* ==========================================================================
+   Quality Assurance & Testing (/quality-assurance-and-testing/) hero only
+   --------------------------------------------------------------------------
+   1) Breadcrumb→H1 gap: .div-block-1204-copy-qa-testing used padding-top 60px
+      + justify-content:center inside a 382px flex row (~119px gap).
+   2) Banner crop: image column is height:382px while .image-59 is 425px at
+      1440+, and .container-27-copy-qa-testing keeps padding-right:0 so the
+      rounded banner sits flush against the viewport (html/body overflow-x:clip).
+   Scoped to .section-38--qa-testing so other service heroes stay untouched.
+   ========================================================================== */
+
+.section-38--qa-testing {
+  overflow: visible !important;
+}
+
+.section-38--qa-testing .container-27-copy-qa-testing {
+  overflow: visible !important;
+  padding-right: 40px !important;
+  box-sizing: border-box;
+}
+
+.section-38--qa-testing .container-27-copy-qa-testing > .text-block-534-copy-qa-testing {
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+  padding-top: 0 !important;
+}
+
+.section-38--qa-testing .qa-testing {
+  align-items: flex-start !important;
+  overflow: visible !important;
+}
+
+.section-38--qa-testing .div-block-1204-copy-qa-testing {
+  padding-top: 0 !important;
+  justify-content: flex-start !important;
+}
+
+.section-38--qa-testing .div-block-1205--qa-testing {
+  /* Keep Webflow’s fixed frame so the relatively-positioned overlay
+     doesn’t inflate the flex row; allow paint outside the frame. */
+  height: 382px !important;
+  overflow: visible !important;
+  position: relative;
+}
+
+.section-38--qa-testing .image-59--qa-testing,
+.section-38--qa-testing .image-58--qa-testing-copy-ds,
+.section-38--qa-testing .image-58--qa-testing-copy-mv {
+  max-width: none;
+}
+
+/* Keep desktop overlay paired with the 1440+ .image-59 height (425px).
+   Base Webflow rules target unused .image-58--qa-testing; HTML uses *-copy-ds. */
+@media screen and (min-width: 1440px) {
+  .section-38--qa-testing .div-block-1205--qa-testing {
+    height: 425px !important;
+  }
+
+  .section-38--qa-testing .image-58--qa-testing-copy-ds {
+    height: 241px !important;
+    top: -323px !important;
+    left: -241px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section-38--qa-testing .container-27-copy-qa-testing {
+    padding-right: 40px !important;
+  }
+
+  .section-38--qa-testing .div-block-1205--qa-testing {
+    height: 382px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-38--qa-testing .container-27-copy-qa-testing {
+    padding-right: 15px !important;
+  }
+
+  .section-38--qa-testing .div-block-1205--qa-testing {
+    height: auto !important;
   }
 }
 
