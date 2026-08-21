@@ -372,10 +372,11 @@ def main() -> None:
         '<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8">'
         '<meta name="viewport" content="width=device-width, initial-scale=1">'
         '<title>Notice of Filing | CYMA</title>'
-        '<link rel="stylesheet" href="../assets/css/style.css"></head>'
-        '<body><main style="max-width:900px;margin:120px auto;padding:24px;font-family:Arial,sans-serif">'
-        '<h1>Notice of Filing</h1><p>CYMA Systems, Inc. Notice of Filing information.</p>'
-        '<p><a href="../">Return to Home</a></p></main></body></html>',
+        '<link rel="stylesheet" href="../assets/css/style.css">'
+        '<style>body{margin:0;background:#f7fbff;color:#252b33;font-family:Arial,sans-serif}.notice-page{max-width:900px;margin:0 auto;padding:clamp(72px,12vw,140px) 24px}.notice-page h1{margin:0 0 20px;color:#0562a7;font-size:clamp(42px,7vw,72px);line-height:1.05}.notice-page p{max-width:650px;font-size:20px;line-height:1.6}.notice-page a{display:inline-block;margin-top:16px;color:#0562a7;font-weight:700}</style></head>'
+        '<body><main class="notice-page"><h1>Notice of Filing</h1>'
+        '<p>CYMA Systems, Inc. Notice of Filing information.</p>'
+        '<a href="../">Return to Home</a></main></body></html>',
         encoding="utf-8",
     )
 
