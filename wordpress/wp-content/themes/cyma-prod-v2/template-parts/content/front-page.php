@@ -103,8 +103,6 @@
                   <div class="_16px-text medium-copy-copy weight" data-text="tn164c917a"><?php echo _u('tn164c917a','text'); ?></div>
                   <div class="w-layout-hflex flex-block-4-copy-mv _2-copy">
                     <a href="<?php echo _u('a2bc946ca','link'); ?>" class="w-inline-block" data-link="a2bc946ca"><img src="<?php echo cyma_get_image(_u('in2274351c', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in2274351c', 'img'))->alt ?>" class="image-109" data-img="in2274351c" srcset="<?php echo cyma_get_image(_u('in2274351c', 'img'))->srcset ?>"></a>
-                    <a href="<?php echo _u('a-4058cb70','link'); ?>" class="w-inline-block" data-link="a-4058cb70"><img src="<?php echo cyma_get_image(_u('i70a9ab37', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i70a9ab37', 'img'))->alt ?>" class="image-110" data-img="i70a9ab37" srcset="<?php echo cyma_get_image(_u('i70a9ab37', 'img'))->srcset ?>"></a>
-                    <a href="<?php echo _u('a23','link'); ?>" class="w-inline-block" data-link="a23"><img src="<?php echo cyma_get_image(_u('in58060b85', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in58060b85', 'img'))->alt ?>" class="image-111" data-img="in58060b85" srcset="<?php echo cyma_get_image(_u('in58060b85', 'img'))->srcset ?>"></a>
                     <a href="<?php echo _u('a5320fcb0','link'); ?>" class="w-inline-block" data-link="a5320fcb0"><img src="<?php echo cyma_get_image(_u('in57f7f404', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in57f7f404', 'img'))->alt ?>" class="image-112" data-img="in57f7f404" srcset="<?php echo cyma_get_image(_u('in57f7f404', 'img'))->srcset ?>"></a>
                   </div>
                 </div>
@@ -142,7 +140,6 @@
                 <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/cyma-desktop_mp4.mp4" type="video/mp4">
               </video>
               <div class="banner-image-copy _1-copy bottom" style="justify-content:center;align-items:center;display:flex;flex-direction:column;padding-bottom:0">
-                <div class="hyper-text" data-text="tn8b086eb"><?php echo _u('tn8b086eb','text'); ?></div>
                 <h1 class="heading-150 w" data-textarea="ta232fbabd"><?php echo _u('ta232fbabd', 'textarea'); ?></h1>
                 <div class="header-description" data-text="tn322862cd"><?php echo _u('tn322862cd','text'); ?></div>
                 <a href="<?php echo _u('a-7ed2abb3','link'); ?>" class="contact-btn-copy-home main-btn _w-h w-inline-block" data-link="a-7ed2abb3">
@@ -154,7 +151,6 @@
                 <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/cyma-mobile_mp4.mp4" type="video/mp4">
               </video>
               <div class="banner-image-copy--mobileview _1-copy bottom" style="justify-content:center;align-items:center;display:flex;flex-direction:column;padding-bottom:0">
-                <div class="hyper-text" data-text="tn8b086eb"><?php echo _u('tn8b086eb','text'); ?></div>
                 <h1 class="heading-150" data-textarea="ta232fbabd"><?php echo _u('ta232fbabd', 'textarea'); ?></h1>
                 <div class="header-description pad" data-text="tn322862cd"><?php echo _u('tn322862cd','text'); ?></div>
                 <a href="<?php echo _u('a-7ed2abb3','link'); ?>" class="contact-btn-copy-home main-btn w-inline-block" data-link="a-7ed2abb3">
@@ -166,7 +162,6 @@
                 <source src="<?php echo get_template_directory_uri(); ?>/assets/videos/cyma-home-banner_mp4.mp4" type="video/mp4">
               </video>
               <div class="banner-image-copy-copy-main _1-copy">
-                <div class="hyper-text" data-text="tn8b086eb"><?php echo _u('tn8b086eb','text'); ?></div>
                 <h1 class="heading-150" data-textarea="ta232fbabd"><?php echo _u('ta232fbabd', 'textarea'); ?></h1>
                 <div class="header-description" data-text="tn322862cd"><?php echo _u('tn322862cd','text'); ?></div>
                 <a href="<?php echo _u('a-7ed2abb3','link'); ?>" class="contact-btn-copy-home main-btn w-inline-block" data-link="a-7ed2abb3">
@@ -177,7 +172,6 @@
           </div>
           <div class="w-slide">
             <div class="banner-image _3">
-              <div class="hyper-text" data-text="tn3c015c4c"><?php echo _u('tn3c015c4c','text'); ?></div>
               <h1 class="heading-162 sl" data-text="tn2e990163"><?php echo _u('tn2e990163','text'); ?></h1>
               <div class="header-description w" data-text="t428d05bf"><?php echo _u('t428d05bf','text'); ?></div>
               <a href="<?php echo esc_url( cyma_get_dice_jobs_url() ); ?>" target="_blank" rel="noopener noreferrer" class="contact-btn-copy-home2 _w-h w-inline-block" data-link="a2643837b">
@@ -187,7 +181,6 @@
           </div>
           <div class="w-slide">
             <div class="banner-image _2">
-              <div class="hyper-text" data-text="t63288bfd"><?php echo _u('t63288bfd','text'); ?></div>
               <h1 class="heading-163 w2 s1" data-text="t2197be44"><?php echo _u('t2197be44','text'); ?></h1>
               <div class="header-description" data-text="t53a28d4a"><?php echo _u('t53a28d4a','text'); ?></div>
               <a href="<?php echo esc_url( cyma_get_dice_jobs_url() ); ?>" target="_blank" rel="noopener noreferrer" class="contact-btn-copy-home3 _w-h w-inline-block" data-link="a2643837b">
@@ -909,8 +902,6 @@
                 <div class="_16px-text medium" data-text="tn164c917a"><?php echo _u('tn164c917a','text'); ?></div>
                 <div class="w-layout-hflex flex-block-4 _2">
                   <a href="<?php echo _u('a2bc946ca','link'); ?>" class="w-inline-block" data-link="a2bc946ca"><img src="<?php echo cyma_get_image(_u('in2274351c', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in2274351c', 'img'))->alt ?>" class="image-109" data-img="in2274351c" srcset="<?php echo cyma_get_image(_u('in2274351c', 'img'))->srcset ?>"></a>
-                  <a href="<?php echo _u('a-4058cb70','link'); ?>" class="w-inline-block" data-link="a-4058cb70"><img src="<?php echo cyma_get_image(_u('i70a9ab37', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i70a9ab37', 'img'))->alt ?>" class="image-110" data-img="i70a9ab37" srcset="<?php echo cyma_get_image(_u('i70a9ab37', 'img'))->srcset ?>"></a>
-                  <a href="<?php echo _u('a23','link'); ?>" class="w-inline-block" data-link="a23"><img src="<?php echo cyma_get_image(_u('in58060b85', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in58060b85', 'img'))->alt ?>" class="image-111" data-img="in58060b85" srcset="<?php echo cyma_get_image(_u('in58060b85', 'img'))->srcset ?>"></a>
                   <a href="<?php echo _u('a5320fcb0','link'); ?>" class="w-inline-block" data-link="a5320fcb0"><img src="<?php echo cyma_get_image(_u('in57f7f404', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('in57f7f404', 'img'))->alt ?>" class="image-112" data-img="in57f7f404" srcset="<?php echo cyma_get_image(_u('in57f7f404', 'img'))->srcset ?>"></a>
                 </div>
               </div>

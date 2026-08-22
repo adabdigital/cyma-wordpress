@@ -63,6 +63,28 @@ BANNER = """
 
 DICE_URL = "https://www.dice.com/jobs?filters.clientBrandNameFilter=Cyma+Systems+Inc"
 INSIGHTS_NAV_KEY = 'data-link="a207e37db"'
+LIVE_NEWS_SCRIPT = """
+<script>
+(function () {
+    var feedUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('https://feeds.bbci.co.uk/news/technology/rss.xml');
+    var terms = /\\b(ai|artificial intelligence|cloud|cybersecurity|data|devops|machine learning|software|technology|tech)\\b/i;
+    var selectors = '.div-block-1106-copy-js, .slider-30 .w-slider-mask';
+    var escapeHtml = function (value) { return String(value).replace(/[&<>'"]/g, function (character) { return {'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character]; }); };
+    var render = function (items) {
+        var cards = items.filter(function (item) { return terms.test(item.title + ' ' + item.description); }).slice(0, 3).map(function (item) {
+            var date = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'}) : '';
+            return '<article class="div-block-1103"><div class="div-block-1104"><div class="text-block-449">News</div><div class="text-block-450">' + escapeHtml(date) + '</div></div><h3 class="heading-17">' + escapeHtml(item.title) + '</h3><div class="text-block-453">' + escapeHtml(item.description || '') + '</div><a class="div-block-1105" href="' + escapeHtml(item.link) + '" target="_blank" rel="noopener noreferrer"><span class="text-block-454">Read More</span><span aria-hidden="true">&#8599;</span></a></article>';
+        }).join('');
+        if (!cards) return;
+        document.querySelectorAll(selectors).forEach(function (container) { container.innerHTML = cards; });
+    };
+    var fallbackItems = [{title:'Latest BBC Technology News', description:'Read the latest technology news from BBC.', link:'https://www.bbc.com/news/technology'}];
+    document.querySelectorAll(selectors).forEach(function (container) { container.innerHTML = '<p>Loading technology news...</p>'; });
+    var timeout = new Promise(function (_, reject) { setTimeout(function () { reject(new Error('Feed timeout')); }, 5000); });
+    Promise.race([fetch(feedUrl).then(function (response) { return response.json(); }), timeout]).then(function (data) { if (data.items) render(data.items); else render(fallbackItems); }).catch(function () { render(fallbackItems); });
+}());
+</script>
+"""
 
 
 def rewrite_dice_ctas(html: str) -> str:
@@ -103,6 +125,169 @@ def rewrite_insights_nav(html: str, slug: str) -> str:
         return re.sub(r'href="[^"]*"', f'href="{hub}"', anchor, count=1)
 
     return re.sub(r"<a\b[^>]*>", repl_open, html, flags=re.I)
+
+
+def rewrite_legal_nav(html: str, slug: str) -> str:
+    """Keep Legal dropdown links inside the static GitHub Pages site."""
+
+    prefix = "" if slug == "home" else "../"
+    html = html.replace(
+        'href="https://cymasys.com/notice-of-filing/"',
+        f'href="{prefix}notice-of-filing/"',
+    )
+    html = html.replace(
+        'href="https://cymasys.com/h1b-lca/"',
+        f'href="{prefix}h1b-lca/"',
+    )
+    return html
+
+
+CASE_STUDIES_STATIC = [
+    ("Automotive", "Smart Grid Modernization for an Energy Provider", "https://cymasys.com/case-studies/case-study-2/"),
+    ("Energy", "Streamlining Vendor Data", "https://cymasys.com/case-studies/case-study-3/"),
+    ("Banking &amp; Financial Services", "Enhancing Data &amp; IT in Healthcare", "https://cymasys.com/case-studies/case-study-4/"),
+    ("Manufacturing", "Upgrading Manufacturing Systems to Enable Smart, Scalable Operations", "https://cymasys.com/case-studies/case-studies-5/"),
+    ("Retail", "Enhancing Retail Platforms to Deliver Seamless, Data-Driven Customer Experiences", "https://cymasys.com/case-studies/case-study-6/"),
+    ("Telecommunication", "Scaling Telecommunication Platforms to Support High-Volume, Always-On Services", "https://cymasys.com/case-studies/case-study-7/"),
+    ("Public Sector", "Delivering Secure, Scalable Digital Services for the Public Sector", "https://cymasys.com/case-studies/case-study-8/"),
+    ("Insurance", "Building Reliable Digital Platforms for Insurance Services", "https://cymasys.com/case-studies/building-reliable-digital-platforms-for-insurance-services/"),
+]
+
+
+def case_studies_static_list_html(thumb: str, arrow: str) -> str:
+    items = []
+    for industry, heading, url in CASE_STUDIES_STATIC:
+        items.append(
+            '<div role="listitem" class="w-dyn-item">'
+            '<div class="div-block-1230">'
+            f'<img decoding="async" src="{thumb}" loading="lazy" alt="" class="image-68">'
+            '<div class="div-block-1233"><div class="div-block-1382">'
+            f'<div class="text-block-554">{industry}</div>'
+            f'<h2 class="heading-96">{heading}</h2></div>'
+            '<div class="div-block-1383">'
+            f'<a href="{url}" class="transformingbusiness-ai-btn w-inline-block">'
+            '<div class="text-block-529-copy">Read More</div>'
+            f'<img decoding="async" loading="lazy" src="{arrow}" alt="" class="image-145">'
+            "</a></div></div></div></div>"
+        )
+    return (
+        '<div role="list" class="collection-list w-dyn-items">'
+        + "".join(items)
+        + "</div>"
+    )
+
+
+def strip_case_studies_webflow_chrome(html: str, thumb: str, arrow: str) -> str:
+    """Remove leftover Webflow empty-state + pagination; keep a static listing."""
+
+    replacement = case_studies_static_list_html(thumb, arrow)
+
+    def repl(match: re.Match[str]) -> str:
+        return match.group(1) + replacement + match.group(2)
+
+    updated, n = re.subn(
+        r'(<section class="section-65">\s*<div class="w-layout-blockcontainer container-55 w-container">\s*<div class="w-dyn-list">)[\s\S]*?(</div>\s*</div>\s*</section>)',
+        repl,
+        html,
+        count=1,
+        flags=re.I,
+    )
+    if n:
+        html = updated
+    else:
+        html = re.sub(
+            r'<div class="w-dyn-empty">\s*<div>\s*No items found\.?\s*</div>\s*</div>',
+            "",
+            html,
+            flags=re.I,
+        )
+        html = re.sub(
+            r'<div\b[^>]*role="navigation"[^>]*class="[^"]*w-pagination-wrapper[^"]*"[^>]*>[\s\S]*?</a>\s*</div>',
+            "",
+            html,
+            flags=re.I,
+        )
+    return html
+
+
+def rewrite_static_copy(html: str, slug: str) -> str:
+    """Apply copy corrections and remove retired presentation elements."""
+
+    replacements = {
+        "Seize the Next Oppertunity": "Seize the Next Opportunity.",
+        "Explore Career Oppertunities": "Explore Career Opportunities.",
+        "techbusinesses": "tech businesses",
+        "unique your business needs": "your unique business needs",
+        "Cloud & Devops": "Cloud & DevOps",
+        "Cloud &amp; Devops": "Cloud &amp; DevOps",
+        "Software That Deliver Real Results": "Software That Delivers Real Results",
+        "By cotinuing": "By continuing",
+        "fortune 1000 companies": "Fortune 1000 companies",
+        "Manichester, CT 060442": "Manchester, CT 06042",
+    }
+    for old, new in replacements.items():
+        html = html.replace(old, new)
+    html = re.sub(r"Cloud\s*&(?:amp;)?\s*Devops", "Cloud &amp; DevOps", html, flags=re.I)
+
+    # Keep only LinkedIn and Facebook in the repeated footer markup.
+    html = re.sub(
+        r'<a[^>]*data-link=["\']a-4058cb70["\'][^>]*>[\s\S]*?</a>',
+        "",
+        html,
+        flags=re.I,
+    )
+    html = re.sub(
+        r'<a[^>]*data-link=["\']a23["\'][^>]*>[\s\S]*?</a>',
+        "",
+        html,
+        flags=re.I,
+    )
+    html = re.sub(
+        r'<a[^>]*>[^<]*<img[^>]*class=["\'][^"\']*image-(?:110|111)[^"\']*["\'][^>]*>[^<]*</a>',
+        "",
+        html,
+        flags=re.I,
+    )
+
+    if slug == "home":
+        html = re.sub(
+            r'<div class="hyper-text"[^>]*>\s*(?:Unlock New Possibilities|Workforce Solutions)\s*</div>',
+            "",
+            html,
+            flags=re.I,
+        )
+
+    if slug == "job-seekers":
+        news_urls = iter(
+            [
+                "https://cymasys.com/insights-2/",
+                "https://cymasys.com/insights-3/",
+                "https://cymasys.com/insights-4/",
+            ] * 2
+        )
+
+        def link_news_card(match: re.Match[str]) -> str:
+            url = next(news_urls)
+            class_name = match.group(1)
+            content = match.group(2)
+            return f'<a href="{url}" class="{class_name}" target="_blank" rel="noopener noreferrer">{content}</a>'
+
+        html = re.sub(
+            r'<div class="(div-block-1105[^\"]*)">([\s\S]*?<img[^>]*>\s*)</div>',
+            link_news_card,
+            html,
+            count=6,
+            flags=re.I,
+        )
+
+    if slug == "case-studies":
+        prefix = "../"
+        html = strip_case_studies_webflow_chrome(
+            html,
+            thumb=f"{prefix}assets/images/casestudies2.webp",
+            arrow=f"{prefix}assets/images/group-1000007155-2.svg?v=1780144474",
+        )
+    return html
 
 
 def main() -> None:
@@ -173,6 +358,7 @@ def main() -> None:
         html = re.sub(r'href="([^"]+)"', repl_href, html)
         html = rewrite_dice_ctas(html)
         html = rewrite_insights_nav(html, slug)
+        html = rewrite_legal_nav(html, slug)
         # Rewrite theme asset URLs (css/js/images/videos) to the local docs/assets copy.
         # Snapshots may reference cyma-prod or cyma-prod-v2; both map to theme assets.
         html = re.sub(
@@ -214,6 +400,9 @@ def main() -> None:
                 1,
             )
         html = rewrite_raster_to_webp(html, assets_out)
+        html = rewrite_static_copy(html, slug)
+        if slug == "job-seekers":
+            html = html.replace("</body>", LIVE_NEWS_SCRIPT + "</body>", 1)
         return html
 
     css_dir = assets_out / "css"
@@ -251,9 +440,23 @@ def main() -> None:
     for rel_path, content in preserved_files.items():
         dest = OUT / rel_path
         dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_text(content, encoding="utf-8")
+        dest.write_text(rewrite_static_copy(content, rel_path.parent.name), encoding="utf-8")
 
-    subprocess.run(["du", "-sh", str(OUT)], check=False)
+    notice_dir = OUT / "notice-of-filing"
+    notice_dir.mkdir(parents=True, exist_ok=True)
+    (notice_dir / "index.html").write_text(
+        '<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8">'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">'
+        '<title>Notice of Filing | CYMA</title>'
+        '<link rel="stylesheet" href="../assets/css/style.css">'
+        '<style>body{margin:0;color:#30363b;font-family:Arial,sans-serif}.notice-nav{height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(24px,4vw,64px);box-sizing:border-box;background:#fff}.notice-logo{font-size:24px;color:#0562a7;font-weight:700}.notice-nav a{margin-left:24px;color:#0562a7;text-decoration:none;font-size:14px;font-weight:700}.notice-hero{height:272px;background:linear-gradient(90deg,rgba(0,92,145,.68),rgba(19,130,150,.45)),url("../assets/images/noticeoffiling.webp") center/cover}.notice-content{background:#fff url("../assets/images/bg-notice.webp") center/cover;padding:24px clamp(24px,9vw,220px) 100px;min-height:520px}.notice-crumb{font-size:12px;color:#69737b;margin-bottom:12px}.notice-content h1{font-size:clamp(40px,5vw,56px);font-weight:400;text-align:center;margin:8px 0 48px}.notice-card{max-width:820px;margin:auto}.notice-card h2{font-size:30px;margin:0 0 14px}.notice-card h3{font-size:14px;color:#0562a7;margin:16px 0 6px}.notice-card p{font-size:14px;line-height:1.55;margin:0 0 10px}.notice-footer{padding:28px 24px;text-align:center;border-top:1px solid #dbe8ed;font-size:13px}@media(max-width:700px){.notice-nav{height:auto;padding:18px 20px}.notice-nav-links{display:none}.notice-hero{height:190px}.notice-content{padding:20px 24px 64px}.notice-content h1{margin-bottom:32px}.notice-card h2{font-size:25px}}</style></head>'
+        '<body><header class="notice-nav"><a class="notice-logo" href="../">CYMA</a><nav class="notice-nav-links"><a href="../">Home</a><a href="../about-us/">About Us</a><a href="../business-solutions/">Business Solutions</a><a href="../industries/">Industries</a><a href="../job-seekers/">Job Seekers</a><a href="../legal/">Legal</a><a href="../resources/">Resources</a></nav></header>'
+        '<div class="notice-hero"></div><main class="notice-content"><div class="notice-crumb">Home &bull; Legal &bull; <strong>Notice of Filing</strong></div><h1>Notice of Filing</h1><section class="notice-card"><h2>Job Title: Software Developer</h2><h3>Job Duties:</h3><p>Design, and implement Java/J2EE applications using AGILE methodology, participate in Scrum, Retrospective, and Release Planning Meetings. Develop and manage CI/CD pipeline utilizing the Azure DevOps platform. Integrate cloud storage services with AWS S3-compatible APIs to ensure compatibility and interoperability. Build UI Screens using Angular JS, Node JS, HTML5, CSS, JavaScript, and Bootstrap. Perform error handling at the method level. Work on Spring controllers, microservices and DAO using annotation. Execute Kibana and elastic search to identify the Kafka and IBM MQ message failure scenarios. Improve response times and test web services, Restful web services and test using SOAP UI and POSTMAN with required validation of Source and Targets. Work on Mockito Framework. Utilize Git, TFS, Maven, Jenkins, Docker, and Kubernetes for efficient development workflows. Will work in Manchester, CT and/or various unanticipated client sites throughout the U.S. Must be willing to travel and/or relocate.</p><h3>Salary:</h3><p>$127,000 /year</p><h3>Employer:</h3><p>Cyma Systems Inc</p><h3>Work Location:</h3><p>360 Tolland Turnpike, Suite 2D, Manchester, CT and/or various unanticipated client sites throughout the U.S.</p><h3>Apply to:</h3><p>Cyma Systems Inc, 360 Tolland Turnpike, Suite 2D, Manchester, CT 06042</p></section></main><footer class="notice-footer">CYMA SYSTEMS, INC. &bull; 360 Tolland Turnpike, Suite 2D Manchester, CT 06042, USA</footer></body></html>',
+        encoding="utf-8",
+    )
+
+    if shutil.which("du"):
+        subprocess.run(["du", "-sh", str(OUT)], check=False)
     print(f"Built {len(pages)} pages into {OUT}")
 
 

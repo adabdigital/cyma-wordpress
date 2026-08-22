@@ -175,52 +175,8 @@
   </section>
   <section class="section-65">
     <div class="w-layout-blockcontainer container-55 w-container">
-      <div class="w-dyn-list">
-        <div role="list" class="collection-list w-dyn-items">
-          <div role="listitem" class="w-dyn-item">
-            <div data-w-id="0e5c55fa-3434-9c3d-4cc8-f684fe2a038b" class="div-block-1230"><img src="<?php echo cyma_get_image(_u('i11be7e50', 'img'))->src ?>" loading="lazy" alt="<?php echo cyma_get_image(_u('i11be7e50', 'img'))->alt ?>" class="image-68 w-dyn-bind-empty" data-img="i11be7e50" srcset="<?php echo cyma_get_image(_u('i11be7e50', 'img'))->srcset ?>">
-              <div class="div-block-1233">
-                <div class="div-block-1382">
-                  <div class="text-block-554 w-dyn-bind-empty"></div>
-                  <h1 class="heading-96 w-dyn-bind-empty"></h1>
-                </div>
-                <div class="div-block-1383">
-                  <div class="text-block-555-copy">Technologies Used:</div>
-                  <div class="div-block-1232-copy-h">
-                    <div class="text-block-556">Staff Augmentation</div>
-                    <div class="text-block-556">Executive Search</div>
-                    <div class="text-block-556">Workforce Consulting</div>
-                    <div class="text-block-556">RPO</div>
-                  </div>
-                  <div class="div-block-1343_mv1">
-                    <div class="text-block-556-copy">Staff Augmentation</div>
-                    <div class="text-block-556-copy">Executive Search</div>
-                  </div>
-                  <div class="div-block-1343-mv">
-                    <div class="text-block-556-copy">Workforce Consulting</div>
-                    <div class="text-block-556-copy">RPO</div>
-                  </div>
-                  <a href="#" class="transformingbusiness-ai-btn w-inline-block">
-                    <div class="text-block-529-copy">Read More</div><img loading="lazy" src="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->src ?>" alt="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->alt ?>" class="image-145" data-img="in75c75f65" srcset="<?php echo cyma_get_image(_u('in75c75f65', 'img'))->srcset ?>">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-dyn-empty">
-          <div>No items found.</div>
-        </div>
-        <div role="navigation" aria-label="List" class="w-pagination-wrapper pagination">
-          <a href="#" aria-label="Previous Page" class="w-pagination-previous previous"><svg class="w-pagination-previous-icon icon-22" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)">
-              <path fill="none" stroke="currentColor" fill-rule="evenodd" d="M8 10L4 6l4-4"></path>
-            </svg>
-            <div class="text-block-636 w-inline-block">Previous</div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/group-1000007155-2.svg?v=1780144474" loading="lazy" alt="">
-          </a>
-          <a href="#" aria-label="Next Page" class="w-pagination-next next">
-            <div class="text-block-635 w-inline-block">View More</div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/group-1000007155-2.svg?v=1780144474" loading="lazy" alt="">
-          </a>
-        </div>
+      <div class="w-dyn-list cyma-case-studies-list">
+        <?php get_template_part( 'template-parts/content/case-studies-list' ); ?>
       </div>
     </div>
   </section>

@@ -113,8 +113,15 @@ function cyma_the_page_content( $fallback_slug = '' ) {
 	$post_id = get_the_ID();
 
 	if ( cyma_page_uses_cms_content( $post_id ) ) {
+		$content = (string) get_post_field( 'post_content', $post_id );
+		if ( 'job-seekers' === get_post_field( 'post_name', $post_id ) && strpos( $content, 'section-18' ) !== false ) {
+			ob_start();
+			get_template_part( 'template-parts/content/job-seeker-news' );
+			$news_section = ob_get_clean();
+			$content      = preg_replace( '/<section class="section-18">[\s\S]*?<\/section>/i', $news_section, $content, 1 );
+		}
 		echo '<div class="cyma-cms-page">';
-		the_content();
+		echo apply_filters( 'the_content', $content );
 		echo '</div>';
 		return;
 	}
@@ -183,15 +190,7 @@ function cyma_render_design_html( $post_id ) {
 	}
 
 	if ( $post_obj && 'case-studies' === $post_obj->post_name ) {
-		$replaced = preg_replace(
-			'#<section class="section-65">[\s\S]*?</section>#i',
-			'<section class="section-65"><div class="w-layout-blockcontainer container-55 w-container"><div class="w-dyn-list">[cyma_case_studies]</div></div></section>',
-			$html,
-			1
-		);
-		if ( is_string( $replaced ) && $replaced !== '' ) {
-			$html = $replaced;
-		}
+		$html = cyma_case_studies_live_list_markup( $html );
 	}
 
 	if ( $post_obj && 'insights' === $post_obj->post_name ) {
@@ -360,25 +359,93 @@ function cyma_insights_list_shortcode() {
 add_shortcode( 'cyma_insights_list', 'cyma_insights_list_shortcode' );
 
 /**
- * Keep Case Studies listing live from the Case Studies CPT.
- * Runs before do_shortcode (priority 11) so the shortcode can expand.
+ * Live Case Studies list wrapper (shortcode). Replaces Webflow CMS chrome.
  */
-function cyma_replace_case_studies_list_in_cms( $content ) {
-	if ( ! is_page( 'case-studies' ) || ! is_string( $content ) || $content === '' ) {
+function cyma_case_studies_shortcode_section() {
+	return '<section class="section-65"><div class="w-layout-blockcontainer container-55 w-container"><div class="w-dyn-list cyma-case-studies-list">[cyma_case_studies]</div></div></section>';
+}
+
+/**
+ * True when seeded HTML still has Webflow empty-state / pagination chrome.
+ */
+function cyma_case_studies_has_webflow_chrome( $content ) {
+	if ( ! is_string( $content ) || $content === '' ) {
+		return false;
+	}
+	if ( false !== stripos( $content, 'No items found' ) ) {
+		return true;
+	}
+	if ( false !== strpos( $content, 'w-pagination-wrapper' ) || false !== strpos( $content, 'w-pagination-previous' ) ) {
+		return true;
+	}
+	if ( false !== strpos( $content, 'w-dyn-bind-empty' ) ) {
+		return true;
+	}
+	return false;
+}
+
+/**
+ * Drop leftover Webflow empty collection + inactive pagination on Case Studies.
+ *
+ * @param string $content HTML.
+ * @return string
+ */
+function cyma_case_studies_live_list_markup( $content ) {
+	if ( ! is_string( $content ) || $content === '' ) {
 		return $content;
 	}
-	if ( false !== strpos( $content, '[cyma_case_studies]' ) ) {
+
+	$has_shortcode = false !== strpos( $content, '[cyma_case_studies]' );
+	$has_chrome    = cyma_case_studies_has_webflow_chrome( $content );
+
+	if ( $has_shortcode && ! $has_chrome ) {
 		return $content;
 	}
 
 	$replaced = preg_replace(
-		'#<section class="section-65">[\s\S]*?</section>#i',
-		'<section class="section-65"><div class="w-layout-blockcontainer container-55 w-container"><div class="w-dyn-list">[cyma_case_studies]</div></div></section>',
+		'#<section\b[^>]*class="[^"]*\bsection-65\b[^"]*"[^>]*>[\s\S]*?</section>#i',
+		cyma_case_studies_shortcode_section(),
 		$content,
 		1
 	);
+	if ( is_string( $replaced ) && $replaced !== '' ) {
+		$content = $replaced;
+	}
 
-	return is_string( $replaced ) && $replaced !== '' ? $replaced : $content;
+	$content = preg_replace(
+		'#<div class="w-dyn-empty">\s*<div>\s*No items found\.?\s*</div>\s*</div>#i',
+		'',
+		$content
+	);
+	$content = preg_replace(
+		'#<div\b[^>]*\brole="navigation"[^>]*class="[^"]*\bw-pagination-wrapper\b[^"]*"[^>]*>[\s\S]*?</a>\s*</div>#i',
+		'',
+		$content
+	);
+	$content = preg_replace(
+		'#<div\b[^>]*class="[^"]*\bw-pagination-wrapper\b[^"]*"[^>]*>[\s\S]*?</a>\s*</div>#i',
+		'',
+		$content
+	);
+
+	if ( false === strpos( $content, '[cyma_case_studies]' ) ) {
+		$content .= "\n[cyma_case_studies]\n";
+	}
+
+	return is_string( $content ) ? $content : '';
+}
+
+/**
+ * Keep Case Studies listing live from the Case Studies CPT.
+ * Runs before do_shortcode (priority 11) so the shortcode can expand.
+ * Also strips leftover Webflow empty-state chrome beside the shortcode.
+ */
+function cyma_replace_case_studies_list_in_cms( $content ) {
+	if ( ( ! is_page( 'case-studies' ) && 'case-studies' !== get_post_field( 'post_name', get_queried_object_id() ) ) || ! is_string( $content ) || $content === '' ) {
+		return $content;
+	}
+
+	return cyma_case_studies_live_list_markup( $content );
 }
 
 /**

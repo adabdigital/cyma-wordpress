@@ -336,6 +336,8 @@
       </div>
     </section>
   </div>
+  <?php get_template_part( 'template-parts/content/job-seeker-news' ); ?>
+  <?php if ( false ) : ?>
   <section class="section-18">
     <div class="w-layout-blockcontainer container-8 w-container">
       <div data-w-id="c986ab1e-24a7-7158-226b-2ba8d1f77245" style="opacity:0" class="div-block-1102">
@@ -429,6 +431,7 @@
       </div>
     </div>
   </section>
+  <?php endif; ?>
   <section class="sec30">
     <div data-w-id="41fc3d90-d10b-717f-f5fe-8cab5330e527" style="opacity:0" class="w-layout-blockcontainer container-11 max-width w-container">
       <div class="div-block-1113">

@@ -175,7 +175,7 @@
   </section>
   <section class="section-65">
     <div class="w-layout-blockcontainer container-55 w-container">
-      <div class="w-dyn-list">
+      <div class="w-dyn-list cyma-case-studies-list">
         <?php get_template_part( 'template-parts/content/case-studies-list' ); ?>
       </div>
     </div>
