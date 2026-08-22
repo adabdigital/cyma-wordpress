@@ -57,6 +57,15 @@ function cyma_enqueue_styles() {
         . '{ opacity: 1 !important; }'
     );
 
+    if ( is_page( 'case-studies' ) ) {
+        wp_add_inline_style(
+            'cyma-style',
+            '.section-65 .w-dyn-list > .w-dyn-empty:not(.cyma-live-empty),'
+            . '.section-65 .w-dyn-list > .w-pagination-wrapper'
+            . '{display:none!important;}'
+        );
+    }
+
     // Hide header Contact Us on mobile/tablet (drawer already has CTA)
     wp_add_inline_style(
         'cyma-animations',

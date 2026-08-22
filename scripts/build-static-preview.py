@@ -142,6 +142,74 @@ def rewrite_legal_nav(html: str, slug: str) -> str:
     return html
 
 
+CASE_STUDIES_STATIC = [
+    ("Automotive", "Smart Grid Modernization for an Energy Provider", "https://cymasys.com/case-studies/case-study-2/"),
+    ("Energy", "Streamlining Vendor Data", "https://cymasys.com/case-studies/case-study-3/"),
+    ("Banking &amp; Financial Services", "Enhancing Data &amp; IT in Healthcare", "https://cymasys.com/case-studies/case-study-4/"),
+    ("Manufacturing", "Upgrading Manufacturing Systems to Enable Smart, Scalable Operations", "https://cymasys.com/case-studies/case-studies-5/"),
+    ("Retail", "Enhancing Retail Platforms to Deliver Seamless, Data-Driven Customer Experiences", "https://cymasys.com/case-studies/case-study-6/"),
+    ("Telecommunication", "Scaling Telecommunication Platforms to Support High-Volume, Always-On Services", "https://cymasys.com/case-studies/case-study-7/"),
+    ("Public Sector", "Delivering Secure, Scalable Digital Services for the Public Sector", "https://cymasys.com/case-studies/case-study-8/"),
+    ("Insurance", "Building Reliable Digital Platforms for Insurance Services", "https://cymasys.com/case-studies/building-reliable-digital-platforms-for-insurance-services/"),
+]
+
+
+def case_studies_static_list_html(thumb: str, arrow: str) -> str:
+    items = []
+    for industry, heading, url in CASE_STUDIES_STATIC:
+        items.append(
+            '<div role="listitem" class="w-dyn-item">'
+            '<div class="div-block-1230">'
+            f'<img decoding="async" src="{thumb}" loading="lazy" alt="" class="image-68">'
+            '<div class="div-block-1233"><div class="div-block-1382">'
+            f'<div class="text-block-554">{industry}</div>'
+            f'<h2 class="heading-96">{heading}</h2></div>'
+            '<div class="div-block-1383">'
+            f'<a href="{url}" class="transformingbusiness-ai-btn w-inline-block">'
+            '<div class="text-block-529-copy">Read More</div>'
+            f'<img decoding="async" loading="lazy" src="{arrow}" alt="" class="image-145">'
+            "</a></div></div></div></div>"
+        )
+    return (
+        '<div role="list" class="collection-list w-dyn-items">'
+        + "".join(items)
+        + "</div>"
+    )
+
+
+def strip_case_studies_webflow_chrome(html: str, thumb: str, arrow: str) -> str:
+    """Remove leftover Webflow empty-state + pagination; keep a static listing."""
+
+    replacement = case_studies_static_list_html(thumb, arrow)
+
+    def repl(match: re.Match[str]) -> str:
+        return match.group(1) + replacement + match.group(2)
+
+    updated, n = re.subn(
+        r'(<section class="section-65">\s*<div class="w-layout-blockcontainer container-55 w-container">\s*<div class="w-dyn-list">)[\s\S]*?(</div>\s*</div>\s*</section>)',
+        repl,
+        html,
+        count=1,
+        flags=re.I,
+    )
+    if n:
+        html = updated
+    else:
+        html = re.sub(
+            r'<div class="w-dyn-empty">\s*<div>\s*No items found\.?\s*</div>\s*</div>',
+            "",
+            html,
+            flags=re.I,
+        )
+        html = re.sub(
+            r'<div\b[^>]*role="navigation"[^>]*class="[^"]*w-pagination-wrapper[^"]*"[^>]*>[\s\S]*?</a>\s*</div>',
+            "",
+            html,
+            flags=re.I,
+        )
+    return html
+
+
 def rewrite_static_copy(html: str, slug: str) -> str:
     """Apply copy corrections and remove retired presentation elements."""
 
@@ -210,6 +278,14 @@ def rewrite_static_copy(html: str, slug: str) -> str:
             html,
             count=6,
             flags=re.I,
+        )
+
+    if slug == "case-studies":
+        prefix = "../"
+        html = strip_case_studies_webflow_chrome(
+            html,
+            thumb=f"{prefix}assets/images/casestudies2.webp",
+            arrow=f"{prefix}assets/images/group-1000007155-2.svg?v=1780144474",
         )
     return html
 
